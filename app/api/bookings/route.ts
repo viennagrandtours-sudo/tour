@@ -3,12 +3,15 @@ import { getSupabaseServer } from "@/lib/supabase";
 import { supabaseConfigured } from "@/lib/supabase-env";
 import { getAvailability } from "@/lib/blocked-slots";
 import { isSlotAvailable } from "@/lib/availability";
+import { getResolvedTour } from "@/lib/tour-settings";
+import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 import {
   TOURS,
   NARRATION_LANGUAGES,
   MIN_GUESTS,
   MAX_GUESTS,
-  calculateTotal,
+  FLEET_SIZE,
+  MAX_GUESTS_PER_CAR,
   SITE_URL,
   type TourType,
 } from "@/lib/tours";
@@ -29,7 +32,23 @@ type BookingBody = {
 
 const emailOk = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
+/** UTC "yesterday" — a one-day grace window so a guest's local "today" (in a
+ * timezone ahead of UTC) is never rejected by the server's UTC clock. */
+function earliestBookableDate(): string {
+  const d = new Date();
+  d.setUTCDate(d.getUTCDate() - 1);
+  return d.toISOString().slice(0, 10);
+}
+
 export async function POST(req: NextRequest) {
+  const rate = checkRateLimit(`bookings:${clientIp(req)}`, { limit: 8, windowMs: 10 * 60 * 1000 });
+  if (!rate.ok) {
+    return NextResponse.json(
+      { error: "Too many booking attempts. Please wait a few minutes and try again." },
+      { status: 429, headers: { "Retry-After": String(rate.retryAfterSeconds) } }
+    );
+  }
+
   let body: BookingBody;
 
   try {
@@ -63,6 +82,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Date and time required" }, { status: 400 });
   }
 
+  if (date < earliestBookableDate()) {
+    return NextResponse.json({ error: "That date has already passed" }, { status: 400 });
+  }
+
   const guests = Number(guest_count);
   if (!Number.isFinite(guests) || guests < MIN_GUESTS || guests > MAX_GUESTS) {
     return NextResponse.json(
@@ -75,48 +98,79 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid narration language" }, { status: 400 });
   }
 
+  // Price and "still on sale" both come from the admin-editable tour_settings
+  // table (falling back to the lib/tours.ts default), never the static table
+  // alone — otherwise a price change or a retired tour in /admin/tours would
+  // never reach what guests are actually charged.
+  const resolvedTour = await getResolvedTour(tour_type);
+  if (!resolvedTour || !resolvedTour.active) {
+    return NextResponse.json({ error: "That tour is not currently available" }, { status: 400 });
+  }
+  const amount = resolvedTour.pricePerPerson * guests;
+  const tour = TOURS.find((t) => t.id === tour_type)!;
+
+  // Fast, non-authoritative pre-check: gives a quick "unavailable" for the
+  // common case (owner already blocked this slot) before we touch the DB or
+  // SumUp. The real capacity/availability enforcement happens atomically
+  // inside create_booking_if_available below.
   const availability = await getAvailability({ from: date, to: date });
   if (!isSlotAvailable(availability, date, time)) {
     return NextResponse.json({ error: "That time is no longer available" }, { status: 409 });
   }
 
-  const amount = calculateTotal(tour_type, guests);
-  const tour = TOURS.find((t) => t.id === tour_type)!;
   const localePrefix = (locale || "en").replace(/[^a-z-]/gi, "") || "en";
 
-  const row = {
-    name: name.trim(),
-    email: email.trim().toLowerCase(),
-    phone: phone.trim(),
-    tour_type,
-    date,
-    time,
-    guest_count: guests,
-    language,
-    notes: notes?.trim() || null,
-    status: "awaiting_payment" as const,
-  };
-
   const supabase = supabaseConfigured() ? getSupabaseServer() : null;
+
+  // A booking that isn't persisted can't later be confirmed, refunded, or even
+  // found in /admin — so if Supabase isn't configured, never take real money
+  // for it, regardless of whether SumUp happens to be configured too.
+  if (!supabase && sumupConfigured()) {
+    console.error(
+      "Booking blocked: SumUp is configured but Supabase is not — refusing to create a real charge with no record."
+    );
+    return NextResponse.json(
+      {
+        error: "Booking is temporarily unavailable. Please contact us directly to book.",
+      },
+      { status: 503 }
+    );
+  }
+
   let bookingId: string;
-  let demo = false;
+  const demo = !supabase;
 
   if (!supabase) {
     bookingId = `demo_${Date.now().toString(36)}`;
-    demo = true;
   } else {
-    const { data, error } = await supabase
-      .from("bookings")
-      .insert(row)
-      .select("id")
-      .single();
+    const { data, error } = await supabase.rpc("create_booking_if_available", {
+      p_name: name.trim(),
+      p_email: email.trim().toLowerCase(),
+      p_phone: phone.trim(),
+      p_tour_type: tour_type,
+      p_date: date,
+      p_time: time,
+      p_guest_count: guests,
+      p_language: language,
+      p_notes: notes?.trim() || null,
+      p_status: "awaiting_payment",
+      p_fleet_size: FLEET_SIZE,
+      p_seats_per_car: MAX_GUESTS_PER_CAR,
+    });
 
     if (error) {
+      if (error.message === "slot_full" || error.message === "slot_blocked") {
+        return NextResponse.json({ error: "That time is no longer available" }, { status: 409 });
+      }
+      if (/does not exist|schema cache/i.test(error.message)) {
+        console.error("create_booking_if_available is missing — re-run supabase/schema.sql:", error);
+        return NextResponse.json({ error: "Could not save booking" }, { status: 500 });
+      }
       console.error("Supabase booking insert error:", error);
       return NextResponse.json({ error: "Could not save booking" }, { status: 500 });
     }
 
-    bookingId = data.id;
+    bookingId = data as string;
   }
 
   if (sumupConfigured()) {
@@ -127,7 +181,9 @@ export async function POST(req: NextRequest) {
       // SumUp needs redirect_url at create time, so we include a placeholder path that the
       // complete page can resolve using sessionStorage when ?checkout= is absent.
       const completeUrl = `${origin}/${localePrefix}/book/complete?booking=${encodeURIComponent(bookingId)}`;
-      const webhookUrl = `${origin}/api/sumup/webhook`;
+      const webhookUrl = new URL("/api/sumup/webhook", origin);
+      const webhookSecret = process.env.SUMUP_WEBHOOK_SECRET?.trim();
+      if (webhookSecret) webhookUrl.searchParams.set("token", webhookSecret);
 
       const checkout = await createHostedCheckout({
         amount,
@@ -135,7 +191,7 @@ export async function POST(req: NextRequest) {
         checkoutReference: bookingId,
         description: `Vienna Grand Tours · ${tour.id} · ${guests} guests · ${date} ${time}`,
         redirectUrl: completeUrl,
-        returnUrl: webhookUrl,
+        returnUrl: webhookUrl.toString(),
       });
 
       if (supabase) {

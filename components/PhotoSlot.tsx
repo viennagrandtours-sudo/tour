@@ -26,6 +26,10 @@ type Props = {
   objectPosition?: string;
   /** Extra classes on the next/image element */
   imageClassName?: string;
+  /** Set true only for the single largest above-the-fold image on a page (LCP). */
+  priority?: boolean;
+  /** 75 (default) suits smaller/below-fold tiles; pass 90 for a true hero shot. */
+  quality?: number;
 };
 
 /**
@@ -43,6 +47,8 @@ export default function PhotoSlot({
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
   objectPosition,
   imageClassName = "",
+  priority = false,
+  quality = 75,
 }: Props) {
   if (!src) return null;
 
@@ -53,7 +59,8 @@ export default function PhotoSlot({
         alt={alt}
         fill
         sizes={sizes}
-        quality={90}
+        quality={quality}
+        priority={priority}
         className={`object-cover ${imageClassName}`.trim()}
         style={objectPosition ? { objectPosition } : undefined}
       />

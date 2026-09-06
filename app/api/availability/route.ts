@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAvailability, EMPTY_AVAILABILITY } from "@/lib/blocked-slots";
+import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +15,14 @@ const ISO_DAY = /^\d{4}-\d{2}-\d{2}$/;
  * degrades to "nothing is blocked".
  */
 export async function GET(req: NextRequest) {
+  const rate = checkRateLimit(`availability:${clientIp(req)}`, { limit: 60, windowMs: 60 * 1000 });
+  if (!rate.ok) {
+    return NextResponse.json(EMPTY_AVAILABILITY, {
+      status: 429,
+      headers: { "Retry-After": String(rate.retryAfterSeconds) },
+    });
+  }
+
   const { searchParams } = req.nextUrl;
   const from = searchParams.get("from");
   const to = searchParams.get("to");

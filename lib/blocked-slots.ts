@@ -34,10 +34,15 @@ export async function getBlockedSlots(options?: {
 
   try {
     const { data, error } = await query;
-    if (error || !data) return [];
+    if (error || !data) {
+      if (error) console.error("Failed to read blocked_slots:", error);
+      return [];
+    }
     return data as BlockedSlot[];
-  } catch {
-    // Never block the booking flow because availability could not be read.
+  } catch (error) {
+    // Never block the booking flow because availability could not be read —
+    // but log it, since "fully available" is a silent fail-open otherwise.
+    console.error("Failed to read blocked_slots:", error);
     return [];
   }
 }

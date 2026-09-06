@@ -44,10 +44,15 @@ export async function getTourSettingRows(): Promise<TourSettingRow[]> {
 
   try {
     const { data, error } = await supabase.from("tour_settings").select("*");
-    if (error || !data) return [];
+    if (error || !data) {
+      if (error) console.error("Failed to read tour_settings:", error);
+      return [];
+    }
     return data as TourSettingRow[];
-  } catch {
-    // Public pages must render even if Supabase is unreachable.
+  } catch (error) {
+    // Public pages must render even if Supabase is unreachable — but log it,
+    // since this silently falls back to code-default pricing otherwise.
+    console.error("Failed to read tour_settings:", error);
     return [];
   }
 }

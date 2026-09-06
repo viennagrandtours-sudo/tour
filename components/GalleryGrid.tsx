@@ -163,7 +163,7 @@ export default function GalleryGrid({ items }: { items: GalleryTile[] }) {
                     width={1200}
                     height={900}
                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 400px"
-                    quality={90}
+                    quality={75}
                     className="h-auto w-full transition duration-500 ease-elegant group-hover:brightness-[1.04]"
                   />
                   {item.title ? (

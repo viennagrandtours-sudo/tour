@@ -1,8 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseServer } from "@/lib/supabase";
 import { supabaseConfigured } from "@/lib/supabase-env";
+import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 
 export async function POST(req: NextRequest) {
+  const rate = checkRateLimit(`contact:${clientIp(req)}`, { limit: 5, windowMs: 10 * 60 * 1000 });
+  if (!rate.ok) {
+    return NextResponse.json(
+      { error: "Too many messages sent. Please wait a few minutes and try again." },
+      { status: 429, headers: { "Retry-After": String(rate.retryAfterSeconds) } }
+    );
+  }
+
   const body = await req.json().catch(() => null);
 
   if (!body?.name || !body?.email || !body?.message) {

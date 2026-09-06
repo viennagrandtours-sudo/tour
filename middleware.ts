@@ -32,6 +32,10 @@ async function adminMiddleware(request: NextRequest, options: { api?: boolean } 
   const response = NextResponse.next({ request: { headers: request.headers } });
 
   const supabase = createServerClient(url, anonKey, {
+    // No client JS anywhere in the admin area reads this cookie directly (the
+    // login form posts through a Server Action) — force httpOnly so an XSS
+    // bug elsewhere can't read the admin session token.
+    cookieOptions: { httpOnly: true, secure: process.env.NODE_ENV === "production", sameSite: "lax" },
     cookies: {
       get: (name: string) => request.cookies.get(name)?.value,
       set: (name: string, value: string, options: CookieOptions) => {

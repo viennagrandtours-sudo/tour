@@ -39,6 +39,7 @@ export function createSupabaseRSC(): SupabaseClient | null {
   const store = cookies();
 
   return createServerClient(url()!, anonKey()!, {
+    cookieOptions: { httpOnly: true, secure: process.env.NODE_ENV === "production", sameSite: "lax" },
     cookies: {
       get: (name: string) => store.get(name)?.value,
       set: () => {},
@@ -53,6 +54,7 @@ export function createSupabaseAction(): SupabaseClient | null {
   const store = cookies();
 
   return createServerClient(url()!, anonKey()!, {
+    cookieOptions: { httpOnly: true, secure: process.env.NODE_ENV === "production", sameSite: "lax" },
     cookies: {
       get: (name: string) => store.get(name)?.value,
       set: (name: string, value: string, options: CookieOptions) => {

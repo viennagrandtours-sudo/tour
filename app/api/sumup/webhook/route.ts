@@ -14,6 +14,17 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "SumUp not configured" }, { status: 503 });
   }
 
+  // Optional shared-secret check: SumUp's callback carries no signature, but
+  // the return_url we register with SumUp (app/api/bookings/route.ts) can
+  // include this token, so a POST without it is very unlikely to be genuine.
+  // Not required for correctness — confirmBookingAfterPayment always
+  // re-verifies with SumUp's own API before trusting anything below — this
+  // just cuts unnecessary SumUp lookups from probing/replayed requests.
+  const webhookSecret = process.env.SUMUP_WEBHOOK_SECRET?.trim();
+  if (webhookSecret && req.nextUrl.searchParams.get("token") !== webhookSecret) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   let payload: Record<string, unknown> = {};
   const contentType = req.headers.get("content-type") || "";
 

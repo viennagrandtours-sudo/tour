@@ -97,6 +97,8 @@ export default async function HomePage({ params }: Props) {
               mode="media"
               src={hero.src}
               sizes="100vw"
+              priority
+              quality={90}
               className="h-full min-h-[100svh] w-full"
               // Car sits mid-lower in the Graben three-quarter; bias cover crop to the grille/body.
               objectPosition="center 58%"

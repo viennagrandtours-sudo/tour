@@ -34,11 +34,11 @@ export const TOURS: Tour[] = [
 export const MIN_GUESTS = 3;
 /** Seats available for guests in one car (guide rides separately). */
 export const MAX_GUESTS_PER_CAR = 7;
-/**
- * Soft online-booking cap (4 cars). Larger parties can still enquire by email;
- * we confirm fleet availability after the request.
- */
-export const MAX_GUESTS = 28;
+/** Cars in the fleet. Keep in sync with `FLEET_SIZE` used by the atomic
+ * capacity check in supabase/schema.sql (create_booking_if_available). */
+export const FLEET_SIZE = 4;
+/** Online-booking cap: the whole fleet, one party (`FLEET_SIZE * MAX_GUESTS_PER_CAR`). */
+export const MAX_GUESTS = FLEET_SIZE * MAX_GUESTS_PER_CAR;
 
 /** Cars required for a party size (ceil of guests ÷ seats per car). */
 export function carsNeeded(guestCount: number): number {

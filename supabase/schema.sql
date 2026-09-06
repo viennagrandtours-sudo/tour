@@ -10,7 +10,10 @@ create table if not exists public.bookings (
   tour_type text not null check (tour_type in ('bronze', 'silver', 'gold', 'diamond')),
   date date not null,
   time text not null,
-  guest_count integer not null check (guest_count >= 3 and guest_count <= 7),
+  -- 35 = ADMIN_MAX_GUESTS (lib/admin/booking-actions.ts), the widest of the two
+  -- entry points that insert into this table; the public form still enforces
+  -- MAX_GUESTS = 28 (lib/tours.ts) in the API route before it ever gets here.
+  guest_count integer not null check (guest_count >= 3 and guest_count <= 35),
   language text not null check (language in ('en', 'de', 'es', 'it', 'ar', 'zh', 'pt', 'tr')),
   notes text,
   status text not null default 'pending'
@@ -56,6 +59,7 @@ alter table public.testimonials enable row level security;
 alter table public.contact_submissions enable row level security;
 
 -- Public can insert bookings (anon key from the booking API / client)
+drop policy if exists "Allow public insert bookings" on public.bookings;
 create policy "Allow public insert bookings"
   on public.bookings
   for insert
@@ -63,6 +67,7 @@ create policy "Allow public insert bookings"
   with check (true);
 
 -- Public can read published testimonials only
+drop policy if exists "Allow public read published testimonials" on public.testimonials;
 create policy "Allow public read published testimonials"
   on public.testimonials
   for select
@@ -70,6 +75,7 @@ create policy "Allow public read published testimonials"
   using (published = true);
 
 -- Public can insert contact messages
+drop policy if exists "Allow public insert contact" on public.contact_submissions;
 create policy "Allow public insert contact"
   on public.contact_submissions
   for insert
@@ -88,11 +94,20 @@ create policy "Allow public insert contact"
 -- Replace them with real, attributable reviews you have permission to publish.
 -- The same sample quotes live in messages/*.json under `testimonials.items`
 -- and are shown with a "sample reviews" label until this table has rows.
+-- `where not exists` (not `on conflict`, since testimonials has no natural
+-- unique key to conflict on) so re-running this file doesn't add a fresh set
+-- of duplicates every time.
 insert into public.testimonials (author_name, rating, quote, locale, published)
-values
-  ('Anna K.', 5, '[SAMPLE] Warm, personal, and the perfect way to see Vienna without rushing.', 'en', true),
-  ('James R.', 5, '[SAMPLE] A beautiful car and genuinely good stories in English — like being driven by a local friend.', 'en', true),
-  ('Elena M.', 5, '[MUSTER] Wir haben die 1,5-Stunden-Tour gebucht und hätten gern länger gehabt.', 'de', true);
+select * from (
+  values
+    ('Anna K.', 5, '[SAMPLE] Warm, personal, and the perfect way to see Vienna without rushing.', 'en', true),
+    ('James R.', 5, '[SAMPLE] A beautiful car and genuinely good stories in English — like being driven by a local friend.', 'en', true),
+    ('Elena M.', 5, '[MUSTER] Wir haben die 1,5-Stunden-Tour gebucht und hätten gern länger gehabt.', 'de', true)
+) as seed(author_name, rating, quote, locale, published)
+where not exists (
+  select 1 from public.testimonials t
+  where t.author_name = seed.author_name and t.quote = seed.quote
+);
 
 
 -- ---------------------------------------------------------------------------
@@ -106,10 +121,11 @@ alter table public.bookings drop constraint if exists bookings_status_check;
 alter table public.bookings add constraint bookings_status_check
   check (status in ('pending', 'awaiting_payment', 'confirmed', 'completed', 'cancelled'));
 
---    Guest count: public form and admin both allow 1–7 (one private car).
+--    Guest count: public form allows 3–28 (the whole 4-car fleet, one party);
+--    admin can log slightly larger walk-up/phone parties, up to 35.
 alter table public.bookings drop constraint if exists bookings_guest_count_check;
 alter table public.bookings add constraint bookings_guest_count_check
-  check (guest_count >= 3 and guest_count <= 7);
+  check (guest_count >= 3 and guest_count <= 35);
 
 alter table public.bookings drop constraint if exists bookings_tour_type_check;
 alter table public.bookings add constraint bookings_tour_type_check
@@ -371,3 +387,89 @@ drop policy if exists "Admin delete photos bucket" on storage.objects;
 create policy "Admin delete photos bucket"
   on storage.objects for delete to authenticated
   using (bucket_id = 'photos');
+
+-- ---------------------------------------------------------------------------
+-- 10. Atomic, race-safe booking creation.
+--
+-- The public API previously read blocked_slots, decided the slot was open,
+-- then inserted the booking as two separate steps. Two guests submitting the
+-- same date+time within milliseconds of each other could both pass the check
+-- and both get inserted — nothing enforced the fleet's actual car capacity.
+--
+-- This function does the capacity check and the insert in one transaction,
+-- serialized per date+time via a Postgres advisory lock, so concurrent
+-- requests for the same slot are queued rather than racing. A slot's capacity
+-- is FLEET_SIZE cars (lib/tours.ts); a booking's `awaiting_payment` hold only
+-- counts against capacity for 30 minutes, so an abandoned SumUp checkout
+-- doesn't lock a car out for guests forever.
+-- ---------------------------------------------------------------------------
+create or replace function public.create_booking_if_available(
+  p_name text,
+  p_email text,
+  p_phone text,
+  p_tour_type text,
+  p_date date,
+  p_time text,
+  p_guest_count integer,
+  p_language text,
+  p_notes text,
+  p_status text,
+  p_fleet_size integer,
+  p_seats_per_car integer
+) returns uuid
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_lock_key bigint;
+  v_cars_needed integer;
+  v_cars_in_use integer;
+  v_id uuid;
+begin
+  v_cars_needed := ceil(p_guest_count::numeric / p_seats_per_car);
+
+  -- Serialize every attempt at this exact date+time so two concurrent callers
+  -- can't both read "capacity available" before either one commits.
+  v_lock_key := hashtextextended(p_date::text || '|' || p_time, 0);
+  perform pg_advisory_xact_lock(v_lock_key);
+
+  if exists (
+    select 1 from public.blocked_slots
+    where date = p_date
+      and (
+        (start_time is null and end_time is null)
+        or (p_time >= coalesce(start_time, '00:00') and p_time < coalesce(end_time, '23:59'))
+      )
+  ) then
+    raise exception 'slot_blocked';
+  end if;
+
+  select coalesce(sum(ceil(guest_count::numeric / p_seats_per_car)), 0)
+    into v_cars_in_use
+    from public.bookings
+    where date = p_date
+      and time = p_time
+      and (
+        status in ('confirmed', 'completed')
+        or (status = 'awaiting_payment' and created_at > now() - interval '30 minutes')
+      );
+
+  if v_cars_in_use + v_cars_needed > p_fleet_size then
+    raise exception 'slot_full';
+  end if;
+
+  insert into public.bookings (
+    name, email, phone, tour_type, date, time, guest_count, language, notes, status
+  ) values (
+    p_name, p_email, p_phone, p_tour_type, p_date, p_time, p_guest_count, p_language, p_notes, p_status
+  )
+  returning id into v_id;
+
+  return v_id;
+end;
+$$;
+
+grant execute on function public.create_booking_if_available(
+  text, text, text, text, date, text, integer, text, text, text, integer, integer
+) to anon, authenticated;
