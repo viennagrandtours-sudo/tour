@@ -1,0 +1,864 @@
+{
+  "meta": {
+    "siteName": "Vienna Grand Tours",
+    "homeTitle": "Vienna Grand Tours — 复古电动车私人维也纳城市游览",
+    "homeDescription": "维也纳私人导览：复古电动游览车车队——深绿、白色与酒红。八种语言讲解。人均 25 欧元起，最少 3 人。",
+    "toursTitle": "行程与价格 — Vienna Grand Tours",
+    "toursDescription": "四条私人行程：青铜 30 分钟 25 欧元、白银 1 小时 39 欧元、黄金 90 分钟 49 欧元、钻石 2 小时 69 欧元／人。最少三人。",
+    "bookTitle": "预订行程 — Vienna Grand Tours",
+    "bookDescription": "六个简短步骤预订私人维也纳游览：时长、日期、人数、讲解语言。出发前 24 小时可免费取消。",
+    "aboutTitle": "关于我们 — Vienna Grand Tours",
+    "aboutDescription": "Vienna Grand Tours 的故事、我们的复古电动游览车车队，以及如何带领小型私人团体游览维也纳。",
+    "galleryTitle": "相册 — Vienna Grand Tours",
+    "galleryDescription": "客人眼中的维也纳：日出时的歌剧院、蓝调时刻的市政厅、日落屋顶，以及我们的电动游览车车队。",
+    "faqTitle": "常见问题 — Vienna Grand Tours",
+    "faqDescription": "雨水与天气、取消、集合地点、无障碍、付款、儿童、行李以及三人最低人数——如实作答。",
+    "impressumTitle": "法律信息 — Vienna Grand Tours",
+    "impressumDescription": "Vienna Grand Tours 依据奥地利《电子商务法》第 5 条与《媒体法》第 25 条的法律披露。",
+    "agbTitle": "条款与条件 — Vienna Grand Tours",
+    "agbDescription": "Vienna Grand Tours 私人游览的预订、付款、取消、未到、天气与责任条款。",
+    "datenschutzTitle": "隐私政策 — Vienna Grand Tours",
+    "datenschutzDescription": "Vienna Grand Tours 如何依据 GDPR 处理您的数据：预订表收集哪些信息、由谁处理、保存多久，以及您的权利。"
+  },
+  "nav": {
+    "home": "首页",
+    "tours": "行程",
+    "book": "预订",
+    "about": "关于",
+    "gallery": "相册",
+    "faq": "问答",
+    "bookCta": "预订行程",
+    "menu": "菜单",
+    "mainNav": "主导航",
+    "mobileNav": "移动导航",
+    "languageSwitcher": "语言"
+  },
+  "hero": {
+    "brand": "Vienna Grand Tours",
+    "headline": "从容的维也纳 — 环城大街、宫殿，以及其间的故事。",
+    "subline": "乘坐深绿色复古风格电动车的私人导览。安静，敞向空气，从不与陌生人拼车。",
+    "cta": "预订行程",
+    "secondaryCta": "查看行程与价格",
+    "shotTitle": "环城大街上的车辆 — 前侧四分之三",
+    "shotHint": "金色时刻 · 深绿色车身 · 地标柔和在后",
+    "imageAlt": "深绿色复古电动游览车，金色时刻在维也纳环城大街上的前侧四分之三视角",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "closingTitle": "Your private car is waiting",
+    "closingSub": "Reserve your Vienna hour — book online in a few minutes."
+  },
+  "trust": {
+    "statValue": "8",
+    "statUnit": "种语言",
+    "statCaption": "Choose your guide language when you book.",
+    "kicker": "每次行程均包含",
+    "item1": "一辆私人车辆",
+    "item2": "持证本地导游",
+    "item3": "静音电动行驶"
+  },
+  "tours": {
+    "kicker": "私人行程",
+    "sectionTitle": "选择您的游览",
+    "sectionSub": "四条行程，一辆专车，最少三位客人。不会与陌生人拼车。",
+    "pageTitle": "行程与价格",
+    "pageIntro": "青铜、白银、黄金与钻石。全程包车。价格按人计，最少三人。每车最多七人；更大团队可多车出行。",
+    "perPerson": "每人",
+    "minGuests": "最少 {count} 位",
+    "book": "预订",
+    "viewAll": "完整价格与路线",
+    "included": "包含内容",
+    "languages": "讲解语言",
+    "landmarks": "路线亮点",
+    "stops": "停留",
+    "mapKicker": "路线",
+    "mapTitle": "我们驶过的地方",
+    "mapNote": "Bronze is the classic 30-minute Ring loop (Hofburg, museums, Parliament, Rathaus, Opera). Silver is the one-hour Grand Tour with Old Town highlights and a stop at the Minoritenkirche. Gold is the 90-minute Premium route with the Red Army Monument and a Belvedere stop. Diamond keeps the Gold sights at a slower pace. Tell us what you want to see and we rearrange it.",
+    "mapShotTitle": "路线图 — 环城大街 / 老城环线",
+    "mapShotHint": "清晰环线 · 歌剧院 / 霍夫堡 / 圣斯特凡标记 · 森林绿 + 金色",
+    "mapShotAlt": "Vienna Grand Tours 环城大街与老城环线路线图",
+    "tiers": {
+      "bronze": {
+        "name": "青铜",
+        "duration": "30 分钟",
+        "description": "Classic half-hour Ring tour — Hofburg, the museums, Parliament, Rathaus, Opera and more, 21 sights from the car.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten"
+        ],
+        "stops": "Photo stops along the Ring",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "21 monuments and sights",
+          "Bottled water"
+        ]
+      },
+      "silver": {
+        "name": "白银",
+        "duration": "1 小时",
+        "description": "Grand one-hour tour — everything in Bronze, plus Freyung, Café Central, Sacher, Karlskirche, Musikverein and more, with a stop at the Minoritenkirche.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern"
+        ],
+        "stops": "Stop at Minoriten Church, plus photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "36 monuments and sights",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "gold": {
+        "name": "黄金",
+        "duration": "1.5 小时",
+        "description": "Premium 90-minute tour — the full Silver route plus the Red Army Monument and a stop at Belvedere Palace.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Stops at Minoriten Church and Belvedere Palace",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "diamond": {
+        "name": "钻石",
+        "duration": "2 小时",
+        "description": "The Gold route at an unhurried pace — Belvedere stop, Minoritenkirche stop, and extra time for photographs wherever the light is best.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Belvedere and Minoritenkirche stops, plus extra photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights, unhurried",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water",
+          "Route timed for photographs"
+        ]
+      }
+    },
+    "narrationList": "中文 · 英语 · 德语 · 西班牙语 · 意大利语 · 阿拉伯语 · 葡萄牙语 · 土耳其语",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "groupFrom": "From €{total} for {count}"
+  },
+  "why": {
+    "kicker": "体验",
+    "title": "为何与我们同行",
+    "items": {
+      "personal": {
+        "title": "主理人亲自导览",
+        "text": "您与规划路线的人同行。我开车、我讲解，也回答您真正想问的问题——没有固定台词，也没有轮换的陌生车队。"
+      },
+      "vintage": {
+        "title": "一辆让人驻足的车",
+        "text": "深绿色，侧面敞开，纯电动。外表像 1910 年，开起来却像明天：没有需要压过的引擎声，红灯前也没有柴油气味。"
+      },
+      "languages": {
+        "title": "八种语言",
+        "text": "讲解提供中文、英语、德语、西班牙语、意大利语、阿拉伯语、葡萄牙语或土耳其语。预订时选定语言，整趟行程都跟着您——混合语种团体也可以。"
+      },
+      "pace": {
+        "title": "您的路线，您的节奏",
+        "text": "每次预订都是私人的，所以我们可以等光线、跳过您已经看过的地方，并在您想拍照的任何地方停下。"
+      }
+    }
+  },
+  "gallery": {
+    "kicker": "瞬间",
+    "teaserTitle": "从副驾看维也纳",
+    "teaserSub": "我们每天穿行的这座城市的几帧画面。",
+    "viewAll": "打开相册",
+    "title": "相册",
+    "sub": "客人眼中的维也纳——街上的车队，以及我们每天经过的地标。",
+    "shotListTitle": "拍摄清单",
+    "shotListIntro": "本站需要的每一张图，附工作标题、建议地点及出现页面。同一份清单也在项目根目录的 PHOTO_SHOT_LIST.md。",
+    "shotListPrivacy": "客人照片——登车、车内面容、讲解中的导游——仅在明确同意后发布。预订时或行程结束后均可告知。",
+    "photoNeeded": "待补照片",
+    "vehicleBadge": "深绿色复古电动车 — 待补照片",
+    "filtersLabel": "相册筛选",
+    "filters": {
+      "all": "全部",
+      "vehicle": "车辆",
+      "landmarks": "地标",
+      "guests": "客人",
+      "city": "城市景色"
+    },
+    "close": "关闭",
+    "shotList": {
+      "location": "地点",
+      "appearsOn": "出现页面",
+      "consent": "仅在客人同意后发布。",
+      "categories": {
+        "vehicle": "车辆 — 深绿色复古电动车",
+        "landmarks": "地标",
+        "guests": "客人（需同意）",
+        "city": "城市景色",
+        "site": "其他站点位置"
+      }
+    },
+    "items": {
+      "v1": {
+        "title": "格拉本大街上的森林绿观光车",
+        "hint": "Three-quarter front on Vienna’s historic pedestrian mile",
+        "alt": "格拉本大街上的森林绿观光车"
+      },
+      "v2": {
+        "title": "圣斯蒂芬大教堂旁的侧面",
+        "hint": "Full silhouette beside the cathedral",
+        "alt": "圣斯蒂芬大教堂旁的侧面"
+      },
+      "v3": {
+        "title": "夜间车头细节",
+        "hint": "Grille, lights and badge in warm night light",
+        "alt": "夜间车头细节"
+      },
+      "v4": {
+        "title": "车内座椅",
+        "hint": "Guest perspective from the cabin",
+        "alt": "车内座椅"
+      },
+      "v5": {
+        "title": "黄昏时圣斯蒂芬大教堂旁的观光车",
+        "hint": "Warm dusk light on dark green paint",
+        "alt": "黄昏时圣斯蒂芬大教堂旁的观光车"
+      },
+      "v6": {
+        "title": "白色车队车（红色座椅）",
+        "hint": "Open-sided vintage EV",
+        "alt": "白色车队车（红色座椅）"
+      },
+      "v7": {
+        "title": "酒红色车队车",
+        "hint": "Open-sided vintage EV on the Ring",
+        "alt": "酒红色车队车"
+      },
+      "v8": {
+        "title": "车队——绿、白与酒红",
+        "hint": "All three colours at pickup",
+        "alt": "车队——绿、白与酒红"
+      },
+      "v9": {
+        "title": "夜间格拉本大街上的观光车",
+        "hint": "Headlights and café lights",
+        "alt": "夜间格拉本大街上的观光车"
+      },
+      "v10": {
+        "title": "金色光线下圣斯蒂芬大教堂旁的观光车",
+        "hint": "Warm late light · open roof",
+        "alt": "金色光线下圣斯蒂芬大教堂旁的观光车"
+      },
+      "l1": {
+        "title": "黄昏时圣斯蒂芬大教堂旁的观光车",
+        "hint": "Cathedral façade · headlights on",
+        "alt": "黄昏时圣斯蒂芬大教堂旁的观光车"
+      },
+      "l2": {
+        "title": "霍夫堡宫前的绿色观光车",
+        "hint": "Michaelerplatz · daytime",
+        "alt": "霍夫堡宫前的绿色观光车"
+      },
+      "l3": {
+        "title": "白天格拉本大街上的观光车",
+        "hint": "Old Town boulevard",
+        "alt": "白天格拉本大街上的观光车"
+      },
+      "l4": {
+        "title": "白天圣斯蒂芬大教堂旁的观光车",
+        "hint": "Cathedral spires · vehicle in frame",
+        "alt": "白天圣斯蒂芬大教堂旁的观光车"
+      },
+      "g1": {
+        "title": "客人上车",
+        "hint": "Published only with consent",
+        "alt": "客人上车"
+      },
+      "g2": {
+        "title": "车上的客人",
+        "hint": "Published only with consent",
+        "alt": "车上的客人"
+      },
+      "g3": {
+        "title": "导游讲解",
+        "hint": "Published only with consent",
+        "alt": "导游讲解"
+      },
+      "c1": {
+        "title": "暮色中维也纳屋顶上的圣斯蒂芬大教堂",
+        "hint": "Rooftops toward the cathedral",
+        "alt": "暮色中维也纳屋顶上的圣斯蒂芬大教堂"
+      },
+      "c2": {
+        "title": "维也纳市政厅（Rathaus）拱廊",
+        "hint": "Civic landmark on the Ring",
+        "alt": "维也纳市政厅（Rathaus）拱廊"
+      },
+      "c3": {
+        "title": "暮色中的维也纳国家歌剧院",
+        "hint": "Opernring",
+        "alt": "暮色中的维也纳国家歌剧院"
+      },
+      "c4": {
+        "title": "圣斯蒂芬大教堂",
+        "hint": "Daytime façade",
+        "alt": "圣斯蒂芬大教堂"
+      },
+      "c5": {
+        "title": "夜色中灯火通明的圣斯蒂芬大教堂",
+        "hint": "Night façade",
+        "alt": "夜色中灯火通明的圣斯蒂芬大教堂"
+      },
+      "c6": {
+        "title": "霍夫堡——米夏埃尔庭圆顶",
+        "hint": "Palace architecture",
+        "alt": "霍夫堡——米夏埃尔庭圆顶"
+      },
+      "c7": {
+        "title": "夜色中的维也纳国家歌剧院",
+        "hint": "Illuminated Opera",
+        "alt": "夜色中的维也纳国家歌剧院"
+      },
+      "c8": {
+        "title": "环城大道上的奥地利议会",
+        "hint": "Ringstrasse landmark",
+        "alt": "环城大道上的奥地利议会"
+      },
+      "c9": {
+        "title": "美景宫与倒影池",
+        "hint": "Palace gardens",
+        "alt": "美景宫与倒影池"
+      },
+      "c10": {
+        "title": "蓝调时刻的卡尔教堂",
+        "hint": "Karlsplatz",
+        "alt": "蓝调时刻的卡尔教堂"
+      },
+      "c11": {
+        "title": "美泉宫",
+        "hint": "Imperial residence",
+        "alt": "美泉宫"
+      },
+      "c12": {
+        "title": "格拉本——维也纳历史悠久的步行街",
+        "hint": "Old Town",
+        "alt": "格拉本——维也纳历史悠久的步行街"
+      }
+    }
+  },
+  "testimonials": {
+    "_comment": "SAMPLE CONTENT — plausible placeholder reviews used until real guest reviews are collected. Replace with genuine, attributable reviews (see supabase/schema.sql seed rows) before publishing.",
+    "title": "客人怎么说",
+    "sub": "来自后座的话",
+    "sampleNote": "在收集到第一批真实评价前，此处为示例评论。",
+    "items": [
+      {
+        "author": "Anna K.",
+        "quote": "温暖、私人，是不赶时间看维也纳的理想方式。想拍照时随时可以停。",
+        "rating": 5
+      },
+      {
+        "author": "James R.",
+        "quote": "车很美，英语讲解也真正讲得好——像被本地朋友开车带着转。",
+        "rating": 5
+      },
+      {
+        "author": "Elena M.",
+        "quote": "我们和父母预订了 1.5 小时行程，还希望再长一些。安静、轻松，没有拥挤。",
+        "rating": 5
+      }
+    ]
+  },
+  "booking": {
+    "title": "预订您的行程",
+    "sub": "六个简短步骤。选择行程、时间、人数和语言——我们通常在几小时内通过电子邮件确认。",
+    "stepsLabel": "预订步骤",
+    "steps": {
+      "tour": "行程",
+      "datetime": "日期与时间",
+      "guests": "客人",
+      "language": "语言",
+      "contact": "联系方式",
+      "payment": "摘要"
+    },
+    "hints": {
+      "tour": "每次游览均为包车——您的团队独自乘坐我们车队中的一辆或多辆车，绝不按座位拼车。",
+      "datetime": "日间出发时间为 09:00 至 17:00，天天开行。维也纳当地时间。",
+      "guests": "最少三人。每车最多七人——更大团队将分乘多车。情侣可订三个座位，仍可独享整车。",
+      "language": "选择您希望使用的讲解语言。混合语言的团体没有问题——我们会随行切换。",
+      "contact": "这些信息仅用于确认预订，以及天气变化时联系您。",
+      "payment": "Check the summary and pay securely online with SumUp. After payment we email you the meeting point and departure time."
+    },
+    "fields": {
+      "tourType": "行程时长",
+      "date": "日期",
+      "time": "出发时间",
+      "guests": "客人人数",
+      "language": "讲解语言",
+      "name": "全名",
+      "email": "电子邮箱",
+      "phone": "电话",
+      "notes": "我们应了解的事项（可选）",
+      "notesPlaceholder": "行动需求、孩子年龄、生日、接送酒店地址、您想看的地方。",
+      "cars": "车辆"
+    },
+    "languages": {
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Español",
+      "it": "Italiano",
+      "ar": "العربية",
+      "zh": "中文",
+      "pt": "Português",
+      "tr": "Türkçe"
+    },
+    "validation": {
+      "tour": "请选择行程时长。",
+      "date": "请选择您希望出行的日期。",
+      "time": "请选择出发时间。",
+      "unavailable": "该时段我们不开车。请另选日期或出发时间。",
+      "guests": "预订起订三人。每车最多七人；更大团队使用多车（线上最多 28 人）。",
+      "language": "请选择讲解语言。",
+      "name": "请告知预订所用的姓名。",
+      "email": "请输入电子邮箱，以便我们发送确认。",
+      "emailFormat": "这个邮箱看起来不对——请检查一下。",
+      "phone": "请留下电话号码，以便当天联系您。"
+    },
+    "next": "继续",
+    "back": "返回",
+    "submit": "Confirm & pay with SumUp",
+    "summary": "预订摘要",
+    "total": "合计",
+    "policyTitle": "取消与天气",
+    "policy": "出发前 24 小时可免费取消，全额退款。小雨照常出行——侧帘一分钟内即可拉上。若天气变得不安全，我们会另约时段或全额退款。若您这边有变，写信给我们，我们会想办法。",
+    "paymentNote": "You pay online now on SumUp’s secure checkout. Card details are entered only on SumUp — never stored on this website. After payment you return here and we email the meeting point and departure time.",
+    "successTitle": "您的行程已预留",
+    "successBody": "Thank you. Payment is complete and your booking is confirmed. A message is on its way to your inbox with the meeting point and exact departure time.",
+    "successNote": "若一小时内没有收到，请查看垃圾邮件或直接发邮件给我们——我们会手工确认。",
+    "successRef": "预订编号",
+    "error": "此刻无法保存您的预订。请再试一次，或发邮件给我们，我们会为您保留该时段。",
+    "minGuestsHint": "最少 3 人。每车最多 7 人；更大团队多车出行。价格按人计。",
+    "demoMode": "Demo mode: Supabase and/or SumUp are not fully configured. This booking was validated locally for this session only.",
+    "carsNeededHint": "您的团队需要 {count} 辆车（每车最多 7 人）。我们将通过电子邮件确认车队档期。",
+    "paymentStartFailed": "We saved your booking but could not start SumUp checkout. Please try again in a moment, or email us with your booking reference.",
+    "heldTitle": "Booking held — payment pending",
+    "heldBody": "Your details are saved. Online card payment is not available on this environment yet, so your booking stays awaiting payment. We will email a SumUp payment link or confirm the next step by hand.",
+    "paymentCheckingKicker": "SumUp",
+    "paymentCheckingTitle": "Confirming your payment",
+    "paymentCheckingBody": "One moment while we verify your SumUp payment and confirm the booking.",
+    "paymentPendingTitle": "Payment still processing",
+    "paymentPending": "SumUp has not confirmed the payment yet. If you were charged, write to us with your booking reference and we will confirm by hand.",
+    "paymentVerifyMissing": "Missing booking reference. Please return to the booking form or email us.",
+    "paymentVerifyFailedTitle": "We could not confirm payment",
+    "paymentVerifyFailed": "Something went wrong verifying the SumUp payment. If you were charged, email us with your booking reference and we will sort it out.",
+    "backToTours": "Browse tours",
+    "backToBook": "Back to booking"
+  },
+  "about": {
+    "title": "关于 Vienna Grand Tours",
+    "intro": "环城大街上的一人一车、主理人亲自导览的游览生意——以及让这一切成为可能的深绿色电动车。",
+    "storyKicker": "故事",
+    "storyTitle": "主理人的一封短信",
+    "story1": "我在离环城大街几站电车的地方长大。多年来看着访客抵达、拍下歌剧院，又离开，从未听过这些建筑为何立在这里。那时我在另一个行业工作。这座城市却一直在提醒我。",
+    "story2": "终于创办 Vienna Grand Tours 时，我想要的是大巴的反面：一辆小车，一次一组客人，没有麦克风，也没有固定台词。我找到一辆复古造型的电动车，漆成深森林绿，用一个夏天弄清英雄广场哪一角能接到晚光，大教堂后哪条巷子安静得够讲完一个故事。",
+    "story3": "现在依然如此。您预订整车，我们大致商定去向，然后慢慢走。我宁愿带您把四个地方看明白，也不愿让您隔着车窗掠过十二处——若市政厅前的光线正好，我们就多坐一会儿。",
+    "founderShotTitle": "主理人与深绿色电动车",
+    "founderShotHint": "霍夫堡或歌剧院背景 · 车身颜色清晰可见",
+    "founderShotAlt": "主理人站在维也纳深绿色复古电动游览车旁",
+    "vehicleShotTitle": "车辆特写 — 打磨过的细节",
+    "vehicleShotHint": "车门、轮毂或徽标 · 精工提示",
+    "vehicleShotAlt": "深绿色复古电动游览车打磨过的细节",
+    "vehicleKicker": "车辆",
+    "vehicleTitle": "外表复古，内里电动",
+    "vehicle1": "它看起来属于另一个世纪，靠电池行驶。没有需要压过的引擎声，红灯前没有气味，天气好时您与立面之间也没有玻璃。客人听见的是电车、马车，然后是导游，按这个顺序。",
+    "vehicle2": "天气好时侧面敞开，变天时一分钟内即可遮上，所以阵雨改变的是行程气氛，而不是取消行程。六个座位，一个小团体，座位旁还有日用包和相机的空间。",
+    "vehicleSpecsTitle": "简而言之",
+    "vehicleSpecs": [
+      "纯电动 — 安静，老城中无尾气",
+      "最多可坐六位客人，另加导游",
+      "好天气敞开侧面，下雨有挡雨帘",
+      "深森林绿，复古造型车身",
+      "可放日用包、相机和折叠婴儿车",
+      "夜间充电 — 沿途零排放"
+    ],
+    "valuesKicker": "我们的承诺",
+    "valuesTitle": "我们坚持什么",
+    "values": {
+      "care": {
+        "title": "贴心照料",
+        "text": "一次一组客人，第二处停留时主人已记得您的名字，回复您的消息的是人，而不是排队系统。"
+      },
+      "city": {
+        "title": "尊重这座城市",
+        "text": "电动而安静，住宅巷弄仍是住宅巷弄。我们只走城市允许的路线与停留点，也不会为拍照挡住电车。"
+      },
+      "honesty": {
+        "title": "诚实待客",
+        "text": "按人计价、无隐藏费用、取消规则清楚、没有付费购物站。"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "sub": "预订前值得知道的一切。若您的问题不在这里，写信给我们——由人来答复。",
+    "items": [
+      {
+        "q": "下雨还开吗？",
+        "a": "小雨可以——挡雨帘大约一分钟就能拉上，而且维也纳在湿漉漉的石板路上格外好看。暴雨、雷暴、结冰或强风时我们不开车。我们会另约时段或全额退款，并尽可能早通知您。"
+      },
+      {
+        "q": "行程中天气变了怎么办？",
+        "a": "我们拉上挡雨帘继续走；阵雨往往是当天最好拍的一段。若情况确实变得不安全，我们会提前结束行程，退还未完成部分的费用，或改期，由您选择。"
+      },
+      {
+        "q": "取消政策是什么？",
+        "a": "出发前 24 小时以上免费取消，全额退款。24 小时以内，若能改期我们通常会安排；若不能，则收取行程费用。若是我们取消——天气、技术故障、生病——您一律获得全额退款或新日期，由您选择。"
+      },
+      {
+        "q": "行动不便适合参加吗？",
+        "a": "上车有一级台阶，两侧有扶手，我们很乐意协助登车。坐下后，整段行程都在座位上完成。折叠轮椅、助行器或手杖可以随行；车辆无法容纳固定框架轮椅或电动代步车，也没有登车坡道。请在预订备注中说明行动情况，我们会选择合适的停留点。"
+      },
+      {
+        "q": "如何付款？",
+        "a": "抵达后在集合点付款——出发前刷卡或现金。人均价格含适用税费：青铜 25 欧元、白银 39 欧元、黄金 49 欧元、钻石 69 欧元。确认邮件中的总额为应付金额。"
+      },
+      {
+        "q": "在哪里集合？",
+        "a": "除非另有约定，在国家歌剧院附近的环城大街——确切定位、出发时间和电话号码会随确认邮件送达。若酒店在环城大街内侧或紧邻，可在预订备注中提出，我们通常会到门口接您。"
+      },
+      {
+        "q": "一行最多几人——为什么最少三人？",
+        "a": "最少三人。每车最多七人；更大团队可乘坐车队中的多辆车。绝不按座位拼车。情侣与单独旅客可订三个座位独享。"
+      },
+      {
+        "q": "可以改路线或时长吗？",
+        "a": "可以。本站上的路线是起点，不是时刻表。出发前——或半路上——告诉我们：若想在霍夫堡多留一会儿、绕过博物馆区，或跳过已经看过的地方。若当天想延长，只要下一段预订允许，我们就会安排。"
+      },
+      {
+        "q": "用哪些语言讲解？",
+        "a": "中文、英语、德语、西班牙语、意大利语、阿拉伯语、葡萄牙语和土耳其语。请在预订时选择语言，以便我们做好准备。混合语种团体没问题——我们会在两种语言间切换，不会拖慢行程。"
+      },
+      {
+        "q": "可以带孩子吗？有儿童座椅吗？",
+        "a": "非常欢迎儿童，并计入三人最低人数。奥地利法律要求身高不足 135 厘米或未满 14 岁的儿童使用儿童座椅或增高垫，请至少提前 24 小时在预订备注中告知孩子年龄，车上会备好合适座椅。婴儿车可折叠随行。"
+      },
+      {
+        "q": "行李放哪里？",
+        "a": "座位旁可放日用包、相机和折叠婴儿车，但不能放大箱子。若行程结束后还要赶路，请把行李留在酒店或车站储物柜——这是观光车，不是接送车。"
+      }
+    ]
+  },
+  "legal": {
+    "impressumTitle": "法律信息（Impressum）",
+    "agbTitle": "一般条款与条件",
+    "datenschutzTitle": "隐私政策",
+    "reviewNotice": "草稿文本。本站上线前，须由奥地利律师审阅本页，并填写所有方括号内的字段。",
+    "lastUpdated": "最后更新：2026年8月31日",
+    "impressum": {
+      "intro": "依据奥地利《电子商务法》（ECG）第 5 条与《媒体法》（MedienG）第 25 条须提供的信息。",
+      "companyHeading": "公司与媒体所有者",
+      "ownerHeading": "所有者 / 内容负责人",
+      "contactHeading": "联系方式",
+      "registerHeading": "登记与商业主管机关",
+      "vatHeading": "VAT status",
+      "chamberHeading": "商会会员资格",
+      "tradeHeading": "行业法规",
+      "tradeBody": "适用行业法规：Gewerbeordnung（GewO），可在 www.ris.bka.gv.at 查阅。依据 GewO 第 108 条第 3 款的详情应客人要求提供，并载于预订确认中。",
+      "authorityHeading": "监管机关",
+      "authorityBody": "主管商业机关（Gewerbebehörde）：Magistratisches Bezirksamt für den {district}. Bezirk, Vienna。",
+      "purposeHeading": "经营目的",
+      "purposeBody": "维也纳私人导览，使用复古电动游览车车队（深绿、白色与酒红），八种语言讲解。",
+      "odrHeading": "在线争议解决",
+      "odrBody": "欧盟委员会提供在线争议解决平台。我们既无义务、也不愿参加消费者仲裁机构的争议解决程序。",
+      "contentHeading": "内容与链接责任",
+      "contentBody": "本站内容经审慎编写，但我们对其准确性、完整性或时效性不承担责任。链向外部网站时，其内容由各运营商负责；设置链接时我们检查过这些页面是否含有违法内容，当时并未发现。",
+      "copyrightHeading": "版权与图片",
+      "copyrightBody": "本站所有文字、图片与版式受版权保护。照片为我们自有或获授权；客人照片仅在同意后发布。转载须经我们书面许可。",
+      "labels": {
+        "owner": "所有者",
+        "phone": "电话",
+        "email": "电子邮箱",
+        "firmenbuch": "公司登记号",
+        "court": "登记法院",
+        "gisa": "GISA 编号",
+        "uid": "增值税号",
+        "legalForm": "法律形式"
+      },
+      "vatExemptBody": "No VAT identification number (UID). We are exempt from charging VAT under the Austrian small-business scheme (Kleinunternehmerregelung pursuant to § 6 Abs. 1 Z 27 UStG). Prices are final; no VAT is added or shown on invoices."
+    },
+    "agb": {
+      "intro": "这些条款适用于通过本网站、电子邮件或电话向我们预订的每一次行程。请在预订前阅读——预订确认所指即为此版本。",
+      "sections": [
+        {
+          "title": "1. 适用范围与合同当事人",
+          "body": "本一般条款与条件适用于与 Ahmed Wezza（“我们”）以 Vienna Grand Tours 名义进行的所有行程预订。客人提出的不同条件仅在我们书面同意时适用。"
+        },
+        {
+          "title": "2. 我们的服务",
+          "body": "私人导览：青铜（30 分钟）、白银（60 分钟）、黄金（90 分钟）与钻石（120 分钟）。每车最多七人；更大团队多车出行。每次预订最少三人。"
+        },
+        {
+          "title": "3. 预订与合同成立",
+          "body": "通过网站、电子邮件或电话提出的预订请求是客人的要约。合同在我们以电子邮件发出预订确认时成立。请立即核对确认函，若有误请马上告知。预订人须年满 18 岁；未成年人须由随行成人照料乘车。"
+        },
+        {
+          "title": "4. 价格与付款",
+          "body": "Prices are per person, in euro, and are final. We operate as a small business under the Austrian Kleinunternehmerregelung and do not charge VAT: Bronze 30 minutes €25, Silver 1 hour €39, Gold 1.5 hours €49, Diamond 2 hours €69. The total is the per-person price multiplied by the number of guests, with a minimum of three. Payment is taken online at booking via SumUp’s secure checkout. Card details are collected by SumUp, not on this website. A booking is confirmed once payment succeeds."
+        },
+        {
+          "title": "5. 客人取消",
+          "body": "在约定出发时间 24 小时以上取消，免费并全额退款。24 小时以内，我们会在可能时提供替代时段；若无法安排，可保留全款。取消须以书面发至我们的电子邮箱或通过电话提出。消费者的法定撤回权在适用时不受影响；请注意，针对特定日期的休闲服务，《远程与外出交易法》第 18 条第 1 款第 10 项排除 14 天撤回权。"
+        },
+        {
+          "title": "6. 迟到与未到",
+          "body": "请于约定出发时间前五分钟到达。我们等候最多 15 分钟；更晚出发相应缩短行程，价格不减。若一行人完全未到且未取消，须支付全款。"
+        },
+        {
+          "title": "7. 我方取消、天气与不可抗力",
+          "body": "小雨照常出行。若天气使行程变得不安全——风暴、结冰、强风、极端高温——或车辆、导游或道路无法通行，我们可取消或缩短行程。此时您可选择改期，或退还价款或未完成部分。除非我们存在故意或重大过失，进一步索赔予以排除。"
+        },
+        {
+          "title": "8. 行程中的行为",
+          "body": "客人须遵守导游的安全指示，车辆行驶时保持就座并使用配备的安全带。身高不足 135 厘米或未满 14 岁的儿童须使用合适的儿童座椅，我们在提前告知后提供。禁止吸烟、明火及行驶中站立。若客人醉酒、危及他人或屡次无视指示，我们可拒绝或结束行程且不予退款。"
+        },
+        {
+          "title": "9. 行李与个人物品",
+          "body": "座位旁可放日用包、相机和折叠婴儿车；我们不能携带行李箱。行程中客人对自己的物品负责。仅在故意或重大过失时，我们对遗失或损坏的物品承担责任。"
+        },
+        {
+          "title": "10. 责任",
+          "body": "我们对人身伤害以及故意与重大过失承担无限责任。轻微过失的责任限于违反主要合同义务，且限于此类合同典型、在缔约时可以预见的损害。这不影响奥地利《产品责任法》或强制性消费者保护规定下的责任。车辆已按奥地利法律要求投保。"
+        },
+        {
+          "title": "11. 照片与数据",
+          "body": "我们偶尔为网站和社交媒体拍摄行程，仅在客人明确同意后发布含其肖像的图片，您可随时撤回同意。个人数据按我们的隐私政策处理。"
+        },
+        {
+          "title": "12. 适用法律与管辖",
+          "body": "适用奥地利法律，排除其冲突规范及《联合国国际货物销售合同公约》。对消费者而言，其居住国的强制性保护规定与管辖地不受影响。对商人而言，维也纳有管辖权的法院有管辖权。任一条款无效时，其余条款仍然有效。"
+        }
+      ]
+    },
+    "datenschutz": {
+      "intro": "我们只收集预订所需的最少信息，不出售数据，也不运行广告跟踪器。本页说明您提供的信息如何被处理，依据欧盟《通用数据保护条例》（GDPR）与奥地利《数据保护法》（DSG）。",
+      "sections": [
+        {
+          "title": "1. 控制者",
+          "body": "此处所述处理的控制者为法律信息页中列明的公司，可通过该页所给电子邮箱联系。我们未任命数据保护官，因为并无此项义务。"
+        },
+        {
+          "title": "2. 预订时处理的数据",
+          "body": "预订表收集您的姓名、电子邮箱、电话号码、所选行程、日期与出发时间、客人数、讲解语言，以及您在备注栏写下的任何内容——请仅在希望我们据此安排时分享健康或行动详情。我们需要这些数据以履行与您的合同（GDPR 第 6 条第 1 款 b 项）；您在备注中自愿提供的特殊类别数据，依据您的同意处理（GDPR 第 9 条第 2 款 a 项）。"
+        },
+        {
+          "title": "3. 您联系我们时处理的数据",
+          "body": "若您通过电子邮件写信给我们，我们会处理您的地址、留言及所含详情，以便答复（GDPR 第 6 条第 1 款 b 项与 f 项——我们回复问询的合法利益）。"
+        },
+        {
+          "title": "4. 自动收集的数据",
+          "body": "我们的托管服务商记录标准服务器日志数据——IP 地址、日期与时间、请求的页面、来源页面、浏览器与操作系统——以保障网站安全与稳定（GDPR 第 6 条第 1 款 f 项）。这些日志在短时间后删除，不与其他数据合并。"
+        },
+        {
+          "title": "5. Cookie 与分析",
+          "body": "我们在浏览器本地存储中设置一项必要记录，以记住您的 cookie 选择；其中不含个人数据，也无跟踪标识。分析仅在您于横幅中同意后加载（GDPR 第 6 条第 1 款 a 项），您可随时通过清除本站的浏览器存储或写信给我们撤回该同意。不使用广告或画像 cookie。"
+        },
+        {
+          "title": "6. 处理者与接收方",
+          "body": "We use carefully selected service providers, each bound by a data processing agreement under Art. 28 GDPR where applicable: Netlify (website hosting and delivery), Supabase (booking database, hosted in the EU), SumUp (online card payments via hosted checkout), and our email provider for confirmation messages. Payment card details are entered only on SumUp’s systems, not on this website. Data is transferred to third countries only on the basis of EU standard contractual clauses or an adequacy decision. Beyond that, we pass data to third parties only where we are legally obliged to — for instance to tax authorities."
+        },
+        {
+          "title": "7. 数据保存多久",
+          "body": "预订与开票数据依据奥地利税务与商法保存七年（《联邦税法通则》第 132 条、《企业法典》第 212 条）。未导致预订的问询在事项结束后删除，最迟十二个月。服务器日志在数日后删除。基于同意的数据在您撤回同意时删除。"
+        },
+        {
+          "title": "8. 您的权利",
+          "body": "您有权查阅、更正或删除您的数据，限制处理，反对基于合法利益的处理，并以可携格式接收您的数据。处理基于同意时，您可随时撤回，对将来生效。请写信至法律信息页中的电子邮箱，我们将在一个月内答复。"
+        },
+        {
+          "title": "9. 投诉权",
+          "body": "若您认为我们违法处理您的数据，可向奥地利数据保护局（Österreichische Datenschutzbehörde, Barichgasse 40–42, 1030 Vienna, dsb.gv.at）或您居住地的监管机关投诉。"
+        },
+        {
+          "title": "10. 照片",
+          "body": "我们仅在明确同意后发布可识别客人的照片，同意须书面作出或在当天清楚表示。同意可随时撤回；写信给我们，我们会从网站和社交渠道移除该图片。"
+        },
+        {
+          "title": "11. 本政策的变更",
+          "body": "当我们的工具或流程发生变化时，我们会更新本政策。此处公布的版本即为适用版本。"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "维也纳私人导览：复古电动游览车车队——深绿、白色与酒红。最少 3 人，每车最多 7 人（更大团队可多车），八种语言。",
+    "quickLinks": "探索",
+    "legal": "法律",
+    "contact": "联系",
+    "meetingPoint": "维也纳环城大街集合点 — 确切定位随预订确认送达。",
+    "googleBusiness": "Google 商家资料",
+    "rights": "© {year} Vienna Grand Tours。保留所有权利。",
+    "impressum": "法律信息",
+    "agb": "条款与条件",
+    "datenschutz": "隐私",
+    "madeBy": "由 <name>Besaweb</name> 制作"
+  },
+  "cookies": {
+    "title": "Cookie 与隐私",
+    "body": "我们在浏览器中存储一小项记录以记住此选择。分析仅在您同意后加载，我们从不使用广告跟踪器。",
+    "accept": "接受分析",
+    "essential": "仅必要项",
+    "privacy": "阅读隐私政策"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "这一页走错了路",
+    "body": "您要找的页面不在这里——可能已搬迁，或链接已经过时。行程、价格和预订表都只需一点。",
+    "home": "返回首页",
+    "book": "预订行程"
+  },
+  "common": {
+    "loading": "加载中…",
+    "close": "关闭",
+    "learnMore": "了解更多",
+    "photoNeeded": "待补照片"
+  }
+}

@@ -1,0 +1,864 @@
+{
+  "meta": {
+    "siteName": "Vienna Grand Tours",
+    "homeTitle": "Vienna Grand Tours — Passeios privados em Viena num carro elétrico de estilo vintage",
+    "homeDescription": "Tours privados por Viena numa frota de carros elétricos vintage — verde, branco e bordeaux. Narração em oito idiomas. Bronze, Prata, Ouro e Diamante desde 25 € por pessoa, mínimo três convidados.",
+    "toursTitle": "Passeios e preços — Vienna Grand Tours",
+    "toursDescription": "Quatro tours: Bronze 30 min 25 €, Prata 1 h 39 €, Ouro 90 min 49 €, Diamante 2 h 69 € por pessoa. Mínimo três pessoas.",
+    "bookTitle": "Reservar um passeio — Vienna Grand Tours",
+    "bookDescription": "Reserve um passeio privado em Viena em seis passos: duração, data, número de pessoas, língua da narração. Cancelamento gratuito até 24 horas antes da partida.",
+    "aboutTitle": "Sobre nós — Vienna Grand Tours",
+    "aboutDescription": "A história da Vienna Grand Tours, a nossa frota de carros elétricos vintage e como guiamos pequenos grupos privados por Viena.",
+    "galleryTitle": "Galeria — Vienna Grand Tours",
+    "galleryDescription": "Viena como os nossos convidados a vêem: a Ópera ao nascer do sol, o Rathaus na hora azul, telhados ao pôr do sol e a nossa frota de carros elétricos.",
+    "faqTitle": "Perguntas frequentes — Vienna Grand Tours",
+    "faqDescription": "Chuva e meteorologia, cancelamento, ponto de encontro, acessibilidade, pagamento, crianças, bagagem e o mínimo de três pessoas — explicados com clareza.",
+    "impressumTitle": "Impressum — Vienna Grand Tours",
+    "impressumDescription": "Informação legal da Vienna Grand Tours nos termos do § 5 ECG e do § 25 MedienG.",
+    "agbTitle": "Termos e condições — Vienna Grand Tours",
+    "agbDescription": "Reserva, pagamento, cancelamento, não comparência, meteorologia e responsabilidade nos passeios privados da Vienna Grand Tours.",
+    "datenschutzTitle": "Política de privacidade — Vienna Grand Tours",
+    "datenschutzDescription": "Como a Vienna Grand Tours trata os seus dados ao abrigo do RGPD: o que o formulário de reserva recolhe, quem os trata, durante quanto tempo os guardamos e os seus direitos."
+  },
+  "nav": {
+    "home": "Início",
+    "tours": "Passeios",
+    "book": "Reservar",
+    "about": "Sobre nós",
+    "gallery": "Galeria",
+    "faq": "Perguntas",
+    "bookCta": "Reserve o seu passeio",
+    "menu": "Menu",
+    "mainNav": "Navegação principal",
+    "mobileNav": "Navegação móvel",
+    "languageSwitcher": "Idioma"
+  },
+  "hero": {
+    "brand": "Vienna Grand Tours",
+    "headline": "Viena sem pressa — o Ring, os palácios e as histórias pelo caminho.",
+    "subline": "Passeios privados guiados num carro elétrico verde-escuro de estilo vintage. Silencioso, aberto ao ar, e nunca partilhado com desconhecidos.",
+    "cta": "Reserve o seu passeio",
+    "secondaryCta": "Ver passeios e preços",
+    "shotTitle": "Veículo na Ringstrasse — três quartos de frente",
+    "shotHint": "Hora dourada · carroçaria verde-escuro · monumento suave ao fundo",
+    "imageAlt": "Carro elétrico vintage verde-escuro, vista frontal a três quartos na Ringstrasse de Viena à hora dourada",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "closingTitle": "Your private car is waiting",
+    "closingSub": "Reserve your Vienna hour — book online in a few minutes."
+  },
+  "trust": {
+    "statValue": "8",
+    "statUnit": "línguas",
+    "statCaption": "Choose your guide language when you book.",
+    "kicker": "Cada passeio inclui",
+    "item1": "Um carro privado",
+    "item2": "Um guia local credenciado",
+    "item3": "Condução elétrica silenciosa"
+  },
+  "tours": {
+    "kicker": "Passeios privados",
+    "sectionTitle": "Escolha o seu percurso",
+    "sectionSub": "Quatro tours, um carro privado, mínimo três pessoas. Ninguém mais entra.",
+    "pageTitle": "Passeios e preços",
+    "pageIntro": "Bronze, Prata, Ouro e Diamante. Cada reserva é privada. Preços por pessoa, mínimo três. Até sete por carro; grupos maiores em vários carros.",
+    "perPerson": "por pessoa",
+    "minGuests": "Mín. {count} pessoas",
+    "book": "Reservar",
+    "viewAll": "Preços e percursos",
+    "included": "O que está incluído",
+    "languages": "Línguas da narração",
+    "landmarks": "Pontos do percurso",
+    "stops": "Paragens",
+    "mapKicker": "O percurso",
+    "mapTitle": "Por onde circulamos",
+    "mapNote": "Bronze is the classic 30-minute Ring loop (Hofburg, museums, Parliament, Rathaus, Opera). Silver is the one-hour Grand Tour with Old Town highlights and a stop at the Minoritenkirche. Gold is the 90-minute Premium route with the Red Army Monument and a Belvedere stop. Diamond keeps the Gold sights at a slower pace. Tell us what you want to see and we rearrange it.",
+    "mapShotTitle": "Mapa do percurso — anel Ringstrasse / Cidade Velha",
+    "mapShotHint": "Circuito claro · marcas na Ópera / Hofburg / Stephansdom · verde-floresta + ouro",
+    "mapShotAlt": "Mapa do percurso da Vienna Grand Tours na Ringstrasse e na Cidade Velha",
+    "tiers": {
+      "bronze": {
+        "name": "Bronze",
+        "duration": "30 minutos",
+        "description": "Classic half-hour Ring tour — Hofburg, the museums, Parliament, Rathaus, Opera and more, 21 sights from the car.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten"
+        ],
+        "stops": "Photo stops along the Ring",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "21 monuments and sights",
+          "Bottled water"
+        ]
+      },
+      "silver": {
+        "name": "Prata",
+        "duration": "1 hora",
+        "description": "Grand one-hour tour — everything in Bronze, plus Freyung, Café Central, Sacher, Karlskirche, Musikverein and more, with a stop at the Minoritenkirche.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern"
+        ],
+        "stops": "Stop at Minoriten Church, plus photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "36 monuments and sights",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "gold": {
+        "name": "Ouro",
+        "duration": "1,5 horas",
+        "description": "Premium 90-minute tour — the full Silver route plus the Red Army Monument and a stop at Belvedere Palace.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Stops at Minoriten Church and Belvedere Palace",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "diamond": {
+        "name": "Diamante",
+        "duration": "2 horas",
+        "description": "The Gold route at an unhurried pace — Belvedere stop, Minoritenkirche stop, and extra time for photographs wherever the light is best.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Belvedere and Minoritenkirche stops, plus extra photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights, unhurried",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water",
+          "Route timed for photographs"
+        ]
+      }
+    },
+    "narrationList": "Português · Inglês · Alemão · Espanhol · Italiano · Árabe · Chinês · Turco",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "groupFrom": "From €{total} for {count}"
+  },
+  "why": {
+    "kicker": "A experiência",
+    "title": "Porque viajar connosco",
+    "items": {
+      "personal": {
+        "title": "Guiado pelo dono",
+        "text": "Viaja com a pessoa que pensou o percurso. Eu conduzo, narro e respondo às perguntas que realmente tem — sem guião, sem frota rotativa de desconhecidos."
+      },
+      "vintage": {
+        "title": "Um carro que faz parar",
+        "text": "Verde-escuro, aberto aos lados e totalmente elétrico. Parece de 1910 e anda como amanhã: sem ruído de motor a tapar a conversa e sem diesel no semáforo."
+      },
+      "languages": {
+        "title": "Oito línguas",
+        "text": "Narração em português, inglês, alemão, espanhol, italiano, árabe, chinês ou turco. Escolha a sua ao reservar e todo o passeio segue consigo — grupos mistos incluídos."
+      },
+      "pace": {
+        "title": "O seu percurso, o seu ritmo",
+        "text": "Cada reserva é privada, por isso podemos esperar pela luz, saltar o que já viu e parar onde quiser uma fotografia."
+      }
+    }
+  },
+  "gallery": {
+    "kicker": "Momentos",
+    "teaserTitle": "Viena do banco do passageiro",
+    "teaserSub": "Alguns fotogramas da cidade por onde passamos todos os dias.",
+    "viewAll": "Abrir a galeria",
+    "title": "Galeria",
+    "sub": "Viena como os nossos hóspedes a veem — a frota nas ruas e os marcos por onde passamos todos os dias.",
+    "shotListTitle": "Lista de fotografias",
+    "shotListIntro": "Cada imagem que este sítio espera, com o título de trabalho, um local sugerido e as páginas em que aparece. A mesma lista está em PHOTO_SHOT_LIST.md na raiz do projeto.",
+    "shotListPrivacy": "Fotografias de convidados — a entrar, rostos a bordo, o guia a meio da história — só se publicam com consentimento claro. Peça na reserva, ou depois do passeio.",
+    "photoNeeded": "Fotografia em falta",
+    "vehicleBadge": "EV vintage verde-escuro — fotografia em falta",
+    "filtersLabel": "Filtros da galeria",
+    "filters": {
+      "all": "Todas",
+      "vehicle": "O carro",
+      "landmarks": "Monumentos",
+      "guests": "Convidados",
+      "city": "Vistas da cidade"
+    },
+    "close": "Fechar",
+    "shotList": {
+      "location": "Local",
+      "appearsOn": "No sítio",
+      "consent": "Publicar apenas com o consentimento do convidado.",
+      "categories": {
+        "vehicle": "O carro — EV vintage verde-escuro",
+        "landmarks": "Monumentos",
+        "guests": "Convidados (consentimento obrigatório)",
+        "city": "Vistas da cidade",
+        "site": "Outros espaços do sítio"
+      }
+    },
+    "items": {
+      "v1": {
+        "title": "Carro verde-floresta no Graben",
+        "hint": "Three-quarter front on Vienna’s historic pedestrian mile",
+        "alt": "Carro verde-floresta no Graben"
+      },
+      "v2": {
+        "title": "Perfil lateral no Stephansdom",
+        "hint": "Full silhouette beside the cathedral",
+        "alt": "Perfil lateral no Stephansdom"
+      },
+      "v3": {
+        "title": "Detalhe frontal à noite",
+        "hint": "Grille, lights and badge in warm night light",
+        "alt": "Detalhe frontal à noite"
+      },
+      "v4": {
+        "title": "Interior",
+        "hint": "Guest perspective from the cabin",
+        "alt": "Interior"
+      },
+      "v5": {
+        "title": "Carro no Stephansdom ao crepúsculo",
+        "hint": "Warm dusk light on dark green paint",
+        "alt": "Carro no Stephansdom ao crepúsculo"
+      },
+      "v6": {
+        "title": "Carro branco da frota com bancos vermelhos",
+        "hint": "Open-sided vintage EV",
+        "alt": "Carro branco da frota com bancos vermelhos"
+      },
+      "v7": {
+        "title": "Carro borgonha da frota",
+        "hint": "Open-sided vintage EV on the Ring",
+        "alt": "Carro borgonha da frota"
+      },
+      "v8": {
+        "title": "Frota — verde, branco e borgonha",
+        "hint": "All three colours at pickup",
+        "alt": "Frota — verde, branco e borgonha"
+      },
+      "v9": {
+        "title": "Carro no Graben à noite",
+        "hint": "Headlights and café lights",
+        "alt": "Carro no Graben à noite"
+      },
+      "v10": {
+        "title": "Carro no Stephansdom com luz dourada",
+        "hint": "Warm late light · open roof",
+        "alt": "Carro no Stephansdom com luz dourada"
+      },
+      "l1": {
+        "title": "Carro no Stephansdom ao crepúsculo",
+        "hint": "Cathedral façade · headlights on",
+        "alt": "Carro no Stephansdom ao crepúsculo"
+      },
+      "l2": {
+        "title": "Carro verde perante a Hofburg",
+        "hint": "Michaelerplatz · daytime",
+        "alt": "Carro verde perante a Hofburg"
+      },
+      "l3": {
+        "title": "Carro no Graben de dia",
+        "hint": "Old Town boulevard",
+        "alt": "Carro no Graben de dia"
+      },
+      "l4": {
+        "title": "Carro no Stephansdom de dia",
+        "hint": "Cathedral spires · vehicle in frame",
+        "alt": "Carro no Stephansdom de dia"
+      },
+      "g1": {
+        "title": "Hóspedes a embarcar",
+        "hint": "Published only with consent",
+        "alt": "Hóspedes a embarcar"
+      },
+      "g2": {
+        "title": "Hóspedes a bordo",
+        "hint": "Published only with consent",
+        "alt": "Hóspedes a bordo"
+      },
+      "g3": {
+        "title": "Guia a narrar",
+        "hint": "Published only with consent",
+        "alt": "Guia a narrar"
+      },
+      "c1": {
+        "title": "Stephansdom sobre os telhados de Viena ao crepúsculo",
+        "hint": "Rooftops toward the cathedral",
+        "alt": "Stephansdom sobre os telhados de Viena ao crepúsculo"
+      },
+      "c2": {
+        "title": "Câmara Municipal de Viena (Rathaus) — arcadas",
+        "hint": "Civic landmark on the Ring",
+        "alt": "Câmara Municipal de Viena (Rathaus) — arcadas"
+      },
+      "c3": {
+        "title": "Ópera Estatal de Viena ao crepúsculo",
+        "hint": "Opernring",
+        "alt": "Ópera Estatal de Viena ao crepúsculo"
+      },
+      "c4": {
+        "title": "Catedral de Santo Estêvão (Stephansdom)",
+        "hint": "Daytime façade",
+        "alt": "Catedral de Santo Estêvão (Stephansdom)"
+      },
+      "c5": {
+        "title": "Stephansdom iluminado à noite",
+        "hint": "Night façade",
+        "alt": "Stephansdom iluminado à noite"
+      },
+      "c6": {
+        "title": "Hofburg — cúpula do Michaelertrakt",
+        "hint": "Palace architecture",
+        "alt": "Hofburg — cúpula do Michaelertrakt"
+      },
+      "c7": {
+        "title": "Ópera Estatal de Viena à noite",
+        "hint": "Illuminated Opera",
+        "alt": "Ópera Estatal de Viena à noite"
+      },
+      "c8": {
+        "title": "Parlamento austríaco na Ringstrasse",
+        "hint": "Ringstrasse landmark",
+        "alt": "Parlamento austríaco na Ringstrasse"
+      },
+      "c9": {
+        "title": "Palácio Belvedere e lago refletor",
+        "hint": "Palace gardens",
+        "alt": "Palácio Belvedere e lago refletor"
+      },
+      "c10": {
+        "title": "Karlskirche à hora azul",
+        "hint": "Karlsplatz",
+        "alt": "Karlskirche à hora azul"
+      },
+      "c11": {
+        "title": "Palácio de Schönbrunn",
+        "hint": "Imperial residence",
+        "alt": "Palácio de Schönbrunn"
+      },
+      "c12": {
+        "title": "O Graben, a milha pedonal histórica de Viena",
+        "hint": "Old Town",
+        "alt": "O Graben, a milha pedonal histórica de Viena"
+      }
+    }
+  },
+  "testimonials": {
+    "_comment": "SAMPLE CONTENT — plausible placeholder reviews used until real guest reviews are collected. Replace with genuine, attributable reviews (see supabase/schema.sql seed rows) before publishing.",
+    "title": "O que dizem os convidados",
+    "sub": "Palavras do banco de trás",
+    "sampleNote": "Opiniões de exemplo, enquanto recolhemos as primeiras verdadeiras.",
+    "items": [
+      {
+        "author": "Anna K.",
+        "quote": "Acolhedor, pessoal e a forma certa de ver Viena sem pressa. Parámos sempre que quisemos uma fotografia.",
+        "rating": 5
+      },
+      {
+        "author": "James R.",
+        "quote": "Um carro bonito e histórias mesmo boas em inglês — parecia ser levado pela cidade por um amigo local.",
+        "rating": 5
+      },
+      {
+        "author": "Elena M.",
+        "quote": "Reservámos o passeio de 1,5 horas com os nossos pais e gostaríamos que tivesse durado mais. Silencioso, fácil, sem multidões.",
+        "rating": 5
+      }
+    ]
+  },
+  "booking": {
+    "title": "Reserve o seu passeio",
+    "sub": "Seis passos curtos. Escolha o passeio, a hora, o grupo e a língua — confirmamos por e-mail, normalmente dentro de algumas horas.",
+    "stepsLabel": "Passos da reserva",
+    "steps": {
+      "tour": "Passeio",
+      "datetime": "Data e hora",
+      "guests": "Pessoas",
+      "language": "Língua",
+      "contact": "Contacto",
+      "payment": "Resumo"
+    },
+    "hints": {
+      "tour": "Cada tour é privado — o seu grupo viaja sozinho num ou mais carros da nossa frota, nunca vendido por lugar.",
+      "datetime": "De dia partimos entre as 09:00 e as 17:00, todos os dias. Hora de Viena.",
+      "guests": "Mínimo três pessoas. Até sete por carro; grupos maiores são divididos por vários carros. Casais reservam três lugares e ficam com o carro só para si.",
+      "language": "Escolha a língua em que quer a narração. Grupos mistos não são problema — vamos alternando.",
+      "contact": "Usamos estes dados apenas para confirmar a reserva e para o contactar se o tempo virar.",
+      "payment": "Check the summary and pay securely online with SumUp. After payment we email you the meeting point and departure time."
+    },
+    "fields": {
+      "tourType": "Duração do passeio",
+      "date": "Data",
+      "time": "Hora de partida",
+      "guests": "Número de pessoas",
+      "language": "Língua da narração",
+      "name": "Nome completo",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "notes": "Algo que devamos saber (facultativo)",
+      "notesPlaceholder": "Necessidades de mobilidade, idades das crianças, um aniversário, a morada do hotel para recolha, um sítio que gostaria de ver.",
+      "cars": "Carros"
+    },
+    "languages": {
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Español",
+      "it": "Italiano",
+      "ar": "العربية",
+      "zh": "中文",
+      "pt": "Português",
+      "tr": "Türkçe"
+    },
+    "validation": {
+      "tour": "Escolha a duração do passeio.",
+      "date": "Escolha a data em que gostaria de ir.",
+      "time": "Escolha uma hora de partida.",
+      "unavailable": "Não fazemos passeios nessa hora. Escolha outra data ou outra partida.",
+      "guests": "As reservas começam em três pessoas. Até sete por carro; grupos maiores usam vários carros (até 28 pessoas online).",
+      "language": "Escolha uma língua da narração.",
+      "name": "Indique o nome em que deve ficar a reserva.",
+      "email": "Introduza um endereço de e-mail para enviarmos a confirmação.",
+      "emailFormat": "Esse endereço de e-mail não parece certo — verifique, por favor.",
+      "phone": "Acrescente um número de telefone para o contactarmos no dia."
+    },
+    "next": "Continuar",
+    "back": "Voltar",
+    "submit": "Confirm & pay with SumUp",
+    "summary": "Resumo da reserva",
+    "total": "Total",
+    "policyTitle": "Cancelamento e meteorologia",
+    "policy": "Cancelamento gratuito até 24 horas antes da partida, com reembolso total. Conduzimos com chuva fraca — as coberturas laterais sobem num minuto. Se o tempo ficar inseguro, oferecemos outro horário ou o reembolso completo. Se algo mudar do seu lado, escreva-nos; encontramos uma solução.",
+    "paymentNote": "You pay online now on SumUp’s secure checkout. Card details are entered only on SumUp — never stored on this website. After payment you return here and we email the meeting point and departure time.",
+    "successTitle": "O seu passeio está reservado",
+    "successBody": "Thank you. Payment is complete and your booking is confirmed. A message is on its way to your inbox with the meeting point and exact departure time.",
+    "successNote": "Se nada chegar dentro de uma hora, veja o spam ou escreva-nos — confirmamos à mão.",
+    "successRef": "Referência da reserva",
+    "error": "Não conseguimos gravar a reserva neste momento. Tente de novo, ou escreva-nos e guardamos o horário para si.",
+    "minGuestsHint": "Mínimo 3 pessoas. Até 7 por carro; grupos maiores em vários carros. Preço por pessoa.",
+    "demoMode": "Demo mode: Supabase and/or SumUp are not fully configured. This booking was validated locally for this session only.",
+    "carsNeededHint": "O seu grupo precisa de {count} carros (até 7 pessoas cada). Confirmamos a disponibilidade da frota por email.",
+    "paymentStartFailed": "We saved your booking but could not start SumUp checkout. Please try again in a moment, or email us with your booking reference.",
+    "heldTitle": "Booking held — payment pending",
+    "heldBody": "Your details are saved. Online card payment is not available on this environment yet, so your booking stays awaiting payment. We will email a SumUp payment link or confirm the next step by hand.",
+    "paymentCheckingKicker": "SumUp",
+    "paymentCheckingTitle": "Confirming your payment",
+    "paymentCheckingBody": "One moment while we verify your SumUp payment and confirm the booking.",
+    "paymentPendingTitle": "Payment still processing",
+    "paymentPending": "SumUp has not confirmed the payment yet. If you were charged, write to us with your booking reference and we will confirm by hand.",
+    "paymentVerifyMissing": "Missing booking reference. Please return to the booking form or email us.",
+    "paymentVerifyFailedTitle": "We could not confirm payment",
+    "paymentVerifyFailed": "Something went wrong verifying the SumUp payment. If you were charged, email us with your booking reference and we will sort it out.",
+    "backToTours": "Browse tours",
+    "backToBook": "Back to booking"
+  },
+  "about": {
+    "title": "Sobre a Vienna Grand Tours",
+    "intro": "Um negócio de passeios com um só carro, guiado pelo dono na Ringstrasse — e o veículo elétrico verde-escuro que o tornou possível.",
+    "storyKicker": "A história",
+    "storyTitle": "Uma nota do fundador",
+    "story1": "Cresci a um par de paragens de elétrico do Ring e, durante anos, vi visitantes chegar, fotografar a Ópera e ir embora sem nunca ouvir por que é que tudo isto está onde está. Trabalhava noutro ofício. A cidade não me largava.",
+    "story2": "Quando finalmente abri a Vienna Grand Tours, queria o oposto de um autocarro: um carro pequeno, um grupo de cada vez, sem microfone e sem guião fixo. Encontrei um veículo elétrico de estilo vintage, mandei-o acabar num verde-floresta fundo e passei um verão a aprender que canto da Heldenplatz apanha a luz da tarde e que ruela atrás da catedral é quieta o bastante para contar uma história.",
+    "story3": "Continua a ser assim. Reserva o carro inteiro, combinamos grosso modo para onde ir, e depois vamos devagar. Prefiro mostrar-lhe quatro sítios a sério do que doze pela janela — e se a luz estiver boa em frente ao Rathaus, ficamos ali um pouco mais.",
+    "founderShotTitle": "O fundador com o EV verde-escuro",
+    "founderShotHint": "Fundo Hofburg ou Ópera · cor do veículo bem visível",
+    "founderShotAlt": "O fundador de pé com o carro elétrico vintage verde-escuro em Viena",
+    "vehicleShotTitle": "Destaque do veículo — pormenor polido",
+    "vehicleShotHint": "Porta, roda ou emblema · sinal de ofício",
+    "vehicleShotAlt": "Pormenor polido do carro elétrico vintage verde-escuro",
+    "vehicleKicker": "O carro",
+    "vehicleTitle": "Vintage por fora, elétrico por baixo",
+    "vehicle1": "Parece de outro século e anda a bateria. Não há ruído de motor a tapar a conversa, nada a cheirar no vermelho e — com bom tempo — nenhum vidro entre si e as fachadas. Os convidados ouvem os elétricos, os fiakers e o guia, por essa ordem.",
+    "vehicle2": "Os lados ficam abertos quando o tempo ajuda e cobertos num minuto quando não ajuda, por isso um aguaceiro muda o humor do passeio em vez de o cancelar. Seis lugares, um grupo pequeno, e espaço ao lado para malas de dia e máquina fotográfica.",
+    "vehicleSpecsTitle": "Em resumo",
+    "vehicleSpecs": [
+      "Totalmente elétrico — silencioso, e sem escape na Cidade Velha",
+      "Até seis pessoas mais o guia",
+      "Lados abertos com bom tempo, coberturas para a chuva",
+      "Verde-floresta fundo, carroçaria de estilo vintage",
+      "Espaço para malas de dia, máquinas fotográficas e um carrinho dobrado",
+      "Carregado durante a noite — sem emissões no percurso"
+    ],
+    "valuesKicker": "A nossa promessa",
+    "valuesTitle": "Aquilo em que nos apoiamos",
+    "values": {
+      "care": {
+        "title": "Cuidado pessoal",
+        "text": "Um grupo de cada vez, um anfitrião que sabe os seus nomes à segunda paragem, e respostas às mensagens escritas por uma pessoa, não por uma fila."
+      },
+      "city": {
+        "title": "Respeito pela cidade",
+        "text": "Elétrico e silencioso, para que uma rua residencial continue a sê-lo. Mantemo-nos nos percursos e paragens que a cidade permite, e não bloqueamos elétricos por uma fotografia."
+      },
+      "honesty": {
+        "title": "Hospitalidade honesta",
+        "text": "Preços por pessoa, nada escondido, cancelamento claro, nenhuma paragem paga em loja."
+      }
+    }
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "sub": "Tudo o que vale a pena saber antes de reservar. Se a sua pergunta não estiver aqui, escreva-nos — responde uma pessoa.",
+    "items": [
+      {
+        "q": "Os passeios fazem-se com chuva?",
+        "a": "Com chuva fraca, sim — as coberturas sobem em cerca de um minuto, e Viena fica especialmente bem nas pedras molhadas. Com chuva forte, trovoada, gelo ou vento forte não saímos. Oferecemos outro horário ou o reembolso total, e avisamos o mais cedo que pudermos."
+      },
+      {
+        "q": "O que acontece se o tempo virar a meio do passeio?",
+        "a": "Pomos as coberturas e seguimos; um aguaceiro é muitas vezes a parte mais fotogénica do dia. Se as condições se tornarem realmente inseguras, encerramos o passeio mais cedo e reembolsamos a parte que não fez, ou mudamos para outra data, o que preferir."
+      },
+      {
+        "q": "Qual é a vossa política de cancelamento?",
+        "a": "Cancelamento gratuito até 24 horas antes da partida, com reembolso total. Dentro das 24 horas normalmente mudamos para outro horário se pudermos; se não pudermos, o passeio é cobrado. Se cancelarmos nós — meteorologia, avaria, doença — tem sempre reembolso total ou uma nova data, o que preferir."
+      },
+      {
+        "q": "O passeio serve para mobilidade reduzida?",
+        "a": "Há um degrau para entrar, com corrimão dos dois lados, e temos gosto em ajudar a bordo. Depois de sentado, o passeio inteiro acontece do seu lugar. Uma cadeira de rodas dobrável, um andarilho ou uma bengala viajam connosco; o carro não leva uma cadeira de estrutura fixa nem uma scooter elétrica, e não há rampa. Fale-nos da sua mobilidade nas notas da reserva e escolhemos paragens que resultem."
+      },
+      {
+        "q": "Como se paga?",
+        "a": "Online at booking, on SumUp’s secure checkout. You are redirected to SumUp to pay by card, then return here for confirmation. Prices are per person and final (no VAT is charged under the Austrian small-business scheme): Bronze €25, Silver €39, Gold €49, Diamond €69. The total in your booking confirmation is the amount charged."
+      },
+      {
+        "q": "Onde nos encontramos?",
+        "a": "Na Ringstrasse junto à Ópera Estatal, salvo outro acordo — o pin exato, a hora de partida e um número de telefone chegam com o e-mail de confirmação. Se o hotel estiver no Ring ou logo ao lado, diga nas notas e normalmente vamos buscá-lo à porta."
+      },
+      {
+        "q": "Qual o tamanho do grupo — e porque o mínimo de três pessoas?",
+        "a": "Mínimo três pessoas. Até sete por carro; grupos maiores viajam em vários carros da frota. O carro não se vende por lugar. Casais e viajantes a solo reservam três lugares."
+      },
+      {
+        "q": "Podemos mudar o percurso ou a duração?",
+        "a": "Sim. Os percursos neste sítio são um ponto de partida, não um horário. Diga-nos antes de partir — ou a meio do circuito — se quiser mais tempo no Hofburg, um desvio pelo Museumsquartier, ou saltar algo que já viu. Se quiser prolongar no próprio dia, fazemo-lo se a reserva seguinte o permitir."
+      },
+      {
+        "q": "Em que línguas guiam?",
+        "a": "Português, inglês, alemão, espanhol, italiano, árabe, chinês e turco. Escolha a língua ao reservar para podermos preparar-nos bem. Grupos mistos não são problema — alternamos entre duas línguas sem atrasar o passeio."
+      },
+      {
+        "q": "As crianças podem ir? Têm cadeiras?",
+        "a": "As crianças são bem-vindas e contam para o mínimo de três pessoas. A lei austríaca exige cadeira ou banco elevatório para crianças com menos de 135 cm ou 14 anos, por isso indique as idades nas notas da reserva com pelo menos 24 horas de antecedência e a cadeira certa estará no carro. Os carrinhos dobram e viajam connosco."
+      },
+      {
+        "q": "Onde vai a bagagem?",
+        "a": "Há espaço ao lado dos bancos para malas de dia, máquina fotográfica e um carrinho dobrado, mas não para malas de viagem. Se seguir viagem depois do passeio, deixe a bagagem no hotel ou num cacifo da estação — o carro é um veículo de visita, não um transfer."
+      }
+    ]
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "agbTitle": "Condições gerais",
+    "datenschutzTitle": "Política de privacidade",
+    "reviewNotice": "Texto em rascunho. Antes de o sítio entrar em linha, um advogado austríaco deve rever esta página e todos os campos entre parênteses retos devem ser preenchidos.",
+    "lastUpdated": "Última atualização: 31 de agosto de 2026",
+    "impressum": {
+      "intro": "Informação exigida pelo § 5 da Lei austríaca do Comércio Eletrónico (ECG) e pelo § 25 da Lei austríaca dos Media (MedienG).",
+      "companyHeading": "Empresa e titular do média",
+      "ownerHeading": "Titular / responsável pelos conteúdos",
+      "contactHeading": "Contacto",
+      "registerHeading": "Registo e autoridade comercial",
+      "vatHeading": "VAT status",
+      "chamberHeading": "Adesão à câmara",
+      "tradeHeading": "Regulamentação comercial",
+      "tradeBody": "Regulamentação comercial aplicável: Gewerbeordnung (GewO), disponível em www.ris.bka.gv.at. Os pormenores nos termos do § 108 (3) GewO são fornecidos a pedido do convidado e constam da confirmação da reserva.",
+      "authorityHeading": "Autoridade de supervisão",
+      "authorityBody": "Autoridade comercial competente (Gewerbebehörde): Magistratisches Bezirksamt für den {district}. Bezirk, Viena.",
+      "purposeHeading": "Objeto da atividade",
+      "purposeBody": "Tours privados guiados de Viena numa frota de veículos elétricos vintage (verde, branco e bordeaux), com narração em oito idiomas.",
+      "odrHeading": "Resolução de litígios em linha",
+      "odrBody": "A Comissão Europeia disponibiliza uma plataforma para a resolução de litígios em linha. Não estamos obrigados nem dispostos a participar em processos perante uma entidade de arbitragem de consumo.",
+      "contentHeading": "Responsabilidade por conteúdos e ligações",
+      "contentBody": "O conteúdo deste sítio foi preparado com cuidado, mas não assumimos responsabilidade pela sua exatidão, integralidade ou atualidade. Onde ligamos a sítios externos, os respetivos operadores são responsáveis pelos conteúdos; verificámos essas páginas quanto a conteúdos ilícitos quando as ligações foram colocadas e não encontrámos nenhum.",
+      "copyrightHeading": "Direitos de autor e imagens",
+      "copyrightBody": "Todos os textos, imagens e o layout deste sítio estão protegidos por direitos de autor. As fotografias são nossas ou licenciadas; as fotografias de convidados só se publicam com consentimento. Qualquer reutilização exige a nossa autorização escrita.",
+      "labels": {
+        "owner": "Titular",
+        "phone": "Telefone",
+        "email": "E-mail",
+        "firmenbuch": "Número de registo comercial",
+        "court": "Tribunal de registo",
+        "gisa": "Número GISA",
+        "uid": "NIF IVA",
+        "legalForm": "Forma jurídica"
+      },
+      "vatExemptBody": "No VAT identification number (UID). We are exempt from charging VAT under the Austrian small-business scheme (Kleinunternehmerregelung pursuant to § 6 Abs. 1 Z 27 UStG). Prices are final; no VAT is added or shown on invoices."
+    },
+    "agb": {
+      "intro": "Estas condições regem todos os passeios reservados connosco, seja através deste sítio, por e-mail ou por telefone. Leia-as antes de reservar — a confirmação da reserva refere-se a esta versão.",
+      "sections": [
+        {
+          "title": "1. Âmbito e parte contratante",
+          "body": "As presentes Condições Gerais aplicam-se a todas as reservas de passeios com Ahmed Wezza («nós»), que opera como Vienna Grand Tours. Condições divergentes do convidado só valem se as tivermos aceite por escrito."
+        },
+        {
+          "title": "2. O nosso serviço",
+          "body": "Tours privados: Bronze (30 min), Prata (60 min), Ouro (90 min) e Diamante (120 min). Até sete pessoas por carro; grupos maiores em vários carros. Mínimo três pessoas por reserva."
+        },
+        {
+          "title": "3. Reserva e formação do contrato",
+          "body": "Um pedido de reserva através do sítio, por e-mail ou por telefone é uma oferta do convidado. O contrato forma-se quando enviamos uma confirmação de reserva por e-mail. Verifique a confirmação de imediato e avise-nos já se algo estiver errado. Para reservar é preciso ter pelo menos 18 anos; os menores viajam ao cuidado de um adulto acompanhante."
+        },
+        {
+          "title": "4. Preços e pagamento",
+          "body": "Prices are per person, in euro, and are final. We operate as a small business under the Austrian Kleinunternehmerregelung and do not charge VAT: Bronze 30 minutes €25, Silver 1 hour €39, Gold 1.5 hours €49, Diamond 2 hours €69. The total is the per-person price multiplied by the number of guests, with a minimum of three. Payment is taken online at booking via SumUp’s secure checkout. Card details are collected by SumUp, not on this website. A booking is confirmed once payment succeeds."
+        },
+        {
+          "title": "5. Cancelamento pelo convidado",
+          "body": "Os cancelamentos feitos com mais de 24 horas de antecedência em relação à hora de partida combinada são gratuitos e reembolsados na totalidade. Dentro das 24 horas oferecemos um horário alternativo quando pudermos; se não for possível, o preço total pode ser retido. Os cancelamentos devem ser feitos por escrito para o nosso e-mail ou por telefone. Os direitos de resolução previstos na lei para os consumidores mantêm-se inalterados quando se aplicam; note-se que, para serviços de lazer ligados a uma data específica, o § 18 (1) (10) FAGG exclui o direito de resolução de 14 dias."
+        },
+        {
+          "title": "6. Atraso e não comparência",
+          "body": "Chegue cinco minutos antes da hora de partida combinada. Esperamos até 15 minutos; um início mais tardio encurta o passeio na mesma medida e não reduz o preço. Se o grupo não aparecer e não tiver cancelado, é devido o preço total."
+        },
+        {
+          "title": "7. Cancelamento da nossa parte, meteorologia e força maior",
+          "body": "Conduzimos com chuva fraca. Se as condições meteorológicas tornarem o passeio inseguro — tempestades, gelo, vento forte, calor extremo — ou se o veículo, o guia ou as estradas o tornarem impossível, podemos cancelar ou encurtar o passeio. Nesse caso recebe uma data alternativa ou o reembolso do preço, ou da parte não percorrida, à sua escolha. Outras pretensões estão excluídas salvo dolo ou negligência grosseira da nossa parte."
+        },
+        {
+          "title": "8. Conduta durante o passeio",
+          "body": "Os convidados seguem as instruções de segurança do guia, permanecem sentados com o veículo em movimento e usam os cintos fornecidos. Crianças com menos de 135 cm ou 14 anos devem viajar numa cadeira adequada, que fornecemos quando avisados com antecedência. Fumar, chamas abertas e permanecer de pé durante a marcha não são permitidos. Podemos recusar ou interromper um passeio sem reembolso se um convidado estiver embriagado, puser outros em perigo ou ignorar repetidamente as instruções."
+        },
+        {
+          "title": "9. Bagagem e objetos pessoais",
+          "body": "Há espaço ao lado dos bancos para malas de dia, máquinas fotográficas e um carrinho dobrado; não podemos transportar malas de viagem. Os convidados são responsáveis pelos seus objetos durante o passeio. Só respondemos por objetos perdidos ou danificados em caso de dolo ou negligência grosseira."
+        },
+        {
+          "title": "10. Responsabilidade",
+          "body": "Respondemos sem limite por danos pessoais e, de resto, por dolo e negligência grosseira. A responsabilidade por negligência ligeira limita-se à violação de obrigações contratuais essenciais e aos danos típicos deste tipo de contrato, previsíveis no momento da celebração. Isto não afeta a responsabilidade ao abrigo da lei austríaca da responsabilidade do produtor nem as disposições imperativas de proteção do consumidor. O veículo está segurado como exige a lei austríaca."
+        },
+        {
+          "title": "11. Fotografias e dados",
+          "body": "Fotografamos os passeios ocasionalmente para o nosso sítio e redes sociais, e publicamos imagens com convidados reconhecíveis apenas com o seu consentimento expresso, que pode retirar a qualquer momento. Os dados pessoais são tratados como descrito na nossa Política de privacidade."
+        },
+        {
+          "title": "12. Lei aplicável e foro",
+          "body": "Aplica-se o direito austríaco, excluídas as normas de conflitos de leis e a Convenção das Nações Unidas sobre Contratos de Compra e Venda Internacional de Mercadorias. Para os consumidores, mantêm-se as disposições protetoras imperativas e os foros do país de residência. Para comerciantes, é competente o tribunal de Viena. Se alguma disposição for inválida, o restante destas condições mantém-se em vigor."
+        }
+      ]
+    },
+    "datenschutz": {
+      "intro": "Recolhemos sobre si o mínimo que uma reserva permite, não vendemos dados e não usamos rastreadores publicitários. Esta página explica o que acontece à informação que nos dá, ao abrigo do Regulamento Geral sobre a Proteção de Dados (RGPD) e da Lei austríaca de Proteção de Dados (DSG).",
+      "sections": [
+        {
+          "title": "1. Responsável pelo tratamento",
+          "body": "O responsável pelo tratamento aqui descrito é a empresa indicada no Impressum, contactável no endereço de e-mail aí indicado. Não nomeámos um encarregado de proteção de dados, por não sermos obrigados a isso."
+        },
+        {
+          "title": "2. Dados que tratamos quando reserva",
+          "body": "O formulário de reserva recolhe o nome, o endereço de e-mail, o número de telefone, o passeio escolhido, a data e a hora de partida, o número de pessoas, a língua da narração e o que escrever no campo de notas — partilhe pormenores de saúde ou mobilidade apenas se quiser que os tenhamos em conta. Precisamos destes dados para executar o contrato consigo (art. 6.º, n.º 1, alínea b) do RGPD); quaisquer dados de categorias especiais que voluntariamente indique nas notas são tratados com base no consentimento (art. 9.º, n.º 2, alínea a) do RGPD)."
+        },
+        {
+          "title": "3. Dados que tratamos quando nos contacta",
+          "body": "Se nos escrever por e-mail, tratamos o seu endereço, a mensagem e quaisquer pormenores incluídos, para lhe responder (art. 6.º, n.º 1, alíneas b) e f) do RGPD — o nosso interesse legítimo em responder a pedidos)."
+        },
+        {
+          "title": "4. Dados recolhidos automaticamente",
+          "body": "O nosso fornecedor de alojamento regista os dados padrão dos registos do servidor — endereço IP, data e hora, página pedida, página de origem, navegador e sistema operativo — para a segurança e estabilidade do sítio (art. 6.º, n.º 1, alínea f) do RGPD). Estes registos são apagados após um período curto e não são cruzados com outros dados."
+        },
+        {
+          "title": "5. Cookies e analítica",
+          "body": "Guardamos um único elemento essencial na memória local do navegador para lembrar a sua escolha de cookies; não contém dados pessoais nem um identificador de rastreio. A analítica só carrega depois de a aceitar no aviso (art. 6.º, n.º 1, alínea a) do RGPD), e pode retirar esse consentimento a qualquer momento ao limpar os dados deste sítio no navegador ou ao escrever-nos. Não se usam cookies de publicidade ou de perfilagem."
+        },
+        {
+          "title": "6. Subcontratantes e destinatários",
+          "body": "We use carefully selected service providers, each bound by a data processing agreement under Art. 28 GDPR where applicable: Netlify (website hosting and delivery), Supabase (booking database, hosted in the EU), SumUp (online card payments via hosted checkout), and our email provider for confirmation messages. Payment card details are entered only on SumUp’s systems, not on this website. Data is transferred to third countries only on the basis of EU standard contractual clauses or an adequacy decision. Beyond that, we pass data to third parties only where we are legally obliged to — for instance to tax authorities."
+        },
+        {
+          "title": "7. Durante quanto tempo guardamos os seus dados",
+          "body": "Os dados de reserva e faturação são conservados durante sete anos ao abrigo do direito fiscal e comercial austríaco (§ 132 BAO, § 212 UGB). Os pedidos que não levam a uma reserva são apagados quando o assunto fica encerrado, o mais tardar após doze meses. Os registos do servidor são apagados ao fim de poucos dias. Os dados baseados em consentimento são apagados quando o retira."
+        },
+        {
+          "title": "8. Os seus direitos",
+          "body": "Tem o direito de aceder aos seus dados, de os fazer retificar ou apagar, de limitar o tratamento, de se opor ao tratamento baseado em interesses legítimos e de receber os seus dados num formato portátil. Quando o tratamento assenta no consentimento, pode retirá-lo a qualquer momento com efeitos para o futuro. Escreva para o e-mail no Impressum e responderemos no prazo de um mês."
+        },
+        {
+          "title": "9. Direito de reclamação",
+          "body": "Se considerar que tratamos os seus dados de forma ilícita, pode apresentar reclamação à Autoridade Austríaca de Proteção de Dados (Österreichische Datenschutzbehörde, Barichgasse 40–42, 1030 Viena, dsb.gv.at) ou à autoridade de controlo do local onde vive."
+        },
+        {
+          "title": "10. Fotografias",
+          "body": "Publicamos fotografias com convidados reconhecíveis apenas com consentimento expresso, dado por escrito ou de forma clara no próprio dia. O consentimento pode ser retirado a qualquer momento; escreva-nos e retiramos a imagem do sítio e dos canais sociais."
+        },
+        {
+          "title": "11. Alterações a esta política",
+          "body": "Atualizamos esta política sempre que as nossas ferramentas ou processos mudam. A versão publicada aqui é a que se aplica."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Tours privados guiados pelo proprietário em Viena em carros elétricos vintage — verde, branco e bordeaux. Mínimo três convidados, até sete por carro (vários carros para grupos maiores), oito idiomas.",
+    "quickLinks": "Explorar",
+    "legal": "Notas legais",
+    "contact": "Contacto",
+    "meetingPoint": "Ponto de encontro na Ringstrasse, Viena — o pin exato chega com a confirmação da reserva.",
+    "googleBusiness": "Perfil Google Business",
+    "rights": "© {year} Vienna Grand Tours. Todos os direitos reservados.",
+    "impressum": "Impressum",
+    "agb": "Termos e condições",
+    "datenschutz": "Privacidade",
+    "madeBy": "Feito por <name>Besaweb</name>"
+  },
+  "cookies": {
+    "title": "Cookies e privacidade",
+    "body": "Guardamos um pequeno elemento no navegador para lembrar esta escolha. A analítica só carrega se disser que sim, e nunca usamos rastreadores publicitários.",
+    "accept": "Aceitar analítica",
+    "essential": "Apenas essenciais",
+    "privacy": "Ler a política de privacidade"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Esta página enganou o caminho",
+    "body": "A página que procurava não está aqui — pode ter mudado, ou a ligação envelheceu. Os passeios, os preços e o formulário de reserva estão a um clique.",
+    "home": "Voltar à página inicial",
+    "book": "Reservar um passeio"
+  },
+  "common": {
+    "loading": "A carregar…",
+    "close": "Fechar",
+    "learnMore": "Saber mais",
+    "photoNeeded": "Fotografia em falta"
+  }
+}

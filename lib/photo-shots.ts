@@ -1,0 +1,401 @@
+/**
+ * Canonical photo shot list for Vienna Grand Tours.
+ * Keep in sync with PHOTO_SHOT_LIST.md and gallery i18n keys (gallery.items.*).
+ *
+ * Public images live in public/gallery/. City landmark stills are credited in
+ * public/gallery/CREDITS.txt; fleet photos are original.
+ */
+
+export type ShotCategory = "vehicle" | "landmarks" | "guests" | "city" | "site";
+
+export type PhotoShot = {
+  id: string;
+  category: ShotCategory;
+  /** Concrete shoot title */
+  title: string;
+  /** Suggested Vienna location */
+  location: string;
+  /** Framing / time-of-day hint */
+  hint: string;
+  /** Alt text for the intended photo */
+  alt: string;
+  /** Where this image appears in the UI */
+  appearsOn: string[];
+  /** Public path when a real photo is wired (e.g. /gallery/...) */
+  src?: string;
+  /** Privacy note for guest photography */
+  consentNote?: boolean;
+};
+
+export const PHOTO_SHOTS: PhotoShot[] = [
+  // Vehicle — dark green vintage EV + fleet
+  {
+    id: "v1",
+    category: "vehicle",
+    title: "Vehicle at Ringstrasse — three-quarter front",
+    location: "Ringstrasse (e.g. near Opernring or Burgtheater stretch)",
+    hint: "Golden hour · three-quarter front · show dark green body + chrome · landmark soft in background",
+    alt: "Dark green vintage electric tour vehicle, three-quarter front view on Vienna’s Ringstrasse at golden hour",
+    src: "/gallery/vehicle-graben-three-quarter.jpg",
+    appearsOn: ["Homepage hero", "Homepage gallery teaser", "Gallery"],
+  },
+  {
+    id: "v2",
+    category: "vehicle",
+    title: "Side profile — full length",
+    location: "Quiet Ringstrasse curb or Hofburg side street",
+    hint: "Overcast or soft morning light · full side silhouette · wheels and body colour clear",
+    alt: "Full side profile of the dark green vintage electric tour vehicle in Vienna",
+    src: "/gallery/vehicle-side-stephansdom.jpg",
+    appearsOn: ["Gallery", "About vehicle spotlight (optional)"],
+  },
+  {
+    id: "v3",
+    category: "vehicle",
+    title: "Front detail — grille, lights & badge",
+    location: "Any clean backdrop; avoid cluttered parking",
+    hint: "Close crop · polish reflections · emphasise dark green paint and vintage details",
+    alt: "Close-up front detail of the dark green vintage EV showing grille, lights, and badge",
+    src: "/gallery/vehicle-front-grille-night.jpg",
+    appearsOn: ["Gallery", "About vehicle spotlight"],
+  },
+  {
+    id: "v4",
+    category: "vehicle",
+    title: "Interior seating — guest perspective",
+    location: "Vehicle interior (parked, doors open or closed)",
+    hint: "Natural light from open side · seats + cabin charm · no personal clutter",
+    alt: "Interior seating of the dark green vintage electric tour vehicle from a guest perspective",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "v5",
+    category: "vehicle",
+    title: "Night / golden-hour parked glow",
+    location: "Illuminated Ringstrasse or Hofburg vicinity after dusk",
+    hint: "Warm street lights · dark green paint catching gold · elegant, not flashy",
+    alt: "Dark green vintage EV parked in Vienna at dusk with warm city lights",
+    src: "/gallery/vehicle-stephansdom-dusk.jpg",
+    appearsOn: ["Gallery", "Homepage teaser (optional)"],
+  },
+  // Landmarks — vehicle in frame
+  {
+    id: "l1",
+    category: "landmarks",
+    title: "Stephansdom at dusk — vehicle in frame",
+    location: "Stephansplatz vicinity (legal photo stop only)",
+    hint: "Twilight · cathedral façade · headlights on",
+    alt: "Dark green vintage EV at St. Stephen’s Cathedral at dusk",
+    src: "/gallery/landmark-stephansdom-evening.jpg",
+    appearsOn: ["Gallery", "Homepage gallery teaser"],
+  },
+  {
+    id: "l2",
+    category: "landmarks",
+    title: "Hofburg — Michaelerplatz",
+    location: "Hofburg / Michaelerplatz",
+    hint: "Palace architecture + dark green EV · daytime",
+    alt: "Dark green vintage EV in front of the Hofburg palace on Michaelerplatz",
+    src: "/gallery/landmark-hofburg.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "l3",
+    category: "landmarks",
+    title: "Graben / Old Town — daytime",
+    location: "Graben / Jungferngasse",
+    hint: "Boulevard scale · vehicle readable as dark green",
+    alt: "Dark green vintage electric vehicle on Vienna’s Graben in daytime",
+    src: "/gallery/landmark-graben-day.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "l4",
+    category: "landmarks",
+    title: "St. Stephen’s Cathedral — daytime",
+    location: "Stephansplatz vicinity (legal parking / photo stop only)",
+    hint: "Cathedral spires · vehicle in frame · respect pedestrian zones",
+    alt: "Tour context near St. Stephen’s Cathedral (Stephansdom) in Vienna’s Old Town",
+    src: "/gallery/landmark-stephansdom-day.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "v9",
+    category: "vehicle",
+    title: "Graben at night — headlights",
+    location: "Graben / Graben-Hof",
+    hint: "Night · headlights · café lights behind",
+    alt: "Dark green vintage EV on the Graben at night with headlights on",
+    src: "/gallery/vehicle-graben-night.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "v10",
+    category: "vehicle",
+    title: "Stephansdom — golden light",
+    location: "Stephansplatz",
+    hint: "Warm late light · cathedral stone · open roof frame",
+    alt: "Dark green vintage EV at Stephansdom in golden light",
+    src: "/gallery/vehicle-stephansdom-golden.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "v6",
+    category: "vehicle",
+    title: "White fleet car — open-sided vintage EV",
+    location: "Meeting point or hotel pickup",
+    hint: "Full vehicle · red upholstery · white body · fleet context",
+    alt: "White vintage electric tour vehicle with red seats in the Vienna Grand Tours fleet",
+    src: "/gallery/fleet-white.jpg",
+    appearsOn: ["Gallery", "About — fleet"],
+  },
+  {
+    id: "v7",
+    category: "vehicle",
+    title: "Burgundy fleet car — open-sided vintage EV",
+    location: "Ringstrasse or Opernring",
+    hint: "Three-quarter front · burgundy body · gold wheels",
+    alt: "Burgundy vintage electric tour vehicle in the Vienna Grand Tours fleet on the Ringstrasse",
+    src: "/gallery/fleet-burgundy.jpg",
+    appearsOn: ["Gallery", "About — fleet"],
+  },
+  {
+    id: "v8",
+    category: "vehicle",
+    title: "Fleet lineup — green, white & burgundy",
+    location: "Meeting point / hotel pickup",
+    hint: "All three colours in frame · shows scale of the fleet",
+    alt: "Vienna Grand Tours fleet of vintage electric tour vehicles in green, white and burgundy lined up at pickup",
+    src: "/gallery/fleet-lineup.jpg",
+    appearsOn: ["Gallery", "About — fleet", "Homepage gallery teaser"],
+  },
+  // Guests — consent required (no public files yet)
+  {
+    id: "g1",
+    category: "guests",
+    title: "Guest boarding",
+    location: "Meeting point (e.g. near Opernring)",
+    hint: "Candid mid-step into vehicle · faces optional · show access and welcome",
+    alt: "Guests boarding the dark green vintage electric tour vehicle in Vienna",
+    appearsOn: ["Gallery", "Homepage gallery teaser"],
+    consentNote: true,
+  },
+  {
+    id: "g2",
+    category: "guests",
+    title: "Smiling passengers onboard",
+    location: "During a photo stop or slow Ringstrasse stretch",
+    hint: "Natural smiles · 2–4 guests · dark green interior/exterior edge visible",
+    alt: "Smiling passengers seated in the vintage electric tour vehicle during a Vienna tour",
+    appearsOn: ["Gallery"],
+    consentNote: true,
+  },
+  {
+    id: "g3",
+    category: "guests",
+    title: "Guide narrating",
+    location: "Any scenic pause (Hofburg, Ring, Old Town edge)",
+    hint: "Guide mid-story · guests listening · authentic, not posed stiffly",
+    alt: "Tour guide narrating to guests beside or inside the vintage electric vehicle",
+    appearsOn: ["Gallery"],
+    consentNote: true,
+  },
+  // City views — landmark stills (see public/gallery/CREDITS.txt)
+  {
+    id: "c1",
+    category: "city",
+    title: "Stephansdom rooftops at twilight",
+    location: "Elevated view toward St. Stephen’s Cathedral (Stephansdom)",
+    hint: "Warm twilight · tiled roofs & spire",
+    alt: "Stephansdom over Vienna rooftops at twilight",
+    src: "/gallery/city-stephansdom-rooftops.jpg",
+    appearsOn: ["Gallery", "Homepage gallery teaser"],
+  },
+  {
+    id: "c2",
+    category: "city",
+    title: "Vienna City Hall (Rathaus)",
+    location: "Ringstrasse near Rathaus",
+    hint: "Arcade detail · civic landmark",
+    alt: "Vienna City Hall (Rathaus) arcade",
+    src: "/gallery/city-rathaus.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "c3",
+    category: "city",
+    title: "Vienna State Opera at dusk",
+    location: "Opernring / Vienna State Opera",
+    hint: "Dusk · Opera façade",
+    alt: "Vienna State Opera (Staatsoper) at dusk",
+    src: "/gallery/city-staatsoper.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "c4",
+    category: "city",
+    title: "St. Stephen’s Cathedral — daytime",
+    location: "Stephansplatz",
+    hint: "Daytime · cathedral façade",
+    alt: "St. Stephen’s Cathedral (Stephansdom) in daytime",
+    src: "/gallery/city-stephansdom-day.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "c5",
+    category: "city",
+    title: "Stephansdom at night",
+    location: "Stephansplatz",
+    hint: "Illuminated façade · night",
+    alt: "Stephansdom illuminated at night",
+    src: "/gallery/city-stephansdom-night.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "c6",
+    category: "city",
+    title: "Hofburg — Michaelertrakt dome",
+    location: "Michaelerplatz / Hofburg",
+    hint: "Dome and palace architecture",
+    alt: "Hofburg — Michaelertrakt dome",
+    src: "/gallery/city-hofburg.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "c7",
+    category: "city",
+    title: "Vienna State Opera at night",
+    location: "Opernring",
+    hint: "Night · illuminated Opera",
+    alt: "Vienna State Opera at night",
+    src: "/gallery/city-staatsoper-night.jpg",
+    appearsOn: ["Gallery", "Homepage gallery teaser"],
+  },
+  {
+    id: "c8",
+    category: "city",
+    title: "Austrian Parliament",
+    location: "Ringstrasse / Parliament",
+    hint: "Day or blue hour · Ringstrasse context",
+    alt: "Austrian Parliament on the Ringstrasse",
+    src: "/gallery/city-parliament.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "c9",
+    category: "city",
+    title: "Belvedere Palace",
+    location: "Belvedere",
+    hint: "Palace + reflecting pool",
+    alt: "Belvedere Palace and reflecting pool",
+    src: "/gallery/city-belvedere.jpg",
+    appearsOn: ["Gallery", "Homepage gallery teaser"],
+  },
+  {
+    id: "c10",
+    category: "city",
+    title: "Karlskirche at blue hour",
+    location: "Karlsplatz",
+    hint: "Blue hour · dome illuminated",
+    alt: "Karlskirche at blue hour",
+    src: "/gallery/city-karlskirche.jpg",
+    appearsOn: ["Gallery", "Homepage gallery teaser"],
+  },
+  {
+    id: "c11",
+    category: "city",
+    title: "Schönbrunn Palace",
+    location: "Schönbrunn",
+    hint: "Palace façade · gardens context",
+    alt: "Schönbrunn Palace",
+    src: "/gallery/city-schonbrunn.jpg",
+    appearsOn: ["Gallery"],
+  },
+  {
+    id: "c12",
+    category: "city",
+    title: "The Graben",
+    location: "Graben",
+    hint: "Historic pedestrian mile · daytime",
+    alt: "The Graben, Vienna’s historic pedestrian mile",
+    src: "/gallery/city-graben.jpg",
+    appearsOn: ["Gallery"],
+  },
+  // Site-specific (not in gallery grid filters)
+  {
+    id: "about-founder",
+    category: "site",
+    title: "Founder with the dark green EV",
+    location: "Landmark backdrop (Hofburg or Opera)",
+    hint: "Half-body or environmental portrait · vehicle clearly dark green behind/beside",
+    alt: "Founder standing with the dark green vintage electric tour vehicle in Vienna",
+    appearsOn: ["About — story section"],
+  },
+  {
+    id: "about-detail",
+    category: "site",
+    title: "Vehicle spotlight — polished detail",
+    location: "Clean outdoor light",
+    hint: "Door handle, wheel, or badge detail · premium craftsmanship cue",
+    alt: "Polished detail of the dark green vintage electric tour vehicle",
+    src: "/gallery/vehicle-front-grille-night.jpg",
+    appearsOn: ["About — vehicle section"],
+  },
+  {
+    id: "tours-map",
+    category: "site",
+    title: "Route map — Ringstrasse / Old Town loop",
+    location: "Graphic or annotated static map (design or photo of printed map)",
+    hint: "Clear loop · Opera / Hofburg / Stephansdom markers · brand colours",
+    alt: "Route map of the Vienna Grand Tours Ringstrasse and Old Town loop",
+    appearsOn: ["Tours & Pricing — route map"],
+  },
+  {
+    id: "og-social",
+    category: "site",
+    title: "OG / social share — hero three-quarter",
+    location: "Same as v1 (or cropped variant)",
+    hint: "1200×630 friendly crop · dark green EV dominant · landmark readable",
+    alt: "Social share image: dark green vintage EV on a Vienna landmark backdrop",
+    appearsOn: ["Open Graph / social previews (when wired)"],
+  },
+];
+
+export const GALLERY_SHOT_IDS = [
+  "v1",
+  "v2",
+  "v3",
+  "v4",
+  "v5",
+  "v6",
+  "v7",
+  "v8",
+  "v9",
+  "v10",
+  "l1",
+  "l2",
+  "l3",
+  "l4",
+  "g1",
+  "g2",
+  "g3",
+  "c1",
+  "c2",
+  "c3",
+  "c4",
+  "c5",
+  "c6",
+  "c7",
+  "c8",
+  "c9",
+  "c10",
+  "c11",
+  "c12",
+] as const;
+
+export type GalleryShotId = (typeof GALLERY_SHOT_IDS)[number];
+
+/** Public image path for a shot when a real photo is wired. */
+export function getShotSrc(id: string): string | undefined {
+  return PHOTO_SHOTS.find((s) => s.id === id)?.src;
+}

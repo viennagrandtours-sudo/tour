@@ -1,0 +1,864 @@
+{
+  "meta": {
+    "siteName": "Vienna Grand Tours",
+    "homeTitle": "Vienna Grand Tours — Private Stadtrundfahrten im Elektro-Oldtimer",
+    "homeDescription": "Private Stadtrundfahrten durch Wien in einer Flotte elektrischer Oldtimer — Waldgrün, Weiß und Burgunderrot. Führung in acht Sprachen. Bronze, Silber, Gold und Diamant ab €25 pro Person, mindestens drei Gäste.",
+    "toursTitle": "Touren & Preise — Vienna Grand Tours",
+    "toursDescription": "Vier private Touren — Bronze 30 Min. €25, Silber 1 Std. €39, Gold 90 Min. €49, Diamant 2 Std. €69 pro Person. Mindestens drei Gäste.",
+    "bookTitle": "Tour buchen — Vienna Grand Tours",
+    "bookDescription": "Private Wien-Tour in sechs Schritten buchen: Dauer, Datum, Gruppengröße, Sprache. Kostenlose Stornierung bis 24 Stunden vor Abfahrt.",
+    "aboutTitle": "Über uns — Vienna Grand Tours",
+    "aboutDescription": "Die Geschichte hinter Vienna Grand Tours, unserer Flotte elektrischer Oldtimer und den privaten Kleingruppen-Touren durch Wien.",
+    "galleryTitle": "Galerie — Vienna Grand Tours",
+    "galleryDescription": "Wien, wie unsere Gäste es sehen: die Oper im Morgenlicht, das Rathaus zur blauen Stunde, Dächer im Sonnenuntergang — und unsere Flotte elektrischer Oldtimer.",
+    "faqTitle": "Häufige Fragen — Vienna Grand Tours",
+    "faqDescription": "Wetter und Regen, Stornierung, Treffpunkt, Barrierefreiheit, Zahlung, Kinder, Gepäck und die Mindestteilnehmerzahl von drei Gästen.",
+    "impressumTitle": "Impressum — Vienna Grand Tours",
+    "impressumDescription": "Offenlegung gemäß § 5 ECG und § 25 MedienG für Vienna Grand Tours.",
+    "agbTitle": "AGB — Vienna Grand Tours",
+    "agbDescription": "Buchung, Zahlung, Stornierung, Nichterscheinen, Wetter und Haftung für private Touren mit Vienna Grand Tours.",
+    "datenschutzTitle": "Datenschutz — Vienna Grand Tours",
+    "datenschutzDescription": "Wie Vienna Grand Tours Ihre Daten nach der DSGVO verarbeitet: was das Buchungsformular erhebt, wer sie verarbeitet, Speicherdauer und Ihre Rechte."
+  },
+  "nav": {
+    "home": "Start",
+    "tours": "Touren",
+    "book": "Buchen",
+    "about": "Über uns",
+    "gallery": "Galerie",
+    "faq": "Fragen",
+    "bookCta": "Tour buchen",
+    "menu": "Menü",
+    "mainNav": "Hauptnavigation",
+    "mobileNav": "Mobile Navigation",
+    "languageSwitcher": "Sprache"
+  },
+  "hero": {
+    "brand": "Vienna Grand Tours",
+    "headline": "Wien in Ruhe — der Ring, die Paläste und die Geschichten dazwischen.",
+    "subline": "Private Stadtrundfahrten in einer Flotte elektrischer Oldtimer — Waldgrün, Weiß und Burgunderrot. Leise, offen und nie mit Fremden geteilt.",
+    "cta": "Tour buchen",
+    "secondaryCta": "Touren & Preise ansehen",
+    "shotTitle": "Fahrzeug an der Ringstraße — Dreiviertel-Front",
+    "shotHint": "Goldene Stunde · dunkelgrüne Karosserie · Sehenswürdigkeit weich im Hintergrund",
+    "imageAlt": "Dunkelgrünes Elektrofahrzeug im Oldtimer-Stil, Dreiviertel-Front an der Wiener Ringstraße im Abendlicht",
+    "payOnArrival": "Online buchen · sicher mit SumUp bei der Buchung zahlen.",
+    "closingTitle": "Ihr privater Wagen wartet",
+    "closingSub": "Reservieren Sie Ihre Wiener Stunde — online in wenigen Minuten."
+  },
+  "trust": {
+    "statValue": "8",
+    "statUnit": "Sprachen",
+    "statCaption": "Wählen Sie die Sprache Ihres Guides bei der Buchung.",
+    "kicker": "In jeder Tour enthalten",
+    "item1": "Ein privates Oldtimer-Fahrzeug",
+    "item2": "Konzessionierte Wiener Guides",
+    "item3": "Leiser Elektroantrieb"
+  },
+  "tours": {
+    "kicker": "Private Touren",
+    "sectionTitle": "Wählen Sie Ihre Fahrt",
+    "sectionSub": "Vier Touren, ein privater Wagen, mindestens drei Gäste. Niemand steigt zu.",
+    "pageTitle": "Touren & Preise",
+    "pageIntro": "Bronze, Silber, Gold und Diamant — von einer halben Stunde Ring bis zu zwei ruhigen Stunden. Jede Buchung ist privat. Preise pro Person, mindestens drei Gäste. Bis zu sieben Gäste pro Fahrzeug; größere Gruppen fahren in mehreren Wagen.",
+    "perPerson": "pro Person",
+    "minGuests": "Ab {count} Gästen",
+    "book": "Buchen",
+    "viewAll": "Alle Preise & Routen",
+    "included": "Inbegriffen",
+    "languages": "Sprachen der Führung",
+    "landmarks": "Highlights der Route",
+    "stops": "Stopps",
+    "mapKicker": "Die Route",
+    "mapTitle": "Wo wir fahren",
+    "mapNote": "Bronze ist die klassische halbe Stunde am Ring (Hofburg, Museen, Parlament, Rathaus, Oper). Silber ist die einstündige Grand Tour mit Altstadt und Halt an der Minoritenkirche. Gold ist die 90-Minuten-Premium-Route mit Heldendenkmal und Belvedere-Halt. Diamant bleibt bei den Gold-Sehenswürdigkeiten, in ruhigerem Tempo. Sagen Sie uns, was Sie sehen möchten — wir legen um.",
+    "mapShotTitle": "Routenkarte — Ringstraße / Altstadt-Schleife",
+    "mapShotHint": "Klare Schleife · Oper / Hofburg / Stephansdom · Waldgrün + Gold",
+    "mapShotAlt": "Routenkarte der Vienna Grand Tours Ringstraßen- und Altstadt-Schleife",
+    "tiers": {
+      "bronze": {
+        "name": "Bronze",
+        "duration": "30 Minuten",
+        "description": "Klassische halbe Stunde am Ring — Hofburg, Museen, Parlament, Rathaus, Oper und mehr, 21 Anblicke vom Wagen aus.",
+        "highlights": [
+          "Hofburg",
+          "Naturhistorisches Museum",
+          "Kunsthistorisches Museum",
+          "Maria-Theresien-Denkmal",
+          "Ringstraße",
+          "Parlament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus",
+          "Café Landtmann",
+          "Universität Wien",
+          "Beethovens Wohnhaus",
+          "Minoritenkirche",
+          "Präsidentschaftskanzlei",
+          "Sisi Museum",
+          "Spanische Hofreitschule",
+          "Nationalbibliothek",
+          "Albertina",
+          "Café Mozart",
+          "Staatsoper",
+          "Burggarten"
+        ],
+        "stops": "Fotohalte entlang der Ringstraße",
+        "included": [
+          "Privater Wagen für Ihre Gruppe",
+          "Live-Guide",
+          "21 Monumente und Sehenswürdigkeiten",
+          "Wasser"
+        ]
+      },
+      "silver": {
+        "name": "Silber",
+        "duration": "1 Stunde",
+        "description": "Grand Tour in einer Stunde — alles aus Bronze, dazu Freyung, Café Central, Sacher, Karlskirche, Musikverein und mehr, mit Halt an der Minoritenkirche.",
+        "highlights": [
+          "Hofburg",
+          "Naturhistorisches Museum",
+          "Kunsthistorisches Museum",
+          "Maria-Theresien-Denkmal",
+          "Ringstraße",
+          "Parlament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus",
+          "Café Landtmann",
+          "Universität Wien",
+          "Beethovens Wohnhaus",
+          "Minoritenkirche",
+          "Präsidentschaftskanzlei",
+          "Sisi Museum",
+          "Spanische Hofreitschule",
+          "Nationalbibliothek",
+          "Albertina",
+          "Café Mozart",
+          "Staatsoper",
+          "Burggarten",
+          "Votivkirche",
+          "Freyung",
+          "Schottenkirche",
+          "Ferstel-Passage",
+          "Am Hof",
+          "Mozarthaus",
+          "Café Central",
+          "Hotel Sacher",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenbergplatz",
+          "Karlskirche",
+          "Musikverein",
+          "Technische Universität Wien",
+          "Albertina Modern"
+        ],
+        "stops": "Halt an der Minoritenkirche, dazu Fotohalte",
+        "included": [
+          "Privater Wagen für Ihre Gruppe",
+          "Live-Guide",
+          "36 Monumente und Sehenswürdigkeiten",
+          "Halt an der Minoritenkirche",
+          "Hotel-Abholung",
+          "Prosecco",
+          "Wasser"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "duration": "1,5 Stunden",
+        "description": "Premium-Tour 90 Minuten — die volle Silber-Route plus Heldendenkmal der Roten Armee und Halt am Belvedere.",
+        "highlights": [
+          "Hofburg",
+          "Naturhistorisches Museum",
+          "Kunsthistorisches Museum",
+          "Maria-Theresien-Denkmal",
+          "Ringstraße",
+          "Parlament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus",
+          "Café Landtmann",
+          "Universität Wien",
+          "Beethovens Wohnhaus",
+          "Minoritenkirche",
+          "Präsidentschaftskanzlei",
+          "Sisi Museum",
+          "Spanische Hofreitschule",
+          "Nationalbibliothek",
+          "Albertina",
+          "Café Mozart",
+          "Staatsoper",
+          "Burggarten",
+          "Votivkirche",
+          "Freyung",
+          "Schottenkirche",
+          "Ferstel-Passage",
+          "Am Hof",
+          "Mozarthaus",
+          "Café Central",
+          "Hotel Sacher",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenbergplatz",
+          "Karlskirche",
+          "Musikverein",
+          "Technische Universität Wien",
+          "Albertina Modern",
+          "Heldendenkmal der Roten Armee",
+          "Schloss Belvedere (Halt)"
+        ],
+        "stops": "Halte an der Minoritenkirche und am Belvedere",
+        "included": [
+          "Privater Wagen für Ihre Gruppe",
+          "Live-Guide",
+          "38 Monumente und Sehenswürdigkeiten",
+          "Halt am Schloss Belvedere",
+          "Halt an der Minoritenkirche",
+          "Hotel-Abholung",
+          "Prosecco",
+          "Wasser"
+        ]
+      },
+      "diamond": {
+        "name": "Diamant",
+        "duration": "2 Stunden",
+        "description": "Die Gold-Strecke ohne Eile — Belvedere-Halt, Minoritenkirche-Halt und mehr Zeit für Fotos, wo das Licht am schönsten ist.",
+        "highlights": [
+          "Hofburg",
+          "Naturhistorisches Museum",
+          "Kunsthistorisches Museum",
+          "Maria-Theresien-Denkmal",
+          "Ringstraße",
+          "Parlament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus",
+          "Café Landtmann",
+          "Universität Wien",
+          "Beethovens Wohnhaus",
+          "Minoritenkirche",
+          "Präsidentschaftskanzlei",
+          "Sisi Museum",
+          "Spanische Hofreitschule",
+          "Nationalbibliothek",
+          "Albertina",
+          "Café Mozart",
+          "Staatsoper",
+          "Burggarten",
+          "Votivkirche",
+          "Freyung",
+          "Schottenkirche",
+          "Ferstel-Passage",
+          "Am Hof",
+          "Mozarthaus",
+          "Café Central",
+          "Hotel Sacher",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenbergplatz",
+          "Karlskirche",
+          "Musikverein",
+          "Technische Universität Wien",
+          "Albertina Modern",
+          "Heldendenkmal der Roten Armee",
+          "Schloss Belvedere (Halt)"
+        ],
+        "stops": "Belvedere- und Minoritenkirche-Halt, plus extra Fotohalte",
+        "included": [
+          "Privater Wagen für Ihre Gruppe",
+          "Live-Guide",
+          "38 Monumente und Sehenswürdigkeiten, ohne Eile",
+          "Halt am Schloss Belvedere",
+          "Halt an der Minoritenkirche",
+          "Hotel-Abholung",
+          "Prosecco",
+          "Wasser",
+          "Route nach dem Licht gelegt"
+        ]
+      }
+    },
+    "narrationList": "Deutsch · Englisch · Spanisch · Italienisch · Arabisch · Chinesisch · Portugiesisch · Türkisch",
+    "payOnArrival": "Online buchen · sicher mit SumUp bei der Buchung zahlen.",
+    "groupFrom": "Ab €{total} für {count}"
+  },
+  "why": {
+    "kicker": "Das Erlebnis",
+    "title": "Warum mit uns fahren",
+    "items": {
+      "personal": {
+        "title": "Vom Inhaber geführt",
+        "text": "Sie fahren mit dem Menschen, der die Route geplant hat. Ich fahre, ich erzähle, und ich beantworte Ihre Fragen — kein Skript, keine wechselnde Flotte."
+      },
+      "vintage": {
+        "title": "Ein Fahrzeug, für das man stehen bleibt",
+        "text": "Drei elektrische Oldtimer — Waldgrün, Weiß und Burgunderrot — offen und vollelektrisch. Sie sehen aus wie 1910 und fahren wie morgen: kein Motorlärm und kein Diesel an der Ampel."
+      },
+      "languages": {
+        "title": "Acht Sprachen",
+        "text": "Führung auf Deutsch, Englisch, Spanisch, Italienisch, Arabisch, Chinesisch, Portugiesisch oder Türkisch. Sie wählen bei der Buchung — auch gemischte Gruppen sind kein Problem."
+      },
+      "pace": {
+        "title": "Ihre Route, Ihr Tempo",
+        "text": "Jede Buchung ist privat. Wir warten auf das richtige Licht, lassen aus, was Sie schon kennen, und halten dort, wo Sie fotografieren möchten."
+      }
+    }
+  },
+  "gallery": {
+    "kicker": "Momente",
+    "teaserTitle": "Wien vom Beifahrersitz",
+    "teaserSub": "Ein paar Bilder aus der Stadt, durch die wir jeden Tag fahren.",
+    "viewAll": "Zur Galerie",
+    "title": "Galerie",
+    "sub": "Wien, wie unsere Gäste es sehen — die Flotte in den Straßen und die Wahrzeichen, an denen wir jeden Tag vorbeifahren.",
+    "shotListTitle": "Foto-Shotlist",
+    "shotListIntro": "Jedes Bild, das diese Website vorsieht: Arbeitstitel, Ortsvorschlag und die Seiten, auf denen es erscheint. Dieselbe Liste liegt als PHOTO_SHOT_LIST.md im Projektverzeichnis.",
+    "shotListPrivacy": "Gästefotos — Einsteigen, Gesichter an Bord, der Guide beim Erzählen — veröffentlichen wir ausschließlich mit ausdrücklicher Einwilligung. Am besten bei der Buchung oder nach der Tour fragen.",
+    "photoNeeded": "Foto ausständig",
+    "vehicleBadge": "Dunkelgrüner Elektro-Oldtimer — Foto ausständig",
+    "filtersLabel": "Galerie-Filter",
+    "filters": {
+      "all": "Alle",
+      "vehicle": "Das Fahrzeug",
+      "landmarks": "Sehenswürdigkeiten",
+      "guests": "Gäste",
+      "city": "Stadtblicke"
+    },
+    "close": "Schließen",
+    "shotList": {
+      "location": "Ort",
+      "appearsOn": "Auf der Website",
+      "consent": "Nur mit Einwilligung der Gäste veröffentlichen.",
+      "categories": {
+        "vehicle": "Die Flotte — elektrische Oldtimer",
+        "landmarks": "Sehenswürdigkeiten",
+        "guests": "Gäste (Einwilligung erforderlich)",
+        "city": "Stadtblicke",
+        "site": "Weitere Bildplätze"
+      }
+    },
+    "items": {
+      "v1": {
+        "title": "Waldgrüner Tourwagen am Graben",
+        "hint": "Dreiviertelansicht auf der Fußgängerzone",
+        "alt": "Dunkelgrüner elektrischer Tourwagen am Wiener Graben"
+      },
+      "v2": {
+        "title": "Seitenprofil am Stephansdom",
+        "hint": "Ganzes Silhouette neben dem Dom",
+        "alt": "Seitenprofil des dunkelgrünen Tourwagens am Stephansdom"
+      },
+      "v3": {
+        "title": "Frontdetail bei Nacht",
+        "hint": "Kühlergrill, Lichter und Emblem",
+        "alt": "Frontdetail des grünen Elektro-Oldtimers bei Nacht"
+      },
+      "v4": {
+        "title": "Innenraum",
+        "hint": "Blick aus der Gästeperspektive",
+        "alt": "Innenraum des dunkelgrünen Tourwagens aus Gästesicht"
+      },
+      "v5": {
+        "title": "Tourwagen am Stephansdom in der Dämmerung",
+        "hint": "Warmes Abendlicht",
+        "alt": "Dunkelgrüner Tourwagen am Stephansdom in der Dämmerung"
+      },
+      "v6": {
+        "title": "Weißer Flottenwagen mit roten Sitzen",
+        "hint": "Offener Elektro-Oldtimer",
+        "alt": "Weißer elektrischer Tourwagen mit roten Sitzen"
+      },
+      "v7": {
+        "title": "Weinroter Flottenwagen",
+        "hint": "Offener Elektro-Oldtimer",
+        "alt": "Weinroter elektrischer Tourwagen der Flotte"
+      },
+      "v8": {
+        "title": "Flotte — Grün, Weiß und Burgunderrot",
+        "hint": "Alle drei Farben am Treffpunkt",
+        "alt": "Flotte von Vienna Grand Tours: grün, weiß und burgunderrot"
+      },
+      "v9": {
+        "title": "Tourwagen am Graben bei Nacht",
+        "hint": "Scheinwerfer und Cafélicht",
+        "alt": "Dunkelgrüner Tourwagen am Graben bei Nacht"
+      },
+      "v10": {
+        "title": "Tourwagen am Stephansdom im goldenen Licht",
+        "hint": "Warmes Spätlicht",
+        "alt": "Dunkelgrüner Tourwagen am Stephansdom im goldenen Licht"
+      },
+      "l1": {
+        "title": "Tourwagen am Stephansdom in der Dämmerung",
+        "hint": "Domfassade · Scheinwerfer",
+        "alt": "Dunkelgrüner Tourwagen am Stephansdom in der Dämmerung"
+      },
+      "l2": {
+        "title": "Grüner Tourwagen vor der Hofburg",
+        "hint": "Michaelerplatz · tagsüber",
+        "alt": "Dunkelgrüner Tourwagen vor der Hofburg am Michaelerplatz"
+      },
+      "l3": {
+        "title": "Tourwagen am Graben bei Tag",
+        "hint": "Altstadt-Boulevard",
+        "alt": "Dunkelgrüner Tourwagen am Graben bei Tag"
+      },
+      "l4": {
+        "title": "Tourwagen am Stephansdom bei Tag",
+        "hint": "Domtürme · Wagen im Bild",
+        "alt": "Dunkelgrüner Tourwagen am Stephansdom bei Tag"
+      },
+      "g1": {
+        "title": "Gäste beim Einsteigen",
+        "hint": "Nur mit Einwilligung",
+        "alt": "Gäste steigen in den dunkelgrünen Tourwagen ein"
+      },
+      "g2": {
+        "title": "Gäste an Bord",
+        "hint": "Nur mit Einwilligung",
+        "alt": "Lächelnde Gäste im Tourwagen"
+      },
+      "g3": {
+        "title": "Guide beim Erzählen",
+        "hint": "Nur mit Einwilligung",
+        "alt": "Guide erzählt Gästen neben oder im Tourwagen"
+      },
+      "c1": {
+        "title": "Stephansdom über den Dächern Wiens in der Dämmerung",
+        "hint": "Dächer und Dom",
+        "alt": "Stephansdom über den Dächern Wiens in der Dämmerung"
+      },
+      "c2": {
+        "title": "Wiener Rathaus — Arkaden",
+        "hint": "Am Ring",
+        "alt": "Wiener Rathaus — Arkaden"
+      },
+      "c3": {
+        "title": "Wiener Staatsoper in der Dämmerung",
+        "hint": "Opernring",
+        "alt": "Wiener Staatsoper in der Dämmerung"
+      },
+      "c4": {
+        "title": "Stephansdom",
+        "hint": "Bei Tag",
+        "alt": "Stephansdom bei Tag"
+      },
+      "c5": {
+        "title": "Stephansdom bei Nacht",
+        "hint": "Beleuchtete Fassade",
+        "alt": "Stephansdom bei Nacht"
+      },
+      "c6": {
+        "title": "Hofburg — Kuppel am Michaelertrakt",
+        "hint": "Palastarchitektur",
+        "alt": "Hofburg — Kuppel am Michaelertrakt"
+      },
+      "c7": {
+        "title": "Wiener Staatsoper bei Nacht",
+        "hint": "Beleuchtete Oper",
+        "alt": "Wiener Staatsoper bei Nacht"
+      },
+      "c8": {
+        "title": "Parlamentsgebäude an der Ringstraße",
+        "hint": "Wahrzeichen am Ring",
+        "alt": "Parlamentsgebäude an der Ringstraße"
+      },
+      "c9": {
+        "title": "Schloss Belvedere mit Spiegelteich",
+        "hint": "Schlosspark",
+        "alt": "Schloss Belvedere mit Spiegelteich"
+      },
+      "c10": {
+        "title": "Karlskirche zur blauen Stunde",
+        "hint": "Karlsplatz",
+        "alt": "Karlskirche zur blauen Stunde"
+      },
+      "c11": {
+        "title": "Schloss Schönbrunn",
+        "hint": "Kaiserliche Residenz",
+        "alt": "Schloss Schönbrunn"
+      },
+      "c12": {
+        "title": "Der Graben — Wiens historische Fußgängerzone",
+        "hint": "Altstadt",
+        "alt": "Der Graben — Wiens historische Fußgängerzone"
+      }
+    }
+  },
+  "testimonials": {
+    "_comment": "BEISPIELINHALTE — plausible Musterbewertungen, bis echte Gästestimmen vorliegen. Vor der Veröffentlichung durch echte, zuordenbare Bewertungen ersetzen (siehe Seed-Zeilen in supabase/schema.sql).",
+    "title": "Was Gäste sagen",
+    "sub": "Stimmen von der Rückbank",
+    "sampleNote": "Musterstimmen, solange wir die ersten echten Bewertungen sammeln.",
+    "items": [
+      {
+        "author": "Anna K.",
+        "quote": "Herzlich, persönlich und die schönste Art, Wien ohne Hetze zu sehen. Wir haben angehalten, wann immer wir fotografieren wollten.",
+        "rating": 5
+      },
+      {
+        "author": "James R.",
+        "quote": "Ein wunderschönes Fahrzeug und wirklich gute Geschichten — als würde einen ein Freund aus Wien herumfahren.",
+        "rating": 5
+      },
+      {
+        "author": "Elena M.",
+        "quote": "Wir haben die 1,5-Stunden-Tour mit meinen Eltern gebucht und hätten gern länger gehabt. Leise, bequem, kein Gedränge.",
+        "rating": 5
+      }
+    ]
+  },
+  "booking": {
+    "title": "Tour buchen",
+    "sub": "Sechs kurze Schritte: Tour, Termin, Gruppe und Sprache wählen — die Bestätigung kommt in der Regel innerhalb weniger Stunden per E-Mail.",
+    "stepsLabel": "Buchungsschritte",
+    "steps": {
+      "tour": "Tour",
+      "datetime": "Datum & Zeit",
+      "guests": "Gäste",
+      "language": "Sprache",
+      "contact": "Kontakt",
+      "payment": "Übersicht"
+    },
+    "hints": {
+      "tour": "Jede Tour ist privat — Ihre Gruppe fährt allein in einem oder mehreren Fahrzeugen aus unserer Flotte, nie sitzweise verkauft.",
+      "datetime": "Tagsüber starten wir zwischen 09:00 und 17:00, sieben Tage die Woche. Wiener Ortszeit.",
+      "guests": "Mindestens drei Gäste. Bis zu sieben pro Fahrzeug — größere Gruppen werden auf mehrere Wagen aufgeteilt. Paare buchen drei Sitze und haben den Wagen trotzdem für sich.",
+      "language": "Wählen Sie die Sprache der Führung. Gemischte Gruppen sind kein Problem, wir wechseln unterwegs.",
+      "contact": "Wir verwenden diese Angaben nur für die Bestätigung und um Sie bei Wetterumschwung zu erreichen.",
+      "payment": "Prüfen Sie die Übersicht und zahlen Sie sicher online mit SumUp. Nach der Zahlung senden wir Treffpunkt und Abfahrtszeit per E-Mail."
+    },
+    "fields": {
+      "tourType": "Dauer der Tour",
+      "date": "Datum",
+      "time": "Abfahrtszeit",
+      "guests": "Anzahl der Gäste",
+      "language": "Sprache der Führung",
+      "name": "Vollständiger Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "notes": "Was wir wissen sollten (optional)",
+      "notesPlaceholder": "Mobilität, Alter der Kinder, ein Geburtstag, Hotelabholung, ein Ort, den Sie unbedingt sehen möchten.",
+      "cars": "Fahrzeuge"
+    },
+    "languages": {
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Español",
+      "it": "Italiano",
+      "ar": "العربية",
+      "zh": "中文",
+      "pt": "Português",
+      "tr": "Türkçe"
+    },
+    "validation": {
+      "tour": "Bitte wählen Sie eine Tourdauer.",
+      "date": "Bitte wählen Sie ein Datum für Ihre Fahrt.",
+      "time": "Bitte wählen Sie eine Abfahrtszeit.",
+      "unavailable": "Zu diesem Zeitpunkt fahren wir nicht. Bitte wählen Sie ein anderes Datum oder eine andere Abfahrtszeit.",
+      "guests": "Buchungen beginnen bei drei Gästen. Bis zu sieben pro Fahrzeug; größere Gruppen fahren in mehreren Wagen (online bis 28 Gäste).",
+      "language": "Bitte wählen Sie eine Sprache für die Führung.",
+      "name": "Bitte nennen Sie uns den Namen für die Buchung.",
+      "email": "Bitte geben Sie eine E-Mail-Adresse für die Bestätigung an.",
+      "emailFormat": "Diese E-Mail-Adresse scheint nicht zu stimmen — bitte prüfen Sie sie.",
+      "phone": "Bitte geben Sie eine Telefonnummer an, unter der wir Sie am Tag erreichen."
+    },
+    "next": "Weiter",
+    "back": "Zurück",
+    "submit": "Bestätigen & mit SumUp zahlen",
+    "summary": "Buchungsübersicht",
+    "total": "Gesamtpreis",
+    "policyTitle": "Stornierung & Wetter",
+    "policy": "Kostenlose Stornierung bis 24 Stunden vor Abfahrt, volle Rückerstattung. Bei leichtem Regen fahren wir — die Wetterplanen sind in einer Minute oben. Wird das Wetter unsicher, bieten wir einen Ersatztermin oder erstatten den vollen Betrag. Ändert sich etwas auf Ihrer Seite, schreiben Sie uns; wir finden eine Lösung.",
+    "paymentNote": "Sie zahlen jetzt online über den sicheren SumUp-Checkout. Kartendaten geben Sie nur bei SumUp ein — nicht auf dieser Website. Nach der Zahlung kehren Sie hierher zurück; Treffpunkt und Abfahrtszeit senden wir per E-Mail.",
+    "paymentStartFailed": "Ihre Buchung ist gespeichert, aber der SumUp-Checkout konnte nicht gestartet werden. Bitte versuchen Sie es gleich noch einmal oder schreiben Sie uns mit Ihrer Buchungsnummer.",
+    "heldTitle": "Buchung vorgemerkt — Zahlung ausstehend",
+    "heldBody": "Ihre Angaben sind gespeichert. Online-Kartenzahlung ist in dieser Umgebung noch nicht verfügbar; die Buchung bleibt zahlungsoffen. Wir senden Ihnen einen SumUp-Zahlungslink oder bestätigen den nächsten Schritt persönlich.",
+    "paymentCheckingKicker": "SumUp",
+    "paymentCheckingTitle": "Zahlung wird bestätigt",
+    "paymentCheckingBody": "Einen Moment — wir prüfen Ihre SumUp-Zahlung und bestätigen die Buchung.",
+    "paymentPendingTitle": "Zahlung wird noch verarbeitet",
+    "paymentPending": "SumUp hat die Zahlung noch nicht bestätigt. Falls bereits abgebucht wurde, schreiben Sie uns mit Ihrer Buchungsnummer — wir bestätigen dann von Hand.",
+    "paymentVerifyMissing": "Buchungsnummer fehlt. Bitte kehren Sie zum Formular zurück oder schreiben Sie uns.",
+    "paymentVerifyFailedTitle": "Zahlung konnte nicht bestätigt werden",
+    "paymentVerifyFailed": "Bei der Prüfung der SumUp-Zahlung ist etwas schiefgelaufen. Falls bereits abgebucht wurde, schreiben Sie uns mit Ihrer Buchungsnummer.",
+    "backToTours": "Touren ansehen",
+    "backToBook": "Zur Buchung",
+    "successTitle": "Ihre Tour ist reserviert",
+    "successBody": "Vielen Dank. Die Zahlung ist eingegangen und Ihre Buchung bestätigt. Eine E-Mail mit Treffpunkt und genauer Abfahrtszeit ist unterwegs.",
+    "successNote": "Sollte innerhalb einer Stunde nichts ankommen, sehen Sie bitte im Spam-Ordner nach oder schreiben Sie uns einfach — wir bestätigen dann persönlich.",
+    "successRef": "Buchungsnummer",
+    "error": "Die Buchung konnte gerade nicht gespeichert werden. Bitte versuchen Sie es erneut oder schreiben Sie uns — wir halten den Termin für Sie frei.",
+    "minGuestsHint": "Mindestens 3 Gäste. Bis zu 7 pro Fahrzeug; größere Gruppen in mehreren Wagen. Preis pro Person.",
+    "demoMode": "Demo-Modus: Supabase und/oder SumUp sind nicht vollständig konfiguriert. Diese Buchung wurde lokal geprüft und nur für diese Sitzung gehalten.",
+    "carsNeededHint": "Ihre Gruppe braucht {count} Fahrzeuge (bis zu 7 Gäste je Wagen). Die Flottenverfügbarkeit bestätigen wir per E-Mail."
+  },
+  "about": {
+    "title": "Über Vienna Grand Tours",
+    "intro": "Ein kleiner, vom Inhaber geführter Tourbetrieb an der Ringstraße — und eine Flotte elektrischer Oldtimer, die das möglich macht.",
+    "storyKicker": "Die Geschichte",
+    "storyTitle": "Ein paar Zeilen vom Gründer",
+    "story1": "Ich bin zwei Straßenbahnstationen vom Ring entfernt aufgewachsen und habe jahrelang zugesehen, wie Gäste ankamen, die Oper fotografierten und wieder abreisten, ohne je gehört zu haben, warum das alles genau dort steht. Ich habe damals in einer ganz anderen Branche gearbeitet. Die Stadt hat mich nicht losgelassen.",
+    "story2": "Als ich Vienna Grand Tours schließlich gegründet habe, wollte ich das Gegenteil eines Reisebusses: ein kleines Fahrzeug, eine Gruppe, kein Mikrofon, kein festes Skript. Ich habe eine Flotte elektrischer Oldtimer aufgebaut — Waldgrün, Weiß und Burgunderrot — und einen Sommer damit verbracht herauszufinden, welche Ecke des Heldenplatzes das Abendlicht einfängt und welche Gasse hinter dem Dom leise genug ist, um dort eine Geschichte zu erzählen.",
+    "story3": "So läuft es bis heute. Sie buchen das ganze Fahrzeug, wir einigen uns ungefähr auf die Richtung, und dann fahren wir langsam. Lieber zeige ich Ihnen vier Orte in Ruhe als zwölf durch die Scheibe — und wenn das Licht vor dem Rathaus gerade schön ist, bleiben wir eben etwas länger stehen.",
+    "founderShotTitle": "Gründer mit dem dunkelgrünen Fahrzeug",
+    "founderShotHint": "Hofburg- oder Oper-Kulisse · Fahrzeugfarbe klar sichtbar",
+    "founderShotAlt": "Gründer mit dem dunkelgrünen Elektro-Oldtimer in Wien",
+    "vehicleShotTitle": "Fahrzeug-Spotlight — poliertes Detail",
+    "vehicleShotHint": "Tür, Rad oder Emblem · Premium-Handwerk",
+    "vehicleShotAlt": "Poliertes Detail des dunkelgrünen Elektro-Oldtimers",
+    "vehicleKicker": "Die Flotte",
+    "vehicleTitle": "Drei Oldtimer-Karossen, darunter Elektro",
+    "vehicle1": "Sie sehen aus, als gehörten sie in ein anderes Jahrhundert, und fahren mit Batterie. Kein Motorlärm, gegen den man anreden muss, nichts, was an der Ampel riecht, und bei schönem Wetter kein Glas zwischen Ihnen und den Fassaden. Man hört die Straßenbahn, die Fiaker und den Guide — in dieser Reihenfolge.",
+    "vehicle2": "Die Seiten sind bei gutem Wetter offen und in einer Minute geschlossen, wenn es nötig ist. Ein Regenschauer verändert also die Stimmung einer Tour, statt sie abzusagen. Jedes Fahrzeug bietet Platz für bis zu sieben Gäste plus Guide, daneben Raum für Tagesrucksäcke und Kameras. Grün, Weiß oder Burgunderrot je nach Verfügbarkeit — das Erlebnis ist dasselbe.",
+    "vehicleSpecsTitle": "Kurz gefasst",
+    "vehicleSpecs": [
+      "Vollelektrisch — leise und ohne Abgase in der Altstadt",
+      "Platz für bis zu sieben Gäste plus Guide in jedem Fahrzeug",
+      "Bei schönem Wetter offen, bei Regen mit Planen",
+      "Drei Farben: tiefes Waldgrün, Weiß und Burgunderrot",
+      "Raum für Tagesrucksäcke, Kameras und einen zusammengeklappten Kinderwagen",
+      "Wird über Nacht geladen — unterwegs emissionsfrei"
+    ],
+    "valuesKicker": "Unser Versprechen",
+    "valuesTitle": "Wofür wir stehen",
+    "values": {
+      "care": {
+        "title": "Persönliche Betreuung",
+        "text": "Eine Gruppe zur Zeit, ein Gastgeber, der spätestens ab dem zweiten Stopp Ihre Namen kennt, und Antworten, die ein Mensch schreibt und keine Warteschlange."
+      },
+      "city": {
+        "title": "Respekt vor der Stadt",
+        "text": "Elektrisch und leise, damit eine Wohngasse eine Wohngasse bleibt. Wir halten uns an erlaubte Routen und Stopps und blockieren für kein Foto die Straßenbahn."
+      },
+      "honesty": {
+        "title": "Ehrliche Gastfreundschaft",
+        "text": "Preise pro Person, nichts versteckt, eine Absage-Regel in klarer Sprache, kein bezahlter Shop-Halt."
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "sub": "Alles Wesentliche vor der Buchung. Fehlt Ihre Frage, schreiben Sie uns — es antwortet ein Mensch.",
+    "items": [
+      {
+        "q": "Fahren Sie auch bei Regen?",
+        "a": "Bei leichtem Regen ja — die Wetterplanen sind in etwa einer Minute oben, und Wien sieht auf nassem Kopfsteinpflaster besonders gut aus. Bei Starkregen, Gewitter, Eis oder starkem Wind fahren wir nicht. Dann bieten wir Ihnen einen Ersatztermin oder erstatten den vollen Betrag — und melden uns so früh wie möglich."
+      },
+      {
+        "q": "Was passiert, wenn das Wetter während der Tour umschlägt?",
+        "a": "Wir schließen die Planen und fahren weiter; ein Schauer ist oft der fotogenste Teil des Tages. Wird es wirklich unsicher, beenden wir die Tour früher und erstatten den nicht gefahrenen Teil — oder verschieben auf einen anderen Termin, ganz wie Sie möchten."
+      },
+      {
+        "q": "Wie ist die Stornierungsregelung?",
+        "a": "Bis 24 Stunden vor Abfahrt stornieren Sie kostenlos und erhalten den vollen Betrag zurück. Innerhalb von 24 Stunden verschieben wir Sie, wenn es geht; ist das nicht möglich, wird die Tour verrechnet. Sagen wir ab — wegen Wetter, Technik oder Krankheit —, bekommen Sie in jedem Fall den vollen Betrag zurück oder einen neuen Termin, ganz wie Sie möchten."
+      },
+      {
+        "q": "Ist die Tour bei eingeschränkter Mobilität geeignet?",
+        "a": "Es gibt eine Stufe ins Fahrzeug, beidseitig mit Haltegriff, und wir helfen Ihnen gerne beim Einsteigen. Danach findet die ganze Tour im Sitzen statt. Ein faltbarer Rollstuhl, ein Rollator oder ein Stock fahren mit; ein Rollstuhl mit festem Rahmen oder ein Elektroscooter passen nicht ins Fahrzeug, und eine Rampe gibt es nicht. Schreiben Sie uns Ihre Situation ins Anmerkungsfeld, dann wählen wir passende Stopps."
+      },
+      {
+        "q": "Wie bezahle ich?",
+        "a": "Online bei der Buchung über den sicheren SumUp-Checkout. Sie werden zu SumUp weitergeleitet, zahlen per Karte und kehren danach hierher zur Bestätigung zurück. Preise pro Person als Endpreis (keine Umsatzsteuer nach der Kleinunternehmerregelung): Bronze €25, Silber €39, Gold €49, Diamant €69. Der Gesamtbetrag in Ihrer Buchungsbestätigung ist der abgebuchte Betrag."
+      },
+      {
+        "q": "Wo treffen wir uns?",
+        "a": "An der Ringstraße bei der Staatsoper, sofern wir nichts anderes vereinbaren — den genauen Punkt, die Abfahrtszeit und eine Telefonnummer erhalten Sie mit der Bestätigungs-E-Mail. Liegt Ihr Hotel innerhalb des Rings oder knapp daneben, notieren Sie das bei der Buchung: In der Regel holen wir Sie direkt dort ab."
+      },
+      {
+        "q": "Wie groß darf die Gruppe sein — und warum mindestens drei Gäste?",
+        "a": "Mindestens drei Gäste. Bis zu sieben Gäste pro Fahrzeug; größere Gruppen fahren in mehreren Wagen aus unserer Flotte. Der Wagen wird nie einzeln verkauft — drei Sitze sind nötig, damit eine private Abfahrt funktioniert. Paare und Alleinreisende sind willkommen: Sie buchen drei Sitze und fahren allein."
+      },
+      {
+        "q": "Können wir Route oder Dauer ändern?",
+        "a": "Ja. Die Routen auf dieser Website sind ein Vorschlag, kein Fahrplan. Sagen Sie vor der Abfahrt — oder mittendrin —, wenn Sie länger bei der Hofburg bleiben, einen Abstecher zum Museumsquartier machen oder etwas auslassen möchten. Eine Verlängerung vor Ort ist möglich, sofern die nächste Buchung es zulässt."
+      },
+      {
+        "q": "In welchen Sprachen führen Sie?",
+        "a": "Deutsch, Englisch, Spanisch, Italienisch, Arabisch, Chinesisch, Portugiesisch und Türkisch. Wählen Sie Ihre Sprache bei der Buchung, damit wir uns vorbereiten können. Gemischte Gruppen sind kein Problem — wir wechseln zwischen zwei Sprachen, ohne dass die Tour dadurch zäh wird."
+      },
+      {
+        "q": "Dürfen Kinder mitfahren? Gibt es Kindersitze?",
+        "a": "Kinder sind sehr willkommen und zählen zur Mindestteilnehmerzahl von drei. In Österreich brauchen Kinder unter 135 cm bzw. 14 Jahren einen geeigneten Kindersitz — nennen Sie uns das Alter Ihrer Kinder mindestens 24 Stunden vorher im Anmerkungsfeld, dann liegt der passende Sitz bereit. Kinderwagen fahren zusammengeklappt mit."
+      },
+      {
+        "q": "Wohin mit dem Gepäck?",
+        "a": "Neben den Sitzen ist Platz für Tagesrucksäcke, Kameras und einen zusammengeklappten Kinderwagen, nicht aber für Koffer. Wenn Sie nach der Tour weiterreisen, lassen Sie Ihr Gepäck bitte im Hotel oder in einem Bahnhofsschließfach — das Fahrzeug ist für Sightseeing gedacht, nicht für Transfers."
+      }
+    ]
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "agbTitle": "Allgemeine Geschäftsbedingungen",
+    "datenschutzTitle": "Datenschutzerklärung",
+    "reviewNotice": "Bitte füllen Sie alle eckig geklammerten Felder im Impressum aus, bevor Sie bezahlte Buchungen annehmen. Eine österreichische Rechtsprüfung wird empfohlen.",
+    "lastUpdated": "Stand: 31. August 2026",
+    "impressum": {
+      "intro": "Offenlegung gemäß § 5 E-Commerce-Gesetz (ECG) und § 25 Mediengesetz (MedienG).",
+      "companyHeading": "Unternehmen und Medieninhaber",
+      "ownerHeading": "Inhaber / für den Inhalt verantwortlich",
+      "contactHeading": "Kontakt",
+      "registerHeading": "Register und Gewerbebehörde",
+      "vatHeading": "Umsatzsteuer",
+      "chamberHeading": "Kammerzugehörigkeit",
+      "tradeHeading": "Gewerberechtliche Vorschriften",
+      "tradeBody": "Anwendbare Rechtsvorschrift: Gewerbeordnung (GewO), abrufbar unter www.ris.bka.gv.at. Die Angaben gemäß § 108 Abs. 3 GewO werden Gästen auf Verlangen bekannt gegeben und sind in der Buchungsbestätigung angeführt.",
+      "authorityHeading": "Aufsichtsbehörde",
+      "authorityBody": "Zuständige Gewerbebehörde: Magistratisches Bezirksamt für den {district}. Bezirk, Wien.",
+      "purposeHeading": "Unternehmensgegenstand",
+      "purposeBody": "Private Stadtrundfahrten in Wien mit einer Flotte elektrischer Oldtimer (Waldgrün, Weiß und Burgunderrot), mit Führung auf Deutsch, Englisch, Spanisch, Italienisch, Arabisch, Chinesisch, Portugiesisch und Türkisch.",
+      "odrHeading": "Online-Streitbeilegung",
+      "odrBody": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir weder verpflichtet noch bereit.",
+      "contentHeading": "Haftung für Inhalte und Links",
+      "contentBody": "Die Inhalte dieser Website wurden sorgfältig erstellt; für Richtigkeit, Vollständigkeit und Aktualität übernehmen wir dennoch keine Gewähr. Für verlinkte fremde Seiten sind deren Betreiber verantwortlich; zum Zeitpunkt der Verlinkung waren dort keine rechtswidrigen Inhalte erkennbar.",
+      "copyrightHeading": "Urheberrecht und Bilder",
+      "copyrightBody": "Texte, Bilder und Gestaltung dieser Website sind urheberrechtlich geschützt. Die Fotos stammen von uns oder sind lizenziert; Aufnahmen mit Gästen veröffentlichen wir nur mit deren Einwilligung. Eine Weiterverwendung bedarf unserer schriftlichen Zustimmung.",
+      "labels": {
+        "owner": "Inhaber",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "firmenbuch": "Firmenbuchnummer",
+        "court": "Firmenbuchgericht",
+        "gisa": "GISA-Zahl",
+        "uid": "UID-Nummer",
+        "legalForm": "Rechtsform"
+      },
+      "vatExemptBody": "Keine UID-Nummer. Wir sind nach der Kleinunternehmerregelung (§ 6 Abs. 1 Z 27 UStG) von der Umsatzsteuer befreit. Die Preise sind Endpreise; es wird keine Umsatzsteuer ausgewiesen oder zusätzlich berechnet."
+    },
+    "agb": {
+      "intro": "Diese Bedingungen gelten für jede bei uns gebuchte Tour — über diese Website, per E-Mail oder telefonisch. Bitte lesen Sie sie vor der Buchung; die Buchungsbestätigung bezieht sich auf diese Fassung.",
+      "sections": [
+        {
+          "title": "1. Geltungsbereich und Vertragspartner",
+          "body": "Diese Allgemeinen Geschäftsbedingungen gelten für alle Tourbuchungen bei Ahmed Wezza („wir“), auftretend als Vienna Grand Tours. Abweichende Bedingungen des Gastes gelten nur, wenn wir ihnen schriftlich zugestimmt haben."
+        },
+        {
+          "title": "2. Unsere Leistung",
+          "body": "Wir bieten private geführte Stadtrundfahrten in Wien mit elektrischen Oldtimern aus unserer Flotte (Waldgrün, Weiß oder Burgunderrot): Bronze (30 Minuten), Silber (60 Minuten), Gold (90 Minuten) und Diamant (120 Minuten), mit Live-Führung auf Deutsch, Englisch, Spanisch, Italienisch, Arabisch, Chinesisch, Portugiesisch oder Türkisch. Jedes Fahrzeug bietet Platz für bis zu sieben Gäste plus Guide; größere Gruppen fahren in mehreren Fahrzeugen. Mindestens drei Gäste pro Buchung. Wir weisen je nach Verfügbarkeit Fahrzeuge aus der Flotte zu. Routen sind Richtwerte und können wegen Verkehr, Sperren, Veranstaltungen, Wetter oder Ihren Wünschen angepasst werden."
+        },
+        {
+          "title": "3. Buchung und Vertragsabschluss",
+          "body": "Eine Buchungsanfrage über die Website, per E-Mail oder telefonisch ist ein Angebot des Gastes. Der Vertrag kommt mit unserer Buchungsbestätigung per E-Mail zustande. Bitte prüfen Sie die Bestätigung sofort und melden Sie sich umgehend, falls etwas nicht stimmt. Buchende müssen mindestens 18 Jahre alt sein; Minderjährige fahren in Begleitung einer erwachsenen Aufsichtsperson mit."
+        },
+        {
+          "title": "4. Preise und Zahlung",
+          "body": "Die Preise gelten pro Person in Euro und sind Endpreise. Wir sind Kleinunternehmer nach § 6 Abs. 1 Z 27 UStG und berechnen keine Umsatzsteuer: Bronze 30 Minuten €25, Silber 1 Stunde €39, Gold 1,5 Stunden €49, Diamant 2 Stunden €69. Der Gesamtbetrag ergibt sich aus dem Preis pro Person multipliziert mit der Gästezahl, mindestens drei. Die Zahlung erfolgt online bei der Buchung über den sicheren SumUp-Checkout. Kartendaten werden bei SumUp erhoben, nicht auf dieser Website. Die Buchung gilt als bestätigt, sobald die Zahlung erfolgreich ist."
+        },
+        {
+          "title": "5. Stornierung durch den Gast",
+          "body": "Stornierungen, die mehr als 24 Stunden vor der vereinbarten Abfahrtszeit einlangen, sind kostenlos; der Betrag wird vollständig erstattet. Innerhalb von 24 Stunden bieten wir nach Möglichkeit einen Ersatztermin an; ist keiner möglich, kann der volle Preis einbehalten werden. Stornierungen bitte schriftlich an unsere E-Mail-Adresse oder telefonisch. Gesetzliche Rücktrittsrechte für Verbraucher bleiben unberührt, soweit sie anwendbar sind; bei termingebundenen Freizeitdienstleistungen besteht gemäß § 18 Abs. 1 Z 10 FAGG kein 14-tägiges Rücktrittsrecht."
+        },
+        {
+          "title": "6. Verspätung und Nichterscheinen",
+          "body": "Bitte seien Sie fünf Minuten vor der vereinbarten Abfahrtszeit am Treffpunkt. Wir warten bis zu 15 Minuten; ein späterer Start verkürzt die Tour entsprechend und mindert den Preis nicht. Erscheint die Gruppe ohne Stornierung gar nicht, ist der volle Preis fällig."
+        },
+        {
+          "title": "7. Absage durch uns, Wetter und höhere Gewalt",
+          "body": "Bei leichtem Regen fahren wir. Machen die Witterungsverhältnisse die Fahrt unsicher — Sturm, Eis, starker Wind, extreme Hitze — oder ist sie aus Gründen des Fahrzeugs, des Guides oder der Verkehrslage nicht möglich, können wir die Tour absagen oder verkürzen. Sie erhalten dann nach Ihrer Wahl einen Ersatztermin oder die Erstattung des Preises bzw. des nicht gefahrenen Anteils. Weitergehende Ansprüche sind ausgeschlossen, sofern uns nicht Vorsatz oder grobe Fahrlässigkeit trifft."
+        },
+        {
+          "title": "8. Verhalten während der Tour",
+          "body": "Gäste folgen den Sicherheitshinweisen des Guides und bleiben während der Fahrt sitzen. Kinder unter 135 cm bzw. 14 Jahren benötigen einen geeigneten Kindersitz, wenn einer erforderlich ist — teilen Sie uns dies bei der Buchung mit, dann bestätigen wir, was wir bereitstellen können. Rauchen, offenes Feuer und Aufstehen während der Fahrt sind nicht gestattet. Wir dürfen eine Tour ohne Erstattung verweigern oder abbrechen, wenn ein Gast alkoholisiert ist, andere gefährdet oder Anweisungen wiederholt missachtet."
+        },
+        {
+          "title": "9. Gepäck und persönliche Gegenstände",
+          "body": "Neben den Sitzen ist Platz für Tagesrucksäcke, Kameras und einen zusammengeklappten Kinderwagen; Koffer können wir nicht mitnehmen. Für ihre Gegenstände sind die Gäste während der Tour selbst verantwortlich. Für Verlust oder Beschädigung haften wir nur bei Vorsatz oder grober Fahrlässigkeit."
+        },
+        {
+          "title": "10. Haftung",
+          "body": "Für Personenschäden haften wir unbeschränkt, im Übrigen für Vorsatz und grobe Fahrlässigkeit. Die Haftung für leichte Fahrlässigkeit ist auf die Verletzung wesentlicher Vertragspflichten sowie auf den vertragstypischen, bei Vertragsabschluss vorhersehbaren Schaden begrenzt. Die Haftung nach dem Produkthaftungsgesetz und zwingende Verbraucherschutzbestimmungen bleiben unberührt. Das Fahrzeug ist nach den gesetzlichen Vorgaben versichert."
+        },
+        {
+          "title": "11. Fotos und Daten",
+          "body": "Wir fotografieren Touren gelegentlich für unsere Website und unsere sozialen Kanäle. Aufnahmen, auf denen Gäste erkennbar sind, veröffentlichen wir nur mit ausdrücklicher Einwilligung, die jederzeit widerrufen werden kann. Personenbezogene Daten verarbeiten wir wie in der Datenschutzerklärung beschrieben."
+        },
+        {
+          "title": "12. Anwendbares Recht und Gerichtsstand",
+          "body": "Es gilt österreichisches Recht unter Ausschluss seiner Verweisungsnormen und des UN-Kaufrechts. Für Verbraucher bleiben die zwingenden Schutzbestimmungen und Gerichtsstände ihres Wohnsitzstaates unberührt. Für Unternehmer ist das sachlich zuständige Gericht in Wien zuständig. Sollte eine Bestimmung unwirksam sein, bleiben die übrigen Bedingungen davon unberührt."
+        }
+      ]
+    },
+    "datenschutz": {
+      "intro": "Wir erheben so wenig über Sie, wie eine Buchung eben braucht, verkaufen keine Daten und setzen keine Werbetracker ein. Diese Seite erklärt, was mit Ihren Angaben geschieht — nach der Datenschutz-Grundverordnung (DSGVO) und dem österreichischen Datenschutzgesetz (DSG).",
+      "sections": [
+        {
+          "title": "1. Verantwortlicher",
+          "body": "Verantwortlich für die hier beschriebenen Verarbeitungen ist das im Impressum genannte Unternehmen, erreichbar unter der dort angeführten E-Mail-Adresse. Einen Datenschutzbeauftragten haben wir nicht bestellt, da wir dazu nicht verpflichtet sind."
+        },
+        {
+          "title": "2. Daten bei einer Buchung",
+          "body": "Das Buchungsformular erhebt Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer, die gewählte Tour, Datum und Abfahrtszeit, die Gästezahl, Ihre Sprache sowie das, was Sie ins Anmerkungsfeld schreiben — Gesundheits- oder Mobilitätsangaben bitte nur dann, wenn wir sie berücksichtigen sollen. Diese Daten benötigen wir zur Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO); freiwillig genannte besondere Kategorien von Daten verarbeiten wir auf Grundlage Ihrer Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)."
+        },
+        {
+          "title": "3. Daten bei einer Kontaktaufnahme",
+          "body": "Schreiben Sie uns eine E-Mail, verarbeiten wir Ihre Adresse, Ihre Nachricht und die darin enthaltenen Angaben, um Ihnen zu antworten (Art. 6 Abs. 1 lit. b und lit. f DSGVO — unser berechtigtes Interesse an der Beantwortung von Anfragen)."
+        },
+        {
+          "title": "4. Automatisch erhobene Daten",
+          "body": "Unser Hosting-Anbieter protokolliert übliche Server-Logdaten — IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, verweisende Seite, Browser und Betriebssystem — zur Sicherheit und Stabilität der Website (Art. 6 Abs. 1 lit. f DSGVO). Diese Protokolle werden nach kurzer Zeit gelöscht und nicht mit anderen Daten zusammengeführt."
+        },
+        {
+          "title": "5. Cookies und Analyse",
+          "body": "Wir speichern einen notwendigen Eintrag im lokalen Speicher Ihres Browsers, um Ihre Cookie-Entscheidung zu merken; er enthält keine personenbezogenen Daten und keine Tracking-Kennung. Analysewerkzeuge laden erst, wenn Sie im Banner zustimmen (Art. 6 Abs. 1 lit. a DSGVO); diese Einwilligung können Sie jederzeit widerrufen, indem Sie den Browserspeicher für diese Seite löschen oder uns schreiben. Werbe- oder Profiling-Cookies setzen wir nicht ein."
+        },
+        {
+          "title": "6. Auftragsverarbeiter und Empfänger",
+          "body": "Wir arbeiten mit sorgfältig ausgewählten Dienstleistern, jeweils gebunden durch einen Auftragsverarbeitungsvertrag nach Art. 28 DSGVO, soweit anwendbar: Netlify (Hosting und Auslieferung der Website), Supabase (Buchungsdatenbank, Standort EU), SumUp (Online-Kartenzahlungen über Hosted Checkout) sowie unser E-Mail-Anbieter für Bestätigungen. Kartendaten werden nur bei SumUp eingegeben, nicht auf dieser Website. Eine Übermittlung in Drittländer erfolgt nur auf Grundlage von EU-Standardvertragsklauseln oder eines Angemessenheitsbeschlusses. Darüber hinaus geben wir Daten nur weiter, wenn wir gesetzlich dazu verpflichtet sind — etwa an die Finanzbehörden."
+        },
+        {
+          "title": "7. Speicherdauer",
+          "body": "Buchungs- und Rechnungsdaten bewahren wir nach österreichischem Steuer- und Unternehmensrecht sieben Jahre auf (§ 132 BAO, § 212 UGB). Anfragen, die zu keiner Buchung führen, löschen wir nach Abschluss der Angelegenheit, spätestens nach zwölf Monaten. Server-Logs werden nach wenigen Tagen gelöscht. Auf Einwilligung gestützte Daten löschen wir mit Ihrem Widerruf."
+        },
+        {
+          "title": "8. Ihre Rechte",
+          "body": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen sowie auf Datenübertragbarkeit. Beruht eine Verarbeitung auf Ihrer Einwilligung, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen. Schreiben Sie an die im Impressum genannte E-Mail-Adresse; wir antworten innerhalb eines Monats."
+        },
+        {
+          "title": "9. Beschwerderecht",
+          "body": "Wenn Sie der Ansicht sind, dass wir Ihre Daten unrechtmäßig verarbeiten, können Sie sich bei der Österreichischen Datenschutzbehörde (Barichgasse 40–42, 1030 Wien, dsb.gv.at) oder bei der Aufsichtsbehörde Ihres Wohnorts beschweren."
+        },
+        {
+          "title": "10. Fotos",
+          "body": "Aufnahmen, auf denen Gäste erkennbar sind, veröffentlichen wir nur mit ausdrücklicher Einwilligung — schriftlich oder eindeutig vor Ort erteilt. Die Einwilligung können Sie jederzeit widerrufen; schreiben Sie uns, und wir entfernen das Bild von Website und Social-Media-Kanälen."
+        },
+        {
+          "title": "11. Änderungen dieser Erklärung",
+          "body": "Wir aktualisieren diese Erklärung, sobald sich unsere Werkzeuge oder Abläufe ändern. Es gilt jeweils die hier veröffentlichte Fassung."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Vom Inhaber geführte Privattouren durch Wien in elektrischen Oldtimern — Waldgrün, Weiß und Burgunderrot. Ab drei Gästen, bis zu sieben pro Fahrzeug (mehrere Wagen für größere Gruppen), acht Sprachen.",
+    "quickLinks": "Entdecken",
+    "legal": "Rechtliches",
+    "contact": "Kontakt",
+    "meetingPoint": "Treffpunkt an der Ringstraße in Wien — den genauen Punkt erhalten Sie mit Ihrer Buchungsbestätigung.",
+    "googleBusiness": "Google Unternehmensprofil",
+    "rights": "© {year} Vienna Grand Tours. Alle Rechte vorbehalten.",
+    "impressum": "Impressum",
+    "agb": "AGB",
+    "datenschutz": "Datenschutz",
+    "madeBy": "Gestaltet von <name>Besaweb</name>"
+  },
+  "cookies": {
+    "title": "Cookies & Datenschutz",
+    "body": "Wir speichern einen kleinen Eintrag in Ihrem Browser, um diese Entscheidung zu merken. Analysewerkzeuge laden nur mit Ihrer Zustimmung, Werbetracker setzen wir gar nicht ein.",
+    "accept": "Analyse zulassen",
+    "essential": "Nur notwendige",
+    "privacy": "Zur Datenschutzerklärung"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Diese Seite ist falsch abgebogen",
+    "body": "Die gesuchte Seite gibt es hier nicht — vielleicht wurde sie verschoben oder der Link ist in die Jahre gekommen. Touren, Preise und Buchung sind nur einen Klick entfernt.",
+    "home": "Zurück zur Startseite",
+    "book": "Tour buchen"
+  },
+  "common": {
+    "loading": "Laden…",
+    "close": "Schließen",
+    "learnMore": "Mehr erfahren",
+    "photoNeeded": "Foto ausständig"
+  }
+}

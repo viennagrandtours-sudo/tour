@@ -1,0 +1,864 @@
+{
+  "meta": {
+    "siteName": "Vienna Grand Tours",
+    "homeTitle": "Vienna Grand Tours — Klasik tasarımlı elektrikli araçla özel Viyana turları",
+    "homeDescription": "Viyana'da vintage elektrikli otomobil filosuyla özel turlar — yeşil, beyaz ve bordo. Sekiz dilde anlatım. Kişi başı 25 €'dan, en az üç misafir.",
+    "toursTitle": "Turlar ve fiyatlar — Vienna Grand Tours",
+    "toursDescription": "Dört özel tur: Bronz 30 dk 25 €, Gümüş 1 sa 39 €, Altın 90 dk 49 €, Elmas 2 sa 69 € kişi başı. En az üç kişi.",
+    "bookTitle": "Tur rezervasyonu — Vienna Grand Tours",
+    "bookDescription": "Özel Viyana turunuzu altı adımda ayırtın: süre, tarih, kişi sayısı ve anlatım dili. Kalkıştan 24 saat öncesine kadar ücretsiz iptal.",
+    "aboutTitle": "Hakkımızda — Vienna Grand Tours",
+    "aboutDescription": "Vienna Grand Tours'un hikâyesi, vintage elektrikli otomobil filomuz ve küçük özel gruplara Viyana'yı nasıl gezdirdiğimiz.",
+    "galleryTitle": "Galeri — Vienna Grand Tours",
+    "galleryDescription": "Misafirlerimizin gördüğü Viyana: gün doğumunda Opera, mavi saatte Rathaus, gün batımında çatılar ve elektrikli otomobil filomuz.",
+    "faqTitle": "Sık sorulan sorular — Vienna Grand Tours",
+    "faqDescription": "Yağmur ve hava durumu, iptal, buluşma noktası, erişilebilirlik, ödeme, çocuklar, bagaj ve üç kişilik alt sınır — açık yanıtlarla.",
+    "impressumTitle": "Künye — Vienna Grand Tours",
+    "impressumDescription": "Vienna Grand Tours için Avusturya ECG § 5 ve MedienG § 25 uyarınca yasal bilgilendirme.",
+    "agbTitle": "Genel şartlar — Vienna Grand Tours",
+    "agbDescription": "Vienna Grand Tours özel turları için rezervasyon, ödeme, iptal, gelmeme, hava koşulları ve sorumluluk şartları.",
+    "datenschutzTitle": "Gizlilik politikası — Vienna Grand Tours",
+    "datenschutzDescription": "Vienna Grand Tours verilerinizi KVKG/GDPR kapsamında nasıl işler: form neyi toplar, kim işler, ne kadar saklanır ve haklarınız."
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "tours": "Turlar",
+    "book": "Rezervasyon",
+    "about": "Hakkımızda",
+    "gallery": "Galeri",
+    "faq": "Sorular",
+    "bookCta": "Tur ayırtın",
+    "menu": "Menü",
+    "mainNav": "Ana gezinme",
+    "mobileNav": "Mobil gezinme",
+    "languageSwitcher": "Dil"
+  },
+  "hero": {
+    "brand": "Vienna Grand Tours",
+    "headline": "Acelesiz bir Viyana — Ring, saraylar ve aradaki hikâyeler.",
+    "subline": "Koyu yeşil, klasik tasarımlı elektrikli araçla özel rehberli turlar. Sessiz, açık havaya bakan ve asla yabancılarla paylaşılmayan.",
+    "cta": "Tur ayırtın",
+    "secondaryCta": "Turlar ve fiyatlar",
+    "shotTitle": "Ringstrasse’de araç — dörtte üç önden",
+    "shotHint": "Altın saat · koyu yeşil gövde · arkada yumuşak bir yapı",
+    "imageAlt": "Koyu yeşil klasik elektrikli tur aracı, Viyana Ringstrasse’de altın saatte dörtte üç önden görünüm",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "closingTitle": "Your private car is waiting",
+    "closingSub": "Reserve your Vienna hour — book online in a few minutes."
+  },
+  "trust": {
+    "statValue": "8",
+    "statUnit": "dil",
+    "statCaption": "Choose your guide language when you book.",
+    "kicker": "Her tura dahil",
+    "item1": "Size özel araç",
+    "item2": "Ruhsatlı yerel rehber",
+    "item3": "Sessiz elektrikli sürüş"
+  },
+  "tours": {
+    "kicker": "Özel turlar",
+    "sectionTitle": "Turunuzu seçin",
+    "sectionSub": "Dört tur, bir özel araç, en az üç kişi. Başka kimse binmez.",
+    "pageTitle": "Turlar ve fiyatlar",
+    "pageIntro": "Bronz, Gümüş, Altın ve Elmas. Her rezervasyon özeldir. Fiyatlar kişi başı, en az üç. Araç başına en fazla yedi; daha büyük gruplar birden fazla araçta.",
+    "perPerson": "kişi başı",
+    "minGuests": "En az {count} kişi",
+    "book": "Ayırt",
+    "viewAll": "Tüm fiyatlar ve rotalar",
+    "included": "Dahil olanlar",
+    "languages": "Anlatım dilleri",
+    "landmarks": "Rota öne çıkanları",
+    "stops": "Duraklar",
+    "mapKicker": "Rota",
+    "mapTitle": "Nereleri geziyoruz",
+    "mapNote": "Bronze is the classic 30-minute Ring loop (Hofburg, museums, Parliament, Rathaus, Opera). Silver is the one-hour Grand Tour with Old Town highlights and a stop at the Minoritenkirche. Gold is the 90-minute Premium route with the Red Army Monument and a Belvedere stop. Diamond keeps the Gold sights at a slower pace. Tell us what you want to see and we rearrange it.",
+    "mapShotTitle": "Rota haritası — Ringstrasse / Eski Şehir turu",
+    "mapShotHint": "Net döngü · Opera / Hofburg / Stephansdom işaretleri · orman yeşili ve altın",
+    "mapShotAlt": "Vienna Grand Tours Ringstrasse ve Eski Şehir rotasının haritası",
+    "tiers": {
+      "bronze": {
+        "name": "Bronz",
+        "duration": "30 dakika",
+        "description": "Classic half-hour Ring tour — Hofburg, the museums, Parliament, Rathaus, Opera and more, 21 sights from the car.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten"
+        ],
+        "stops": "Photo stops along the Ring",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "21 monuments and sights",
+          "Bottled water"
+        ]
+      },
+      "silver": {
+        "name": "Gümüş",
+        "duration": "1 saat",
+        "description": "Grand one-hour tour — everything in Bronze, plus Freyung, Café Central, Sacher, Karlskirche, Musikverein and more, with a stop at the Minoritenkirche.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern"
+        ],
+        "stops": "Stop at Minoriten Church, plus photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "36 monuments and sights",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "gold": {
+        "name": "Altın",
+        "duration": "1,5 saat",
+        "description": "Premium 90-minute tour — the full Silver route plus the Red Army Monument and a stop at Belvedere Palace.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Stops at Minoriten Church and Belvedere Palace",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "diamond": {
+        "name": "Elmas",
+        "duration": "2 saat",
+        "description": "The Gold route at an unhurried pace — Belvedere stop, Minoritenkirche stop, and extra time for photographs wherever the light is best.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Belvedere and Minoritenkirche stops, plus extra photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights, unhurried",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water",
+          "Route timed for photographs"
+        ]
+      }
+    },
+    "narrationList": "Türkçe · İngilizce · Almanca · İspanyolca · İtalyanca · Arapça · Çince · Portekizce",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "groupFrom": "From €{total} for {count}"
+  },
+  "why": {
+    "kicker": "Deneyim",
+    "title": "Neden bizimle",
+    "items": {
+      "personal": {
+        "title": "İşletme sahibi rehberliğinde",
+        "text": "Rotayı planlayan kişiyle yolculuk edersiniz. Ben sürerim, ben anlatırım ve gerçekten merak ettiğiniz soruları yanıtlarım — ezber metin yok, sürekli değişen ekipler yok."
+      },
+      "vintage": {
+        "title": "İnsanların dönüp baktığı bir araç",
+        "text": "Koyu yeşil, yanları açık ve tamamen elektrikli. 1910 gibi görünür, yarın gibi gider: üstüne konuşulacak motor gürültüsü ve kırmızı ışıkta dizel kokusu yok."
+      },
+      "languages": {
+        "title": "Sekiz dil",
+        "text": "Türkçe, İngilizce, Almanca, İspanyolca, İtalyanca, Arapça, Çince veya Portekizce anlatım. Rezervasyonda seçin, tur size uysun — karışık gruplar da dahil."
+      },
+      "pace": {
+        "title": "Kendi rotanız, kendi temponuz",
+        "text": "Her rezervasyon özel olduğundan ışığı bekleyebilir, daha önce gördüklerinizi atlayabilir ve fotoğraf istediğiniz her yerde durabiliriz."
+      }
+    }
+  },
+  "gallery": {
+    "kicker": "Anlar",
+    "teaserTitle": "Yolcu koltuğundan Viyana",
+    "teaserSub": "Her gün geçtiğimiz şehirden birkaç kare.",
+    "viewAll": "Galeriyi aç",
+    "title": "Galeri",
+    "sub": "Misafirlerimizin gördüğü Viyana — sokaklarda filo ve her gün geçtiğimiz simgeler.",
+    "shotListTitle": "Çekim listesi",
+    "shotListIntro": "Bu sitenin beklediği her görsel: çalışma başlığı, önerilen konum ve göründüğü sayfalar. Aynı liste projenin kök dizinindeki PHOTO_SHOT_LIST.md dosyasında da var.",
+    "shotListPrivacy": "Konuk fotoğrafları — araca binerken, araçta yüzler, anlatım sırasında rehber — yalnızca açık onayla yayımlanır. En iyisi rezervasyonda ya da turdan sonra sormak.",
+    "photoNeeded": "Fotoğraf bekleniyor",
+    "vehicleBadge": "Koyu yeşil klasik elektrikli araç — fotoğraf bekleniyor",
+    "filtersLabel": "Galeri filtreleri",
+    "filters": {
+      "all": "Tümü",
+      "vehicle": "Araç",
+      "landmarks": "Yapılar",
+      "guests": "Konuklar",
+      "city": "Şehir manzaraları"
+    },
+    "close": "Kapat",
+    "shotList": {
+      "location": "Konum",
+      "appearsOn": "Sitede",
+      "consent": "Yalnızca konuk onayıyla yayımlayın.",
+      "categories": {
+        "vehicle": "Araç — koyu yeşil klasik elektrikli",
+        "landmarks": "Yapılar",
+        "guests": "Konuklar (onay gerekir)",
+        "city": "Şehir manzaraları",
+        "site": "Diğer görsel alanları"
+      }
+    },
+    "items": {
+      "v1": {
+        "title": "Graben’de orman yeşili tur arabası",
+        "hint": "Three-quarter front on Vienna’s historic pedestrian mile",
+        "alt": "Graben’de orman yeşili tur arabası"
+      },
+      "v2": {
+        "title": "Stephansdom’da yan profil",
+        "hint": "Full silhouette beside the cathedral",
+        "alt": "Stephansdom’da yan profil"
+      },
+      "v3": {
+        "title": "Gece ön detay",
+        "hint": "Grille, lights and badge in warm night light",
+        "alt": "Gece ön detay"
+      },
+      "v4": {
+        "title": "İç mekan",
+        "hint": "Guest perspective from the cabin",
+        "alt": "İç mekan"
+      },
+      "v5": {
+        "title": "Alacakaranlıkta Stephansdom’da tur arabası",
+        "hint": "Warm dusk light on dark green paint",
+        "alt": "Alacakaranlıkta Stephansdom’da tur arabası"
+      },
+      "v6": {
+        "title": "Kırmızı koltuklu beyaz filo arabası",
+        "hint": "Open-sided vintage EV",
+        "alt": "Kırmızı koltuklu beyaz filo arabası"
+      },
+      "v7": {
+        "title": "Bordo filo arabası",
+        "hint": "Open-sided vintage EV on the Ring",
+        "alt": "Bordo filo arabası"
+      },
+      "v8": {
+        "title": "Filo — yeşil, beyaz ve bordo",
+        "hint": "All three colours at pickup",
+        "alt": "Filo — yeşil, beyaz ve bordo"
+      },
+      "v9": {
+        "title": "Gece Graben’de tur arabası",
+        "hint": "Headlights and café lights",
+        "alt": "Gece Graben’de tur arabası"
+      },
+      "v10": {
+        "title": "Altın ışıkta Stephansdom’da tur arabası",
+        "hint": "Warm late light · open roof",
+        "alt": "Altın ışıkta Stephansdom’da tur arabası"
+      },
+      "l1": {
+        "title": "Alacakaranlıkta Stephansdom’da tur arabası",
+        "hint": "Cathedral façade · headlights on",
+        "alt": "Alacakaranlıkta Stephansdom’da tur arabası"
+      },
+      "l2": {
+        "title": "Hofburg önünde yeşil tur arabası",
+        "hint": "Michaelerplatz · daytime",
+        "alt": "Hofburg önünde yeşil tur arabası"
+      },
+      "l3": {
+        "title": "Gündüz Graben’de tur arabası",
+        "hint": "Old Town boulevard",
+        "alt": "Gündüz Graben’de tur arabası"
+      },
+      "l4": {
+        "title": "Gündüz Stephansdom’da tur arabası",
+        "hint": "Cathedral spires · vehicle in frame",
+        "alt": "Gündüz Stephansdom’da tur arabası"
+      },
+      "g1": {
+        "title": "Misafirler binerken",
+        "hint": "Published only with consent",
+        "alt": "Misafirler binerken"
+      },
+      "g2": {
+        "title": "Araçtaki misafirler",
+        "hint": "Published only with consent",
+        "alt": "Araçtaki misafirler"
+      },
+      "g3": {
+        "title": "Anlatan rehber",
+        "hint": "Published only with consent",
+        "alt": "Anlatan rehber"
+      },
+      "c1": {
+        "title": "Alacakaranlıkta çatılar üzerinden Stephansdom",
+        "hint": "Rooftops toward the cathedral",
+        "alt": "Alacakaranlıkta çatılar üzerinden Stephansdom"
+      },
+      "c2": {
+        "title": "Viyana Belediye Binası (Rathaus) — kemerler",
+        "hint": "Civic landmark on the Ring",
+        "alt": "Viyana Belediye Binası (Rathaus) — kemerler"
+      },
+      "c3": {
+        "title": "Alacakaranlıkta Viyana Devlet Operası",
+        "hint": "Opernring",
+        "alt": "Alacakaranlıkta Viyana Devlet Operası"
+      },
+      "c4": {
+        "title": "Aziz Stephan Katedrali (Stephansdom)",
+        "hint": "Daytime façade",
+        "alt": "Aziz Stephan Katedrali (Stephansdom)"
+      },
+      "c5": {
+        "title": "Gece aydınlatılmış Stephansdom",
+        "hint": "Night façade",
+        "alt": "Gece aydınlatılmış Stephansdom"
+      },
+      "c6": {
+        "title": "Hofburg — Michaelertrakt kubbesi",
+        "hint": "Palace architecture",
+        "alt": "Hofburg — Michaelertrakt kubbesi"
+      },
+      "c7": {
+        "title": "Gece Viyana Devlet Operası",
+        "hint": "Illuminated Opera",
+        "alt": "Gece Viyana Devlet Operası"
+      },
+      "c8": {
+        "title": "Ringstrasse’de Avusturya Parlamentosu",
+        "hint": "Ringstrasse landmark",
+        "alt": "Ringstrasse’de Avusturya Parlamentosu"
+      },
+      "c9": {
+        "title": "Belvedere Sarayı ve yansıtma havuzu",
+        "hint": "Palace gardens",
+        "alt": "Belvedere Sarayı ve yansıtma havuzu"
+      },
+      "c10": {
+        "title": "Mavi saatte Karlskirche",
+        "hint": "Karlsplatz",
+        "alt": "Mavi saatte Karlskirche"
+      },
+      "c11": {
+        "title": "Schönbrunn Sarayı",
+        "hint": "Imperial residence",
+        "alt": "Schönbrunn Sarayı"
+      },
+      "c12": {
+        "title": "Graben — Viyana’nın tarihi yaya caddesi",
+        "hint": "Old Town",
+        "alt": "Graben — Viyana’nın tarihi yaya caddesi"
+      }
+    }
+  },
+  "testimonials": {
+    "_comment": "ÖRNEK İÇERİK — gerçek konuk yorumları toplanana kadar kullanılan makul örnek yorumlar. Yayına almadan önce gerçek ve doğrulanabilir yorumlarla değiştirin (bkz. supabase/schema.sql örnek satırları).",
+    "title": "Konuklarımız ne diyor",
+    "sub": "Arka koltuktan sözler",
+    "sampleNote": "İlk gerçek yorumları toplayana kadar gösterilen örnek yorumlar.",
+    "items": [
+      {
+        "author": "Anna K.",
+        "quote": "Sıcak, kişisel ve Viyana’yı acele etmeden görmenin en güzel yolu. Fotoğraf istediğimiz her yerde durduk.",
+        "rating": 5
+      },
+      {
+        "author": "James R.",
+        "quote": "Çok güzel bir araç ve gerçekten iyi hikâyeler — bizi şehirde bir arkadaşımız gezdiriyor gibiydi.",
+        "rating": 5
+      },
+      {
+        "author": "Elena M.",
+        "quote": "Ailemle 1,5 saatlik turu ayırttık, keşke daha uzun sürseydi. Sessiz, rahat ve kalabalıksız.",
+        "rating": 5
+      }
+    ]
+  },
+  "booking": {
+    "title": "Tur ayırtın",
+    "sub": "Altı kısa adım. Turu, saati, grubunuzu ve dili seçin; onayı genelde birkaç saat içinde e-postayla gönderiyoruz.",
+    "stepsLabel": "Rezervasyon adımları",
+    "steps": {
+      "tour": "Tur",
+      "datetime": "Tarih ve saat",
+      "guests": "Kişi sayısı",
+      "language": "Dil",
+      "contact": "İletişim",
+      "payment": "Özet"
+    },
+    "hints": {
+      "tour": "Her tur özeldir — grubunuz filomuzdaki bir veya daha fazla araçta yalnız seyahat eder, koltuk koltuk satılmaz.",
+      "datetime": "Gündüz turları 09:00–17:00 arası, her gün. Viyana saati.",
+      "guests": "En az üç kişi. Araç başına en fazla yedi — daha büyük gruplar birden fazla araca bölünür. Çiftler üç koltuk rezervasyonu yapıp aracı yine kendilerine ayırabilir.",
+      "language": "Anlatımın hangi dilde olacağını seçin. Karışık gruplar sorun değil, yol boyunca dil değiştiririz.",
+      "contact": "Bu bilgileri yalnızca rezervasyonu onaylamak ve hava değişirse size ulaşmak için kullanırız.",
+      "payment": "Check the summary and pay securely online with SumUp. After payment we email you the meeting point and departure time."
+    },
+    "fields": {
+      "tourType": "Tur süresi",
+      "date": "Tarih",
+      "time": "Kalkış saati",
+      "guests": "Kişi sayısı",
+      "language": "Anlatım dili",
+      "name": "Ad soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "notes": "Bilmemiz gerekenler (isteğe bağlı)",
+      "notesPlaceholder": "Hareket kısıtı, çocukların yaşı, bir doğum günü, alınacak otel adresi, görmek istediğiniz bir yer.",
+      "cars": "Araçlar"
+    },
+    "languages": {
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Español",
+      "it": "Italiano",
+      "ar": "العربية",
+      "zh": "中文",
+      "pt": "Português",
+      "tr": "Türkçe"
+    },
+    "validation": {
+      "tour": "Lütfen bir tur süresi seçin.",
+      "date": "Lütfen turun tarihini seçin.",
+      "time": "Lütfen bir kalkış saati seçin.",
+      "unavailable": "O tarihte veya saatte tur düzenlemiyoruz. Lütfen başka bir tarih ya da kalkış saati seçin.",
+      "guests": "Rezervasyonlar en az üç kişiyle başlar. Araç başına en fazla yedi; daha büyük gruplar birden fazla araç kullanır (online en fazla 28 kişi).",
+      "language": "Lütfen anlatım dilini seçin.",
+      "name": "Lütfen rezervasyonun kime yapılacağını yazın.",
+      "email": "Onayı gönderebilmemiz için bir e-posta adresi girin.",
+      "emailFormat": "Bu e-posta adresi doğru görünmüyor — lütfen kontrol edin.",
+      "phone": "Tur günü size ulaşabilmemiz için bir telefon numarası ekleyin."
+    },
+    "next": "Devam",
+    "back": "Geri",
+    "submit": "Confirm & pay with SumUp",
+    "summary": "Rezervasyon özeti",
+    "total": "Toplam",
+    "policyTitle": "İptal ve hava koşulları",
+    "policy": "Kalkıştan 24 saat öncesine kadar ücretsiz iptal, tam iade. Hafif yağmurda yola çıkarız — yan örtüler bir dakikada takılır. Hava güvensiz hâle gelirse başka bir saat önerir ya da tamamını iade ederiz. Sizin tarafınızda bir şey değişirse yazın, bir çözüm buluruz.",
+    "paymentNote": "You pay online now on SumUp’s secure checkout. Card details are entered only on SumUp — never stored on this website. After payment you return here and we email the meeting point and departure time.",
+    "successTitle": "Turunuz ayrıldı",
+    "successBody": "Thank you. Payment is complete and your booking is confirmed. A message is on its way to your inbox with the meeting point and exact departure time.",
+    "successNote": "Bir saat içinde bir şey gelmezse spam klasörünüze bakın ya da bize yazın — onayı elden gönderelim.",
+    "successRef": "Rezervasyon numarası",
+    "error": "Rezervasyonunuzu şu anda kaydedemedik. Lütfen tekrar deneyin ya da bize yazın; saati sizin için tutalım.",
+    "minGuestsHint": "En az 3 kişi. Araç başına en fazla 7; daha büyük gruplar birden fazla araçta. Fiyat kişi başı.",
+    "demoMode": "Demo mode: Supabase and/or SumUp are not fully configured. This booking was validated locally for this session only.",
+    "carsNeededHint": "Grubunuz {count} araç gerektirir (her biri en fazla 7 kişi). Filo müsaitliğini e-posta ile teyit ederiz.",
+    "paymentStartFailed": "We saved your booking but could not start SumUp checkout. Please try again in a moment, or email us with your booking reference.",
+    "heldTitle": "Booking held — payment pending",
+    "heldBody": "Your details are saved. Online card payment is not available on this environment yet, so your booking stays awaiting payment. We will email a SumUp payment link or confirm the next step by hand.",
+    "paymentCheckingKicker": "SumUp",
+    "paymentCheckingTitle": "Confirming your payment",
+    "paymentCheckingBody": "One moment while we verify your SumUp payment and confirm the booking.",
+    "paymentPendingTitle": "Payment still processing",
+    "paymentPending": "SumUp has not confirmed the payment yet. If you were charged, write to us with your booking reference and we will confirm by hand.",
+    "paymentVerifyMissing": "Missing booking reference. Please return to the booking form or email us.",
+    "paymentVerifyFailedTitle": "We could not confirm payment",
+    "paymentVerifyFailed": "Something went wrong verifying the SumUp payment. If you were charged, email us with your booking reference and we will sort it out.",
+    "backToTours": "Browse tours",
+    "backToBook": "Back to booking"
+  },
+  "about": {
+    "title": "Vienna Grand Tours hakkında",
+    "intro": "Ringstrasse’de tek araçlı, sahibinin rehberlik ettiği bir işletme — ve bunu mümkün kılan koyu yeşil elektrikli araç.",
+    "storyKicker": "Hikâye",
+    "storyTitle": "Kurucudan birkaç satır",
+    "story1": "Ring’e iki tramvay durağı uzaklıkta büyüdüm ve yıllarca, gelen konukların Opera’yı fotoğraflayıp, bunların neden tam orada durduğunu hiç duymadan geri döndüklerini izledim. O sıralar bambaşka bir sektörde çalışıyordum. Şehir peşimi bırakmadı.",
+    "story2": "Vienna Grand Tours’u sonunda kurduğumda, otobüs turunun tam tersini istiyordum: küçük bir araç, tek bir grup, mikrofonsuz ve ezbersiz. Klasik tasarımlı bir elektrikli araç buldum, koyu bir orman yeşiline boyattım ve bir yazı Heldenplatz’ın hangi köşesinin akşam ışığını yakaladığını, katedralin arkasındaki hangi sokağın hikâye anlatacak kadar sessiz olduğunu öğrenerek geçirdim.",
+    "story3": "Bugün de böyle işliyor. Aracın tamamını ayırtıyorsunuz, kabaca nereye gideceğimize karar veriyoruz ve sonra yavaş gidiyoruz. Dört yeri düzgün göstermeyi, on ikisini camdan göstermeye tercih ederim — Rathaus’un önünde ışık güzelse biraz daha oturur, bekleriz.",
+    "founderShotTitle": "Kurucu ve koyu yeşil araç",
+    "founderShotHint": "Hofburg ya da Opera fonu · araç rengi net görünsün",
+    "founderShotAlt": "Viyana’da koyu yeşil klasik elektrikli tur aracının yanında duran kurucu",
+    "vehicleShotTitle": "Araç detayı — parlatılmış yakın çekim",
+    "vehicleShotHint": "Kapı, jant ya da arma · özenli işçilik izlenimi",
+    "vehicleShotAlt": "Koyu yeşil klasik elektrikli tur aracının parlatılmış detayı",
+    "vehicleKicker": "Araç",
+    "vehicleTitle": "Dışı klasik, altı elektrikli",
+    "vehicle1": "Başka bir yüzyıla aitmiş gibi görünür ve bataryayla çalışır. Üstüne konuşulacak motor gürültüsü yok, kırmızı ışıkta koku yok ve hava güzelken sizinle cepheler arasında cam yok. Sırasıyla tramvayları, faytonları ve rehberi duyarsınız.",
+    "vehicle2": "Hava iyiyken yanlar açık, gerektiğinde bir dakikada kapalıdır. Böylece sağanak bir turu iptal etmek yerine havasını değiştirir. Altı koltuk, küçük bir grup ve yanında günlük çantalarla fotoğraf makineleri için yer.",
+    "vehicleSpecsTitle": "Kısaca",
+    "vehicleSpecs": [
+      "Tamamen elektrikli — sessiz ve Eski Şehir’de egzozsuz",
+      "Rehber dışında altı konuğa kadar yer",
+      "Güzel havada açık yanlar, yağmurda örtüler",
+      "Koyu orman yeşili, klasik tasarımlı gövde",
+      "Günlük çanta, fotoğraf makinesi ve katlanmış bebek arabası için yer",
+      "Gece şarj edilir — yolda emisyon yok"
+    ],
+    "valuesKicker": "Sözümüz",
+    "valuesTitle": "Neye önem veriyoruz",
+    "values": {
+      "care": {
+        "title": "Kişisel ilgi",
+        "text": "Aynı anda tek grup, ikinci durakta adınızı bilen bir ev sahibi ve çağrı merkezinin değil, bir insanın yazdığı yanıtlar."
+      },
+      "city": {
+        "title": "Şehre saygı",
+        "text": "Elektrikli ve sessiz; böylece bir konut sokağı konut sokağı olarak kalır. İzinli rota ve duraklara uyar, bir fotoğraf için tramvayın önünü kesmeyiz."
+      },
+      "honesty": {
+        "title": "Dürüst misafirperverlik",
+        "text": "Kişi başı fiyat, gizli ücret yok, açık iptal kuralı, ücretli mağaza durağı yok."
+      }
+    }
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "sub": "Rezervasyondan önce bilinmesi gereken her şey. Sorunuz burada yoksa yazın — yanıtı bir insan verir.",
+    "items": [
+      {
+        "q": "Yağmurda tur yapılıyor mu?",
+        "a": "Hafif yağmurda evet — yan örtüler yaklaşık bir dakikada takılır ve Viyana ıslak arnavut kaldırımında özellikle güzel görünür. Şiddetli yağmur, fırtına, buzlanma veya kuvvetli rüzgârda yola çıkmayız. Bu durumda başka bir saat önerir ya da ücreti tamamen iade ederiz; olabildiğince erken haber veririz."
+      },
+      {
+        "q": "Tur sırasında hava bozarsa ne olur?",
+        "a": "Örtüleri kapatır, devam ederiz; sağanak çoğu zaman günün en fotojenik anıdır. Koşullar gerçekten güvensizleşirse turu erken bitirir, gezilmeyen kısmın ücretini iade eder ya da tercihinize göre başka bir güne alırız."
+      },
+      {
+        "q": "İptal koşullarınız nedir?",
+        "a": "Kalkıştan 24 saat öncesine kadar ücretsiz iptal edebilir, ücretin tamamını geri alırsınız. Son 24 saat içinde mümkünse sizi başka bir saate alırız; mümkün değilse tur ücretlendirilir. İptali biz yaparsak — hava, teknik sorun ya da hastalık — her hâlükârda tam iade ya da yeni bir tarih alırsınız, seçim sizin."
+      },
+      {
+        "q": "Hareket kısıtı olan konuklar için uygun mu?",
+        "a": "Araca binerken bir basamak var; iki yanda tutamak bulunuyor ve binerken seve seve yardım ederiz. Oturduktan sonra turun tamamı koltuğunuzda geçer. Katlanır tekerlekli sandalye, yürüteç veya baston bizimle gelir; sabit gövdeli tekerlekli sandalye ya da elektrikli skuter araca sığmaz ve rampa yoktur. Durumunuzu rezervasyon notlarına yazın, uygun duraklar seçelim."
+      },
+      {
+        "q": "Ödeme nasıl yapılıyor?",
+        "a": "Online at booking, on SumUp’s secure checkout. You are redirected to SumUp to pay by card, then return here for confirmation. Prices are per person and final (no VAT is charged under the Austrian small-business scheme): Bronze €25, Silver €39, Gold €49, Diamond €69. The total in your booking confirmation is the amount charged."
+      },
+      {
+        "q": "Nerede buluşuyoruz?",
+        "a": "Aksini kararlaştırmadıysak Ringstrasse’de Devlet Operası yakınında — tam konum, kalkış saati ve bir telefon numarası onay e-postasıyla gelir. Oteliniz Ring’in içinde ya da hemen yanındaysa rezervasyon notuna yazın; genellikle kapıdan alırız."
+      },
+      {
+        "q": "Grup en fazla kaç kişi olabilir ve neden en az üç kişi?",
+        "a": "En az üç kişi. Araç başına en fazla yedi; daha büyük gruplar filomuzdaki birden fazla araçla seyahat eder. Araç koltuk koltuk satılmaz. Çiftler ve yalnız gezginler üç koltuk rezervasyonu yapar."
+      },
+      {
+        "q": "Rotayı ya da süreyi değiştirebilir miyiz?",
+        "a": "Evet. Buradaki rotalar bir başlangıç noktasıdır, tarife değil. Hofburg’da daha uzun kalmak, Museumsquartier’a uğramak ya da daha önce gördüğünüz bir yeri atlamak isterseniz kalkıştan önce — hatta yolun ortasında — söyleyin. Aynı gün uzatmak isterseniz, sonraki rezervasyon elveriyorsa uzatırız."
+      },
+      {
+        "q": "Hangi dillerde rehberlik ediyorsunuz?",
+        "a": "Türkçe, İngilizce, Almanca, İspanyolca, İtalyanca, Arapça, Çince ve Portekizce. Hazırlıklı olabilmemiz için dilinizi rezervasyonda seçin. Karışık gruplar sorun değil — turu ağırlaştırmadan iki dil arasında geçiş yaparız."
+      },
+      {
+        "q": "Çocuklar gelebilir mi? Çocuk koltuğunuz var mı?",
+        "a": "Çocuklar çok hoş karşılanır ve üç kişilik alt sınıra dahildir. Avusturya’da 135 cm’den kısa ya da 14 yaşından küçük çocuklar için uygun bir koltuk zorunludur; çocuklarınızın yaşını en az 24 saat önce rezervasyon notlarına yazın, doğru koltuk araçta hazır olsun. Bebek arabaları katlanarak bizimle gelir."
+      },
+      {
+        "q": "Bagajlar nereye konuyor?",
+        "a": "Koltukların yanında günlük çanta, fotoğraf ekipmanı ve katlanmış bir bebek arabası için yer var, ancak valizler için yok. Turdan sonra yola devam edecekseniz bagajınızı otelde ya da gar dolabında bırakın — araç bir gezi aracıdır, transfer aracı değil."
+      }
+    ]
+  },
+  "legal": {
+    "impressumTitle": "Künye (Impressum)",
+    "agbTitle": "Genel şartlar ve koşullar",
+    "datenschutzTitle": "Gizlilik politikası",
+    "reviewNotice": "Taslak metin. Site yayına alınmadan önce bu sayfanın Avusturyalı bir avukat tarafından incelenmesi ve köşeli parantez içindeki tüm alanların doldurulması gerekir.",
+    "lastUpdated": "Son güncelleme: 31 Ağustos 2026",
+    "impressum": {
+      "intro": "Avusturya E-Ticaret Kanunu (ECG) § 5 ve Medya Kanunu (MedienG) § 25 uyarınca zorunlu bilgiler.",
+      "companyHeading": "İşletme ve medya sahibi",
+      "ownerHeading": "Sahibi / içerikten sorumlu",
+      "contactHeading": "İletişim",
+      "registerHeading": "Sicil ve ticaret makamı",
+      "vatHeading": "VAT status",
+      "chamberHeading": "Oda üyeliği",
+      "tradeHeading": "Ticari mevzuat",
+      "tradeBody": "Geçerli mevzuat: Gewerbeordnung (GewO), www.ris.bka.gv.at adresinden erişilebilir. GewO § 108 (3) uyarınca bilgiler, talep eden konuklara verilir ve rezervasyon onayında belirtilir.",
+      "authorityHeading": "Denetim makamı",
+      "authorityBody": "Yetkili ticaret makamı: Viyana {district}. bölgesi Magistratisches Bezirksamt.",
+      "purposeHeading": "Faaliyet konusu",
+      "purposeBody": "Viyana'da vintage elektrikli otomobil filosuyla (yeşil, beyaz ve bordo) özel rehberli turlar, sekiz dilde anlatım.",
+      "odrHeading": "Çevrim içi uyuşmazlık çözümü",
+      "odrBody": "Avrupa Komisyonu çevrim içi uyuşmazlık çözümü için bir platform sunmaktadır. Tüketici tahkim kurulu önünde uyuşmazlık çözümü sürecine katılma yükümlülüğümüz ve isteğimiz bulunmamaktadır.",
+      "contentHeading": "İçerik ve bağlantı sorumluluğu",
+      "contentBody": "Bu sitenin içeriği özenle hazırlanmıştır; yine de doğruluk, eksiksizlik ve güncellik konusunda sorumluluk üstlenmeyiz. Bağlantı verilen dış sitelerin içeriğinden işletmecileri sorumludur; bağlantılar kurulurken hukuka aykırı bir içerik görülmemiştir.",
+      "copyrightHeading": "Telif hakkı ve görseller",
+      "copyrightBody": "Bu sitedeki metin, görsel ve tasarım telif hakkıyla korunur. Fotoğraflar bize aittir ya da lisanslıdır; konukların göründüğü kareler yalnızca onların onayıyla yayımlanır. Yeniden kullanım yazılı iznimize bağlıdır.",
+      "labels": {
+        "owner": "Sahibi",
+        "phone": "Telefon",
+        "email": "E-posta",
+        "firmenbuch": "Ticaret sicil numarası",
+        "court": "Sicil mahkemesi",
+        "gisa": "GISA numarası",
+        "uid": "KDV numarası",
+        "legalForm": "Hukuki biçim"
+      },
+      "vatExemptBody": "No VAT identification number (UID). We are exempt from charging VAT under the Austrian small-business scheme (Kleinunternehmerregelung pursuant to § 6 Abs. 1 Z 27 UStG). Prices are final; no VAT is added or shown on invoices."
+    },
+    "agb": {
+      "intro": "Bu koşullar, ister bu site üzerinden ister e-posta veya telefonla olsun, bizde yapılan tüm tur rezervasyonları için geçerlidir. Rezervasyondan önce lütfen okuyun; onay e-postası bu sürüme atıfta bulunur.",
+      "sections": [
+        {
+          "title": "1. Kapsam ve sözleşme tarafı",
+          "body": "Bu genel şartlar, Vienna Grand Tours adıyla faaliyet gösteren Ahmed Wezza (“biz”) ile yapılan tüm tur rezervasyonları için geçerlidir. Konuğun farklı koşulları, ancak yazılı olarak kabul etmemiz hâlinde geçerlidir."
+        },
+        {
+          "title": "2. Hizmetimiz",
+          "body": "Özel turlar: Bronz (30 dk), Gümüş (60 dk), Altın (90 dk) ve Elmas (120 dk). Araç başına en fazla yedi misafir; daha büyük gruplar birden fazla araçta. Rezervasyon başına en az üç misafir."
+        },
+        {
+          "title": "3. Rezervasyon ve sözleşmenin kurulması",
+          "body": "Site, e-posta veya telefon üzerinden yapılan rezervasyon talebi konuğun teklifidir. Sözleşme, tarafımızdan e-postayla onay gönderildiğinde kurulur. Lütfen onayı hemen kontrol edin ve bir yanlışlık varsa derhâl bize bildirin. Rezervasyon yapanların en az 18 yaşında olması gerekir; reşit olmayanlar refakatçi bir yetişkinle gelir."
+        },
+        {
+          "title": "4. Fiyatlar ve ödeme",
+          "body": "Prices are per person, in euro, and are final. We operate as a small business under the Austrian Kleinunternehmerregelung and do not charge VAT: Bronze 30 minutes €25, Silver 1 hour €39, Gold 1.5 hours €49, Diamond 2 hours €69. The total is the per-person price multiplied by the number of guests, with a minimum of three. Payment is taken online at booking via SumUp’s secure checkout. Card details are collected by SumUp, not on this website. A booking is confirmed once payment succeeds."
+        },
+        {
+          "title": "5. Konuk tarafından iptal",
+          "body": "Kararlaştırılan kalkış saatinden 24 saatten fazla süre önce yapılan iptaller ücretsizdir ve tutar tamamen iade edilir. Son 24 saat içinde mümkünse alternatif bir saat sunarız; mümkün değilse ücretin tamamı alıkonulabilir. İptaller e-posta adresimize yazılı olarak ya da telefonla bildirilmelidir. Tüketicilerin yasal cayma hakları, uygulanabildiği ölçüde saklıdır; belirli bir tarihe bağlı boş zaman hizmetlerinde FAGG § 18 (1) (10) uyarınca 14 günlük cayma hakkı bulunmaz."
+        },
+        {
+          "title": "6. Geç kalma ve gelmeme",
+          "body": "Lütfen kararlaştırılan kalkış saatinden beş dakika önce buluşma noktasında olun. En fazla 15 dakika bekleriz; daha geç bir başlangıç turu buna göre kısaltır ve ücreti düşürmez. Grup hiç gelmez ve iptal bildirmemişse ücretin tamamı tahsil edilir."
+        },
+        {
+          "title": "7. Tarafımızca iptal, hava koşulları ve mücbir sebep",
+          "body": "Hafif yağmurda yola çıkarız. Hava koşulları turu güvensiz hâle getirirse — fırtına, buzlanma, kuvvetli rüzgâr, aşırı sıcak — ya da araç, rehber veya yol durumu nedeniyle tur mümkün olmazsa turu iptal edebilir veya kısaltabiliriz. Bu durumda tercihinize göre alternatif bir tarih ya da ücretin veya gezilmeyen kısmın iadesi sunulur. Kasıt veya ağır ihmal hâlleri dışında başka talepler ileri sürülemez."
+        },
+        {
+          "title": "8. Tur sırasında davranış",
+          "body": "Konuklar rehberin güvenlik uyarılarına uyar, araç hareket hâlindeyken oturur ve mevcut emniyet kemerlerini kullanır. 135 cm’den kısa ya da 14 yaşından küçük çocuklar uygun bir çocuk koltuğunda seyahat etmelidir; önceden bildirilmesi hâlinde koltuğu biz sağlarız. Sigara içmek, açık ateş ve hareket hâlindeyken ayağa kalkmak yasaktır. Bir konuk alkollüyse, başkalarını tehlikeye atıyorsa ya da uyarıları tekrar tekrar dikkate almıyorsa turu iade yapmaksızın reddedebilir veya sonlandırabiliriz."
+        },
+        {
+          "title": "9. Bagaj ve kişisel eşyalar",
+          "body": "Koltukların yanında günlük çanta, fotoğraf ekipmanı ve katlanmış bebek arabası için yer vardır; valiz taşıyamayız. Tur boyunca eşyalarından konuklar sorumludur. Kayıp veya hasardan yalnızca kasıt ya da ağır ihmal hâlinde sorumluyuz."
+        },
+        {
+          "title": "10. Sorumluluk",
+          "body": "Bedensel zararlardan sınırsız, bunun dışında kasıt ve ağır ihmalden sorumluyuz. Hafif ihmalde sorumluluk, esaslı sözleşme yükümlülüklerinin ihlaliyle ve sözleşme kurulurken öngörülebilir tipik zararla sınırlıdır. Avusturya ürün sorumluluğu mevzuatı ile emredici tüketici koruma hükümleri saklıdır. Araç, Avusturya mevzuatının gerektirdiği şekilde sigortalıdır."
+        },
+        {
+          "title": "11. Fotoğraflar ve veriler",
+          "body": "Turları zaman zaman web sitemiz ve sosyal medya hesaplarımız için fotoğraflarız. Konukların tanınabildiği kareleri yalnızca açık rızayla yayımlarız; bu rıza her zaman geri alınabilir. Kişisel veriler gizlilik politikamızda açıklandığı gibi işlenir."
+        },
+        {
+          "title": "12. Uygulanacak hukuk ve yetkili mahkeme",
+          "body": "Kanunlar ihtilafı kuralları ve Milletlerarası Mal Satımına İlişkin Sözleşmeler Hakkında BM Antlaşması hariç olmak üzere Avusturya hukuku uygulanır. Tüketiciler bakımından ikamet ettikleri ülkenin emredici koruyucu hükümleri ve yetkili mahkemeleri saklıdır. Tacirler için Viyana’daki yetkili mahkeme görevlidir. Bir hükmün geçersiz olması hâlinde diğer hükümler yürürlükte kalır."
+        }
+      ]
+    },
+    "datenschutz": {
+      "intro": "Bir rezervasyonun gerektirdiği kadar az veri toplar, veri satmaz ve reklam izleyicileri kullanmayız. Bu sayfa, verdiğiniz bilgilere ne olduğunu Avrupa Genel Veri Koruma Tüzüğü (GDPR) ve Avusturya Veri Koruma Kanunu (DSG) çerçevesinde açıklar.",
+      "sections": [
+        {
+          "title": "1. Veri sorumlusu",
+          "body": "Burada anlatılan işlemlerin sorumlusu, künyede belirtilen işletmedir; orada verilen e-posta adresinden ulaşabilirsiniz. Zorunlu olmadığımız için veri koruma görevlisi atamadık."
+        },
+        {
+          "title": "2. Rezervasyonda işlenen veriler",
+          "body": "Rezervasyon formu adınızı, e-posta adresinizi, telefon numaranızı, seçtiğiniz turu, tarihi ve kalkış saatini, kişi sayısını, anlatım dilini ve not alanına yazdıklarınızı toplar; sağlık ya da hareket kısıtına ilişkin bilgileri yalnızca dikkate almamızı istiyorsanız paylaşın. Bu verilere sözleşmeyi yerine getirmek için ihtiyacımız var (GDPR m. 6/1-b); not alanında gönüllü olarak paylaştığınız özel nitelikli veriler açık rızanıza dayanılarak işlenir (GDPR m. 9/2-a)."
+        },
+        {
+          "title": "3. Bize yazdığınızda işlenen veriler",
+          "body": "Bize e-posta yazarsanız, yanıt verebilmek için adresinizi, mesajınızı ve içerdiği bilgileri işleriz (GDPR m. 6/1-b ve 6/1-f — sorulara yanıt vermekteki meşru menfaatimiz)."
+        },
+        {
+          "title": "4. Otomatik toplanan veriler",
+          "body": "Barındırma sağlayıcımız, sitenin güvenliği ve kararlılığı için olağan sunucu günlüklerini kaydeder: IP adresi, tarih ve saat, istenen sayfa, yönlendiren sayfa, tarayıcı ve işletim sistemi (GDPR m. 6/1-f). Bu kayıtlar kısa süre sonra silinir ve başka verilerle birleştirilmez."
+        },
+        {
+          "title": "5. Çerezler ve analiz",
+          "body": "Çerez tercihinizi hatırlamak için tarayıcınızın yerel deposunda tek bir zorunlu kayıt tutarız; bu kayıt kişisel veri ya da izleme kimliği içermez. Analiz araçları yalnızca bandı onayladığınızda yüklenir (GDPR m. 6/1-a); bu onayı, bu site için tarayıcı depolamasını temizleyerek ya da bize yazarak istediğiniz zaman geri alabilirsiniz. Reklam veya profilleme çerezi kullanmıyoruz."
+        },
+        {
+          "title": "6. Veri işleyenler ve alıcılar",
+          "body": "We use carefully selected service providers, each bound by a data processing agreement under Art. 28 GDPR where applicable: Netlify (website hosting and delivery), Supabase (booking database, hosted in the EU), SumUp (online card payments via hosted checkout), and our email provider for confirmation messages. Payment card details are entered only on SumUp’s systems, not on this website. Data is transferred to third countries only on the basis of EU standard contractual clauses or an adequacy decision. Beyond that, we pass data to third parties only where we are legally obliged to — for instance to tax authorities."
+        },
+        {
+          "title": "7. Saklama süreleri",
+          "body": "Rezervasyon ve fatura verileri, Avusturya vergi ve ticaret mevzuatı uyarınca yedi yıl saklanır (BAO § 132, UGB § 212). Rezervasyona dönüşmeyen sorular, konu kapandığında ve en geç on iki ay içinde silinir. Sunucu günlükleri birkaç gün içinde silinir. Rızaya dayanan veriler, rızanızı geri aldığınızda silinir."
+        },
+        {
+          "title": "8. Haklarınız",
+          "body": "Verilerinize erişme, düzeltilmesini veya silinmesini isteme, işlemenin kısıtlanmasını talep etme, meşru menfaate dayanan işlemelere itiraz etme ve verilerinizi taşınabilir biçimde alma hakkınız vardır. İşleme rızaya dayanıyorsa, rızanızı ileriye etkili olarak istediğiniz zaman geri alabilirsiniz. Künyedeki e-posta adresine yazın; bir ay içinde yanıt veriyoruz."
+        },
+        {
+          "title": "9. Şikâyet hakkı",
+          "body": "Verilerinizi hukuka aykırı işlediğimizi düşünüyorsanız Avusturya Veri Koruma Kurumu’na (Österreichische Datenschutzbehörde, Barichgasse 40–42, 1030 Viyana, dsb.gv.at) ya da yaşadığınız yerdeki denetim makamına şikâyette bulunabilirsiniz."
+        },
+        {
+          "title": "10. Fotoğraflar",
+          "body": "Konukların tanınabildiği fotoğrafları yalnızca yazılı ya da o gün açıkça verilen rızayla yayımlarız. Rıza her zaman geri alınabilir; bize yazın, görseli web sitemizden ve sosyal medya hesaplarımızdan kaldıralım."
+        },
+        {
+          "title": "11. Bu metindeki değişiklikler",
+          "body": "Araçlarımız veya süreçlerimiz değiştikçe bu metni güncelleriz. Her zaman burada yayımlanan sürüm geçerlidir."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Viyana'da vintage elektrikli otomobil filosuyla — yeşil, beyaz ve bordo — sahibi rehberli özel turlar. En az üç misafir, araç başına en fazla yedi (büyük gruplar için birden fazla araç), sekiz dil.",
+    "quickLinks": "Keşfedin",
+    "legal": "Yasal",
+    "contact": "İletişim",
+    "meetingPoint": "Buluşma noktası Viyana’da Ringstrasse — tam konum rezervasyon onayınızla birlikte gelir.",
+    "googleBusiness": "Google İşletme Profili",
+    "rights": "© {year} Vienna Grand Tours. Tüm hakları saklıdır.",
+    "impressum": "Künye",
+    "agb": "Şartlar",
+    "datenschutz": "Gizlilik",
+    "madeBy": "<name>Besaweb</name> tarafından yapılmıştır"
+  },
+  "cookies": {
+    "title": "Çerezler ve gizlilik",
+    "body": "Bu tercihi hatırlamak için tarayıcınızda küçük bir kayıt tutuyoruz. Analiz araçları yalnızca onay verirseniz yüklenir; reklam izleyicisi hiç kullanmıyoruz.",
+    "accept": "Analizi kabul et",
+    "essential": "Yalnızca zorunlu",
+    "privacy": "Gizlilik politikasını okuyun"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Bu sayfa yanlış yola sapmış",
+    "body": "Aradığınız sayfa burada değil — taşınmış ya da bağlantı eskimiş olabilir. Turlar, fiyatlar ve rezervasyon bir tık uzakta.",
+    "home": "Ana sayfaya dön",
+    "book": "Tur ayırtın"
+  },
+  "common": {
+    "loading": "Yükleniyor…",
+    "close": "Kapat",
+    "learnMore": "Daha fazla",
+    "photoNeeded": "Fotoğraf bekleniyor"
+  }
+}

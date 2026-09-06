@@ -1,0 +1,864 @@
+{
+  "meta": {
+    "siteName": "Vienna Grand Tours",
+    "homeTitle": "Vienna Grand Tours — جولات فيينا الخاصة بسيارة كهربائية كلاسيكية",
+    "homeDescription": "جولات خاصة في فيenna بأسطول سيارات كهربائية vintage — أخضر وأبيض وعنابي. سرد بثماني لغات. من 25 € للشخص، ثلاثة ضيوف كحد أدنى.",
+    "toursTitle": "الجولات والأسعار — Vienna Grand Tours",
+    "toursDescription": "أربع جولات: برونزي 30 د 25 €، فضي ساعة 39 €، ذهبي 90 د 49 €، ماسي ساعتان 69 € للشخص. ثلاثة ضيوف كحد أدنى.",
+    "bookTitle": "احجزوا جولة — Vienna Grand Tours",
+    "bookDescription": "احجزوا جولة فيينا الخاصة في ست خطوات قصيرة: مدة الجولة، التاريخ، عدد الضيوف، لغة السرد. إلغاء مجاني حتى 24 ساعة قبل الانطلاق.",
+    "aboutTitle": "من نحن — Vienna Grand Tours",
+    "aboutDescription": "قصة Vienna Grand Tours وأسطولنا من السيارات الكهربائية vintage وكيف نرشد مجموعات صغيرة خاصة.",
+    "galleryTitle": "المعرض — Vienna Grand Tours",
+    "galleryDescription": "فيenna كما يراها ضيوفنا: الأوبرا عند الشروق، Rathaus في الساعة الزرقاء، الأسطح عند الغروب وأسطول سياراتنا.",
+    "faqTitle": "الأسئلة الشائعة — Vienna Grand Tours",
+    "faqDescription": "المطر والطقس، الإلغاء، نقطة اللقاء، إمكانية الوصول، الدفع، الأطفال، الأمتعة والحد الأدنى بثلاثة ضيوف — بإجابات واضحة.",
+    "impressumTitle": "Impressum — Vienna Grand Tours",
+    "impressumDescription": "الإفصاح القانوني لـ Vienna Grand Tours بموجب المادة 5 من قانون التجارة الإلكترونية النمساوي والمادة 25 من قانون الإعلام.",
+    "agbTitle": "الشروط والأحكام — Vienna Grand Tours",
+    "agbDescription": "شروط الحجز والدفع والإلغاء والتغيب والطقس والمسؤولية للجولات الخاصة مع Vienna Grand Tours.",
+    "datenschutzTitle": "سياسة الخصوصية — Vienna Grand Tours",
+    "datenschutzDescription": "كيف تتعامل Vienna Grand Tours مع بياناتكم بموجب اللائحة العامة لحماية البيانات: ما يجمعه نموذج الحجز، ومن يعالجه، ومدة الاحتفاظ به، وحقوقكم."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "tours": "الجولات",
+    "book": "الحجز",
+    "about": "من نحن",
+    "gallery": "المعرض",
+    "faq": "الأسئلة",
+    "bookCta": "احجزوا جولتكم",
+    "menu": "القائمة",
+    "mainNav": "التنقل الرئيسي",
+    "mobileNav": "تنقل الجوال",
+    "languageSwitcher": "اللغة"
+  },
+  "hero": {
+    "brand": "Vienna Grand Tours",
+    "headline": "فيينا على مهل — الـRing والقصور والحكايات بينهما.",
+    "subline": "جولات خاصة برفقة دليل في سيارة كهربائية خضراء داكنة بطراز كلاسيكي. هادئة، مفتوحة للهواء، ولا تُشارك مع غرباء.",
+    "cta": "احجزوا جولتكم",
+    "secondaryCta": "الجولات والأسعار",
+    "shotTitle": "المركبة على Ringstrasse — ثلاثة أرباع أمامية",
+    "shotHint": "الساعة الذهبية · هيكل أخضر داكن · معلم لطيف في الخلفية",
+    "imageAlt": "سيارة جولات كهربائية كلاسيكية خضراء داكنة، منظر أمامي بثلاثة أرباع على Ringstrasse في فيينا في الساعة الذهبية",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "closingTitle": "Your private car is waiting",
+    "closingSub": "Reserve your Vienna hour — book online in a few minutes."
+  },
+  "trust": {
+    "statValue": "8",
+    "statUnit": "لغات",
+    "statCaption": "Choose your guide language when you book.",
+    "kicker": "كل جولة تشمل",
+    "item1": "سيارة خاصة",
+    "item2": "دليل محلي مرخّص",
+    "item3": "قيادة كهربائية صامتة"
+  },
+  "tours": {
+    "kicker": "جولات خاصة",
+    "sectionTitle": "اختاروا جولتكم",
+    "sectionSub": "أربع جولات، سيارة خاصة، ثلاثة ضيوف كحد أدنى. لا يشارككم أحد.",
+    "pageTitle": "الجولات والأسعار",
+    "pageIntro": "برونزي، فضي، ذهبي وماسي. كل حجز خاص. الأسعار للشخص، ثلاثة كحد أدنى. حتى سبعة لكل سيارة؛ المجموعات الأكبر في عدة سيارات.",
+    "perPerson": "للشخص",
+    "minGuests": "الحد الأدنى {count} ضيوف",
+    "book": "احجزوا",
+    "viewAll": "الأسعار والمسارات كاملة",
+    "included": "ما يشمله السعر",
+    "languages": "لغات السرد",
+    "landmarks": "أبرز نقاط المسار",
+    "stops": "التوقفات",
+    "mapKicker": "المسار",
+    "mapTitle": "أين نقود",
+    "mapNote": "Bronze is the classic 30-minute Ring loop (Hofburg, museums, Parliament, Rathaus, Opera). Silver is the one-hour Grand Tour with Old Town highlights and a stop at the Minoritenkirche. Gold is the 90-minute Premium route with the Red Army Monument and a Belvedere stop. Diamond keeps the Gold sights at a slower pace. Tell us what you want to see and we rearrange it.",
+    "mapShotTitle": "خريطة المسار — حلقة Ringstrasse / البلدة القديمة",
+    "mapShotHint": "حلقة واضحة · علامات الأوبرا / Hofburg / Stephansdom · أخضر غابة + ذهب",
+    "mapShotAlt": "خريطة مسار Vienna Grand Tours على Ringstrasse وفي البلدة القديمة",
+    "tiers": {
+      "bronze": {
+        "name": "برونزي",
+        "duration": "30 دقيقة",
+        "description": "Classic half-hour Ring tour — Hofburg, the museums, Parliament, Rathaus, Opera and more, 21 sights from the car.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten"
+        ],
+        "stops": "Photo stops along the Ring",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "21 monuments and sights",
+          "Bottled water"
+        ]
+      },
+      "silver": {
+        "name": "فضي",
+        "duration": "ساعة",
+        "description": "Grand one-hour tour — everything in Bronze, plus Freyung, Café Central, Sacher, Karlskirche, Musikverein and more, with a stop at the Minoritenkirche.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern"
+        ],
+        "stops": "Stop at Minoriten Church, plus photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "36 monuments and sights",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "gold": {
+        "name": "ذهبي",
+        "duration": "ساعة ونصف",
+        "description": "Premium 90-minute tour — the full Silver route plus the Red Army Monument and a stop at Belvedere Palace.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Stops at Minoriten Church and Belvedere Palace",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "diamond": {
+        "name": "ماسي",
+        "duration": "ساعتان",
+        "description": "The Gold route at an unhurried pace — Belvedere stop, Minoritenkirche stop, and extra time for photographs wherever the light is best.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Belvedere and Minoritenkirche stops, plus extra photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights, unhurried",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water",
+          "Route timed for photographs"
+        ]
+      }
+    },
+    "narrationList": "العربية · الإنجليزية · الألمانية · الإسبانية · الإيطالية · الصينية · البرتغالية · التركية",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "groupFrom": "From €{total} for {count}"
+  },
+  "why": {
+    "kicker": "التجربة",
+    "title": "لماذا تركبون معنا",
+    "items": {
+      "personal": {
+        "title": "صاحب العمل هو الدليل",
+        "text": "تركبون مع من خطط المسار. أقود وأروي وأجيب عن الأسئلة التي لديكم فعلاً — بلا نص محفوظ، وبلا أسطول متناوب من الغرباء."
+      },
+      "vintage": {
+        "title": "سيارة يقف الناس لأجلها",
+        "text": "خضراء داكنة، مفتوحة الجوانب، وكهربائية بالكامل. تبدو من عام 1910 وتسير كالغد: لا ضجيج محرك يغطّي الحديث ولا عادم ديزل عند الإشارة."
+      },
+      "languages": {
+        "title": "ثماني لغات",
+        "text": "سرد بالعربية أو الإنجليزية أو الألمانية أو الإسبانية أو الإيطالية أو الصينية أو البرتغالية أو التركية. اختاروا لغتكم عند الحجز، والجولة كلها تتبعكم — بما في ذلك المجموعات المختلطة."
+      },
+      "pace": {
+        "title": "مساركم، إيقاعكم",
+        "text": "كل حجز خاص، فنستطيع انتظار الضوء، وتجاوز ما رأيتموه من قبل، والتوقف حيث تريدون صورة."
+      }
+    }
+  },
+  "gallery": {
+    "kicker": "لحظات",
+    "teaserTitle": "فيينا من مقعد الراكب",
+    "teaserSub": "بعض اللقطات من المدينة التي نقود فيها كل يوم.",
+    "viewAll": "فتح المعرض",
+    "title": "المعرض",
+    "sub": "فيينا كما يراها ضيوفنا — الأسطول في الشوارع والمعالم التي نمر بها كل يوم.",
+    "shotListTitle": "قائمة اللقطات",
+    "shotListIntro": "كل صورة يتوقعها هذا الموقع، مع عنوان العمل وموقع مقترح والصفحات التي تظهر فيها. القائمة نفسها موجودة في PHOTO_SHOT_LIST.md في جذر المشروع.",
+    "shotListPrivacy": "صور الضيوف — الصعود، الوجوه في المركبة، الدليل في منتصف الحكاية — تُنشر فقط بموافقة واضحة. اطلبوا ذلك عند الحجز، أو بعد الجولة.",
+    "photoNeeded": "صورة مطلوبة",
+    "vehicleBadge": "سيارة كلاسيكية كهربائية خضراء داكنة — صورة مطلوبة",
+    "filtersLabel": "مرشحات المعرض",
+    "filters": {
+      "all": "الكل",
+      "vehicle": "السيارة",
+      "landmarks": "المعالم",
+      "guests": "الضيوف",
+      "city": "مناظر المدينة"
+    },
+    "close": "إغلاق",
+    "shotList": {
+      "location": "الموقع",
+      "appearsOn": "على الموقع",
+      "consent": "يُنشر فقط بموافقة الضيف.",
+      "categories": {
+        "vehicle": "السيارة — كلاسيكية كهربائية خضراء داكنة",
+        "landmarks": "المعالم",
+        "guests": "الضيوف (موافقة مطلوبة)",
+        "city": "مناظر المدينة",
+        "site": "أماكن أخرى في الموقع"
+      }
+    },
+    "items": {
+      "v1": {
+        "title": "السيارة الخضراء في الغرابن",
+        "hint": "Three-quarter front on Vienna’s historic pedestrian mile",
+        "alt": "السيارة الخضراء في الغرابن"
+      },
+      "v2": {
+        "title": "منظر جانبي عند كاتدرائية ستيفان",
+        "hint": "Full silhouette beside the cathedral",
+        "alt": "منظر جانبي عند كاتدرائية ستيفان"
+      },
+      "v3": {
+        "title": "تفاصيل الواجهة ليلاً",
+        "hint": "Grille, lights and badge in warm night light",
+        "alt": "تفاصيل الواجهة ليلاً"
+      },
+      "v4": {
+        "title": "المقصورة الداخلية",
+        "hint": "Guest perspective from the cabin",
+        "alt": "المقصورة الداخلية"
+      },
+      "v5": {
+        "title": "السيارة عند ستيفانسدوم عند الغسق",
+        "hint": "Warm dusk light on dark green paint",
+        "alt": "السيارة عند ستيفانسدوم عند الغسق"
+      },
+      "v6": {
+        "title": "سيارة الأسطول البيضاء بمقاعد حمراء",
+        "hint": "Open-sided vintage EV",
+        "alt": "سيارة الأسطول البيضاء بمقاعد حمراء"
+      },
+      "v7": {
+        "title": "سيارة الأسطول العنابية",
+        "hint": "Open-sided vintage EV on the Ring",
+        "alt": "سيارة الأسطول العنابية"
+      },
+      "v8": {
+        "title": "الأسطول — أخضر وأبيض وعنابي",
+        "hint": "All three colours at pickup",
+        "alt": "الأسطول — أخضر وأبيض وعنابي"
+      },
+      "v9": {
+        "title": "السيارة في الغرابن ليلاً",
+        "hint": "Headlights and café lights",
+        "alt": "السيارة في الغرابن ليلاً"
+      },
+      "v10": {
+        "title": "السيارة عند ستيفانسدوم بالضوء الذهبي",
+        "hint": "Warm late light · open roof",
+        "alt": "السيارة عند ستيفانسدوم بالضوء الذهبي"
+      },
+      "l1": {
+        "title": "السيارة عند ستيفانسدوم عند الغسق",
+        "hint": "Cathedral façade · headlights on",
+        "alt": "السيارة عند ستيفانسدوم عند الغسق"
+      },
+      "l2": {
+        "title": "السيارة الخضراء أمام الهوفبورغ",
+        "hint": "Michaelerplatz · daytime",
+        "alt": "السيارة الخضراء أمام الهوفبورغ"
+      },
+      "l3": {
+        "title": "السيارة في الغرابن نهاراً",
+        "hint": "Old Town boulevard",
+        "alt": "السيارة في الغرابن نهاراً"
+      },
+      "l4": {
+        "title": "السيارة عند ستيفانسدوم نهاراً",
+        "hint": "Cathedral spires · vehicle in frame",
+        "alt": "السيارة عند ستيفانسدوم نهاراً"
+      },
+      "g1": {
+        "title": "الضيوف يصعدون",
+        "hint": "Published only with consent",
+        "alt": "الضيوف يصعدون"
+      },
+      "g2": {
+        "title": "الضيوف على متن السيارة",
+        "hint": "Published only with consent",
+        "alt": "الضيوف على متن السيارة"
+      },
+      "g3": {
+        "title": "المرشد يروي",
+        "hint": "Published only with consent",
+        "alt": "المرشد يروي"
+      },
+      "c1": {
+        "title": "ستيفانسدوم فوق أسطح فيينا عند الغسق",
+        "hint": "Rooftops toward the cathedral",
+        "alt": "ستيفانسدوم فوق أسطح فيينا عند الغسق"
+      },
+      "c2": {
+        "title": "قاعة مدينة فيينا (راتهاوس) — الأروقة",
+        "hint": "Civic landmark on the Ring",
+        "alt": "قاعة مدينة فيينا (راتهاوس) — الأروقة"
+      },
+      "c3": {
+        "title": "دار الأوبرا الحكومية عند الغسق",
+        "hint": "Opernring",
+        "alt": "دار الأوبرا الحكومية عند الغسق"
+      },
+      "c4": {
+        "title": "كاتدرائية القديس ستيفان",
+        "hint": "Daytime façade",
+        "alt": "كاتدرائية القديس ستيفان"
+      },
+      "c5": {
+        "title": "ستيفانسدوم مضاء ليلاً",
+        "hint": "Night façade",
+        "alt": "ستيفانسدوم مضاء ليلاً"
+      },
+      "c6": {
+        "title": "الهوفبورغ — قبة ميخائيلرتراكت",
+        "hint": "Palace architecture",
+        "alt": "الهوفبورغ — قبة ميخائيلرتراكت"
+      },
+      "c7": {
+        "title": "دار الأوبرا الحكومية ليلاً",
+        "hint": "Illuminated Opera",
+        "alt": "دار الأوبرا الحكومية ليلاً"
+      },
+      "c8": {
+        "title": "البرلمان النمساوي على الرينغ",
+        "hint": "Ringstrasse landmark",
+        "alt": "البرلمان النمساوي على الرينغ"
+      },
+      "c9": {
+        "title": "قصر بلفيدير والبركة العاكسة",
+        "hint": "Palace gardens",
+        "alt": "قصر بلفيدير والبركة العاكسة"
+      },
+      "c10": {
+        "title": "كارلسكرشه في الساعة الزرقاء",
+        "hint": "Karlsplatz",
+        "alt": "كارلسكرشه في الساعة الزرقاء"
+      },
+      "c11": {
+        "title": "قصر شونبرون",
+        "hint": "Imperial residence",
+        "alt": "قصر شونبرون"
+      },
+      "c12": {
+        "title": "الغرابن — ممشى فيينا التاريخي",
+        "hint": "Old Town",
+        "alt": "الغرابن — ممشى فيينا التاريخي"
+      }
+    }
+  },
+  "testimonials": {
+    "_comment": "SAMPLE CONTENT — plausible placeholder reviews used until real guest reviews are collected. Replace with genuine, attributable reviews (see supabase/schema.sql seed rows) before publishing.",
+    "title": "ماذا يقول الضيوف",
+    "sub": "كلمات من المقعد الخلفي",
+    "sampleNote": "آراء نموذجية إلى أن نجمع الأولى الحقيقية.",
+    "items": [
+      {
+        "author": "Anna K.",
+        "quote": "دافئ وشخصي، والطريقة المثلى لرؤية فيينا بلا استعجال. توقفنا كلما أردنا صورة.",
+        "rating": 5
+      },
+      {
+        "author": "James R.",
+        "quote": "سيارة جميلة وحكايات صادقة بالإنجليزية — كأن صديقاً من المدينة يقودنا.",
+        "rating": 5
+      },
+      {
+        "author": "Elena M.",
+        "quote": "حجزنا جولة الساعة والنصف مع والدينا وتمنينا لو طالت أكثر. هادئة، سهلة، بلا زحام.",
+        "rating": 5
+      }
+    ]
+  },
+  "booking": {
+    "title": "احجزوا جولتكم",
+    "sub": "ست خطوات قصيرة. اختاروا الجولة والوقت والمجموعة واللغة — نؤكد بالبريد، عادة خلال ساعات قليلة.",
+    "stepsLabel": "خطوات الحجز",
+    "steps": {
+      "tour": "الجولة",
+      "datetime": "التاريخ والوقت",
+      "guests": "الضيوف",
+      "language": "اللغة",
+      "contact": "التواصل",
+      "payment": "الملخص"
+    },
+    "hints": {
+      "tour": "كل جولة خاصة — مجموعتكم تركب وحدها في سيارة أو أكثر من أسطولنا، ولا تُباع بالمقعد.",
+      "datetime": "الجولات النهارية بين 09:00 و17:00 كل يوم. توقيت فيينا.",
+      "guests": "ثلاثة ضيوف كحد أدنى. حتى سبعة لكل سيارة — المجموعات الأكبر تُوزَّع على عدة سيارات. الأزواج يحجزون ثلاثة مقاعد ويبقون السيارة لهم.",
+      "language": "اختاروا اللغة التي تريدون السرد بها. المجموعات المختلطة مرحّب بها — ننتقل أثناء السير.",
+      "contact": "نستخدم هذه البيانات فقط لتأكيد حجزكم وللوصول إليكم إن تغيّر الطقس.",
+      "payment": "Check the summary and pay securely online with SumUp. After payment we email you the meeting point and departure time."
+    },
+    "fields": {
+      "tourType": "مدة الجولة",
+      "date": "التاريخ",
+      "time": "وقت الانطلاق",
+      "guests": "عدد الضيوف",
+      "language": "لغة السرد",
+      "name": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "notes": "أي شيء ينبغي أن نعرفه (اختياري)",
+      "notesPlaceholder": "احتياجات التنقل، أعمار الأطفال، عيد ميلاد، عنوان الفندق للاستقبال، مكان تودون رؤيته.",
+      "cars": "السيارات"
+    },
+    "languages": {
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Español",
+      "it": "Italiano",
+      "ar": "العربية",
+      "zh": "中文",
+      "pt": "Português",
+      "tr": "Türkçe"
+    },
+    "validation": {
+      "tour": "يرجى اختيار مدة الجولة.",
+      "date": "يرجى اختيار التاريخ الذي تودون الركوب فيه.",
+      "time": "يرجى اختيار وقت الانطلاق.",
+      "unavailable": "لا نسيّر جولات في ذلك الوقت. يرجى اختيار تاريخ أو موعد آخر.",
+      "guests": "تبدأ الحجوزات من ثلاثة ضيوف. حتى سبعة لكل سيارة؛ المجموعات الأكبر تستخدم عدة سيارات (حتى 28 ضيفًا عبر الإنترنت).",
+      "language": "يرجى اختيار لغة السرد.",
+      "name": "يرجى ذكر الاسم الذي يُسجَّل به الحجز.",
+      "email": "يرجى إدخال عنوان بريد لإرسال التأكيد.",
+      "emailFormat": "عنوان البريد لا يبدو صحيحاً — يرجى التحقق منه.",
+      "phone": "يرجى إضافة رقم هاتف لنتمكن من الوصول إليكم في يوم الجولة."
+    },
+    "next": "متابعة",
+    "back": "رجوع",
+    "submit": "Confirm & pay with SumUp",
+    "summary": "ملخص الحجز",
+    "total": "المجموع",
+    "policyTitle": "الإلغاء والطقس",
+    "policy": "إلغاء مجاني حتى 24 ساعة قبل الانطلاق، مع استرداد كامل. نقود في المطر الخفيف — تُرفع الأغطية الجانبية في دقيقة. إذا أصبح الطقس غير آمن، نعرض موعداً آخر أو استرداداً كاملاً. إن تغيّر شيء من جهتكم، اكتبوا إلينا؛ سنجد حلاً.",
+    "paymentNote": "You pay online now on SumUp’s secure checkout. Card details are entered only on SumUp — never stored on this website. After payment you return here and we email the meeting point and departure time.",
+    "successTitle": "جولتكم محجوزة",
+    "successBody": "Thank you. Payment is complete and your booking is confirmed. A message is on its way to your inbox with the meeting point and exact departure time.",
+    "successNote": "إن لم يصل شيء خلال ساعة، تحققوا من البريد غير المرغوب أو راسلونا — نؤكد يدوياً.",
+    "successRef": "مرجع الحجز",
+    "error": "تعذّر حفظ الحجز الآن. حاولوا مرة أخرى، أو راسلونا وسنحتفظ بالموعد لكم.",
+    "minGuestsHint": "الحد الأدنى 3 ضيوف. حتى 7 لكل سيارة؛ المجموعات الأكبر في عدة سيارات. السعر للشخص.",
+    "demoMode": "Demo mode: Supabase and/or SumUp are not fully configured. This booking was validated locally for this session only.",
+    "carsNeededHint": "مجموعتكم تحتاج إلى {count} سيارات (حتى 7 ضيوف لكل منها). نؤكد توفر الأسطول عبر البريد الإلكتروني.",
+    "paymentStartFailed": "We saved your booking but could not start SumUp checkout. Please try again in a moment, or email us with your booking reference.",
+    "heldTitle": "Booking held — payment pending",
+    "heldBody": "Your details are saved. Online card payment is not available on this environment yet, so your booking stays awaiting payment. We will email a SumUp payment link or confirm the next step by hand.",
+    "paymentCheckingKicker": "SumUp",
+    "paymentCheckingTitle": "Confirming your payment",
+    "paymentCheckingBody": "One moment while we verify your SumUp payment and confirm the booking.",
+    "paymentPendingTitle": "Payment still processing",
+    "paymentPending": "SumUp has not confirmed the payment yet. If you were charged, write to us with your booking reference and we will confirm by hand.",
+    "paymentVerifyMissing": "Missing booking reference. Please return to the booking form or email us.",
+    "paymentVerifyFailedTitle": "We could not confirm payment",
+    "paymentVerifyFailed": "Something went wrong verifying the SumUp payment. If you were charged, email us with your booking reference and we will sort it out.",
+    "backToTours": "Browse tours",
+    "backToBook": "Back to booking"
+  },
+  "about": {
+    "title": "عن Vienna Grand Tours",
+    "intro": "عمل جولات بسيارة واحدة، يقوده صاحبه على Ringstrasse — والمركبة الكهربائية الخضراء الداكنة التي جعلت ذلك ممكناً.",
+    "storyKicker": "القصة",
+    "storyTitle": "كلمة من المؤسس",
+    "story1": "نشأت على بُعد محطتي ترام من الـRing، ولسنوات رأيت الزوار يصلون ويصوّرون الأوبرا ويغادرون من دون أن يسمعوا لماذا يقوم كل هذا حيث يقوم. كنت أعمل في مجال آخر آنذاك. المدينة لم تكفّ عن الإلحاح.",
+    "story2": "حين افتتحت Vienna Grand Tours أخيراً، أردت نقيض الحافلة: سيارة صغيرة، مجموعة واحدة في كل مرة، بلا ميكروفون وبلا نص ثابت. وجدت مركبة كهربائية بطراز كلاسيكي، وأتممتها بالأخضر الغابي العميق، وقضيت صيفاً أتعلم أي ركن من Heldenplatz يمسك ضوء المساء وأي زقاق خلف الكاتدرائية هادئ بما يكفي لرواية حكاية.",
+    "story3": "ما زال الأمر على هذا النحو. تحجزون السيارة كلها، نتفق تقريباً على الوجهة، ثم نسير ببطء. أفضّل أن أريكم أربعة أماكن كما ينبغي على أن أريكم اثني عشر من النافذة — وإن كان الضوء جميلاً أمام Rathaus، نجلس هناك قليلاً أطول.",
+    "founderShotTitle": "المؤسس مع السيارة الخضراء الداكنة",
+    "founderShotHint": "خلفية Hofburg أو الأوبرا · لون المركبة واضح",
+    "founderShotAlt": "المؤسس واقفاً مع سيارة الجولات الكهربائية الكلاسيكية الخضراء الداكنة في فيينا",
+    "vehicleShotTitle": "إضاءة على المركبة — تفصيل مصقول",
+    "vehicleShotHint": "الباب أو العجلة أو الشارة · إشارة حرفية",
+    "vehicleShotAlt": "تفصيل مصقول للسيارة الكهربائية الكلاسيكية الخضراء الداكنة",
+    "vehicleKicker": "السيارة",
+    "vehicleTitle": "كلاسيكية من الخارج، كهربائية من الداخل",
+    "vehicle1": "تبدو من قرن آخر وتسير بالبطارية. لا ضجيج محرك يغطّي الحديث، ولا رائحة عند الإشارة الحمراء، وفي الطقس المعتدل لا زجاج بينكم وبين الواجهات. يسمع الضيوف الترام والعربات التي تجرها الخيل (الـfiakers) والدليل، بهذا الترتيب.",
+    "vehicle2": "الجوانب مفتوحة حين يطيب الطقس، وتُغطى في دقيقة حين لا يطيب، فيغيّر وابل المطر مزاج الجولة بدلاً من إلغائها. ستة مقاعد، مجموعة صغيرة، ومكان بجانبها لحقائب النهار وعدّة التصوير.",
+    "vehicleSpecsTitle": "باختصار",
+    "vehicleSpecs": [
+      "كهربائية بالكامل — هادئة، وبلا عادم في البلدة القديمة",
+      "تتسع لستة ضيوف إضافة إلى دليلكم",
+      "جوانب مفتوحة في الطقس المعتدل، وأغطية للمطر",
+      "أخضر غابي عميق، هيكل بطراز كلاسيكي",
+      "مكان لحقائب النهار والكاميرات وعربة أطفال مطوية",
+      "تُشحن ليلاً — بلا انبعاثات على المسار"
+    ],
+    "valuesKicker": "وعدنا",
+    "valuesTitle": "ما نقف عنده",
+    "values": {
+      "care": {
+        "title": "عناية شخصية",
+        "text": "مجموعة واحدة في كل مرة، مضيف يعرف أسماءكم عند التوقف الثاني، وردود على رسائلكم يكتبها إنسان لا طابور."
+      },
+      "city": {
+        "title": "احترام المدينة",
+        "text": "كهربائية وهادئة، فتبقى الزقاق السكنية زقاقاً سكنية. نلتزم بالمسارات والتوقفات التي تسمح بها المدينة، ولا نسدّ الترام من أجل صورة."
+      },
+      "honesty": {
+        "title": "ضيافة صادقة",
+        "text": "أسعار للشخص بلا خفايا، سياسة إلغاء واضحة، ولا توقف تسوق مدفوع."
+      }
+    }
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة",
+    "sub": "كل ما يستحق المعرفة قبل الحجز. إن لم يكن سؤالكم هنا، اكتبوا إلينا — يجيب شخص.",
+    "items": [
+      {
+        "q": "هل تُسيَّر الجولات تحت المطر؟",
+        "a": "في المطر الخفيف، نعم — تُرفع الأغطية في نحو دقيقة، وفيينا تبدو استثنائية على الحصى المبلل. في المطر الغزير أو العواصف الرعدية أو الجليد أو الرياح القوية لا ننطلق. نعرض موعداً آخر أو نسترد المبلغ كاملاً، ونخبركم في أقرب وقت ممكن."
+      },
+      {
+        "q": "ماذا يحدث إن تغيّر الطقس أثناء الجولة؟",
+        "a": "نرفع الأغطية ونتابع؛ غالباً ما يكون وابل المطر أجمل جزء في اليوم للصور. إن صارت الأحوال غير آمنة حقاً ننهي الجولة مبكراً ونسترد الجزء الذي لم تركبوه، أو ننقلكم إلى تاريخ آخر، كما تفضلون."
+      },
+      {
+        "q": "ما سياسة الإلغاء لديكم؟",
+        "a": "إلغاء مجاني حتى 24 ساعة قبل الانطلاق مع استرداد كامل. داخل الأربع والعشرين ساعة ننقلكم عادة إلى موعد آخر إن أمكن؛ وإن تعذّر ذلك تُحتسب الجولة. إن ألغينا نحن — طقس أو عطل تقني أو مرض — تحصلون دائماً على استرداد كامل أو تاريخ جديد، كما تفضلون."
+      },
+      {
+        "q": "هل الجولة مناسبة لمحدودية الحركة؟",
+        "a": "هناك درجة واحدة للصعود، مع درابزين من الجانبين، ويسعدنا مساعدتكم على الصعود. بعد الجلوس تتم الجولة كلها من مقعدكم. كرسي متحرك قابل للطي أو مشاية أو عصا يسافر معنا؛ السيارة لا تستوعب كرسياً بإطار ثابت ولا سكوتر كهربائياً، وليس هناك منحدر للصعود. أخبرونا عن تنقلكم في ملاحظات الحجز وسنختار توقفات مناسبة."
+      },
+      {
+        "q": "كيف أدفع؟",
+        "a": "Online at booking, on SumUp’s secure checkout. You are redirected to SumUp to pay by card, then return here for confirmation. Prices are per person and final (no VAT is charged under the Austrian small-business scheme): Bronze €25, Silver €39, Gold €49, Diamond €69. The total in your booking confirmation is the amount charged."
+      },
+      {
+        "q": "أين نلتقي؟",
+        "a": "على Ringstrasse قرب دار الأوبرا الحكومية، ما لم نتفق على غير ذلك — يصل الرمز الدقيق ووقت الانطلاق ورقم هاتف مع بريد التأكيد. إن كان فندقكم داخل الـRing أو على حافته، اذكروا ذلك في الملاحظات وغالباً نستقبلكم عند الباب."
+      },
+      {
+        "q": "كم يمكن أن يبلغ حجم مجموعتنا — ولماذا الحد الأدنى بثلاثة ضيوف؟",
+        "a": "ثلاثة ضيوف كحد أدنى. حتى سبعة لكل سيارة؛ المجموعات الأكبر تسافر في عدة سيارات من أسطولنا. لا تُباع السيارة بالمقعد. الأزواج والمسافرون وحدهم يحجزون ثلاثة مقاعد."
+      },
+      {
+        "q": "هل يمكننا تغيير المسار أو المدة؟",
+        "a": "نعم. المسارات في هذا الموقع نقطة انطلاق لا جدول مواعيد. أخبرونا قبل الانطلاق — أو في منتصف الحلقة — إن أردتم وقتاً أطول عند Hofburg، أو انحرافاً عبر Museumsquartier، أو تجاوز شيء رأيتموه من قبل. إن أردتم التمديد في اليوم نفسه، نفعل إن سمح الحجز التالي."
+      },
+      {
+        "q": "بأي لغات ترشدون؟",
+        "a": "العربية والإنجليزية والألمانية والإسبانية والإيطالية والصينية والبرتغالية والتركية. اختاروا لغتكم عند الحجز حتى نستعد جيدًا. المجموعات المختلطة لا مشكلة — ننتقل بين لغتين دون إبطاء الجولة."
+      },
+      {
+        "q": "هل يمكن اصطحاب الأطفال؟ هل لديكم مقاعد أطفال؟",
+        "a": "الأطفال مرحّب بهم ويُحسبون ضمن الحد الأدنى بثلاثة ضيوف. يشترط القانون النمساوي مقعد طفل أو مقعداً رافعاً لمن دون 135 سم أو 14 عاماً، فأخبرونا بأعمار الأطفال في ملاحظات الحجز قبل 24 ساعة على الأقل وسيكون المقعد المناسب في السيارة. عربات الأطفال تُطوى وتسافر معنا."
+      },
+      {
+        "q": "أين توضع الأمتعة؟",
+        "a": "هناك مكان بجانب المقاعد لحقائب النهار وعدّة التصوير وعربة أطفال مطوية، لكن ليس للحقائب الكبيرة. إن كنتم تواصلون السفر بعد الجولة، اتركوا الأمتعة في الفندق أو في خزانة بالمحطة — السيارة مركبة للمشاهدة، لا للنقل."
+      }
+    ]
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "agbTitle": "الشروط والأحكام العامة",
+    "datenschutzTitle": "سياسة الخصوصية",
+    "reviewNotice": "نص مسودة. قبل إطلاق هذا الموقع، يجب أن يراجع محامٍ نمساوي هذه الصفحة وأن تُستكمل كل الحقول بين أقواس مربعة.",
+    "lastUpdated": "آخر تحديث: 31 أغسطس 2026",
+    "impressum": {
+      "intro": "المعلومات المطلوبة بموجب المادة 5 من قانون التجارة الإلكترونية النمساوي (ECG) والمادة 25 من قانون الإعلام النمساوي (MedienG).",
+      "companyHeading": "الشركة ومالك الوسيلة الإعلامية",
+      "ownerHeading": "المالك / المسؤول عن المحتوى",
+      "contactHeading": "التواصل",
+      "registerHeading": "السجل والسلطة التجارية",
+      "vatHeading": "VAT status",
+      "chamberHeading": "عضوية الغرفة",
+      "tradeHeading": "الأنظمة التجارية",
+      "tradeBody": "الأنظمة التجارية السارية: قانون الحرف (Gewerbeordnung / GewO)، متاح على www.ris.bka.gv.at. تُقدَّم التفاصيل بموجب المادة 108 (3) GewO بناءً على طلب الضيف وتُذكر في تأكيد الحجز.",
+      "authorityHeading": "سلطة الإشراف",
+      "authorityBody": "السلطة التجارية المختصة (Gewerbebehörde): Magistratisches Bezirksamt für den {district}. Bezirk, Vienna.",
+      "purposeHeading": "غرض النشاط",
+      "purposeBody": "جولات خاصة مرشدة في فيenna بأسطول سيارات كهربائية vintage (أخضر وأبيض وعنابي)، سرد بثماني لغات.",
+      "odrHeading": "تسوية النزاعات عبر الإنترنت",
+      "odrBody": "توفر المفوضية الأوروبية منصة لتسوية النزاعات عبر الإنترنت. لسنا ملزمين ولا مستعدين للمشاركة في إجراءات تسوية أمام هيئة تحكيم استهلاكية.",
+      "contentHeading": "المسؤولية عن المحتوى والروابط",
+      "contentBody": "أُعد محتوى هذا الموقع بعناية، لكننا لا نتحمل مسؤولية دقته أو اكتماله أو حداثته. حيث نربط بمواقع خارجية، يتحمل مشغّلوها مسؤولية محتواها؛ تحققنا من تلك الصفحات عند وضع الروابط ولم نجد محتوى غير مشروع.",
+      "copyrightHeading": "حقوق المؤلف والصور",
+      "copyrightBody": "جميع النصوص والصور والتنسيق في هذا الموقع محمية بحقوق المؤلف. الصور لنا أو مرخّصة؛ وصور الضيوف تُنشر بموافقة فقط. أي إعادة استخدام تتطلب إذننا الكتابي.",
+      "labels": {
+        "owner": "المالك",
+        "phone": "الهاتف",
+        "email": "البريد الإلكتروني",
+        "firmenbuch": "رقم سجل الشركات",
+        "court": "محكمة السجل",
+        "gisa": "رقم GISA",
+        "uid": "الرقم الضريبي",
+        "legalForm": "الشكل القانوني"
+      },
+      "vatExemptBody": "No VAT identification number (UID). We are exempt from charging VAT under the Austrian small-business scheme (Kleinunternehmerregelung pursuant to § 6 Abs. 1 Z 27 UStG). Prices are final; no VAT is added or shown on invoices."
+    },
+    "agb": {
+      "intro": "تحكم هذه الشروط كل جولة تُحجز معنا، سواء عبر هذا الموقع أو بالبريد أو بالهاتف. يُرجى قراءتها قبل الحجز — يشير تأكيد الحجز إلى هذه النسخة.",
+      "sections": [
+        {
+          "title": "1. النطاق والطرف المتعاقد",
+          "body": "تسري هذه الشروط والأحكام العامة على جميع حجوزات الجولات مع Ahmed Wezza («نحن»)، العاملة باسم Vienna Grand Tours. لا تسري شروط الضيف المخالفة إلا إذا وافقنا عليها كتابة."
+        },
+        {
+          "title": "2. خدمتنا",
+          "body": "جولات خاصة: برونزي (30 دقيقة)، فضي (60 دقيقة)، ذهبي (90 دقيقة) وماسي (120 دقيقة). حتى سبعة ضيوف لكل سيارة؛ المجموعات الأكبر في عدة سيارات. ثلاثة ضيوف كحد أدنى لكل حجز."
+        },
+        {
+          "title": "3. الحجز وانعقاد العقد",
+          "body": "طلب الحجز عبر الموقع أو بالبريد أو بالهاتف عرض من الضيف. ينعقد العقد عندما نرسل تأكيد حجز بالبريد الإلكتروني. يُرجى التحقق من التأكيد فوراً وإخبارنا في الحال إن كان شيء خاطئاً. يجب أن يكون عمر الحاجز 18 عاماً على الأقل؛ ويسافر القُصَّر برفقة بالغ."
+        },
+        {
+          "title": "4. الأسعار والدفع",
+          "body": "Prices are per person, in euro, and are final. We operate as a small business under the Austrian Kleinunternehmerregelung and do not charge VAT: Bronze 30 minutes €25, Silver 1 hour €39, Gold 1.5 hours €49, Diamond 2 hours €69. The total is the per-person price multiplied by the number of guests, with a minimum of three. Payment is taken online at booking via SumUp’s secure checkout. Card details are collected by SumUp, not on this website. A booking is confirmed once payment succeeds."
+        },
+        {
+          "title": "5. الإلغاء من جانب الضيف",
+          "body": "الإلغاءات قبل أكثر من 24 ساعة من وقت الانطلاق المتفق عليه مجانية وتُسترد بالكامل. خلال 24 ساعة نعرض موعداً بديلاً حيث نستطيع؛ إن تعذّر ذلك يجوز الاحتفاظ بالسعر كاملاً. يجب أن يتم الإلغاء كتابة إلى بريدنا أو بالهاتف. تبقى حقوق العدول القانونية للمستهلكين حيث تنطبق؛ ويُلاحظ أن خدمات الترفيه المرتبطة بتاريخ محدد تستثني حق العدول خلال 14 يوماً بموجب المادة 18 (1) (10) FAGG."
+        },
+        {
+          "title": "6. التأخر وعدم الحضور",
+          "body": "يُرجى الوصول قبل خمس دقائق من وقت الانطلاق المتفق عليه. ننتظر حتى 15 دقيقة؛ والتأخر يقصر الجولة بالمقدار نفسه ولا يخفض السعر. إن لم تظهر المجموعة ولم تُلغِ، يستحق السعر كاملاً."
+        },
+        {
+          "title": "7. الإلغاء من جانبنا والطقس والقوة القاهرة",
+          "body": "نقود في المطر الخفيف. إن جعلت أحوال الطقس الجولة غير آمنة — عواصف أو جليد أو رياح قوية أو حر شديد — أو إن جعلت المركبة أو الدليل أو الطرق ذلك مستحيلاً، يجوز لنا إلغاء الجولة أو تقصيرها. في تلك الحالة تحصلون على تاريخ بديل أو استرداد السعر، أو الجزء غير المقطوع، باختياركم. وتُستبعد المطالبات الأخرى ما لم نتصرف عمداً أو بإهمال جسيم."
+        },
+        {
+          "title": "8. السلوك أثناء الجولة",
+          "body": "يتبع الضيوف تعليمات السلامة الصادرة عن الدليل، ويبقون جالسين أثناء حركة المركبة، ويستخدمون أحزمة الأمان المتوفرة. يجب أن يسافر الأطفال دون 135 سم أو 14 عاماً في مقعد مناسب نوفره عند الإخطار مسبقاً. التدخين واللهب المكشوف والوقوف أثناء السير غير مسموح بها. يجوز لنا رفض جولة أو إنهاؤها دون استرداد إن كان ضيف في حالة سكر أو يعرّض غيره للخطر أو يتجاهل التعليمات مراراً."
+        },
+        {
+          "title": "9. الأمتعة والمتعلقات الشخصية",
+          "body": "هناك مكان بجانب المقاعد لحقائب النهار والكاميرات وعربة أطفال مطوية؛ ولا نستطيع حمل حقائب السفر. الضيوف مسؤولون عن متعلقاتهم أثناء الجولة. لا نتحمل مسؤولية المفقود أو التالف إلا في حال العمد أو الإهمال الجسيم."
+        },
+        {
+          "title": "10. المسؤولية",
+          "body": "نتحمل المسؤولية بلا حد عن الإصابات الشخصية، وفيما عدا ذلك عن العمد والإهمال الجسيم. تقتصر المسؤولية عن الإهمال اليسير على الإخلال بالالتزامات التعاقدية الجوهرية وعلى الضرر المعتاد لهذا النوع من العقود والمتوقع عند التعاقد. لا يمس ذلك المسؤولية بموجب قانون مسؤولية المنتج النمساوي أو أحكام حماية المستهلك الإلزامية. المركبة مؤمَّنة كما يقتضي القانون النمساوي."
+        },
+        {
+          "title": "11. الصور والبيانات",
+          "body": "نصوّر الجولات أحياناً لموقعنا ووسائل التواصل، ولا ننشر صوراً يظهر فيها ضيوف إلا بموافقتهم الصريحة، التي يجوز سحبها في أي وقت. تُعالَج البيانات الشخصية كما هو موضح في سياسة الخصوصية."
+        },
+        {
+          "title": "12. القانون الواجب التطبيق والاختصاص",
+          "body": "يسري القانون النمساوي، باستثناء قواعد تنازع القوانين واتفاقية الأمم المتحدة بشأن عقود البيع الدولي للبضائع. بالنسبة للمستهلكين تبقى الأحكام الوقائية الإلزامية وأماكن الاختصاص في بلد الإقامة دون مساس. بالنسبة للتجار تختص محكمة فيينا. إن بطل أي بند، يبقى سائر هذه الشروط نافذاً."
+        }
+      ]
+    },
+    "datenschutz": {
+      "intro": "نجمع عنكم أقل ما يسمح به الحجز، ولا نبيع البيانات، ولا نشغّل متتبعات إعلانية. توضح هذه الصفحة ما يحدث للمعلومات التي تمنحوننا إياها، بموجب اللائحة العامة لحماية البيانات في الاتحاد الأوروبي (GDPR) وقانون حماية البيانات النمساوي (DSG).",
+      "sections": [
+        {
+          "title": "1. المسؤول عن المعالجة",
+          "body": "المسؤول عن المعالجة الموصوفة هنا هو الشركة المذكورة في الـImpressum، ويمكن التواصل معها عبر البريد الإلكتروني الوارد هناك. لم نعيّن مسؤول حماية بيانات، إذ لسنا ملزمين بذلك."
+        },
+        {
+          "title": "2. البيانات التي نعالجها عند الحجز",
+          "body": "يجمع نموذج الحجز الاسم وعنوان البريد ورقم الهاتف والجولة المختارة وتاريخ الانطلاق ووقته وعدد الضيوف ولغة السرد وما تكتبونه في حقل الملاحظات — يُرجى مشاركة تفاصيل صحية أو حركية فقط إن أردتم أن نخطط حولها. نحتاج هذه البيانات لتنفيذ العقد معكم (المادة 6 (1) (ب) GDPR)؛ وأي بيانات من فئات خاصة تقدّمونها طوعاً في الملاحظات تُعالَج على أساس الموافقة (المادة 9 (2) (أ) GDPR)."
+        },
+        {
+          "title": "3. البيانات التي نعالجها عند التواصل معنا",
+          "body": "إن راسلتمونا بالبريد، نعالج عنوانكم ورسالتكم وأي تفاصيل تتضمنها، للإجابة عليكم (المادة 6 (1) (ب) و(و) GDPR — مصلحتنا المشروعة في الرد على الاستفسارات)."
+        },
+        {
+          "title": "4. البيانات المجمّعة تلقائياً",
+          "body": "يسجّل مزوّد الاستضافة بيانات سجل الخادم المعتادة — عنوان IP والتاريخ والوقت والصفحة المطلوبة والصفحة المحيلة والمتصفح ونظام التشغيل — لأمن الموقع واستقراره (المادة 6 (1) (و) GDPR). تُحذف هذه السجلات بعد فترة قصيرة ولا تُدمج مع بيانات أخرى."
+        },
+        {
+          "title": "5. ملفات تعريف الارتباط والتحليلات",
+          "body": "نضع عنصراً أساسياً واحداً في التخزين المحلي للمتصفح لتذكّر اختياركم بشأن ملفات تعريف الارتباط؛ ولا يحتوي بيانات شخصية ولا معرّف تتبع. تُحمَّل التحليلات فقط بعد قبولها في الشريط (المادة 6 (1) (أ) GDPR)، ويمكن سحب تلك الموافقة في أي وقت بمسح تخزين المتصفح لهذا الموقع أو بالكتابة إلينا. لا تُستخدم ملفات تعريف ارتباط إعلانية أو للتنميط."
+        },
+        {
+          "title": "6. المعالجون والمتلقون",
+          "body": "We use carefully selected service providers, each bound by a data processing agreement under Art. 28 GDPR where applicable: Netlify (website hosting and delivery), Supabase (booking database, hosted in the EU), SumUp (online card payments via hosted checkout), and our email provider for confirmation messages. Payment card details are entered only on SumUp’s systems, not on this website. Data is transferred to third countries only on the basis of EU standard contractual clauses or an adequacy decision. Beyond that, we pass data to third parties only where we are legally obliged to — for instance to tax authorities."
+        },
+        {
+          "title": "7. مدة الاحتفاظ ببياناتكم",
+          "body": "تُحفظ بيانات الحجز والفوترة سبع سنوات بموجب القانون الضريبي والتجاري النمساوي (§ 132 BAO، § 212 UGB). تُحذف الاستفسارات التي لا تؤدي إلى حجز بعد إغلاق المسألة، في أجل أقصاه اثنا عشر شهراً. تُحذف سجلات الخادم بعد أيام قليلة. تُحذف البيانات القائمة على الموافقة عند سحبها."
+        },
+        {
+          "title": "8. حقوقكم",
+          "body": "لكم الحق في الوصول إلى بياناتكم، وتصحيحها أو محوها، وتقييد المعالجة، والاعتراض على المعالجة القائمة على المصالح المشروعة، وتلقي بياناتكم بصيغة قابلة للنقل. وحيث تقوم المعالجة على الموافقة، يجوز سحبها في أي وقت بأثر للمستقبل. اكتبوا إلى البريد في الـImpressum وسنرد خلال شهر."
+        },
+        {
+          "title": "9. حق الشكوى",
+          "body": "إن رأيتم أننا نعالج بياناتكم بصورة غير مشروعة، يجوز تقديم شكوى إلى هيئة حماية البيانات النمساوية (Österreichische Datenschutzbehörde, Barichgasse 40–42, 1030 Vienna, dsb.gv.at) أو إلى السلطة الإشرافية في محل إقامتكم."
+        },
+        {
+          "title": "10. الصور",
+          "body": "ننشر صوراً يظهر فيها ضيوف يمكن التعرف عليهم فقط بموافقة صريحة، مكتوبة أو واضحة في اليوم نفسه. يجوز سحب الموافقة في أي وقت؛ اكتبوا إلينا وسنزيل الصورة من موقعنا وقنوات التواصل."
+        },
+        {
+          "title": "11. تغييرات هذه السياسة",
+          "body": "نحدّث هذه السياسة كلما تغيّرت أدواتنا أو إجراءاتنا. النسخة المنشورة هنا هي السارية."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "جولات خاصة بإرشاد المالك في فيينا بسيارات كهربائية vintage — أخضر وأبيض وعنابي. ثلاثة ضيوف كحد أدنى، حتى سبعة لكل سيارة (عدة سيارات للمجموعات الأكبر)، ثماني لغات.",
+    "quickLinks": "استكشفوا",
+    "legal": "قانوني",
+    "contact": "التواصل",
+    "meetingPoint": "نقطة اللقاء على Ringstrasse في فيينا — يصل الرمز الدقيق مع تأكيد الحجز.",
+    "googleBusiness": "ملف Google Business",
+    "rights": "© {year} Vienna Grand Tours. جميع الحقوق محفوظة.",
+    "impressum": "Impressum",
+    "agb": "الشروط والأحكام",
+    "datenschutz": "الخصوصية",
+    "madeBy": "من تنفيذ <name>Besaweb</name>"
+  },
+  "cookies": {
+    "title": "ملفات تعريف الارتباط والخصوصية",
+    "body": "نخزّن عنصراً صغيراً في المتصفح لتذكّر هذا الاختيار. تُحمَّل التحليلات فقط إن وافقتم، ولا نستخدم متتبعات إعلانية أبداً.",
+    "accept": "قبول التحليلات",
+    "essential": "الأساسي فقط",
+    "privacy": "اقرأوا سياسة الخصوصية"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "هذه الصفحة أخطأت الطريق",
+    "body": "الصفحة التي تبحثون عنها ليست هنا — ربما انتقلت، أو شاخ الرابط. الجولات والأسعار ونموذج الحجز على بعد نقرة.",
+    "home": "العودة إلى الرئيسية",
+    "book": "احجزوا جولة"
+  },
+  "common": {
+    "loading": "جارٍ التحميل…",
+    "close": "إغلاق",
+    "learnMore": "اعرفوا المزيد",
+    "photoNeeded": "صورة مطلوبة"
+  }
+}

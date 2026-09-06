@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #1b3a2f;
+  --navy-soft: #2d5244;
+  --navy-deep: #0e221c;
+  --gold: #c4a35a;
+  --gold-light: #d4bc7e;
+  --cream: #f7f3eb;
+  --cream-soft: #fbf9f4;
+  --ink: #1a1a1a;
+  --paper-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.18 0 0 0 0 0.14 0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--navy);
+  background-color: var(--cream);
+}
+
+@layer base {
+  ::selection {
+    background: rgba(196, 163, 90, 0.35);
+    color: var(--navy);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-sm bg-gold px-7 py-3.5 font-sans text-sm font-semibold tracking-wideish text-navy-deep transition duration-300 ease-elegant hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-sm border border-cream/35 bg-transparent px-7 py-3.5 font-sans text-sm font-semibold tracking-wideish text-cream transition duration-300 ease-elegant hover:border-gold-light/70 hover:bg-cream/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-sm border border-navy/15 bg-cream-soft/70 px-5 py-2.5 font-sans text-sm font-semibold tracking-wide text-navy transition duration-300 ease-elegant hover:border-gold/60 hover:bg-cream-warm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .input-field {
+    @apply w-full rounded-sm border border-navy/15 bg-cream-soft/80 px-4 py-3.5 font-sans text-navy outline-none transition duration-300 placeholder:text-navy/40 focus:border-gold focus:bg-cream-soft focus:shadow-focus;
+  }
+
+  .label-field {
+    @apply mb-1.5 block font-sans text-xs font-semibold uppercase tracking-caption text-navy/55;
+  }
+
+  .ornament-rule {
+    @apply h-px w-16 origin-left bg-gradient-to-r from-gold via-gold-light to-transparent rtl:origin-right rtl:bg-gradient-to-l;
+  }
+
+  .section-kicker {
+    @apply font-sans text-[11px] font-semibold uppercase tracking-caption text-gold-muted;
+  }
+
+  .paper-surface {
+    @apply relative overflow-hidden border border-navy/10 bg-cream-soft/90;
+  }
+
+  .paper-surface::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.45;
+    background-image: var(--paper-noise);
+    mix-blend-mode: multiply;
+  }
+
+  .texture-noise {
+    position: relative;
+  }
+
+  .texture-noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    background-image: var(--paper-noise);
+    mix-blend-mode: soft-light;
+  }
+
+  .media-frame {
+    @apply relative overflow-hidden;
+    box-shadow: inset 0 0 0 1px rgba(196, 163, 90, 0.12);
+  }
+
+  .media-frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: inset 0 0 60px rgba(7, 21, 18, 0.25);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-180 {
+    animation-delay: 180ms;
+  }
+
+  .delay-260 {
+    animation-delay: 260ms;
+  }
+
+  .delay-340 {
+    animation-delay: 340ms;
+  }
+}
+
+/* Wide Latin tracking looks sparse on Arabic and Simplified Chinese copy.
+   The wordmark keeps its own tracking utilities so the brand stays as designed. */
+html[lang="ar"] .tracking-caption,
+html[lang="ar"] .tracking-wideish,
+html[lang="zh-CN"] .tracking-caption,
+html[lang="zh-CN"] .tracking-wideish {
+  letter-spacing: 0.04em;
+}
+
+/* Legacy hero-veil token (unused on home; keep RTL flip if reused elsewhere). */
+html[dir="rtl"] .bg-hero-veil {
+  background-image:
+    linear-gradient(
+      195deg,
+      rgba(7, 21, 18, 0.55) 0%,
+      rgba(14, 34, 28, 0.42) 35%,
+      rgba(27, 58, 47, 0.55) 68%,
+      rgba(14, 34, 28, 0.82) 100%
+    ),
+    linear-gradient(270deg, rgba(14, 34, 28, 0.55) 0%, transparent 45%);
+}
+
+.glow-inline-start {
+  background: radial-gradient(
+    ellipse 60% 50% at 15% 0%,
+    rgba(196, 163, 90, 0.12),
+    transparent 55%
+  );
+}
+
+html[dir="rtl"] .glow-inline-start {
+  background: radial-gradient(
+    ellipse 60% 50% at 85% 0%,
+    rgba(196, 163, 90, 0.12),
+    transparent 55%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-fade-up,
+  .animate-fade-in,
+  .animate-soft-pan,
+  .animate-rule-draw {
+    animation: none !important;
+  }
+}

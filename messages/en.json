@@ -1,0 +1,864 @@
+{
+  "meta": {
+    "siteName": "Vienna Grand Tours",
+    "homeTitle": "Vienna Grand Tours — Private City Tours in a Vintage Electric Car",
+    "homeDescription": "Private guided sightseeing tours of Vienna in a fleet of vintage-style electric cars — forest green, white and burgundy. Narration in eight languages. Bronze, Silver, Gold and Diamond from €25 per person, minimum three guests.",
+    "toursTitle": "Tours & Pricing — Vienna Grand Tours",
+    "toursDescription": "Four private tours — Bronze 30 min €25, Silver 1 hr €39, Gold 90 min €49, Diamond 2 hr €69 per person. Minimum three guests.",
+    "bookTitle": "Book a Tour — Vienna Grand Tours",
+    "bookDescription": "Reserve a private Vienna tour in six short steps: tour length, date, group size, narration language. Free cancellation up to 24 hours before departure.",
+    "aboutTitle": "About — Vienna Grand Tours",
+    "aboutDescription": "The story behind Vienna Grand Tours, our fleet of vintage-style electric cars, and how we guide small private groups through Vienna.",
+    "galleryTitle": "Gallery — Vienna Grand Tours",
+    "galleryDescription": "Vienna as our guests see it: the Opera at sunrise, the Rathaus at blue hour, rooftops at sunset, and our fleet of vintage electric tour cars.",
+    "faqTitle": "FAQ — Vienna Grand Tours",
+    "faqDescription": "Rain and weather, cancellation, meeting point, accessibility, payment, children, luggage and the three-guest minimum — answered plainly.",
+    "impressumTitle": "Impressum — Vienna Grand Tours",
+    "impressumDescription": "Legal disclosure for Vienna Grand Tours under § 5 ECG and § 25 MedienG.",
+    "agbTitle": "Terms & Conditions — Vienna Grand Tours",
+    "agbDescription": "Booking, payment, cancellation, no-show, weather and liability terms for private tours with Vienna Grand Tours.",
+    "datenschutzTitle": "Privacy Policy — Vienna Grand Tours",
+    "datenschutzDescription": "How Vienna Grand Tours handles your data under the GDPR: what the booking form collects, who processes it, how long we keep it, and your rights."
+  },
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "book": "Book",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "bookCta": "Book your tour",
+    "menu": "Menu",
+    "mainNav": "Main navigation",
+    "mobileNav": "Mobile navigation",
+    "languageSwitcher": "Language"
+  },
+  "hero": {
+    "brand": "Vienna Grand Tours",
+    "headline": "Vienna, unhurried — the Ring, the palaces, and the stories in between.",
+    "subline": "Private guided tours in a fleet of vintage-style electric cars — forest green, white and burgundy. Quiet, open to the air, and never shared with strangers.",
+    "cta": "Book your tour",
+    "secondaryCta": "See tours and prices",
+    "shotTitle": "Vehicle at Ringstrasse — three-quarter front",
+    "shotHint": "Golden hour · dark green body · landmark soft behind",
+    "imageAlt": "Dark green vintage electric tour vehicle, three-quarter front view on Vienna’s Ringstrasse at golden hour",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "closingTitle": "Your private car is waiting",
+    "closingSub": "Reserve your Vienna hour — book online in a few minutes."
+  },
+  "trust": {
+    "statValue": "8",
+    "statUnit": "languages",
+    "statCaption": "Choose your guide language when you book.",
+    "kicker": "Every tour includes",
+    "item1": "A private vintage car",
+    "item2": "A licensed local guide",
+    "item3": "Silent electric drive"
+  },
+  "tours": {
+    "kicker": "Private tours",
+    "sectionTitle": "Choose your ride",
+    "sectionSub": "Four tours, one private car, three guests minimum. Nobody else joins your ride.",
+    "pageTitle": "Tours & pricing",
+    "pageIntro": "Bronze, Silver, Gold and Diamond — from a half-hour Ring loop to two unhurried hours. Every booking is private. Prices are per person, minimum three guests. Each car seats up to seven; larger groups ride in multiple cars.",
+    "perPerson": "per person",
+    "minGuests": "Min. {count} guests",
+    "book": "Book",
+    "viewAll": "Full pricing & routes",
+    "included": "What’s included",
+    "languages": "Narration languages",
+    "landmarks": "Route highlights",
+    "stops": "Stops",
+    "mapKicker": "The route",
+    "mapTitle": "Where we drive",
+    "mapNote": "Bronze is the classic 30-minute Ring loop (Hofburg, museums, Parliament, Rathaus, Opera). Silver is the one-hour Grand Tour with Old Town highlights and a stop at the Minoritenkirche. Gold is the 90-minute Premium route with the Red Army Monument and a Belvedere stop. Diamond keeps the Gold sights at a slower pace. Tell us what you want to see and we rearrange it.",
+    "mapShotTitle": "Route map — Ringstrasse / Old Town loop",
+    "mapShotHint": "Clear loop · Opera / Hofburg / Stephansdom markers · forest green + gold",
+    "mapShotAlt": "Route map of the Vienna Grand Tours Ringstrasse and Old Town loop",
+    "tiers": {
+      "bronze": {
+        "name": "Bronze",
+        "duration": "30 minutes",
+        "description": "Classic half-hour Ring tour — Hofburg, the museums, Parliament, Rathaus, Opera and more, 21 sights from the car.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten"
+        ],
+        "stops": "Photo stops along the Ring",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "21 monuments and sights",
+          "Bottled water"
+        ]
+      },
+      "silver": {
+        "name": "Silver",
+        "duration": "1 hour",
+        "description": "Grand one-hour tour — everything in Bronze, plus Freyung, Café Central, Sacher, Karlskirche, Musikverein and more, with a stop at the Minoritenkirche.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern"
+        ],
+        "stops": "Stop at Minoriten Church, plus photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "36 monuments and sights",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "duration": "1.5 hours",
+        "description": "Premium 90-minute tour — the full Silver route plus the Red Army Monument and a stop at Belvedere Palace.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Stops at Minoriten Church and Belvedere Palace",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water"
+        ]
+      },
+      "diamond": {
+        "name": "Diamond",
+        "duration": "2 hours",
+        "description": "The Gold route at an unhurried pace — Belvedere stop, Minoritenkirche stop, and extra time for photographs wherever the light is best.",
+        "highlights": [
+          "Hofburg Palace",
+          "Natural History Museum",
+          "Art History Museum",
+          "Maria Theresa Monument",
+          "Ring Road",
+          "Parliament",
+          "Volksgarten",
+          "Burgtheater",
+          "Rathaus (City Hall)",
+          "Café Landtmann",
+          "University of Vienna",
+          "Beethoven’s House",
+          "Minoriten Church",
+          "President’s Residence",
+          "Sisi Museum",
+          "Spanish Riding School",
+          "National Library",
+          "Albertina Museum",
+          "Café Mozart",
+          "Opera House",
+          "Burggarten",
+          "Votive Church",
+          "Freyung Square",
+          "Schotten Church",
+          "Ferstel Passage",
+          "Am Hof",
+          "Mozart’s House",
+          "Café Central",
+          "Sacher Hotel",
+          "Moulin Rouge",
+          "Café Schwarzenberg",
+          "Schwarzenberg Square",
+          "Charles Church (Karlskirche)",
+          "Musikverein",
+          "Technical University of Vienna",
+          "Albertina Modern",
+          "Monument of the Red Army",
+          "Belvedere Palace (stop)"
+        ],
+        "stops": "Belvedere and Minoritenkirche stops, plus extra photo stops",
+        "included": [
+          "Private car for your group",
+          "Live guide",
+          "38 monuments and sights, unhurried",
+          "Stop at Belvedere Palace",
+          "Stop at Minoriten Church",
+          "Hotel pick-up",
+          "Bottle of prosecco",
+          "Bottled water",
+          "Route timed for photographs"
+        ]
+      }
+    },
+    "narrationList": "English · German · Spanish · Italian · Arabic · Chinese · Portuguese · Turkish",
+    "payOnArrival": "Book online · pay securely with SumUp at checkout.",
+    "groupFrom": "From €{total} for {count}"
+  },
+  "why": {
+    "kicker": "The experience",
+    "title": "Why ride with us",
+    "items": {
+      "personal": {
+        "title": "Owner-guided",
+        "text": "You ride with the person who planned the route. I drive, I narrate, and I answer the questions you actually have — no script, no rotating fleet of strangers."
+      },
+      "vintage": {
+        "title": "A car people stop for",
+        "text": "Three vintage-style electric cars — forest green, white and burgundy — all open-sided and fully electric. They look like 1910 and drive like tomorrow: no engine noise to talk over and no diesel fumes at the traffic lights."
+      },
+      "languages": {
+        "title": "Eight languages",
+        "text": "Narration in English, German, Spanish, Italian, Arabic, Chinese, Portuguese or Turkish. Choose yours when you book, and the whole tour follows you — mixed groups included."
+      },
+      "pace": {
+        "title": "Your route, your pace",
+        "text": "Every booking is private, so we can wait for the light, skip what you have already seen, and stop wherever you want a photograph."
+      }
+    }
+  },
+  "gallery": {
+    "kicker": "Moments",
+    "teaserTitle": "Vienna from the passenger seat",
+    "teaserSub": "A few frames from the city we drive through every day.",
+    "viewAll": "Open gallery",
+    "title": "Gallery",
+    "sub": "Vienna as our guests see it — the fleet on the streets, and the landmarks we pass every day.",
+    "shotListTitle": "Photo shot list",
+    "shotListIntro": "Every image this site expects, with its working title, a suggested location and the pages it appears on. The same checklist lives in PHOTO_SHOT_LIST.md at the project root.",
+    "shotListPrivacy": "Guest photographs — boarding, faces on board, the guide mid-story — are published only with clear consent. Ask at booking, or after the tour.",
+    "photoNeeded": "Photo needed",
+    "vehicleBadge": "Dark green vintage EV — photo needed",
+    "filtersLabel": "Gallery filters",
+    "filters": {
+      "all": "All",
+      "vehicle": "The car",
+      "landmarks": "Landmarks",
+      "guests": "Guests",
+      "city": "City views"
+    },
+    "close": "Close",
+    "shotList": {
+      "location": "Location",
+      "appearsOn": "On the site",
+      "consent": "Publish only with guest consent.",
+      "categories": {
+        "vehicle": "The fleet — vintage electric cars",
+        "landmarks": "Landmarks",
+        "guests": "Guests (consent required)",
+        "city": "City views",
+        "site": "Other site slots"
+      }
+    },
+    "items": {
+      "v1": {
+        "title": "Forest-green tour car on the Graben",
+        "hint": "Three-quarter front on Vienna’s historic pedestrian mile",
+        "alt": "Dark green vintage electric tour vehicle on Vienna’s Graben"
+      },
+      "v2": {
+        "title": "Side profile at Stephansdom",
+        "hint": "Full silhouette beside the cathedral",
+        "alt": "Full side profile of the dark green vintage electric tour vehicle near Stephansdom"
+      },
+      "v3": {
+        "title": "Front detail at night",
+        "hint": "Grille, lights and badge in warm night light",
+        "alt": "Close-up front detail of the dark green vintage EV at night"
+      },
+      "v4": {
+        "title": "Interior seating",
+        "hint": "Guest perspective from the cabin",
+        "alt": "Interior seating of the dark green vintage electric tour vehicle from a guest perspective"
+      },
+      "v5": {
+        "title": "Tour car at Stephansdom at dusk",
+        "hint": "Warm dusk light on dark green paint",
+        "alt": "Dark green vintage EV at Stephansdom at dusk"
+      },
+      "v6": {
+        "title": "White fleet car with red seats",
+        "hint": "Open-sided vintage EV",
+        "alt": "White vintage electric tour vehicle with red seats"
+      },
+      "v7": {
+        "title": "Burgundy fleet car",
+        "hint": "Open-sided vintage EV on the Ring",
+        "alt": "Burgundy vintage electric tour vehicle in the Vienna Grand Tours fleet"
+      },
+      "v8": {
+        "title": "Fleet lineup — green, white and burgundy",
+        "hint": "All three colours at pickup",
+        "alt": "Vienna Grand Tours fleet lined up: green, white and burgundy"
+      },
+      "v9": {
+        "title": "Tour car on the Graben at night",
+        "hint": "Headlights and café lights",
+        "alt": "Dark green vintage EV on the Graben at night"
+      },
+      "v10": {
+        "title": "Tour car at Stephansdom in golden light",
+        "hint": "Warm late light · open roof",
+        "alt": "Dark green vintage EV at Stephansdom in golden light"
+      },
+      "l1": {
+        "title": "Tour car at Stephansdom at dusk",
+        "hint": "Cathedral façade · headlights on",
+        "alt": "Dark green vintage EV at St. Stephen’s Cathedral at dusk"
+      },
+      "l2": {
+        "title": "Green tour car at the Hofburg",
+        "hint": "Michaelerplatz · daytime",
+        "alt": "Dark green vintage EV in front of the Hofburg on Michaelerplatz"
+      },
+      "l3": {
+        "title": "Tour car on the Graben by day",
+        "hint": "Old Town boulevard",
+        "alt": "Dark green vintage electric vehicle on Vienna’s Graben in daytime"
+      },
+      "l4": {
+        "title": "Tour car at Stephansdom by day",
+        "hint": "Cathedral spires · vehicle in frame",
+        "alt": "Dark green vintage EV near St. Stephen’s Cathedral in daytime"
+      },
+      "g1": {
+        "title": "Guest boarding",
+        "hint": "Published only with consent",
+        "alt": "Guests boarding the dark green vintage electric tour vehicle in Vienna"
+      },
+      "g2": {
+        "title": "Guests onboard",
+        "hint": "Published only with consent",
+        "alt": "Smiling passengers seated in the vintage electric tour vehicle"
+      },
+      "g3": {
+        "title": "Guide narrating",
+        "hint": "Published only with consent",
+        "alt": "Tour guide narrating to guests beside or inside the vintage electric vehicle"
+      },
+      "c1": {
+        "title": "Stephansdom over Vienna rooftops at twilight",
+        "hint": "Rooftops toward the cathedral",
+        "alt": "Stephansdom over Vienna rooftops at twilight"
+      },
+      "c2": {
+        "title": "Vienna City Hall (Rathaus) arcade",
+        "hint": "Civic landmark on the Ring",
+        "alt": "Vienna City Hall (Rathaus) arcade"
+      },
+      "c3": {
+        "title": "Vienna State Opera at dusk",
+        "hint": "Opernring",
+        "alt": "Vienna State Opera at dusk"
+      },
+      "c4": {
+        "title": "St. Stephen’s Cathedral (Stephansdom)",
+        "hint": "Daytime façade",
+        "alt": "St. Stephen’s Cathedral (Stephansdom) in daytime"
+      },
+      "c5": {
+        "title": "Stephansdom illuminated at night",
+        "hint": "Night façade",
+        "alt": "Stephansdom illuminated at night"
+      },
+      "c6": {
+        "title": "Hofburg — Michaelertrakt dome",
+        "hint": "Palace architecture",
+        "alt": "Hofburg — Michaelertrakt dome"
+      },
+      "c7": {
+        "title": "Vienna State Opera at night",
+        "hint": "Illuminated Opera",
+        "alt": "Vienna State Opera at night"
+      },
+      "c8": {
+        "title": "Austrian Parliament on the Ringstrasse",
+        "hint": "Ringstrasse landmark",
+        "alt": "Austrian Parliament on the Ringstrasse"
+      },
+      "c9": {
+        "title": "Belvedere Palace and reflecting pool",
+        "hint": "Palace gardens",
+        "alt": "Belvedere Palace and reflecting pool"
+      },
+      "c10": {
+        "title": "Karlskirche at blue hour",
+        "hint": "Karlsplatz",
+        "alt": "Karlskirche at blue hour"
+      },
+      "c11": {
+        "title": "Schönbrunn Palace",
+        "hint": "Imperial residence",
+        "alt": "Schönbrunn Palace"
+      },
+      "c12": {
+        "title": "The Graben, Vienna’s historic pedestrian mile",
+        "hint": "Old Town",
+        "alt": "The Graben, Vienna’s historic pedestrian mile"
+      }
+    }
+  },
+  "testimonials": {
+    "_comment": "SAMPLE CONTENT — plausible placeholder reviews used until real guest reviews are collected. Replace with genuine, attributable reviews (see supabase/schema.sql seed rows) before publishing.",
+    "title": "What guests say",
+    "sub": "Words from the back seat",
+    "sampleNote": "Sample reviews shown while we collect the first real ones.",
+    "items": [
+      {
+        "author": "Anna K.",
+        "quote": "Warm, personal, and the perfect way to see Vienna without rushing. We stopped whenever we wanted a photograph.",
+        "rating": 5
+      },
+      {
+        "author": "James R.",
+        "quote": "A beautiful car and genuinely good stories in English — it felt like being driven around by a local friend.",
+        "rating": 5
+      },
+      {
+        "author": "Elena M.",
+        "quote": "We booked the 1.5-hour tour with our parents and wished it had lasted longer. Quiet, easy, no crowds.",
+        "rating": 5
+      }
+    ]
+  },
+  "booking": {
+    "title": "Book your tour",
+    "sub": "Six short steps. Choose the tour, the time, your group and the language — we confirm by email, usually within a few hours.",
+    "stepsLabel": "Booking steps",
+    "steps": {
+      "tour": "Tour",
+      "datetime": "Date & time",
+      "guests": "Guests",
+      "language": "Language",
+      "contact": "Contact",
+      "payment": "Summary"
+    },
+    "hints": {
+      "tour": "Every tour is private — your group rides alone in one or more cars from our fleet, never sold by the seat.",
+      "datetime": "Daytime tours leave between 09:00 and 17:00, seven days a week. Vienna local time.",
+      "guests": "Minimum three guests. Each car seats up to seven — larger groups are split across cars. Couples can book three seats and still have the car to themselves.",
+      "language": "Pick the language you would like the narration in. Mixed groups are fine — we switch as we go.",
+      "contact": "We use these details only to confirm your booking and to reach you if the weather turns.",
+      "payment": "Check the summary and pay securely online with SumUp. After payment we email you the meeting point and departure time."
+    },
+    "fields": {
+      "tourType": "Tour",
+      "date": "Date",
+      "time": "Departure time",
+      "guests": "Number of guests",
+      "language": "Narration language",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "notes": "Anything we should know (optional)",
+      "notesPlaceholder": "Mobility needs, children’s ages, a birthday, a hotel address for pickup, a place you would like to see.",
+      "cars": "Cars"
+    },
+    "languages": {
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Español",
+      "it": "Italiano",
+      "ar": "العربية",
+      "zh": "中文",
+      "pt": "Português",
+      "tr": "Türkçe"
+    },
+    "validation": {
+      "tour": "Please choose a tour length.",
+      "date": "Please choose the date you would like to ride.",
+      "time": "Please choose a departure time.",
+      "unavailable": "We are not running tours then. Please choose another date or departure time.",
+      "guests": "Bookings start at three guests. Each car seats up to seven; larger groups use multiple cars (up to 28 guests online).",
+      "language": "Please choose a narration language.",
+      "name": "Please tell us the name the booking should be under.",
+      "email": "Please enter an email address so we can send your confirmation.",
+      "emailFormat": "That email address doesn’t look right — please check it.",
+      "phone": "Please add a phone number so we can reach you on the day."
+    },
+    "next": "Continue",
+    "back": "Back",
+    "submit": "Confirm & pay with SumUp",
+    "summary": "Booking summary",
+    "total": "Total",
+    "policyTitle": "Cancellation & weather",
+    "policy": "Free cancellation up to 24 hours before departure, refunded in full. We drive in light rain — the side covers go up in a minute. If the weather becomes unsafe, we offer you another slot or a full refund. If something changes on your side, write to us; we will find a solution.",
+    "paymentNote": "You pay online now on SumUp’s secure checkout. Card details are entered only on SumUp — never stored on this website. After payment you return here and we email the meeting point and departure time.",
+    "paymentStartFailed": "We saved your booking but could not start SumUp checkout. Please try again in a moment, or email us with your booking reference.",
+    "heldTitle": "Booking held — payment pending",
+    "heldBody": "Your details are saved. Online card payment is not available on this environment yet, so your booking stays awaiting payment. We will email a SumUp payment link or confirm the next step by hand.",
+    "paymentCheckingKicker": "SumUp",
+    "paymentCheckingTitle": "Confirming your payment",
+    "paymentCheckingBody": "One moment while we verify your SumUp payment and confirm the booking.",
+    "paymentPendingTitle": "Payment still processing",
+    "paymentPending": "SumUp has not confirmed the payment yet. If you were charged, write to us with your booking reference and we will confirm by hand.",
+    "paymentVerifyMissing": "Missing booking reference. Please return to the booking form or email us.",
+    "paymentVerifyFailedTitle": "We could not confirm payment",
+    "paymentVerifyFailed": "Something went wrong verifying the SumUp payment. If you were charged, email us with your booking reference and we will sort it out.",
+    "backToTours": "Browse tours",
+    "backToBook": "Back to booking",
+    "successTitle": "Your tour is reserved",
+    "successBody": "Thank you. Payment is complete and your booking is confirmed. A message is on its way to your inbox with the meeting point and exact departure time.",
+    "successNote": "If nothing arrives within an hour, check your spam folder or simply email us — we will confirm by hand.",
+    "successRef": "Booking reference",
+    "error": "We couldn’t save your booking just now. Please try again, or email us and we will hold the slot for you.",
+    "minGuestsHint": "Minimum 3 guests. Up to 7 per car; larger groups ride in multiple cars. Price is per person.",
+    "demoMode": "Demo mode: Supabase and/or SumUp are not fully configured. This booking was validated locally for this session only.",
+    "carsNeededHint": "Your group needs {count} cars (up to 7 guests each). We’ll confirm fleet availability by email."
+  },
+  "about": {
+    "title": "About Vienna Grand Tours",
+    "intro": "A small, owner-guided tour business on the Ringstrasse — and a fleet of vintage-style electric vehicles that made it possible.",
+    "storyKicker": "The story",
+    "storyTitle": "A note from the founder",
+    "story1": "I grew up a couple of tram stops from the Ring, and for years I watched visitors arrive, photograph the Opera and leave again without ever hearing why any of it stands where it does. I was working in a different industry at the time. The city kept nagging at me.",
+    "story2": "When I finally started Vienna Grand Tours, I wanted the opposite of a coach: one small car, one group at a time, no microphone and no fixed script. I built a fleet of vintage-styled electric vehicles — forest green, white and burgundy — and spent a summer learning which corner of Heldenplatz catches the evening light and which lane behind the cathedral is quiet enough to tell a story in.",
+    "story3": "That is still how it works. You book the whole car, we agree roughly where to go, and then we go slowly. I would rather show you four places properly than twelve through a window — and if the light is good in front of the Rathaus, we sit there a little longer.",
+    "founderShotTitle": "Founder with the dark green EV",
+    "founderShotHint": "Hofburg or Opera backdrop · vehicle colour clearly visible",
+    "founderShotAlt": "Founder standing with the dark green vintage electric tour vehicle in Vienna",
+    "vehicleShotTitle": "Vehicle spotlight — polished detail",
+    "vehicleShotHint": "Door, wheel, or badge · premium craftsmanship cue",
+    "vehicleShotAlt": "Polished detail of the dark green vintage electric tour vehicle",
+    "vehicleKicker": "The fleet",
+    "vehicleTitle": "Three vintage bodies, all electric underneath",
+    "vehicle1": "They look like they belong to another century and they run on batteries. There is no engine noise to talk over, nothing to smell at a red light, and — in fair weather — no glass between you and the façades. Guests hear the trams, the fiakers and the guide, in that order.",
+    "vehicle2": "The sides are open when the weather is kind and covered within a minute when it is not, so a shower changes the mood of a tour rather than cancelling it. Each car seats up to seven guests plus your guide, with room beside them for day bags and camera gear. We assign green, white or burgundy depending on availability — the experience is the same.",
+    "vehicleSpecsTitle": "In short",
+    "vehicleSpecs": [
+      "Fully electric — quiet, and no exhaust in the Old Town",
+      "Seats up to seven guests plus your guide in each car",
+      "Open sides in fair weather, weather covers for rain",
+      "Three colours: deep forest green, white and burgundy",
+      "Room for day bags, cameras and a folded pram",
+      "Charged overnight — no emissions on the route"
+    ],
+    "valuesKicker": "Our promise",
+    "valuesTitle": "What we stand for",
+    "values": {
+      "care": {
+        "title": "Personal care",
+        "text": "One group at a time, a host who knows your names by the second stop, and replies to your messages written by a person rather than a queue."
+      },
+      "city": {
+        "title": "Respect for the city",
+        "text": "Electric and quiet, so a residential lane stays a residential lane. We keep to the routes and stops the city allows, and we do not block trams for a photograph."
+      },
+      "honesty": {
+        "title": "Honest hospitality",
+        "text": "Per-person prices with nothing hidden, a cancellation policy written in plain language, and no shop we are paid to stop at."
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "sub": "Everything worth knowing before you book. If your question isn’t here, write to us — a person answers.",
+    "items": [
+      {
+        "q": "Do tours run in the rain?",
+        "a": "In light rain, yes — the weather covers go up in about a minute, and Vienna looks unusually good on wet cobblestones. In heavy rain, thunderstorms, ice or strong wind we do not drive. We will offer you another slot or refund you in full, and we always tell you as early as we can."
+      },
+      {
+        "q": "What happens if the weather turns during the tour?",
+        "a": "We put the covers up and keep going; a shower is usually the most photogenic part of the day. If conditions become genuinely unsafe we end the tour early and refund the portion you did not ride, or move you to another date, whichever you prefer."
+      },
+      {
+        "q": "What is your cancellation policy?",
+        "a": "Cancel free of charge up to 24 hours before departure and you are refunded in full. Inside 24 hours we will usually move you to another slot if we can; if we cannot, the tour is charged. If we cancel — weather, technical trouble, illness — you always get a full refund or a new date, whichever you prefer."
+      },
+      {
+        "q": "Is the tour suitable for limited mobility?",
+        "a": "There is one step up into the car, with a handrail on both sides, and we are glad to help you board. Once seated, the whole tour happens from your seat. A folding wheelchair, walker or cane travels with us; the car cannot take a fixed-frame wheelchair or an electric scooter, and there is no boarding ramp. Tell us about your mobility in the booking notes and we will choose stops that work."
+      },
+      {
+        "q": "How do I pay?",
+        "a": "Online at booking, on SumUp’s secure checkout. You are redirected to SumUp to pay by card, then return here for confirmation. Prices are per person and final (no VAT is charged under the Austrian small-business scheme): Bronze €25, Silver €39, Gold €49, Diamond €69. The total in your booking confirmation is the amount charged."
+      },
+      {
+        "q": "Where do we meet?",
+        "a": "On the Ringstrasse near the State Opera, unless we agree otherwise — the exact pin, the departure time and a phone number arrive with your confirmation email. If your hotel is inside or just off the Ring, ask in the booking notes and we will usually collect you at the door."
+      },
+      {
+        "q": "How big can our group be — and why the three-guest minimum?",
+        "a": "Three guests minimum. Each car seats up to seven; larger groups travel in multiple cars from our fleet. A booking is never sold by the seat — three seats is what it takes to make a private departure work. Couples and solo travellers are welcome: you book three seats and ride alone."
+      },
+      {
+        "q": "Can we change the route or the length?",
+        "a": "Yes. The routes on this site are a starting point, not a timetable. Tell us before we set off — or halfway round — if you would like more time at the Hofburg, a detour past the Museumsquartier, or to skip something you have already seen. If you want to extend on the day, we will if the next booking allows it."
+      },
+      {
+        "q": "Which languages do you guide in?",
+        "a": "English, German, Spanish, Italian, Arabic, Chinese, Portuguese and Turkish. Choose your language when you book so we can prepare properly. Mixed groups are no problem — we switch between two languages without slowing the tour down."
+      },
+      {
+        "q": "Can children come along? Do you have child seats?",
+        "a": "Children are very welcome and count towards the three-guest minimum. Austrian law requires a child seat or booster for children under 135 cm or 14 years, so tell us your children’s ages in the booking notes at least 24 hours ahead and the right seat will be in the car. Prams fold and travel with us."
+      },
+      {
+        "q": "Where does luggage go?",
+        "a": "There is room beside the seats for day bags, camera gear and a folded pram, but not for suitcases. If you are travelling on after the tour, leave your luggage at your hotel or in a station locker — the car is a sightseeing vehicle, not a transfer."
+      }
+    ]
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "agbTitle": "General Terms & Conditions",
+    "datenschutzTitle": "Privacy Policy",
+    "reviewNotice": "Complete any bracketed fields in the Impressum before taking paid bookings. Austrian legal review is recommended.",
+    "lastUpdated": "Last updated: 31 August 2026",
+    "impressum": {
+      "intro": "Information required under § 5 of the Austrian E-Commerce Act (ECG) and § 25 of the Austrian Media Act (MedienG).",
+      "companyHeading": "Company and media owner",
+      "ownerHeading": "Owner / person responsible for content",
+      "contactHeading": "Contact",
+      "registerHeading": "Register and trade authority",
+      "vatHeading": "VAT status",
+      "chamberHeading": "Chamber membership",
+      "tradeHeading": "Trade regulations",
+      "tradeBody": "Applicable trade regulations: Gewerbeordnung (GewO), available at www.ris.bka.gv.at. Details pursuant to § 108 (3) GewO are provided at the guest’s request and are stated on the booking confirmation.",
+      "authorityHeading": "Supervisory authority",
+      "authorityBody": "Competent trade authority (Gewerbebehörde): Magistratisches Bezirksamt für den {district}. Bezirk, Vienna.",
+      "purposeHeading": "Business purpose",
+      "purposeBody": "Private guided sightseeing tours of Vienna in a fleet of vintage-style electric vehicles (forest green, white and burgundy), with narration in English, German, Spanish, Italian, Arabic, Chinese, Portuguese and Turkish.",
+      "odrHeading": "Online dispute resolution",
+      "odrBody": "The European Commission provides a platform for online dispute resolution. We are neither obliged nor willing to take part in dispute resolution proceedings before a consumer arbitration board.",
+      "contentHeading": "Liability for content and links",
+      "contentBody": "The content of this site has been prepared with care, but we accept no liability for its accuracy, completeness or currency. Where we link to external sites, their operators are responsible for their content; we checked those pages for unlawful content when the links were set and found none.",
+      "copyrightHeading": "Copyright and images",
+      "copyrightBody": "All text, images and layout on this site are protected by copyright. Photographs are our own or licensed; guest photographs are published only with consent. Reuse requires our written permission.",
+      "labels": {
+        "owner": "Owner",
+        "phone": "Phone",
+        "email": "Email",
+        "firmenbuch": "Company register number",
+        "court": "Register court",
+        "gisa": "GISA number",
+        "uid": "VAT ID",
+        "legalForm": "Legal form"
+      },
+      "vatExemptBody": "No VAT identification number (UID). We are exempt from charging VAT under the Austrian small-business scheme (Kleinunternehmerregelung pursuant to § 6 Abs. 1 Z 27 UStG). Prices are final; no VAT is added or shown on invoices."
+    },
+    "agb": {
+      "intro": "These terms govern every tour booked with us, whether through this website, by email or by telephone. Please read them before you book — the booking confirmation refers to this version.",
+      "sections": [
+        {
+          "title": "1. Scope and contracting party",
+          "body": "These General Terms and Conditions apply to all tour bookings with Ahmed Wezza (‘we’, ‘us’), operating as Vienna Grand Tours. Differing conditions of the guest apply only if we have agreed to them in writing."
+        },
+        {
+          "title": "2. Our service",
+          "body": "We provide private guided sightseeing tours of Vienna in vintage-style electric vehicles from our fleet (forest green, white or burgundy): Bronze (30 minutes), Silver (60 minutes), Gold (90 minutes) and Diamond (120 minutes), with live narration in English, German, Spanish, Italian, Arabic, Chinese, Portuguese or Turkish. Each car seats up to seven guests plus your guide; larger groups ride in multiple cars. Minimum three guests per booking. We assign cars from the fleet according to availability. Routes are indicative and may be adapted for traffic, road closures, events, weather or the guest’s wishes."
+        },
+        {
+          "title": "3. Booking and formation of contract",
+          "body": "A booking request through the website, by email or by telephone is an offer by the guest. The contract comes into effect when we send a booking confirmation by email. Please check the confirmation immediately and tell us at once if anything is wrong. Guests must be at least 18 years old to book; minors ride in the care of an accompanying adult."
+        },
+        {
+          "title": "4. Prices and payment",
+          "body": "Prices are per person, in euro, and are final. We operate as a small business under the Austrian Kleinunternehmerregelung and do not charge VAT: Bronze 30 minutes €25, Silver 1 hour €39, Gold 1.5 hours €49, Diamond 2 hours €69. The total is the per-person price multiplied by the number of guests, with a minimum of three. Payment is taken online at booking via SumUp’s secure checkout. Card details are collected by SumUp, not on this website. A booking is confirmed once payment succeeds."
+        },
+        {
+          "title": "5. Cancellation by the guest",
+          "body": "Cancellations made more than 24 hours before the agreed departure time are free of charge and refunded in full. Within 24 hours we will offer an alternative slot where we can; if none is possible, the full price may be retained. Cancellations must be made in writing to our email address or by telephone. Statutory rights of withdrawal for consumers remain unaffected where they apply; note that for leisure services tied to a specific date, § 18 (1) (10) FAGG excludes the 14-day right of withdrawal."
+        },
+        {
+          "title": "6. Late arrival and no-show",
+          "body": "Please arrive five minutes before the agreed departure time. We wait up to 15 minutes; a later start shortens the tour accordingly and does not reduce the price. If the group does not appear at all and has not cancelled, the full price is due."
+        },
+        {
+          "title": "7. Cancellation by us, weather and force majeure",
+          "body": "We drive in light rain. If weather conditions make the tour unsafe — storms, ice, strong wind, extreme heat — or if the vehicle, the guide or the roads make it impossible, we may cancel or shorten the tour. In that case you receive an alternative date or a refund of the price, or of the unridden portion, at your choice. Further claims are excluded unless we acted with intent or gross negligence."
+        },
+        {
+          "title": "8. Conduct during the tour",
+          "body": "Guests follow the guide’s safety instructions and remain seated while the vehicle is moving. Children under 135 cm or 14 years must travel in a suitable child seat when one is required — tell us when booking and we will confirm what we can provide. Smoking, open flames and standing during travel are not permitted. We may refuse or end a tour without refund if a guest is intoxicated, endangers others or repeatedly disregards instructions."
+        },
+        {
+          "title": "9. Luggage and personal belongings",
+          "body": "There is space beside the seats for day bags, cameras and a folded pram; we cannot carry suitcases. Guests are responsible for their own belongings during the tour. We are liable for lost or damaged items only in cases of intent or gross negligence."
+        },
+        {
+          "title": "10. Liability",
+          "body": "We are liable without limitation for personal injury and, otherwise, for intent and gross negligence. Liability for slight negligence is limited to the breach of essential contractual obligations and to damage typical of this type of contract and foreseeable at the time of contracting. This does not affect liability under the Austrian Product Liability Act or mandatory consumer protection provisions. The vehicle is insured as required by Austrian law."
+        },
+        {
+          "title": "11. Photographs and data",
+          "body": "We photograph tours occasionally for our website and social media, and publish images showing guests only with their express consent, which you may withdraw at any time. Personal data is processed as described in our Privacy Policy."
+        },
+        {
+          "title": "12. Governing law and jurisdiction",
+          "body": "Austrian law applies, excluding its conflict-of-law rules and the UN Convention on Contracts for the International Sale of Goods. For consumers, the mandatory protective provisions and places of jurisdiction of their country of residence remain unaffected. For merchants, the competent court in Vienna has jurisdiction. Should any provision be invalid, the remainder of these terms stays in force."
+        }
+      ]
+    },
+    "datenschutz": {
+      "intro": "We collect as little about you as a booking allows, we do not sell data, and we do not run advertising trackers. This page explains what happens to the information you give us, under the EU General Data Protection Regulation (GDPR) and the Austrian Data Protection Act (DSG).",
+      "sections": [
+        {
+          "title": "1. Controller",
+          "body": "The controller for the processing described here is the company named in the Impressum, contactable at the email address given there. We have not appointed a data protection officer, as we are not required to."
+        },
+        {
+          "title": "2. Data we process when you book",
+          "body": "The booking form collects your name, email address, telephone number, the tour you selected, the date and departure time, the number of guests, your narration language, and anything you write in the notes field — please share health or mobility details only if you want us to plan around them. We need these data to perform the contract with you (Art. 6 (1) (b) GDPR); any special category data you volunteer in the notes is processed on the basis of your consent (Art. 9 (2) (a) GDPR)."
+        },
+        {
+          "title": "3. Data we process when you contact us",
+          "body": "If you write to us by email, we process your address, your message and any details you include, in order to answer you (Art. 6 (1) (b) and (f) GDPR — our legitimate interest in responding to enquiries)."
+        },
+        {
+          "title": "4. Data collected automatically",
+          "body": "Our hosting provider records standard server log data — IP address, date and time, requested page, referring page, browser and operating system — for the security and stability of the site (Art. 6 (1) (f) GDPR). These logs are deleted after a short period and are not merged with other data."
+        },
+        {
+          "title": "5. Cookies and analytics",
+          "body": "We set one essential item in your browser’s local storage to remember your cookie choice; it contains no personal data and no tracking identifier. Analytics load only after you accept them in the banner (Art. 6 (1) (a) GDPR), and you can withdraw that consent at any time by clearing your browser storage for this site or writing to us. No advertising or profiling cookies are used."
+        },
+        {
+          "title": "6. Processors and recipients",
+          "body": "We use carefully selected service providers, each bound by a data processing agreement under Art. 28 GDPR where applicable: Netlify (website hosting and delivery), Supabase (booking database, hosted in the EU), SumUp (online card payments via hosted checkout), and our email provider for confirmation messages. Payment card details are entered only on SumUp’s systems, not on this website. Data is transferred to third countries only on the basis of EU standard contractual clauses or an adequacy decision. Beyond that, we pass data to third parties only where we are legally obliged to — for instance to tax authorities."
+        },
+        {
+          "title": "7. How long we keep your data",
+          "body": "Booking and invoicing data are retained for seven years under Austrian tax and commercial law (§ 132 BAO, § 212 UGB). Enquiries that do not lead to a booking are deleted once the matter is closed, at the latest after twelve months. Server logs are deleted after a few days. Consent-based data is deleted when you withdraw consent."
+        },
+        {
+          "title": "8. Your rights",
+          "body": "You have the right to access your data, to have it corrected or erased, to have processing restricted, to object to processing based on legitimate interests, and to receive your data in a portable format. Where processing rests on consent, you may withdraw it at any time with effect for the future. Write to the email address in the Impressum and we will respond within one month."
+        },
+        {
+          "title": "9. Right to complain",
+          "body": "If you believe we handle your data unlawfully, you may complain to the Austrian Data Protection Authority (Österreichische Datenschutzbehörde, Barichgasse 40–42, 1030 Vienna, dsb.gv.at) or to the supervisory authority where you live."
+        },
+        {
+          "title": "10. Photographs",
+          "body": "We publish photographs showing recognisable guests only with express consent, given in writing or clearly on the day. Consent may be withdrawn at any time; write to us and we will remove the image from our website and social channels."
+        },
+        {
+          "title": "11. Changes to this policy",
+          "body": "We update this policy whenever our tools or processes change. The version published here is the one that applies."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Owner-guided private tours through Vienna in vintage-style electric cars — forest green, white and burgundy. Three guests minimum, up to seven per car (multiple cars for larger groups), eight languages.",
+    "quickLinks": "Explore",
+    "legal": "Legal",
+    "contact": "Contact",
+    "meetingPoint": "Meeting point on the Ringstrasse, Vienna — the exact pin arrives with your booking confirmation.",
+    "googleBusiness": "Google Business Profile",
+    "rights": "© {year} Vienna Grand Tours. All rights reserved.",
+    "impressum": "Impressum",
+    "agb": "Terms & Conditions",
+    "datenschutz": "Privacy",
+    "madeBy": "Made by <name>Besaweb</name>"
+  },
+  "cookies": {
+    "title": "Cookies & privacy",
+    "body": "We store one small item in your browser to remember this choice. Analytics load only if you say yes, and we never use advertising trackers.",
+    "accept": "Accept analytics",
+    "essential": "Essential only",
+    "privacy": "Read the privacy policy"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "This page took a wrong turn",
+    "body": "The page you were looking for isn’t here — it may have moved, or the link may have aged. The tours, the prices and the booking form are all a click away.",
+    "home": "Back to the homepage",
+    "book": "Book a tour"
+  },
+  "common": {
+    "loading": "Loading…",
+    "close": "Close",
+    "learnMore": "Learn more",
+    "photoNeeded": "Photo needed"
+  }
+}

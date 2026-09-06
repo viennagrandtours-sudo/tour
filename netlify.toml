@@ -1,0 +1,18 @@
+# Netlify + Next.js 14 (App Router)
+# https://docs.netlify.com/frameworks/next-js/overview/
+#
+# The Essential Next.js plugin (@netlify/plugin-nextjs) handles SSR, ISR,
+# middleware (Edge), and Image CDN. Publish dir ".next" is required for
+# framework detection; the plugin owns the actual deploy output.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # next-intl uses locale-prefixed routes (/en, /de). Do not add blanket
+  # redirects here that strip or rewrite those prefixes.
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
