@@ -198,7 +198,7 @@ export default function GalleryGrid({ items }: { items: GalleryTile[] }) {
                 width={1600}
                 height={1200}
                 sizes="(max-width: 768px) 100vw, 1200px"
-                quality={92}
+                quality={90}
                 className="max-h-[78vh] w-auto max-w-full object-contain"
                 priority
               />
