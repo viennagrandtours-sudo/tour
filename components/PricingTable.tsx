@@ -37,34 +37,34 @@ export default function PricingTable({ tours }: Props) {
                   aria-hidden
                 />
                 <div className="relative">
-                  <p className="font-sans text-[11px] font-semibold uppercase tracking-caption text-gold-muted">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-caption text-gold-ink">
                     {t(`tiers.${tier}.duration`)}
                     <span className="mx-2 text-navy/20">·</span>
-                    <span className="text-navy/35">0{index + 1}</span>
+                    <span className="text-navy/70">0{index + 1}</span>
                   </p>
                   <h2 className="mt-3 font-display text-display-md tracking-display text-navy">
                     {t(`tiers.${tier}.name`)}
                   </h2>
                   <div className="ornament-rule mt-4" />
-                  <p className="mt-4 font-sans text-base leading-relaxed text-navy/65">
+                  <p className="mt-4 font-sans text-base leading-relaxed text-navy/75">
                     {t(`tiers.${tier}.description`)}
                   </p>
                   <p className="mt-8 font-display text-4xl tracking-display text-navy sm:text-5xl">
                     €{tour.pricePerPerson}
-                    <span className="ms-2 font-sans text-base tracking-normal text-navy/50">
+                    <span className="ms-2 font-sans text-base tracking-normal text-navy/70">
                       {t("perPerson")}
                     </span>
                   </p>
-                  <p className="mt-1.5 font-sans text-base text-navy/60">
+                  <p className="mt-1.5 font-sans text-base text-navy/70">
                     {t("groupFrom", {
                       total: tour.pricePerPerson * tour.minGuests,
                       count: tour.minGuests,
                     })}
                   </p>
-                  <p className="mt-1 font-sans text-sm text-navy/45">
+                  <p className="mt-1 font-sans text-sm text-navy/70">
                     {t("minGuests", { count: tour.minGuests })}
                   </p>
-                  <p className="mt-3 font-sans text-sm text-navy/55">{t("payOnArrival")}</p>
+                  <p className="mt-3 font-sans text-sm text-navy/70">{t("payOnArrival")}</p>
                   <Link href={`/book?tour=${id}`} className="btn-primary mt-7">
                     {t("book")}
                   </Link>
@@ -73,10 +73,10 @@ export default function PricingTable({ tours }: Props) {
 
               <div className="space-y-7 bg-cream-warm/40 p-7 sm:p-9">
                 <details className="group">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-sans text-[11px] font-semibold uppercase tracking-caption text-gold-muted marker:content-none [&::-webkit-details-marker]:hidden">
+                  <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 font-sans text-xs font-semibold uppercase tracking-caption text-gold-ink marker:content-none [&::-webkit-details-marker]:hidden">
                     <span className="section-kicker !mb-0">
                       {t("landmarks")}
-                      <span className="ms-2 font-normal tracking-normal text-navy/40">
+                      <span className="ms-2 font-normal tracking-normal text-navy/70">
                         ({highlights.length})
                       </span>
                     </span>

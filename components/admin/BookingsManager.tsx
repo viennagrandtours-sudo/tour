@@ -179,7 +179,7 @@ export function BookingsManager({
         </div>
 
         <div className="mt-3 flex flex-wrap items-center justify-between gap-3 border-t border-navy/10 pt-3">
-          <div className="flex flex-wrap items-center gap-3 text-xs text-navy/60">
+          <div className="flex flex-wrap items-center gap-3 text-xs text-navy/70">
             <span>
               <strong className="font-semibold text-navy">{filtered.length}</strong> of{" "}
               {bookings.length} bookings
@@ -335,7 +335,7 @@ function BookingRow({
             onClick={onToggle}
             aria-expanded={open}
             aria-controls={detailId}
-            className="rounded px-1.5 py-0.5 text-navy/60 transition hover:bg-navy/10 hover:text-navy"
+            className="rounded px-1.5 py-0.5 text-navy/70 transition hover:bg-navy/10 hover:text-navy"
           >
             <span aria-hidden>{open ? "▾" : "▸"}</span>
             <span className="sr-only">
@@ -347,7 +347,7 @@ function BookingRow({
           <span className="whitespace-nowrap font-semibold text-navy">
             {formatDate(booking.date)}
           </span>
-          <span className="block text-xs tabular-nums text-navy/55">
+          <span className="block text-xs tabular-nums text-navy/70">
             {booking.time} · {relativeDay(booking.date)}
           </span>
         </td>
@@ -355,7 +355,7 @@ function BookingRow({
           <span className="font-medium">{booking.name}</span>
           <a
             href={`mailto:${booking.email}`}
-            className="block truncate text-xs text-navy/55 underline-offset-2 hover:text-navy hover:underline"
+            className="block truncate text-xs text-navy/70 underline-offset-2 hover:text-navy hover:underline"
           >
             {booking.email}
           </a>
@@ -371,7 +371,7 @@ function BookingRow({
             <BookingStatusSelect id={booking.id} status={booking.status} />
           )}
         </td>
-        <td className={`${td} whitespace-nowrap text-xs text-navy/55`}>
+        <td className={`${td} whitespace-nowrap text-xs text-navy/70`}>
           {formatTimestamp(booking.created_at)}
         </td>
       </tr>
@@ -402,7 +402,7 @@ function BookingRow({
                   {booking.notes ? (
                     <span className="whitespace-pre-wrap">{booking.notes}</span>
                   ) : (
-                    <span className="text-navy/45">No notes</span>
+                    <span className="text-navy/70">No notes</span>
                   )}
                 </Detail>
               </dl>
@@ -429,7 +429,7 @@ function BookingRow({
                 disabled={readOnly}
               />
               {readOnly ? (
-                <span className="self-center text-xs text-navy/50">
+                <span className="self-center text-xs text-navy/70">
                   Editing is disabled while showing demo data.
                 </span>
               ) : null}
@@ -450,7 +450,7 @@ function BookingRow({
 function Detail({ term, children }: { term: string; children: React.ReactNode }) {
   return (
     <div className="flex gap-2">
-      <dt className="w-24 shrink-0 text-[11px] font-semibold uppercase tracking-wideish text-navy/50">
+      <dt className="w-24 shrink-0 text-xs font-semibold uppercase tracking-wideish text-navy/70">
         {term}
       </dt>
       <dd className="min-w-0 flex-1 text-navy/85">{children}</dd>
@@ -516,7 +516,7 @@ function AddBookingDialog({ open, onClose }: { open: boolean; onClose: () => voi
 
   return (
     <Dialog open={open} onClose={onClose} title="Add a booking" width="max-w-xl">
-      <p className="mb-3 text-sm text-navy/60">
+      <p className="mb-3 text-sm text-navy/70">
         For phone or walk-up guests. Nothing is emailed to them — send a confirmation yourself.
       </p>
 

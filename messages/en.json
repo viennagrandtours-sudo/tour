@@ -325,6 +325,9 @@
       "city": "City views"
     },
     "close": "Close",
+    "previous": "Previous photo",
+    "next": "Next photo",
+    "counter": "{current} of {total}",
     "shotList": {
       "location": "Location",
       "appearsOn": "On the site",

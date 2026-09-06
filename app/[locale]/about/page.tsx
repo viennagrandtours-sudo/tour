@@ -129,7 +129,7 @@ export default async function AboutPage({ params }: Props) {
                   <h3 className="mt-3 font-display text-2xl text-navy">
                     {t(`values.${key}.title`)}
                   </h3>
-                  <p className="mt-3 font-sans text-sm leading-relaxed text-navy/65">
+                  <p className="mt-3 font-sans text-sm leading-relaxed text-navy/75">
                     {t(`values.${key}.text`)}
                   </p>
                 </li>

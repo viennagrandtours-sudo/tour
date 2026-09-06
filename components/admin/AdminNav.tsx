@@ -37,7 +37,7 @@ export function AdminSidebarNav() {
             }`}
           >
             <span className="block">{link.label}</span>
-            <span className="block text-[11px] text-cream/40">{link.hint}</span>
+            <span className="block text-xs text-cream/40">{link.hint}</span>
           </Link>
         );
       })}

@@ -66,13 +66,13 @@ export default async function AdminSettingsPage() {
                   <span className="font-semibold text-navy">
                     {check.label}: {check.ok ? "configured" : "missing"}
                   </span>
-                  <span className="block text-xs text-navy/55">{check.detail}</span>
+                  <span className="block text-xs text-navy/70">{check.detail}</span>
                 </span>
               </li>
             ))}
           </ul>
 
-          <p className="mt-4 text-xs text-navy/55">
+          <p className="mt-4 text-xs text-navy/70">
             Set these in Netlify under Site settings → Environment variables, or in{" "}
             <code className="rounded bg-cream-warm px-1">.env.local</code> for local development.
             See ADMIN.md.

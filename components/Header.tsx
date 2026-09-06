@@ -51,8 +51,8 @@ export default function Header() {
               <Link
                 key={link.key}
                 href={link.href}
-                className={`relative font-sans text-[13px] font-medium tracking-wideish transition ${
-                  active ? "text-navy" : "text-navy/60 hover:text-navy"
+                className={`relative font-sans text-sm font-medium tracking-wideish transition ${
+                  active ? "text-navy" : "text-navy/70 hover:text-navy"
                 }`}
               >
                 {t(link.key)}
@@ -62,7 +62,7 @@ export default function Header() {
           <LanguageSwitcher tone="light" />
           <Link
             href="/book"
-            className="btn-primary !px-5 !py-2.5 !text-[11px] uppercase tracking-caption"
+            className="btn-primary !px-5 !py-2.5 !text-xs uppercase tracking-caption"
           >
             {t("bookCta")}
           </Link>
@@ -71,13 +71,13 @@ export default function Header() {
         <div className="flex items-center gap-2 lg:hidden">
           <Link
             href="/book"
-            className="inline-flex items-center justify-center rounded-sm bg-gold px-3.5 py-2 font-sans text-[11px] font-semibold uppercase tracking-caption text-navy-deep transition hover:bg-gold-light"
+            className="inline-flex min-h-11 items-center justify-center rounded-sm bg-gold px-3.5 font-sans text-xs font-semibold uppercase tracking-caption text-navy-deep transition hover:bg-gold-light"
           >
             {t("book")}
           </Link>
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-sm border border-navy/20 px-3 py-2 text-navy transition hover:border-gold/60 hover:bg-cream-warm"
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm border border-navy/20 text-navy transition hover:border-gold/60 hover:bg-cream-warm"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((v) => !v)}

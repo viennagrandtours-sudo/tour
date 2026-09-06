@@ -325,6 +325,9 @@
       "city": "Şehir manzaraları"
     },
     "close": "Kapat",
+    "previous": "Önceki fotoğraf",
+    "next": "Sonraki fotoğraf",
+    "counter": "{current} / {total}",
     "shotList": {
       "location": "Konum",
       "appearsOn": "Sitede",

@@ -38,7 +38,7 @@ export default async function AdminDashboardLayout({ children }: { children: Rea
             <span className="block font-display text-xl font-semibold text-cream">
               Tour Admin
             </span>
-            <span className="block text-[11px] uppercase tracking-caption text-gold-muted">
+            <span className="block text-xs uppercase tracking-caption text-gold-muted">
               Staff dashboard
             </span>
           </Link>
@@ -47,15 +47,15 @@ export default async function AdminDashboardLayout({ children }: { children: Rea
 
         <div className="space-y-2 px-3 pt-6">
           {configured ? (
-            <p className="truncate text-[11px] text-cream/45" title={user?.email ?? ""}>
+            <p className="truncate text-xs text-cream/55" title={user?.email ?? ""}>
               Signed in as {user?.email ?? "unknown"}
             </p>
           ) : (
-            <p className="text-[11px] text-gold-light">Demo mode — Supabase not configured</p>
+            <p className="text-xs text-gold-light">Demo mode — Supabase not configured</p>
           )}
           <Link
             href="/en"
-            className="block text-[11px] text-cream/50 underline-offset-2 hover:text-cream hover:underline"
+            className="block text-xs text-cream/50 underline-offset-2 hover:text-cream hover:underline"
           >
             View public site
           </Link>

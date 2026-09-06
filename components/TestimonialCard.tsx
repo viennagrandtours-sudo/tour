@@ -22,7 +22,7 @@ export default function TestimonialCard({ author, quote, rating = 5 }: Props) {
       </p>
       <footer className="mt-8">
         <div className="mx-auto mb-4 h-px w-10 bg-gold/50" />
-        <cite className="not-italic font-sans text-sm font-semibold tracking-wide text-navy/60">
+        <cite className="not-italic font-sans text-sm font-semibold tracking-wide text-navy/70">
           {author}
         </cite>
       </footer>

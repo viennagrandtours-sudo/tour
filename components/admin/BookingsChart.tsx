@@ -46,13 +46,13 @@ export function BookingsChart({ data }: { data: { date: string; count: number }[
         })}
       </svg>
 
-      <div className="mt-1.5 flex justify-between text-[10px] text-navy/50">
+      <div className="mt-1.5 flex justify-between text-xs text-navy/70">
         <span>{formatDateShort(data[0].date)}</span>
         <span className="font-semibold text-gold-deep">Today</span>
         <span>{formatDateShort(data[data.length - 1].date)}</span>
       </div>
 
-      <figcaption className="mt-2 text-xs text-navy/55">
+      <figcaption className="mt-2 text-xs text-navy/70">
         {total} booked tour{total === 1 ? "" : "s"} across this 14-day window (cancellations
         excluded).
       </figcaption>

@@ -73,7 +73,7 @@ export default async function AdminToursPage() {
             </table>
           </div>
 
-          <p className="mt-3 text-xs text-navy/55">
+          <p className="mt-3 text-xs text-navy/70">
             The public pages still read the code values directly. See ADMIN.md for the one-line
             change that switches them to the merged values from{" "}
             <code className="rounded bg-cream-warm px-1">lib/tour-settings.ts</code>.

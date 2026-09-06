@@ -43,7 +43,7 @@ export default async function BookPage({ params }: Props) {
         <div className="section-shell relative max-w-3xl py-14 sm:py-16">
           <Suspense
             fallback={
-              <div className="paper-surface p-8 font-sans text-navy/55">{t("title")}…</div>
+              <div className="paper-surface p-8 font-sans text-navy/70">{t("title")}…</div>
             }
           >
             <BookingForm />

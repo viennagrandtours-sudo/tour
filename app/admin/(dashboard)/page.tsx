@@ -129,14 +129,14 @@ export default async function AdminOverviewPage() {
                       <tr key={booking.id} className="hover:bg-cream-warm/40">
                         <td className={td}>
                           <span className="font-semibold text-navy">{formatDate(booking.date)}</span>
-                          <span className="block text-xs text-navy/50">
+                          <span className="block text-xs text-navy/70">
                             {relativeDay(booking.date)}
                           </span>
                         </td>
                         <td className={`${td} tabular-nums`}>{booking.time}</td>
                         <td className={td}>
                           <span className="font-medium">{booking.name}</span>
-                          <span className="block text-xs text-navy/50">{booking.phone}</span>
+                          <span className="block text-xs text-navy/70">{booking.phone}</span>
                         </td>
                         <td className={td}>{booking.tour_type}</td>
                         <td className={`${td} tabular-nums`}>{booking.guest_count}</td>
@@ -174,7 +174,7 @@ export default async function AdminOverviewPage() {
 
           <Panel title="Blocked dates" hint="Days the booking form will not offer.">
             {blocked.data.length === 0 ? (
-              <p className="text-sm text-navy/55">
+              <p className="text-sm text-navy/70">
                 Nothing blocked.{" "}
                 <Link href="/admin/availability" className="font-semibold underline">
                   Block a date

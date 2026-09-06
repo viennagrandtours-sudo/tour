@@ -37,15 +37,15 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-sm bg-gold px-7 py-3.5 font-sans text-sm font-semibold tracking-wideish text-navy-deep transition duration-300 ease-elegant hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+    @apply inline-flex items-center justify-center rounded-sm bg-gold px-7 py-3.5 font-sans text-sm font-semibold tracking-wideish text-navy-deep transition duration-300 ease-elegant hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold disabled:pointer-events-none disabled:opacity-40;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-sm border border-cream/35 bg-transparent px-7 py-3.5 font-sans text-sm font-semibold tracking-wideish text-cream transition duration-300 ease-elegant hover:border-gold-light/70 hover:bg-cream/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream;
+    @apply inline-flex items-center justify-center rounded-sm border border-cream/35 bg-transparent px-7 py-3.5 font-sans text-sm font-semibold tracking-wideish text-cream transition duration-300 ease-elegant hover:border-gold-light/70 hover:bg-cream/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream disabled:pointer-events-none disabled:opacity-40;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center rounded-sm border border-navy/15 bg-cream-soft/70 px-5 py-2.5 font-sans text-sm font-semibold tracking-wide text-navy transition duration-300 ease-elegant hover:border-gold/60 hover:bg-cream-warm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+    @apply inline-flex items-center justify-center rounded-sm border border-navy/15 bg-cream-soft/70 px-5 py-2.5 font-sans text-sm font-semibold tracking-wide text-navy transition duration-300 ease-elegant hover:border-gold/60 hover:bg-cream-warm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold disabled:pointer-events-none disabled:opacity-40;
   }
 
   .section-shell {
@@ -57,7 +57,9 @@ body {
   }
 
   .label-field {
-    @apply mb-1.5 block font-sans text-xs font-semibold uppercase tracking-caption text-navy/55;
+    /* navy/80 on cream clears ~6:1 — navy/55 measured ~3.15:1, below the 4.5:1
+       floor for 12px text, and this is the label on every booking-form field. */
+    @apply mb-1.5 block font-sans text-xs font-semibold uppercase tracking-caption text-navy/80;
   }
 
   .ornament-rule {
@@ -65,7 +67,9 @@ body {
   }
 
   .section-kicker {
-    @apply font-sans text-[11px] font-semibold uppercase tracking-caption text-gold-muted;
+    /* gold-ink, not gold-muted: gold-muted measures ~3:1 on cream, below the
+       4.5:1 floor for text this small. gold-ink clears ~6.4:1. */
+    @apply font-sans text-xs font-semibold uppercase tracking-caption text-gold-ink;
   }
 
   .paper-surface {

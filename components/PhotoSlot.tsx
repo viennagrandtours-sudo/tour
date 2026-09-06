@@ -68,7 +68,7 @@ export default function PhotoSlot({
             </p>
           )}
           {badge && (
-            <p className="mt-2.5 border-t border-cream/15 pt-2 font-sans text-[10px] uppercase tracking-wider text-cream/50">
+            <p className="mt-2.5 border-t border-cream/15 pt-2 font-sans text-xs uppercase tracking-wider text-cream/50">
               {badge}
             </p>
           )}

@@ -55,7 +55,7 @@ export default function LanguageSwitcher({
         aria-expanded={open}
         aria-label={t("languageSwitcher")}
         onClick={() => setOpen((value) => !value)}
-        className={`inline-flex min-w-[6.75rem] items-center justify-between gap-2 border px-2.5 py-1.5 font-sans text-[12px] font-semibold tracking-wide transition ${
+        className={`inline-flex min-h-11 min-w-[6.75rem] items-center justify-between gap-2 border px-2.5 py-1.5 font-sans text-xs font-semibold tracking-wide transition ${
           dark
             ? "border-cream/20 bg-navy-ink/40 text-cream/80 hover:border-gold/40 hover:text-cream"
             : "border-navy/12 bg-cream-warm/80 text-navy/70 hover:border-gold/50 hover:text-navy"
@@ -92,7 +92,7 @@ export default function LanguageSwitcher({
                     setOpen(false);
                     router.replace(pathname, { locale: loc });
                   }}
-                  className={`flex w-full items-center px-3 py-2 text-start font-sans text-[13px] transition ${
+                  className={`flex min-h-11 w-full items-center px-3 py-2 text-start font-sans text-sm transition ${
                     active
                       ? "bg-gold/20 font-semibold text-navy"
                       : "text-navy/70 hover:bg-cream-warm hover:text-navy"

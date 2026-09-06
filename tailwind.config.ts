@@ -23,6 +23,9 @@ const config: Config = {
           muted: "#A8894A",
           deep: "#8F7340",
           pale: "#E8D9B0",
+          // Text-safe gold for captions/kickers on cream surfaces — `muted` only
+          // clears ~3:1 there (fails WCAG 4.5:1 for small text); this clears ~6.4:1.
+          ink: "#6B552C",
         },
         cream: {
           DEFAULT: "#F7F3EB",

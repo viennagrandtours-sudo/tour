@@ -325,6 +325,9 @@
       "city": "城市景色"
     },
     "close": "关闭",
+    "previous": "上一张照片",
+    "next": "下一张照片",
+    "counter": "{current} / {total}",
     "shotList": {
       "location": "地点",
       "appearsOn": "出现页面",

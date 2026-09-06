@@ -56,7 +56,7 @@ export function PhotosManager({
   return (
     <div className="space-y-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-navy/60">
+        <p className="text-sm text-navy/70">
           {all.length} slots · {filled} showing an image ({uploaded} uploaded by you) ·{" "}
           {all.length - filled} still waiting for a photo
         </p>
@@ -147,17 +147,17 @@ function PhotoCard({
             {photo.consentNote ? <Pill tone="muted">Consent needed</Pill> : null}
           </div>
 
-          <p className="mt-1.5 text-xs leading-relaxed text-navy/55">{photo.hint}</p>
-          <p className="mt-1 text-[11px] text-navy/45">
+          <p className="mt-1.5 text-xs leading-relaxed text-navy/70">{photo.hint}</p>
+          <p className="mt-1 text-xs text-navy/70">
             On the site: {photo.appearsOn.join(" · ")}
             {group.category ? ` · position ${photo.sortOrder}` : ""}
           </p>
           {altPreview ? (
-            <p className="mt-1.5 line-clamp-2 text-[11px] italic text-navy/50">
+            <p className="mt-1.5 line-clamp-2 text-xs italic text-navy/70">
               Alt (EN): {altPreview}
             </p>
           ) : (
-            <p className="mt-1.5 text-[11px] font-semibold text-amber-700">
+            <p className="mt-1.5 text-xs font-semibold text-amber-700">
               No alt text yet — add one for accessibility and SEO.
             </p>
           )}
@@ -293,7 +293,7 @@ function PhotoThumb({ photo }: { photo: AdminPhoto }) {
           unoptimized={photo.uploaded}
         />
       ) : (
-        <span className="flex h-full w-full items-center justify-center px-2 text-center text-[10px] font-semibold uppercase tracking-wideish text-navy/40">
+        <span className="flex h-full w-full items-center justify-center px-2 text-center text-xs font-semibold uppercase tracking-wideish text-navy/70">
           No photo
         </span>
       )}
@@ -368,7 +368,7 @@ function fileProblem(file: File | null, config: PhotosConfig): string | null {
 
 function UploadHint({ config }: { config: PhotosConfig }) {
   return (
-    <p className="text-xs text-navy/55">
+    <p className="text-xs text-navy/70">
       JPEG, PNG or WebP · up to {Math.round(config.maxBytes / (1024 * 1024))} MB · landscape
       masters look best. Uploading replaces whatever is there now.
     </p>
@@ -391,7 +391,7 @@ function ProgressBar({ progress }: { progress: number }) {
           style={{ width: `${progress}%` }}
         />
       </div>
-      <p className="mt-1 text-[11px] text-navy/55">
+      <p className="mt-1 text-xs text-navy/70">
         {progress < 100 ? `Uploading… ${progress}%` : "Processing…"}
       </p>
     </div>
@@ -538,7 +538,7 @@ function AddPhotoDialog({
         }}
         className="space-y-3"
       >
-        <p className="text-sm text-navy/65">
+        <p className="text-sm text-navy/75">
           This adds a photo to the gallery beyond the planned shot list. You can edit its wording,
           position and visibility afterwards like any other photo.
         </p>
@@ -654,7 +654,7 @@ function EditPhotoDialog({
             defaultValue={photo.title}
             placeholder={photo.codeTitle}
           />
-          <p className="mt-1 text-[11px] text-navy/50">
+          <p className="mt-1 text-xs text-navy/70">
             Used in this dashboard and your shoot brief only. Guests never see it, so it stays in
             one language.
           </p>
@@ -694,7 +694,7 @@ function EditPhotoDialog({
               className={input}
               defaultValue={photo.sortOrder}
             />
-            <p className="mt-1 text-[11px] text-navy/50">
+            <p className="mt-1 text-xs text-navy/70">
               {group.category ? "Lower numbers come first." : "Not used outside the gallery."}
             </p>
           </div>
@@ -713,10 +713,10 @@ function EditPhotoDialog({
         </div>
 
         <fieldset className="space-y-4 rounded border border-navy/15 bg-white px-3 py-3">
-          <legend className="px-1 text-[11px] font-semibold uppercase tracking-wideish text-navy/55">
+          <legend className="px-1 text-xs font-semibold uppercase tracking-wideish text-navy/70">
             Guest-facing wording
           </legend>
-          <p className="text-[11px] text-navy/55">
+          <p className="text-xs text-navy/70">
             Alt text describes the photo for screen readers and search engines. The caption is the
             small line shown under the photo on the site — leave it empty to keep the wording that
             ships with the site.
@@ -726,7 +726,7 @@ function EditPhotoDialog({
             <div key={locale} className="space-y-2 border-t border-navy/10 pt-3 first:border-0 first:pt-0">
               <p className="text-xs font-semibold text-navy">
                 {config.localeLabels[locale]}
-                <span className="ml-1.5 font-normal text-navy/45">
+                <span className="ml-1.5 font-normal text-navy/70">
                   {config.liveLocales.includes(locale) ? "live" : "ready for launch"}
                 </span>
               </p>

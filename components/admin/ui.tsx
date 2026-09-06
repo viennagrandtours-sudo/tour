@@ -19,7 +19,7 @@ export function PageHeading({
       <div>
         <h1 className="font-display text-2xl font-semibold text-navy sm:text-3xl">{title}</h1>
         {description ? (
-          <p className="mt-1 max-w-2xl text-sm text-navy/60">{description}</p>
+          <p className="mt-1 max-w-2xl text-sm text-navy/70">{description}</p>
         ) : null}
       </div>
       {action ? <div className="flex flex-wrap gap-2">{action}</div> : null}
@@ -44,7 +44,7 @@ export function Panel({
         <div className="flex flex-wrap items-center justify-between gap-2 border-b border-navy/10 px-4 py-3 sm:px-5">
           <div>
             <h2 className="font-display text-lg font-semibold text-navy">{title}</h2>
-            {hint ? <p className="text-xs text-navy/55">{hint}</p> : null}
+            {hint ? <p className="text-xs text-navy/70">{hint}</p> : null}
           </div>
           {action}
         </div>
@@ -66,7 +66,7 @@ export function StatusBadge({ status }: { status: AdminBookingStatus }) {
   const tone = STATUS_TONE[status] ?? "border-navy/20 bg-white text-navy";
   return (
     <span
-      className={`inline-flex whitespace-nowrap rounded-full border px-2 py-0.5 text-[11px] font-semibold ${tone}`}
+      className={`inline-flex whitespace-nowrap rounded-full border px-2 py-0.5 text-xs font-semibold ${tone}`}
     >
       {BOOKING_STATUS_LABELS[status] ?? status}
     </span>
@@ -82,7 +82,7 @@ const MESSAGE_TONE: Record<MessageStatus, string> = {
 export function MessageBadge({ status }: { status: MessageStatus }) {
   return (
     <span
-      className={`inline-flex rounded-full border px-2 py-0.5 text-[11px] font-semibold capitalize ${
+      className={`inline-flex rounded-full border px-2 py-0.5 text-xs font-semibold capitalize ${
         MESSAGE_TONE[status] ?? MESSAGE_TONE.new
       }`}
     >
@@ -95,10 +95,10 @@ export function Pill({ children, tone = "neutral" }: { children: ReactNode; tone
   const tones = {
     neutral: "border-navy/20 bg-white text-navy/75",
     gold: "border-gold bg-gold/15 text-navy",
-    muted: "border-navy/10 bg-navy/5 text-navy/55",
+    muted: "border-navy/10 bg-navy/5 text-navy/70",
   };
   return (
-    <span className={`inline-flex rounded-full border px-2 py-0.5 text-[11px] font-semibold ${tones[tone]}`}>
+    <span className={`inline-flex rounded-full border px-2 py-0.5 text-xs font-semibold ${tones[tone]}`}>
       {children}
     </span>
   );
@@ -137,7 +137,7 @@ export function EmptyState({ title, hint }: { title: string; hint?: string }) {
   return (
     <div className="rounded-md border border-dashed border-navy/20 bg-cream-warm/40 px-5 py-10 text-center">
       <p className="font-display text-lg text-navy">{title}</p>
-      {hint ? <p className="mx-auto mt-1 max-w-md text-sm text-navy/55">{hint}</p> : null}
+      {hint ? <p className="mx-auto mt-1 max-w-md text-sm text-navy/70">{hint}</p> : null}
     </div>
   );
 }
@@ -163,7 +163,7 @@ export function StatCard({
       <p className="mt-1 font-display text-2xl font-semibold leading-none text-navy sm:text-3xl">
         {value}
       </p>
-      {hint ? <p className="mt-1.5 text-xs text-navy/55">{hint}</p> : null}
+      {hint ? <p className="mt-1.5 text-xs text-navy/70">{hint}</p> : null}
     </div>
   );
 }

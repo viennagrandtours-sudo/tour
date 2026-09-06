@@ -36,7 +36,7 @@ const SIZES = {
  */
 export default function Wordmark({ tone = "dark", size = "md", className = "" }: Props) {
   const s = SIZES[size];
-  const top = tone === "light" ? "text-gold-light/90" : "text-gold-muted";
+  const top = tone === "light" ? "text-gold-light/90" : "text-gold-ink";
   const bottom = tone === "light" ? "text-cream" : "text-navy";
   const rule = tone === "light" ? "via-gold-light/70" : "via-gold/70";
   const diamond = tone === "light" ? "bg-gold-light" : "bg-gold";

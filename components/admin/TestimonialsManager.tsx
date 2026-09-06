@@ -47,7 +47,7 @@ export function TestimonialsManager({
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-navy/60">
+        <p className="text-sm text-navy/70">
           {testimonials.length} testimonial{testimonials.length === 1 ? "" : "s"}
           {sampleCount > 0 ? ` · ${sampleCount} seeded sample${sampleCount === 1 ? "" : "s"}` : ""}
           {" · "}
@@ -128,7 +128,7 @@ function TestimonialCardRow({
           <blockquote className="mt-2 max-w-3xl text-sm italic text-navy/80">
             “{testimonial.quote}”
           </blockquote>
-          <p className="mt-1.5 text-[11px] text-navy/45">
+          <p className="mt-1.5 text-xs text-navy/70">
             Position {testimonial.sort_order || "—"} · added {formatTimestamp(testimonial.created_at)}
           </p>
         </div>
@@ -341,7 +341,7 @@ function TestimonialDialog({
         </div>
 
         <fieldset className="rounded border border-navy/15 bg-white px-3 py-2.5">
-          <legend className="px-1 text-[11px] font-semibold uppercase tracking-wideish text-navy/55">
+          <legend className="px-1 text-xs font-semibold uppercase tracking-wideish text-navy/70">
             Visibility
           </legend>
           <label className="flex items-center gap-2 py-1 text-sm">

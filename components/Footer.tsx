@@ -151,7 +151,7 @@ export default async function Footer() {
         </div>
       </div>
 
-      <div className="relative border-t border-cream/10 py-5 text-center font-sans text-[11px] tracking-wide text-cream/45">
+      <div className="relative border-t border-cream/10 py-5 text-center font-sans text-xs tracking-wide text-cream/55">
         <p>{t("rights", { year })}</p>
         <p className="mt-1.5 text-cream/55">
           {t.rich("madeBy", {

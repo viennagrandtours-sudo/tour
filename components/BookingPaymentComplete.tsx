@@ -103,7 +103,7 @@ export default function BookingPaymentComplete() {
         <>
           <p className="section-kicker">{t("paymentCheckingKicker")}</p>
           <h1 className="mt-3 font-display text-display-md text-navy">{t("paymentCheckingTitle")}</h1>
-          <p className="mx-auto mt-4 max-w-md font-sans text-navy/65">{t("paymentCheckingBody")}</p>
+          <p className="mx-auto mt-4 max-w-md font-sans text-navy/75">{t("paymentCheckingBody")}</p>
         </>
       )}
 
@@ -114,8 +114,8 @@ export default function BookingPaymentComplete() {
           </p>
           <h1 className="mt-3 font-display text-display-md text-navy">{t("successTitle")}</h1>
           <div className="mx-auto mt-4 h-px w-14 bg-gradient-to-r from-transparent via-gold to-transparent" />
-          <p className="mx-auto mt-4 max-w-md font-sans text-navy/65">{t("successBody")}</p>
-          <p className="mx-auto mt-3 max-w-md font-sans text-sm text-navy/50">{t("successNote")}</p>
+          <p className="mx-auto mt-4 max-w-md font-sans text-navy/75">{t("successBody")}</p>
+          <p className="mx-auto mt-3 max-w-md font-sans text-sm text-navy/70">{t("successNote")}</p>
           <Link href="/tours" className="btn-primary mt-8 inline-flex">
             {t("backToTours")}
           </Link>
@@ -128,7 +128,7 @@ export default function BookingPaymentComplete() {
             {t("successRef")}: {bookingId}
           </p>
           <h1 className="mt-3 font-display text-display-md text-navy">{t("paymentPendingTitle")}</h1>
-          <p className="mx-auto mt-4 max-w-md font-sans text-navy/65">
+          <p className="mx-auto mt-4 max-w-md font-sans text-navy/75">
             {message || t("paymentPending")}
           </p>
           <Link href="/book" className="btn-ghost mt-8 inline-flex">
@@ -140,11 +140,11 @@ export default function BookingPaymentComplete() {
       {phase === "error" && (
         <>
           <h1 className="font-display text-display-md text-navy">{t("paymentVerifyFailedTitle")}</h1>
-          <p className="mx-auto mt-4 max-w-md font-sans text-navy/65">
+          <p className="mx-auto mt-4 max-w-md font-sans text-navy/75">
             {message || t("paymentVerifyFailed")}
           </p>
           {bookingId ? (
-            <p className="mx-auto mt-2 font-sans text-sm text-navy/45">
+            <p className="mx-auto mt-2 font-sans text-sm text-navy/70">
               {t("successRef")}: {bookingId}
             </p>
           ) : null}

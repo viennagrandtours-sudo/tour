@@ -38,12 +38,12 @@ export function MessagesInbox({
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-md border border-navy/10 bg-cream-soft px-4 py-3">
-        <p className="text-sm text-navy/60">
+        <p className="text-sm text-navy/70">
           <strong className="font-semibold text-navy">{counts.new}</strong> new ·{" "}
           {counts.read} read · {counts.handled} handled
         </p>
         <div className="flex items-center gap-2">
-          <label className="text-xs font-semibold text-navy/60" htmlFor="message-filter">
+          <label className="text-xs font-semibold text-navy/70" htmlFor="message-filter">
             Show
           </label>
           <select
@@ -99,14 +99,14 @@ function MessageCard({ message, readOnly }: { message: AdminMessage; readOnly: b
           </div>
           <a
             href={`mailto:${message.email}`}
-            className="text-sm text-navy/60 underline-offset-2 hover:text-navy hover:underline"
+            className="text-sm text-navy/70 underline-offset-2 hover:text-navy hover:underline"
           >
             {message.email}
           </a>
           <p className="mt-2 max-w-3xl whitespace-pre-wrap text-sm text-navy/85">
             {message.message}
           </p>
-          <p className="mt-2 text-[11px] text-navy/45">
+          <p className="mt-2 text-xs text-navy/70">
             Received {formatTimestamp(message.created_at)}
           </p>
         </div>

@@ -140,11 +140,11 @@ export default async function HomePage({ params }: Props) {
           <div className="text-center sm:text-start">
             <p className="font-display text-4xl tracking-display text-navy sm:text-5xl">
               {trust("statValue")}
-              <span className="ms-2 font-sans text-sm font-normal tracking-wide text-navy/45">
+              <span className="ms-2 font-sans text-sm font-normal tracking-wide text-navy/70">
                 {trust("statUnit")}
               </span>
             </p>
-            <p className="mt-1 max-w-xs font-sans text-sm text-navy/55">{trust("statCaption")}</p>
+            <p className="mt-1 max-w-xs font-sans text-sm text-navy/70">{trust("statCaption")}</p>
           </div>
           <div className="hidden h-12 w-px bg-gradient-to-b from-transparent via-navy/15 to-transparent sm:block" />
           <div className="flex-1">
@@ -153,7 +153,7 @@ export default async function HomePage({ params }: Props) {
               {[trust("item1"), trust("item2"), trust("item3")].map((label) => (
                 <span
                   key={label}
-                  className="font-display text-lg tracking-wide text-navy/35 sm:text-xl"
+                  className="font-display text-lg tracking-wide text-navy/70 sm:text-xl"
                 >
                   {label}
                 </span>
@@ -173,10 +173,10 @@ export default async function HomePage({ params }: Props) {
               {tours("sectionTitle")}
             </h2>
             <div className="ornament-rule mt-4" />
-            <p className="mt-4 font-sans text-base leading-relaxed text-navy/60">
+            <p className="mt-4 font-sans text-base leading-relaxed text-navy/70">
               {tours("sectionSub")}
             </p>
-            <p className="mt-3 font-sans text-sm text-navy/50">{tours("payOnArrival")}</p>
+            <p className="mt-3 font-sans text-sm text-navy/70">{tours("payOnArrival")}</p>
           </div>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {tourTiers.map((tour, i) => (
@@ -278,7 +278,7 @@ export default async function HomePage({ params }: Props) {
                   {gallery("teaserTitle")}
                 </h2>
                 <div className="ornament-rule mt-4" />
-                <p className="mt-4 font-sans text-navy/60">{gallery("teaserSub")}</p>
+                <p className="mt-4 font-sans text-navy/70">{gallery("teaserSub")}</p>
               </div>
               <Link href="/gallery" className="btn-ghost shrink-0">
                 {gallery("viewAll")}

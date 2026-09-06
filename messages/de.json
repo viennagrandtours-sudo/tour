@@ -325,6 +325,9 @@
       "city": "Stadtblicke"
     },
     "close": "Schließen",
+    "previous": "Vorheriges Foto",
+    "next": "Nächstes Foto",
+    "counter": "{current} von {total}",
     "shotList": {
       "location": "Ort",
       "appearsOn": "Auf der Website",

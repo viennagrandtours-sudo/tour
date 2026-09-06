@@ -63,7 +63,7 @@ function TierCard({
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
           <h2 className="font-display text-xl font-semibold text-navy">{tour.id}</h2>
-          <p className="text-xs text-navy/55">{tour.durationMinutes} minute tour</p>
+          <p className="text-xs text-navy/70">{tour.durationMinutes} minute tour</p>
         </div>
         <div className="flex flex-wrap gap-1.5">
           {tour.active ? <Pill tone="gold">On sale</Pill> : <Pill>Hidden</Pill>}
@@ -72,7 +72,7 @@ function TierCard({
       </div>
 
       {fallback ? (
-        <p className="mt-2 text-xs text-navy/50">
+        <p className="mt-2 text-xs text-navy/70">
           Code default: {formatEur(fallback.pricePerPerson)} per person, min{" "}
           {fallback.minGuests} guests.
         </p>
@@ -126,7 +126,7 @@ function TierCard({
           />
           <span>
             <span className="font-semibold text-navy">Offer this tier</span>
-            <span className="block text-xs text-navy/55">
+            <span className="block text-xs text-navy/70">
               Uncheck to take it off the public pricing table and booking form.
             </span>
           </span>

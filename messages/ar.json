@@ -325,6 +325,9 @@
       "city": "مناظر المدينة"
     },
     "close": "إغلاق",
+    "previous": "الصورة السابقة",
+    "next": "الصورة التالية",
+    "counter": "{current} من {total}",
     "shotList": {
       "location": "الموقع",
       "appearsOn": "على الموقع",

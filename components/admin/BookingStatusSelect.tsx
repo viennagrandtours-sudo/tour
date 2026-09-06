@@ -51,11 +51,11 @@ export function BookingStatusSelect({
       </select>
 
       {result && !result.ok ? (
-        <p role="alert" className="mt-1 text-[11px] leading-tight text-red-700">
+        <p role="alert" className="mt-1 text-xs leading-tight text-red-700">
           {result.message}
         </p>
       ) : null}
-      {pending ? <p className="mt-1 text-[11px] text-navy/45">Saving…</p> : null}
+      {pending ? <p className="mt-1 text-xs text-navy/70">Saving…</p> : null}
     </div>
   );
 }

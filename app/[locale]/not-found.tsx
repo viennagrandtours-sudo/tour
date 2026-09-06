@@ -11,7 +11,7 @@ export default async function NotFound() {
         {t("title")}
       </h1>
       <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-gold to-transparent" />
-      <p className="mt-5 font-sans text-base leading-relaxed text-navy/65">{t("body")}</p>
+      <p className="mt-5 font-sans text-base leading-relaxed text-navy/75">{t("body")}</p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link href="/" className="btn-primary">
           {t("home")}

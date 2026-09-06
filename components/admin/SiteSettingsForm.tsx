@@ -69,7 +69,7 @@ export function SiteSettingsForm({
                 className={`${input} ${needsFilling ? "border-amber-400 bg-amber-50/50" : ""}`}
                 aria-describedby={`setting-${field.key}-hint`}
               />
-              <p id={`setting-${field.key}-hint`} className="mt-1 text-[11px] text-navy/50">
+              <p id={`setting-${field.key}-hint`} className="mt-1 text-xs text-navy/70">
                 {field.hint}
                 {overridden ? ` Code default: ${fallback}` : ""}
               </p>
@@ -84,7 +84,7 @@ export function SiteSettingsForm({
         <button type="submit" className={btnPrimary} disabled={pending || readOnly}>
           {pending ? "Saving…" : "Save business info"}
         </button>
-        <p className="text-xs text-navy/50">
+        <p className="text-xs text-navy/70">
           Clearing a field falls back to the value in the code.
         </p>
       </div>

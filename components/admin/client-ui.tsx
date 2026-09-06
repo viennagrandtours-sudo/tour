@@ -103,7 +103,7 @@ export function Dialog({
         <button
           type="button"
           onClick={onClose}
-          className="rounded px-2 py-1 text-xl leading-none text-navy/50 transition hover:bg-navy/5 hover:text-navy"
+          className="rounded px-2 py-1 text-xl leading-none text-navy/70 transition hover:bg-navy/5 hover:text-navy"
           aria-label="Close dialog"
         >
           ×

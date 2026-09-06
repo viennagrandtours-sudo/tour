@@ -325,6 +325,9 @@
       "city": "Viste della città"
     },
     "close": "Chiudi",
+    "previous": "Foto precedente",
+    "next": "Foto successiva",
+    "counter": "{current} di {total}",
     "shotList": {
       "location": "Luogo",
       "appearsOn": "Sul sito",

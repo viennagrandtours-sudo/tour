@@ -133,7 +133,7 @@ export default async function ImpressumPage({ params }: Props) {
           <p className="mt-3">{t("impressum.copyrightBody")}</p>
         </section>
 
-        <p className="border-t border-navy/10 pt-6 text-xs text-navy/50">{t("lastUpdated")}</p>
+        <p className="border-t border-navy/10 pt-6 text-xs text-navy/70">{t("lastUpdated")}</p>
       </article>
     </>
   );

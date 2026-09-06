@@ -46,7 +46,7 @@ export default async function ToursPage({ params }: Props) {
       <div className="relative">
         <div className="pointer-events-none absolute inset-0 bg-page-glow" />
         <div className="section-shell relative py-14 sm:py-16">
-          <p className="mb-8 font-sans text-sm text-navy/55">{t("payOnArrival")}</p>
+          <p className="mb-8 font-sans text-sm text-navy/70">{t("payOnArrival")}</p>
           <PricingTable tours={tours} />
 
           <section className="mt-16 overflow-hidden border border-navy/10 bg-cream-soft/60">
@@ -55,7 +55,7 @@ export default async function ToursPage({ params }: Props) {
                 <p className="section-kicker">{t("mapKicker")}</p>
                 <h2 className="mt-3 font-display text-display-md text-navy">{t("mapTitle")}</h2>
                 <div className="ornament-rule mt-4" />
-                <p className="mt-4 font-sans text-sm leading-relaxed text-navy/65">
+                <p className="mt-4 font-sans text-sm leading-relaxed text-navy/75">
                   {t("mapNote")}
                 </p>
               </div>

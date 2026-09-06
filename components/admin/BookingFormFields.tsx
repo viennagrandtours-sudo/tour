@@ -29,7 +29,7 @@ export function Field({
         {labelText}
       </label>
       {children}
-      {hint ? <p className="mt-1 text-[11px] text-navy/50">{hint}</p> : null}
+      {hint ? <p className="mt-1 text-xs text-navy/70">{hint}</p> : null}
     </div>
   );
 }

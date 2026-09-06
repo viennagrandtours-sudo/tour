@@ -35,7 +35,7 @@ function BlockForm({ readOnly }: { readOnly: boolean }) {
   return (
     <section className="rounded-md border border-navy/10 bg-cream-soft p-4">
       <h2 className="font-display text-lg font-semibold text-navy">Block time off</h2>
-      <p className="mt-0.5 text-xs text-navy/55">
+      <p className="mt-0.5 text-xs text-navy/70">
         Blocked days and slots disappear from the public booking form.
       </p>
 
@@ -69,7 +69,7 @@ function BlockForm({ readOnly }: { readOnly: boolean }) {
             Through (optional)
           </label>
           <input id="block-end-date" name="end_date" type="date" className={input} />
-          <p className="mt-1 text-[11px] text-navy/50">
+          <p className="mt-1 text-xs text-navy/70">
             Leave empty for a single day, or set it to block a whole holiday.
           </p>
         </div>
@@ -84,7 +84,7 @@ function BlockForm({ readOnly }: { readOnly: boolean }) {
           />
           <span>
             <span className="font-semibold text-navy">Block the whole day</span>
-            <span className="block text-xs text-navy/55">
+            <span className="block text-xs text-navy/70">
               Uncheck to block only part of the day.
             </span>
           </span>
@@ -139,7 +139,7 @@ function BlockForm({ readOnly }: { readOnly: boolean }) {
         </button>
 
         {readOnly ? (
-          <p className="text-xs text-navy/50">Disabled while showing demo data.</p>
+          <p className="text-xs text-navy/70">Disabled while showing demo data.</p>
         ) : null}
       </form>
     </section>
@@ -183,7 +183,7 @@ function BlockedList({ slots, readOnly }: { slots: BlockedSlot[]; readOnly: bool
                 <span className="whitespace-nowrap font-semibold text-navy">
                   {formatDate(slot.date)}
                 </span>
-                <span className="block text-xs text-navy/50">{relativeDay(slot.date)}</span>
+                <span className="block text-xs text-navy/70">{relativeDay(slot.date)}</span>
               </td>
               <td className={td}>
                 {slot.start_time ? (
@@ -198,7 +198,7 @@ function BlockedList({ slots, readOnly }: { slots: BlockedSlot[]; readOnly: bool
                 {slot.reason ? (
                   slot.reason
                 ) : (
-                  <span className="text-navy/40">—</span>
+                  <span className="text-navy/70">—</span>
                 )}
               </td>
               <td className={`${td} text-right`}>

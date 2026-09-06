@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -38,6 +38,7 @@ function loadAnalytics() {
 export default function CookieConsent() {
   const t = useTranslations("cookies");
   const [visible, setVisible] = useState(false);
+  const acceptRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as ConsentValue | null;
@@ -47,6 +48,12 @@ export default function CookieConsent() {
     }
     if (stored === "all") loadAnalytics();
   }, []);
+
+  // Non-blocking banner (no backdrop, page stays usable) — so we move focus to
+  // it once for keyboard/screen-reader users to notice it, but don't trap Tab.
+  useEffect(() => {
+    if (visible) acceptRef.current?.focus();
+  }, [visible]);
 
   function choose(value: ConsentValue) {
     localStorage.setItem(STORAGE_KEY, value);
@@ -73,7 +80,12 @@ export default function CookieConsent() {
         </Link>
       </p>
       <div className="mt-4 flex flex-wrap gap-3">
-        <button type="button" className="btn-primary !py-2.5" onClick={() => choose("all")}>
+        <button
+          ref={acceptRef}
+          type="button"
+          className="btn-primary !py-2.5"
+          onClick={() => choose("all")}
+        >
           {t("accept")}
         </button>
         <button type="button" className="btn-ghost !py-2.5" onClick={() => choose("essential")}>

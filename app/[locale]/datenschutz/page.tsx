@@ -55,7 +55,7 @@ export default async function DatenschutzPage({ params }: Props) {
           </section>
         ))}
 
-        <p className="border-t border-navy/10 pt-6 text-xs text-navy/50">{t("lastUpdated")}</p>
+        <p className="border-t border-navy/10 pt-6 text-xs text-navy/70">{t("lastUpdated")}</p>
       </article>
     </>
   );

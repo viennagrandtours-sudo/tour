@@ -39,7 +39,7 @@ export default async function BookCompletePage({ params }: Props) {
         <div className="section-shell relative max-w-3xl py-14 sm:py-16">
           <Suspense
             fallback={
-              <div className="paper-surface p-8 font-sans text-navy/55">
+              <div className="paper-surface p-8 font-sans text-navy/70">
                 {t("paymentCheckingBody")}
               </div>
             }

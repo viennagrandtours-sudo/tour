@@ -162,6 +162,10 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
     }
   }
 
+  // Recomputed every render so "Next" reflects the current step's validity live,
+  // instead of only reporting a problem after the guest already tried to advance.
+  const stepIsValid = validateStep() === null;
+
   function goNext() {
     const message = validateStep();
     setStepError(message);
@@ -246,16 +250,16 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
               : t("successTitle")}
           </h2>
           <div className="mx-auto mt-4 h-px w-14 bg-gradient-to-r from-transparent via-gold to-transparent" />
-          <p className="mx-auto mt-4 max-w-md font-sans text-navy/65">
+          <p className="mx-auto mt-4 max-w-md font-sans text-navy/75">
             {confirmation.paymentSkipped || confirmation.awaitingOnlinePayment
               ? t("heldBody")
               : t("successBody")}
           </p>
-          <p className="mx-auto mt-3 max-w-md font-sans text-sm text-navy/50">
+          <p className="mx-auto mt-3 max-w-md font-sans text-sm text-navy/70">
             {t("successNote")}
           </p>
           {confirmation.demo && (
-            <p className="mx-auto mt-5 max-w-md border border-navy/10 bg-cream-warm/80 px-4 py-3 font-sans text-xs text-navy/60">
+            <p className="mx-auto mt-5 max-w-md border border-navy/10 bg-cream-warm/80 px-4 py-3 font-sans text-xs text-navy/70">
               {t("demoMode")}
             </p>
           )}
@@ -278,21 +282,21 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
                   setStepError(null);
                   setStepIndex(i);
                 }}
-                className={`flex items-center gap-2 rounded-sm px-2 py-1 font-sans text-[11px] font-semibold tracking-wide transition ${
+                className={`flex min-h-11 items-center gap-2 rounded-sm px-2 py-1 font-sans text-xs font-semibold tracking-wide transition ${
                   i === stepIndex
                     ? "text-navy"
                     : i < stepIndex
-                      ? "text-gold-muted hover:text-navy"
+                      ? "text-gold-ink hover:text-navy"
                       : "cursor-default text-navy/30"
                 }`}
                 aria-current={i === stepIndex ? "step" : undefined}
               >
                 <span
-                  className={`flex h-6 w-6 items-center justify-center border text-[10px] ${
+                  className={`flex h-6 w-6 shrink-0 items-center justify-center border text-xs ${
                     i === stepIndex
                       ? "border-gold bg-gold text-navy-deep"
                       : i < stepIndex
-                        ? "border-gold/40 text-gold-muted"
+                        ? "border-gold/40 text-gold-ink"
                         : "border-navy/15 text-navy/30"
                   }`}
                 >
@@ -309,7 +313,7 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
       </div>
 
       <div className="relative px-5 py-7 sm:px-8 sm:py-9">
-        <p className="mb-6 max-w-xl font-sans text-sm leading-relaxed text-navy/55">
+        <p className="mb-6 max-w-xl font-sans text-sm leading-relaxed text-navy/70">
           {t(`hints.${step}`)}
         </p>
         <div className="min-h-[240px]">
@@ -336,7 +340,7 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
                     <span className="block font-display text-xl tracking-display text-navy">
                       {tTours(`tiers.${tourTierKey(tour.id)}.name`)}
                     </span>
-                    <span className="mt-1.5 block font-sans text-sm text-navy/55">
+                    <span className="mt-1.5 block font-sans text-sm text-navy/70">
                       €{tour.pricePerPerson} {tTours("perPerson")}
                     </span>
                   </label>
@@ -387,7 +391,7 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
                 </select>
               </div>
               {dayBlocked && (
-                <p className="font-sans text-sm text-navy/55 sm:col-span-2">
+                <p className="font-sans text-sm text-navy/70 sm:col-span-2">
                   {t("validation.unavailable")}
                 </p>
               )}
@@ -409,9 +413,9 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
                 onChange={(e) => update("guest_count", Number(e.target.value))}
                 required
               />
-              <p className="mt-2 font-sans text-xs text-navy/50">{t("minGuestsHint")}</p>
+              <p className="mt-2 font-sans text-xs text-navy/70">{t("minGuestsHint")}</p>
               {form.guest_count > MAX_GUESTS_PER_CAR && (
-                <p className="mt-2 font-sans text-xs text-navy/60">
+                <p className="mt-2 font-sans text-xs text-navy/70">
                   {t("carsNeededHint", { count: carCount })}
                 </p>
               )}
@@ -552,7 +556,7 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
 
               <div>
                 <h3 className="section-kicker">{t("policyTitle")}</h3>
-                <p className="mt-2 font-sans text-xs leading-relaxed text-navy/55">
+                <p className="mt-2 font-sans text-xs leading-relaxed text-navy/70">
                   {t("policy")}
                 </p>
               </div>
@@ -580,7 +584,12 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
           </button>
 
           {step !== "payment" ? (
-            <button type="button" className="btn-primary" onClick={goNext}>
+            <button
+              type="button"
+              className="btn-primary"
+              disabled={!stepIsValid}
+              onClick={goNext}
+            >
               {t("next")}
             </button>
           ) : (

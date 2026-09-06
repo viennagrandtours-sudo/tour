@@ -38,7 +38,7 @@ export default async function AgbPage({ params }: Props) {
             <p className="mt-3 font-sans text-sm leading-relaxed text-navy/75">{s.body}</p>
           </section>
         ))}
-        <p className="border-t border-navy/10 pt-6 font-sans text-xs text-navy/50">
+        <p className="border-t border-navy/10 pt-6 font-sans text-xs text-navy/70">
           {t("lastUpdated")}
         </p>
       </article>

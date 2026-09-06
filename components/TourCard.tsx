@@ -22,26 +22,26 @@ export default function TourCard({ tourId, price, minGuests = 3, featured }: Pro
           : "border-navy/10 hover:border-gold/35"
       }`}
     >
-      <p className="font-sans text-[11px] font-semibold uppercase tracking-caption text-gold-muted">
+      <p className="font-sans text-xs font-semibold uppercase tracking-caption text-gold-ink">
         {t(`tiers.${tier}.duration`)}
       </p>
       <h3 className="mt-2.5 font-display text-2xl tracking-display text-navy transition group-hover:text-navy-soft">
         {t(`tiers.${tier}.name`)}
       </h3>
       <div className="mt-3 h-px w-8 bg-gold/50 transition duration-500 group-hover:w-14" />
-      <p className="mt-4 flex-1 font-sans text-sm leading-relaxed text-navy/65">
+      <p className="mt-4 flex-1 font-sans text-sm leading-relaxed text-navy/75">
         {t(`tiers.${tier}.description`)}
       </p>
       <p className="mt-6 font-display text-3xl tracking-display text-navy">
         €{price}
-        <span className="ms-2 font-sans text-sm font-normal tracking-normal text-navy/50">
+        <span className="ms-2 font-sans text-sm font-normal tracking-normal text-navy/70">
           {t("perPerson")}
         </span>
       </p>
-      <p className="mt-1 font-sans text-sm text-navy/60">
+      <p className="mt-1 font-sans text-sm text-navy/70">
         {t("groupFrom", { total: groupTotal, count: minGuests })}
       </p>
-      <p className="mt-1 font-sans text-xs text-navy/45">
+      <p className="mt-1 font-sans text-xs text-navy/70">
         {t("minGuests", { count: minGuests })}
       </p>
       <Link href={`/book?tour=${tourId}`} className="btn-primary mt-5 w-full !py-3">

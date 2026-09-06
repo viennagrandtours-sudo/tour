@@ -25,7 +25,7 @@ export default function AdminLoginPage({
     <div className="flex min-h-screen items-center justify-center bg-forest-depth px-4 py-12">
       <div className="w-full max-w-sm">
         <div className="mb-6 text-center">
-          <p className="text-[11px] uppercase tracking-caption text-gold-muted">
+          <p className="text-xs uppercase tracking-caption text-gold-muted">
             Staff dashboard
           </p>
           <h1 className="mt-1 font-display text-3xl font-semibold text-cream">Tour Admin</h1>
@@ -54,7 +54,7 @@ export default function AdminLoginPage({
           )}
         </div>
 
-        <p className="mt-5 text-center text-xs text-cream/45">
+        <p className="mt-5 text-center text-xs text-cream/55">
           <Link href="/en" className="underline-offset-2 hover:text-cream hover:underline">
             Back to the public site
           </Link>
