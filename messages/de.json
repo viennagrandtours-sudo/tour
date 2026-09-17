@@ -493,6 +493,8 @@
     "title": "Was Gäste sagen",
     "sub": "Stimmen von der Rückbank",
     "sampleNote": "Musterstimmen, solange wir die ersten echten Bewertungen sammeln.",
+    "carouselLabel": "Erfahrungsberichte",
+    "carouselGoTo": "Zu Erfahrungsbericht {number}",
     "items": [
       {
         "author": "Anna K.",

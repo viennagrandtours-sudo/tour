@@ -493,6 +493,8 @@
     "title": "客人怎么说",
     "sub": "来自后座的话",
     "sampleNote": "在收集到第一批真实评价前，此处为示例评论。",
+    "carouselLabel": "客户评价",
+    "carouselGoTo": "跳转到第 {number} 条评价",
     "items": [
       {
         "author": "Anna K.",

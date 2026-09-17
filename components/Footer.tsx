@@ -14,7 +14,6 @@ export default async function Footer() {
   // Contact details still bracketed are hidden rather than shown to guests.
   const showEmail = !isFillIn(settings.contact_email);
   const showPhone = !isFillIn(settings.contact_phone);
-  const showAddress = !isFillIn(settings.meeting_point_street);
   const showGoogle = !isFillIn(settings.google_business_url.split("cid=")[1] ?? "");
   const showSocial = !isFillIn(settings.instagram_url.split(".com/")[1] ?? "");
 
@@ -101,13 +100,6 @@ export default async function Footer() {
                 >
                   {settings.contact_phone}
                 </a>
-              </li>
-            )}
-            {showAddress && (
-              <li className="leading-relaxed">
-                {settings.meeting_point_street}
-                <br />
-                {settings.meeting_point_city}
               </li>
             )}
             <li className="leading-relaxed text-cream/60">{t("meetingPoint")}</li>

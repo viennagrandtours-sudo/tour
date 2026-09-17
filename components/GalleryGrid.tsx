@@ -191,8 +191,10 @@ export default function GalleryGrid({ items }: { items: GalleryTile[] }) {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative flex max-h-[78vh] items-center justify-center bg-navy-ink/5">
+              {/* No `key` here on purpose: changing only `src` lets the browser keep
+                  showing the previous frame until the next photo has decoded, instead
+                  of unmounting/remounting and flashing blank mid-navigation. */}
               <Image
-                key={active.key}
                 src={active.src}
                 alt={active.alt}
                 width={1600}

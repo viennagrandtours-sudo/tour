@@ -493,6 +493,8 @@
     "title": "Cosa dicono gli ospiti",
     "sub": "Parole dal sedile posteriore",
     "sampleNote": "Recensioni di esempio, in attesa delle prime vere.",
+    "carouselLabel": "Testimonianze",
+    "carouselGoTo": "Vai alla testimonianza {number}",
     "items": [
       {
         "author": "Anna K.",

@@ -493,6 +493,8 @@
     "title": "O que dizem os convidados",
     "sub": "Palavras do banco de trás",
     "sampleNote": "Opiniões de exemplo, enquanto recolhemos as primeiras verdadeiras.",
+    "carouselLabel": "Testemunhos",
+    "carouselGoTo": "Ir para o testemunho {number}",
     "items": [
       {
         "author": "Anna K.",

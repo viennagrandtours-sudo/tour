@@ -493,6 +493,8 @@
     "title": "Konuklarımız ne diyor",
     "sub": "Arka koltuktan sözler",
     "sampleNote": "İlk gerçek yorumları toplayana kadar gösterilen örnek yorumlar.",
+    "carouselLabel": "Yorumlar",
+    "carouselGoTo": "{number}. yoruma git",
     "items": [
       {
         "author": "Anna K.",

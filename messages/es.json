@@ -493,6 +493,8 @@
     "title": "Lo que dicen los huéspedes",
     "sub": "Palabras desde el asiento trasero",
     "sampleNote": "Reseñas de muestra mientras reunimos las primeras opiniones reales.",
+    "carouselLabel": "Testimonios",
+    "carouselGoTo": "Ir al testimonio {number}",
     "items": [
       {
         "author": "Anna K.",

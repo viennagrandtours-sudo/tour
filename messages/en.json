@@ -493,6 +493,8 @@
     "title": "What guests say",
     "sub": "Words from the back seat",
     "sampleNote": "Sample reviews shown while we collect the first real ones.",
+    "carouselLabel": "Testimonials",
+    "carouselGoTo": "Go to testimonial {number}",
     "items": [
       {
         "author": "Anna K.",
