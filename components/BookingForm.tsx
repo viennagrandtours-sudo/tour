@@ -208,7 +208,7 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
           sessionStorage.setItem(`vgt_sumup_checkout_${data.id}`, data.checkoutId);
           sessionStorage.setItem(
             `vgt_sumup_guest_${data.id}`,
-            JSON.stringify({ email: form.email, name: form.name, locale })
+            JSON.stringify({ locale })
           );
         } catch {
           /* private mode — complete page can still use DB lookup */

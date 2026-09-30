@@ -108,25 +108,29 @@ then confirms the booking when SumUp reports `PAID` (`/book/complete` + `/api/su
 Until `SUMUP_*` is set, bookings are saved as `awaiting_payment` and the guest sees an honest
 “payment pending / held” screen (no fake checkout URL).
 
-### 1.5 Confirmation email — no email is sent today
+### 1.5 Confirmation email — turn it on with two env vars
 
-`app/api/confirm-email/route.ts` contains the finished email text in English and German, but there is
-no email provider connected, so **nothing is actually sent**. The success screen tells the guest "a
-confirmation is on its way to your inbox". Until this is wired, that is not true.
+The code is done: the guest automatically gets a confirmation email (English, or German if they
+booked in German) with their booking reference, tour, date, departure time, guests, language and the
+meeting point from `/admin/settings`. It is sent:
 
-- [ ] **Choose an email provider.** [Resend](https://resend.com) is the easiest (free tier ~3,000
-      emails/month, the code comments are written for it); Postmark or Brevo also work. You will need
-      to verify your domain with them by adding two or three DNS records at your registrar.
-- [ ] **Get the API key**, and decide the "from" address (e.g. `bookings@viennagrandtours.at`). These
-      become the env vars `EMAIL_API_KEY` and `EMAIL_FROM` (both are commented out in `.env.example`
-      — uncomment them).
-- [ ] **Have the provider call added** in `app/api/confirm-email/route.ts` — the example code is
-      already written in the comment block above the `POST` function. *Needs a code edit.*
-- [ ] **Interim plan if you launch without it:** watch `/admin/bookings`, and reply to each new
-      booking by hand from your own mailbox. Set an expectation you can keep.
-- [ ] **Add the meeting point to the email.** The template says "the meeting point and exact
-      departure time are below" but no address is inserted. Whoever wires the provider must add it,
-      or the guest gets a promise with nothing after it. *Needs a code edit.*
+- right after SumUp payment is verified (by the return page or SumUp's webhook — only once), and
+- when you switch a booking to **Confirmed** in `/admin/bookings` (e.g. a held booking you took
+  payment for by hand). The dropdown tells you whether the email went out.
+
+Until the two env vars below are set, **nothing is sent** — the booking still works and the attempt
+is only logged.
+
+- [ ] **Create a [Resend](https://resend.com) account** (free tier ~3,000 emails/month) and verify
+      your domain under *Domains* by adding the DNS records it shows you at your registrar.
+- [ ] **Create an API key** (*API Keys* → *Create*, "Sending access" is enough).
+- [ ] **Set the env vars in Netlify** and redeploy: `EMAIL_API_KEY` = the key (`re_…`), and
+      `EMAIL_FROM` = e.g. `Vienna Grand Tours <bookings@viennagrandtours.at>` (must be on the
+      verified domain). Replies go to your contact email from `/admin/settings`.
+- [ ] **Check the meeting point** in `/admin/settings` — it is printed in every email. If it is
+      blank, the email says the exact meeting point will follow separately.
+- [ ] **Send yourself a test:** make a booking with your own address and confirm it (or pay and
+      refund in SumUp). Check the spam folder the first time.
 
 ---
 
@@ -300,17 +304,17 @@ below.
 - [ ] Instagram URL, Facebook URL
 - [ ] Google Business Profile URL
 
-> ⚠️ **Important limit:** these overrides feed the **footer only**. The **Impressum and privacy
-> policy read the values in `lib/tours.ts` directly**, so filling in your phone number in
+> ⚠️ **Important limit:** these overrides feed the **footer and the confirmation email only**. The
+> **Impressum and privacy policy read the values in `lib/tours.ts` directly**, so filling in your phone number in
 > `/admin/settings` will *not* fix `[Telefonnummer]` on the Impressum page. The legal pages always
 > need a code edit. Do both.
 
 ### 3.5 Meeting point
 
 - [ ] **Decide and write down the exact meeting point.** The site says only "Meeting point on the
-      Ringstrasse, Vienna — the exact pin arrives with your booking confirmation." Since the
-      confirmation email is not wired yet (1.5), nobody currently receives that pin. Set it in
-      `/admin/settings` and make sure whatever you send by hand includes it.
+      Ringstrasse, Vienna — the exact pin arrives with your booking confirmation." The
+      confirmation email (1.5) prints the meeting point from `/admin/settings`, so set it there
+      before you switch email on.
 
 ---
 
@@ -403,7 +407,7 @@ clicks "Accept analytics", so you are compliant either way.
 | Photos | `/admin/photos` | ✅ | — |
 | Logo, favicon, social share image | `public/`, `components/` | — | yes |
 | Env vars (Supabase, SumUp, email, analytics, site URL) | Netlify UI | ✅ (Netlify, not `/admin`) | redeploy needed |
-| SumUp checkout, confirmation email sending | `app/api/…` | — | yes |
+| SumUp checkout, confirmation email wording | `app/api/…`, `lib/booking-email.ts` | — | yes |
 | Turning on Spanish / Turkish | `i18n/routing.ts` | — | yes |
 
 `/admin/settings` also has an **Environment** panel that shows, without revealing any values, whether
@@ -427,8 +431,8 @@ commit real values to the code repository.
 | `SUMUP_API_KEY` / `SUMUP_MERCHANT_CODE` | Required for Hosted Checkout | SumUp dashboard → Developer |
 | `SUMUP_PAY_TO_EMAIL` | Optional reference | Your SumUp login email |
 | `NEXT_PUBLIC_SUMUP_PUBLIC_KEY` | Only for embedded widget (not used for Hosted Checkout) | SumUp dashboard |
-| `EMAIL_API_KEY` | For confirmation emails | Sending key (commented out in `.env.example` — uncomment) | Resend / Postmark dashboard |
-| `EMAIL_FROM` | For confirmation emails | The "from" address, e.g. `bookings@yourdomain.at` | Must be a domain you verified with the provider |
+| `EMAIL_API_KEY` | For confirmation emails | Resend API key, `re_…` (commented out in `.env.example` — uncomment) | Resend dashboard → API Keys |
+| `EMAIL_FROM` | For confirmation emails | The "from" address, e.g. `Vienna Grand Tours <bookings@yourdomain.at>` | Must be a domain you verified in Resend |
 | `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | Optional | Turns on Plausible analytics after consent | Plausible account; leave blank if unused |
 | `NEXT_PUBLIC_GA4_MEASUREMENT_ID` | Optional | Turns on Google Analytics after consent | GA4 property; leave blank if unused |
 

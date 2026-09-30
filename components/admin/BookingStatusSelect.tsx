@@ -55,6 +55,12 @@ export function BookingStatusSelect({
           {result.message}
         </p>
       ) : null}
+      {/* Confirming emails the guest — say whether that actually happened. */}
+      {result?.ok && committed === "confirmed" && !pending ? (
+        <p role="status" className="mt-1 text-xs leading-tight text-navy/70">
+          {result.message}
+        </p>
+      ) : null}
       {pending ? <p className="mt-1 text-xs text-navy/70">Saving…</p> : null}
     </div>
   );
