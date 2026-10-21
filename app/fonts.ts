@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import {
   Cormorant_Garamond,
   Noto_Naskh_Arabic,
@@ -7,10 +6,12 @@ import {
   Noto_Serif_SC,
   Source_Sans_3,
 } from "next/font/google";
-import { getLocale } from "next-intl/server";
-import { htmlLang, isRtlLocale } from "@/i18n/routing";
-import "./globals.css";
 
+/**
+ * Shared by the two root layouts (app/[locale] and app/admin). next/font needs
+ * the loaders called at module scope, so they live here rather than in either
+ * layout.
+ */
 const display = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
@@ -57,14 +58,8 @@ const chineseSans = Noto_Sans_SC({
   fallback: ["PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", "sans-serif"],
 });
 
-export default async function RootLayout({ children }: { children: ReactNode }) {
-  let locale = "en";
-  try {
-    locale = await getLocale();
-  } catch {
-    // Fallback during static generation edge cases
-  }
-
+/** Font CSS variables for <body>; Arabic and Chinese faces only load where needed. */
+export function bodyFontClasses(locale: string): string {
   const scriptFonts =
     locale === "ar"
       ? `${arabicDisplay.variable} ${arabicSans.variable}`
@@ -72,11 +67,5 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
         ? `${chineseDisplay.variable} ${chineseSans.variable}`
         : "";
 
-  return (
-    <html lang={htmlLang(locale)} dir={isRtlLocale(locale) ? "rtl" : "ltr"} suppressHydrationWarning>
-      <body className={`${display.variable} ${sans.variable} ${scriptFonts} font-sans antialiased`}>
-        {children}
-      </body>
-    </html>
-  );
+  return `${display.variable} ${sans.variable} ${scriptFonts} font-sans antialiased`;
 }
