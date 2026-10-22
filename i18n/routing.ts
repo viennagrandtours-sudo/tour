@@ -4,6 +4,10 @@ export const routing = defineRouting({
   locales: ["en", "de", "es", "it", "ar", "zh", "pt", "tr"],
   defaultLocale: "en",
   localePrefix: "always",
+  // Every URL already carries the locale. The NEXT_LOCALE cookie would add a
+  // Set-Cookie header to every page response, which stops CDNs (Netlify's
+  // included) from caching the otherwise static HTML.
+  localeCookie: false,
 });
 
 export type Locale = (typeof routing.locales)[number];
