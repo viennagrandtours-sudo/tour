@@ -33,7 +33,7 @@ export default function BookingPaymentComplete() {
 
     async function verify() {
       let checkoutId = checkoutFromQuery && checkoutFromQuery !== "pending" ? checkoutFromQuery : "";
-      let guest: { email?: string; name?: string; locale?: string } = {};
+      let guest: { locale?: string } = {};
 
       try {
         checkoutId =
@@ -51,8 +51,6 @@ export default function BookingPaymentComplete() {
           body: JSON.stringify({
             bookingId,
             checkoutId: checkoutId || undefined,
-            email: guest.email,
-            name: guest.name,
             locale: guest.locale || locale,
           }),
         });

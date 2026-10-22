@@ -12,8 +12,9 @@ Turkish.
 - Homepage, Tours & Pricing, multi-step Booking, About, Gallery, FAQ, 404
 - Austrian legal pages: Impressum, AGB, Datenschutz + GDPR cookie banner
 - Booking API with Supabase persistence (demo fallback without env vars)
-- SumUp **Hosted Checkout** at booking time (`lib/sumup.ts` + `/book/complete`); confirmation-email
-  provider is still optional until `EMAIL_*` is set
+- SumUp **Hosted Checkout** at booking time (`lib/sumup.ts` + `/book/complete`)
+- Automatic confirmation email (EN/DE, via Resend) once payment is verified or the owner confirms a
+  booking in `/admin/bookings` — `lib/booking-email.ts`; sends only when `EMAIL_API_KEY` + `EMAIL_FROM` are set
 - SEO: per-page metadata, Open Graph, `sitemap.xml`, `robots.txt`, LocalBusiness + TouristAttraction JSON-LD
 
 ## Brand assets
@@ -142,7 +143,7 @@ Not ideal for App Router (SSR/middleware need the Next.js runtime). Prefer A or 
 ```
 app/
   [locale]/          # pages (home, tours, book, about, gallery, faq, legal)
-  api/                # bookings, confirm-email stub, contact
+  api/                # bookings, SumUp webhook, contact
 components/           # Header, Footer, BookingForm, TourCard, …
 i18n/                 # next-intl routing + request config
 messages/             # en, de, es, it, ar, zh, pt, tr (identical key structure)
@@ -209,7 +210,7 @@ actually use.
 - [ ] Supabase project + `schema.sql`
 - [x] SumUp Hosted Checkout in `BookingForm` + `app/api/bookings/route.ts` + `/book/complete`
       (set `SUMUP_API_KEY` + `SUMUP_MERCHANT_CODE` to go live)
-- [ ] Confirmation email provider in `app/api/confirm-email/route.ts` (copy is written, EN + DE)
+- [x] Confirmation email (`lib/booking-email.ts`, EN + DE) — set `EMAIL_API_KEY` + `EMAIL_FROM` to go live
 - [ ] Analytics ID (`NEXT_PUBLIC_PLAUSIBLE_DOMAIN` or `NEXT_PUBLIC_GA4_MEASUREMENT_ID`)
 
 ## Scripts

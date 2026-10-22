@@ -1,14 +1,19 @@
 import { getSupabaseServer } from "@/lib/supabase";
 import { supabaseConfigured } from "@/lib/supabase-env";
 import { getCheckout, isCheckoutPaid, sumupConfigured } from "@/lib/sumup";
+import { sendBookingConfirmation } from "@/lib/booking-email";
 
 /**
- * Confirm a booking after SumUp reports PAID.
- * Idempotent: already-confirmed bookings stay confirmed.
+ * Confirm a booking after SumUp reports PAID, and email the guest.
+ * Idempotent: already-confirmed bookings stay confirmed, and only the call
+ * that actually flips the status sends the confirmation email — so the
+ * webhook and the /book/complete page racing each other can't send it twice.
  */
 export async function confirmBookingAfterPayment(opts: {
   bookingId: string;
   checkoutId?: string;
+  /** Guest's site locale, if the caller knows it — picks the email language. */
+  locale?: string;
 }): Promise<{ ok: true; status: string; already?: boolean } | { ok: false; error: string }> {
   if (!sumupConfigured()) {
     return { ok: false, error: "SumUp is not configured" };
@@ -74,15 +79,26 @@ export async function confirmBookingAfterPayment(opts: {
     return { ok: true, status: existing.status, already: true };
   }
 
-  const { error: updateError } = await supabase
+  // Conditional update: only one concurrent caller gets the row back.
+  const { data: flipped, error: updateError } = await supabase
     .from("bookings")
     .update({ status: "confirmed" })
-    .eq("id", opts.bookingId);
+    .eq("id", opts.bookingId)
+    .not("status", "in", "(confirmed,completed)")
+    .select("id");
 
   if (updateError) {
     console.error("Failed to confirm booking after SumUp payment:", updateError);
     return { ok: false, error: "Could not update booking" };
   }
+
+  if (!flipped?.length) {
+    return { ok: true, status: "confirmed", already: true };
+  }
+
+  // Awaited rather than fire-and-forget: on serverless hosts work left
+  // running after the response is sent may be frozen and never finish.
+  await sendBookingConfirmation(opts.bookingId, { locale: opts.locale });
 
   return { ok: true, status: "confirmed" };
 }

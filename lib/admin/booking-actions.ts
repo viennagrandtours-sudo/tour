@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { sendBookingConfirmation } from "@/lib/booking-email";
 import { MAX_GUESTS, MIN_GUESTS, NARRATION_LANGUAGES, TOURS } from "@/lib/tours";
 import { bool, dbFailure, failure, num, requireAdmin, str, success } from "./guard";
 import { BOOKING_STATUSES, type ActionResult, type AdminBookingStatus } from "./types";
@@ -109,10 +110,32 @@ export async function updateBookingStatusAction(
   if (!id) return failure("Missing booking id.");
   if (!BOOKING_STATUSES.includes(status)) return failure("Unknown status.");
 
+  const { data: before } = await gate.supabase
+    .from("bookings")
+    .select("status")
+    .eq("id", id)
+    .maybeSingle();
+
   const { error } = await gate.supabase.from("bookings").update({ status }).eq("id", id);
   if (error) return dbFailure("Could not change the status", error);
 
   refresh();
+
+  // Held bookings (no online payment) are confirmed by hand here — that is
+  // the moment the guest should hear from us, same as after a SumUp payment.
+  const newlyConfirmed =
+    status === "confirmed" && before && before.status !== "confirmed" && before.status !== "completed";
+  if (newlyConfirmed) {
+    const mail = await sendBookingConfirmation(id);
+    return success(
+      mail.sent
+        ? "Status set to confirmed — confirmation email sent to the guest."
+        : mail.reason === "not_configured"
+          ? "Status set to confirmed. No email sent: EMAIL_API_KEY / EMAIL_FROM are not set."
+          : "Status set to confirmed, but the confirmation email failed — please email the guest yourself.",
+    );
+  }
+
   return success(`Status set to ${status.replace("_", " ")}.`);
 }
 
