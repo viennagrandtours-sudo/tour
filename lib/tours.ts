@@ -118,7 +118,7 @@ export const SITE = {
     en: "Private guided tours in a fleet of vintage-style electric vehicles",
     de: "Private Stadtrundfahrten in einer Flotte elektrischer Oldtimer-Fahrzeuge",
   },
-  email: "hello@viennagrandtours.com",
+  email: "viennagrandtours@gmail.com",
   phone: "[Telefonnummer]",
   address: {
     street: "Rüdigergasse 18/5",

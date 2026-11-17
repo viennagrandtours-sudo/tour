@@ -131,7 +131,7 @@ export async function updateBookingStatusAction(
       mail.sent
         ? "Status set to confirmed — confirmation email sent to the guest."
         : mail.reason === "not_configured"
-          ? "Status set to confirmed. No email sent: EMAIL_API_KEY / EMAIL_FROM are not set."
+          ? "Status set to confirmed. No email sent: email sending is not set up yet (add the Resend or Gmail settings in Netlify)."
           : "Status set to confirmed, but the confirmation email failed — please email the guest yourself.",
     );
   }
