@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { buildConfirmationEmail, resolveEmailLocale, type ConfirmationBooking } from "./booking-email";
+import {
+  buildConfirmationEmail,
+  buildOwnerNotification,
+  resolveEmailLocale,
+  type ConfirmationBooking,
+} from "./booking-email";
 import { codeDefaults } from "./site-settings";
 
 const booking: ConfirmationBooking = {
@@ -65,5 +70,27 @@ describe("buildConfirmationEmail", () => {
     });
     expect(mail.text).not.toContain("[");
     expect(mail.text).toContain("we will send you the exact meeting point separately");
+  });
+});
+
+describe("buildOwnerNotification", () => {
+  const full = { ...booking, phone: "+43 660 1234567", notes: "Celebrating a birthday" };
+
+  it("gives the owner everything needed to contact the guest", () => {
+    const mail = buildOwnerNotification(full, "paid");
+    expect(mail.subject).toBe("New booking: Anna Gruber · Saturday, 3 October 2026 14:00 · 4 guests");
+    expect(mail.text).toContain("Paid online");
+    expect(mail.text).toContain("Email: anna@example.com");
+    expect(mail.text).toContain("Phone: +43 660 1234567");
+    expect(mail.text).toContain("Notes: Celebrating a birthday");
+    expect(mail.text).toContain("Tour: Gold · 90 minutes");
+    expect(mail.text).toContain("/admin/bookings");
+  });
+
+  it("flags held bookings that still need a payment link", () => {
+    const mail = buildOwnerNotification({ ...full, notes: null }, "held");
+    expect(mail.subject).toContain("(awaiting payment)");
+    expect(mail.text).toContain("Not paid yet");
+    expect(mail.text).toContain("Notes: —");
   });
 });

@@ -1,12 +1,12 @@
 import { getSupabaseServer } from "@/lib/supabase";
 import { supabaseConfigured } from "@/lib/supabase-env";
 import { getCheckout, isCheckoutPaid, sumupConfigured } from "@/lib/sumup";
-import { sendBookingConfirmation } from "@/lib/booking-email";
+import { sendPaidBookingEmails } from "@/lib/booking-email";
 
 /**
- * Confirm a booking after SumUp reports PAID, and email the guest.
+ * Confirm a booking after SumUp reports PAID, and email the guest and the owner.
  * Idempotent: already-confirmed bookings stay confirmed, and only the call
- * that actually flips the status sends the confirmation email — so the
+ * that actually flips the status sends the emails — so the
  * webhook and the /book/complete page racing each other can't send it twice.
  */
 export async function confirmBookingAfterPayment(opts: {
@@ -98,7 +98,7 @@ export async function confirmBookingAfterPayment(opts: {
 
   // Awaited rather than fire-and-forget: on serverless hosts work left
   // running after the response is sent may be frozen and never finish.
-  await sendBookingConfirmation(opts.bookingId, { locale: opts.locale });
+  await sendPaidBookingEmails(opts.bookingId, { locale: opts.locale });
 
   return { ok: true, status: "confirmed" };
 }

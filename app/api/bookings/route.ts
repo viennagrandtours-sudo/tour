@@ -16,6 +16,7 @@ import {
   type TourType,
 } from "@/lib/tours";
 import { createHostedCheckout, sumupConfigured } from "@/lib/sumup";
+import { sendOwnerNotification } from "@/lib/booking-email";
 
 type BookingBody = {
   name: string;
@@ -246,6 +247,11 @@ export async function POST(req: NextRequest) {
         "Demo mode: SumUp is not configured. Set SUMUP_API_KEY and SUMUP_MERCHANT_CODE to take card payments.",
     });
   }
+
+  // No online payment: the owner has to act on this booking by hand. (Paid
+  // bookings notify the owner from confirmBookingAfterPayment instead, so
+  // abandoned checkouts don't flood the inbox.)
+  await sendOwnerNotification(bookingId, "held");
 
   return NextResponse.json({
     id: bookingId,

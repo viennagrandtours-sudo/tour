@@ -13,8 +13,10 @@ Turkish.
 - Austrian legal pages: Impressum, AGB, Datenschutz + GDPR cookie banner
 - Booking API with Supabase persistence (demo fallback without env vars)
 - SumUp **Hosted Checkout** at booking time (`lib/sumup.ts` + `/book/complete`)
-- Automatic confirmation email (EN/DE, via Resend) once payment is verified or the owner confirms a
-  booking in `/admin/bookings` — `lib/booking-email.ts`; sends only when `EMAIL_API_KEY` + `EMAIL_FROM` are set
+- Booking emails (`lib/booking-email.ts`): EN/DE confirmation to the guest once payment is verified
+  or the owner confirms in `/admin/bookings`, plus a "new booking" notice to the owner at
+  viennagrandtours@gmail.com; sends via Resend (`EMAIL_API_KEY` + `EMAIL_FROM`) or Gmail
+  (`GMAIL_USER` + `GMAIL_APP_PASSWORD`)
 - SEO: per-page metadata, Open Graph, `sitemap.xml`, `robots.txt`, LocalBusiness + TouristAttraction JSON-LD
 
 ## Brand assets
@@ -210,7 +212,7 @@ actually use.
 - [ ] Supabase project + `schema.sql`
 - [x] SumUp Hosted Checkout in `BookingForm` + `app/api/bookings/route.ts` + `/book/complete`
       (set `SUMUP_API_KEY` + `SUMUP_MERCHANT_CODE` to go live)
-- [x] Confirmation email (`lib/booking-email.ts`, EN + DE) — set `EMAIL_API_KEY` + `EMAIL_FROM` to go live
+- [x] Booking emails (`lib/booking-email.ts`) — set the Resend or Gmail env vars to go live (OWNER_CHECKLIST 1.5)
 - [ ] Analytics ID (`NEXT_PUBLIC_PLAUSIBLE_DOMAIN` or `NEXT_PUBLIC_GA4_MEASUREMENT_ID`)
 
 ## Scripts

@@ -5,6 +5,7 @@ import { sendEmail, type SendResult } from "@/lib/email";
 import {
   NARRATION_LANGUAGE_LABELS,
   SITE,
+  SITE_URL,
   TOURS,
   type NarrationLanguage,
 } from "@/lib/tours";
@@ -20,6 +21,8 @@ export type ConfirmationBooking = {
   time: string;
   guest_count: number;
   language: string;
+  phone?: string | null;
+  notes?: string | null;
 };
 
 /**
@@ -147,6 +150,68 @@ export function buildConfirmationEmail(
   };
 }
 
+export type OwnerNotice = "paid" | "held";
+
+/** Email to the business owner about a new booking, in English. Pure. */
+export function buildOwnerNotification(booking: ConfirmationBooking, notice: OwnerNotice) {
+  const date = formatDate(booking.date, "en");
+  const time = booking.time.slice(0, 5);
+  const narration =
+    NARRATION_LANGUAGE_LABELS[booking.language as NarrationLanguage] ?? booking.language;
+  const headline =
+    notice === "paid"
+      ? "Paid online — confirmed. The guest has been sent their confirmation email."
+      : "Not paid yet — online payment is off, so the booking is held. Send the guest a payment link, then mark it Confirmed in the admin (that emails them their confirmation).";
+
+  return {
+    subject: `New booking: ${booking.name} · ${date} ${time} · ${booking.guest_count} guests${
+      notice === "held" ? " (awaiting payment)" : ""
+    }`,
+    text: [
+      headline,
+      "",
+      `Guest: ${booking.name}`,
+      `Email: ${booking.email}`,
+      `Phone: ${booking.phone || "—"}`,
+      "",
+      `Tour: ${tourLabel(booking.tour_type, "en")}`,
+      `Date: ${date}`,
+      `Departure: ${time}`,
+      `Guests: ${booking.guest_count}`,
+      `Language: ${narration}`,
+      `Notes: ${booking.notes?.trim() || "—"}`,
+      "",
+      `Booking reference: ${booking.id}`,
+      `Admin: ${SITE_URL.replace(/\/+$/, "")}/admin/bookings`,
+      "",
+      "Reply to this email to write to the guest directly.",
+    ].join("\n"),
+  };
+}
+
+async function loadBooking(bookingId: string): Promise<ConfirmationBooking | null> {
+  const supabase = supabaseConfigured() ? getSupabaseServer() : null;
+  if (!supabase) return null;
+
+  const { data, error } = await supabase
+    .from("bookings")
+    .select("id, name, email, phone, tour_type, date, time, guest_count, language, notes")
+    .eq("id", bookingId)
+    .maybeSingle();
+
+  if (error || !data) {
+    console.error("[booking-email] booking not found:", bookingId, error?.message);
+    return null;
+  }
+  return data as ConfirmationBooking;
+}
+
+function logFailure(what: string, bookingId: string, result: SendResult) {
+  if (!result.sent && result.reason !== "not_configured") {
+    console.error(`[booking-email] ${what} for ${bookingId} not sent: ${result.reason}`);
+  }
+}
+
 /**
  * Look up a booking and email the guest their confirmation. The recipient
  * always comes from the stored booking, never from a request body, so this
@@ -156,22 +221,10 @@ export async function sendBookingConfirmation(
   bookingId: string,
   opts: { locale?: string } = {},
 ): Promise<SendResult> {
-  const supabase = supabaseConfigured() ? getSupabaseServer() : null;
-  if (!supabase) return { sent: false, reason: "no_database" };
-
   try {
-    const { data, error } = await supabase
-      .from("bookings")
-      .select("id, name, email, tour_type, date, time, guest_count, language")
-      .eq("id", bookingId)
-      .maybeSingle();
+    const booking = await loadBooking(bookingId);
+    if (!booking) return { sent: false, reason: "booking_not_found" };
 
-    if (error || !data) {
-      console.error("[booking-email] booking not found for confirmation:", bookingId, error?.message);
-      return { sent: false, reason: "booking_not_found" };
-    }
-
-    const booking = data as ConfirmationBooking;
     const settings = await getSiteSettings();
     const locale = resolveEmailLocale(opts.locale, booking.language);
     const mail = buildConfirmationEmail(booking, locale, settings);
@@ -182,13 +235,48 @@ export async function sendBookingConfirmation(
       text: mail.text,
       replyTo: settings.contact_email || SITE.email,
     });
-
-    if (!result.sent && result.reason !== "not_configured") {
-      console.error(`[booking-email] confirmation for ${bookingId} not sent: ${result.reason}`);
-    }
+    logFailure("confirmation", bookingId, result);
     return result;
   } catch (err) {
     console.error("[booking-email] unexpected error:", err);
     return { sent: false, reason: "error" };
   }
+}
+
+/**
+ * Tell the owner about a new booking, at the contact email from
+ * /admin/settings (falling back to SITE.email). Reply-To is the guest, so a
+ * reply goes straight to them. Never throws.
+ */
+export async function sendOwnerNotification(
+  bookingId: string,
+  notice: OwnerNotice,
+): Promise<SendResult> {
+  try {
+    const booking = await loadBooking(bookingId);
+    if (!booking) return { sent: false, reason: "booking_not_found" };
+
+    const settings = await getSiteSettings();
+    const mail = buildOwnerNotification(booking, notice);
+
+    const result = await sendEmail({
+      to: settings.contact_email || SITE.email,
+      subject: mail.subject,
+      text: mail.text,
+      replyTo: booking.email,
+    });
+    logFailure("owner notification", bookingId, result);
+    return result;
+  } catch (err) {
+    console.error("[booking-email] unexpected error:", err);
+    return { sent: false, reason: "error" };
+  }
+}
+
+/** Guest confirmation + owner notice after a payment, sent in parallel. */
+export async function sendPaidBookingEmails(bookingId: string, opts: { locale?: string } = {}) {
+  await Promise.all([
+    sendBookingConfirmation(bookingId, opts),
+    sendOwnerNotification(bookingId, "paid"),
+  ]);
 }

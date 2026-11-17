@@ -38,11 +38,11 @@ validate and return a fake reference number but are not stored anywhere.
       (`lib/tours.ts` → `SITE_URL` fallback and `SITE.email`, `.env.example` → analytics domain and
       example email addresses). If you register a *different* domain, those have to be changed in
       code. Buy from any Austrian registrar (e.g. world4you, easyname, Hostinger).
-- [ ] **Create the mailbox `hello@viennagrandtours.at`** (or whatever address you want). This exact
-      address is hard-coded as `SITE.email` in `lib/tours.ts` and appears in the Impressum, the
-      privacy policy and the confirmation email template. It must be a real, monitored inbox — the
-      AGB tell guests they can cancel by writing to it. *Needs a code edit if you use a different
-      address in the Impressum;* the footer address alone can be overridden in `/admin/settings`.
+- [x] **Business email: `viennagrandtours@gmail.com`.** Set as `SITE.email` in `lib/tours.ts`; it
+      appears in the Impressum, the privacy policy, the footer and every booking email, and receives
+      the "new booking" notices. It must be monitored — the AGB tell guests they can cancel by
+      writing to it. If `/admin/settings` has an older contact email saved, change it there too:
+      that saved value wins for the footer and the booking emails.
 - [ ] **Decide the phone number you are willing to publish.** See 2.2 — a phone number is legally
       required in the Impressum.
 
@@ -108,29 +108,50 @@ then confirms the booking when SumUp reports `PAID` (`/book/complete` + `/api/su
 Until `SUMUP_*` is set, bookings are saved as `awaiting_payment` and the guest sees an honest
 “payment pending / held” screen (no fake checkout URL).
 
-### 1.5 Confirmation email — turn it on with two env vars
+### 1.5 Booking emails — turn them on with two Netlify settings
 
-The code is done: the guest automatically gets a confirmation email (English, or German if they
-booked in German) with their booking reference, tour, date, departure time, guests, language and the
-meeting point from `/admin/settings`. It is sent:
+The code is done. Two emails go out automatically:
 
-- right after SumUp payment is verified (by the return page or SumUp's webhook — only once), and
-- when you switch a booking to **Confirmed** in `/admin/bookings` (e.g. a held booking you took
-  payment for by hand). The dropdown tells you whether the email went out.
+- **To the guest** — a confirmation (English, or German if they booked in German) with booking
+  reference, tour, date, departure time, guests, language and the meeting point from
+  `/admin/settings`. Sent once SumUp payment is verified, or when you switch a booking to
+  **Confirmed** in `/admin/bookings` (the dropdown tells you whether it went out).
+- **To you** — "New booking: …" with the guest's name, email, phone, tour, date, time, guests and
+  notes, sent to the contact email when a booking is paid, or straight away when online payment is
+  off and the booking is held. Hit *Reply* to write to the guest directly.
 
-Until the two env vars below are set, **nothing is sent** — the booking still works and the attempt
-is only logged.
+Until one of the two setups below is in Netlify, **nothing is sent** — bookings still work and the
+attempt is only logged. Set up **one** of them (if both are set, Gmail is used).
 
-- [ ] **Create a [Resend](https://resend.com) account** (free tier ~3,000 emails/month) and verify
-      your domain under *Domains* by adding the DNS records it shows you at your registrar.
-- [ ] **Create an API key** (*API Keys* → *Create*, "Sending access" is enough).
-- [ ] **Set the env vars in Netlify** and redeploy: `EMAIL_API_KEY` = the key (`re_…`), and
-      `EMAIL_FROM` = e.g. `Vienna Grand Tours <bookings@viennagrandtours.at>` (must be on the
-      verified domain). Replies go to your contact email from `/admin/settings`.
-- [ ] **Check the meeting point** in `/admin/settings` — it is printed in every email. If it is
-      blank, the email says the exact meeting point will follow separately.
-- [ ] **Send yourself a test:** make a booking with your own address and confirm it (or pay and
-      refund in SumUp). Check the spam folder the first time.
+**Option A — Resend, from your own domain (recommended).** Emails come from e.g.
+`bookings@viennagrandtours.com`, which spam filters trust more; guest replies still go to
+viennagrandtours@gmail.com.
+
+- [ ] **Create a [Resend](https://resend.com) account** (free: 3,000 emails/month) and add your
+      domain under *Domains*. Copy the DNS records it shows into your domain registrar's DNS
+      settings and wait until Resend shows the domain as *Verified* (minutes to a few hours).
+- [ ] **Create an API key** (*API Keys* → *Create*, "Sending access").
+- [ ] **Add both in Netlify** (Site configuration → Environment variables), then redeploy:
+      `EMAIL_API_KEY` = the key (`re_…`), and
+      `EMAIL_FROM` = `Vienna Grand Tours <bookings@viennagrandtours.com>` (any address on the
+      verified domain; it does not need its own inbox).
+
+**Option B — straight from Gmail (no domain needed).**
+
+- [ ] **Turn on 2-Step Verification** for viennagrandtours@gmail.com
+      (Google Account → Security → 2-Step Verification). Google requires it for the next step.
+- [ ] **Create an app password:** Google Account → Security → *App passwords*. Name it "Website"
+      and copy the 16-letter password. It is *not* your normal Gmail password.
+- [ ] **Add both in Netlify**, then redeploy: `GMAIL_USER` = `viennagrandtours@gmail.com`,
+      `GMAIL_APP_PASSWORD` = the 16 letters. (Gmail allows about 500 emails a day.)
+
+**Either way:**
+
+- [ ] **Check the contact email and meeting point** in `/admin/settings`. The contact email
+      receives the "new booking" emails; the meeting point is printed in every guest email (if it is
+      blank, the email says the exact meeting point will follow separately).
+- [ ] **Send yourself a test:** book with another email address of yours, then confirm it in
+      `/admin/bookings`. Check spam the first time.
 
 ---
 
@@ -407,7 +428,7 @@ clicks "Accept analytics", so you are compliant either way.
 | Photos | `/admin/photos` | ✅ | — |
 | Logo, favicon, social share image | `public/`, `components/` | — | yes |
 | Env vars (Supabase, SumUp, email, analytics, site URL) | Netlify UI | ✅ (Netlify, not `/admin`) | redeploy needed |
-| SumUp checkout, confirmation email wording | `app/api/…`, `lib/booking-email.ts` | — | yes |
+| SumUp checkout, booking email wording | `app/api/…`, `lib/booking-email.ts` | — | yes |
 | Turning on Spanish / Turkish | `i18n/routing.ts` | — | yes |
 
 `/admin/settings` also has an **Environment** panel that shows, without revealing any values, whether
@@ -431,8 +452,10 @@ commit real values to the code repository.
 | `SUMUP_API_KEY` / `SUMUP_MERCHANT_CODE` | Required for Hosted Checkout | SumUp dashboard → Developer |
 | `SUMUP_PAY_TO_EMAIL` | Optional reference | Your SumUp login email |
 | `NEXT_PUBLIC_SUMUP_PUBLIC_KEY` | Only for embedded widget (not used for Hosted Checkout) | SumUp dashboard |
-| `EMAIL_API_KEY` | For confirmation emails | Resend API key, `re_…` (commented out in `.env.example` — uncomment) | Resend dashboard → API Keys |
-| `EMAIL_FROM` | For confirmation emails | The "from" address, e.g. `Vienna Grand Tours <bookings@yourdomain.at>` | Must be a domain you verified in Resend |
+| `GMAIL_USER` | For booking emails (Option B) | `viennagrandtours@gmail.com` | — |
+| `GMAIL_APP_PASSWORD` | For booking emails (Option B) | 16-letter Google app password (not the normal password) | Google Account → Security → App passwords |
+| `EMAIL_API_KEY` | For booking emails (Option A) | Resend API key, `re_…` | Resend dashboard → API Keys |
+| `EMAIL_FROM` | For booking emails (Option A) | The "from" address, e.g. `Vienna Grand Tours <bookings@yourdomain.at>` | Must be a domain you verified in Resend |
 | `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | Optional | Turns on Plausible analytics after consent | Plausible account; leave blank if unused |
 | `NEXT_PUBLIC_GA4_MEASUREMENT_ID` | Optional | Turns on Google Analytics after consent | GA4 property; leave blank if unused |
 
