@@ -23,10 +23,16 @@ Vienna Grand Tours account and set in `wrangler.jsonc`. KV is free without a pay
 its free tier allows 1,000 writes a day (each deploy and each page refresh uses some). If the
 site outgrows that, switch to R2 storage (needs a payment method; see "For developers").
 
-## 3. Connect the GitHub repository
+## 3. Connect the GitHub repository (done)
 
-Dashboard → **Workers & Pages** → **Create** → **Import a repository** → pick
-`viennagrandtours-sudo/tour`, branch `main`, then:
+The Worker `vienna-grand-tours` exists in the Vienna Grand Tours account and is connected to
+GitHub: Worker → **Settings** → **Build** → Git repository `viennagrandtours-sudo/tour`. Every
+push to the connected branch builds and deploys automatically. The branch is currently
+`claude/serene-faraday-3kt41n`; switch it to `main` once that branch is merged.
+
+To set this up again from scratch: **Workers & Pages** → the Worker → **Settings** → **Build** →
+**Connect** (installing the "Cloudflare Workers and Pages" GitHub app needs the repository
+owner's GitHub login), then:
 
 | Setting | Value |
 |---|---|
@@ -43,8 +49,9 @@ Under **Build variables** (these are baked into the site when it is built), add:
 | `NEXT_PUBLIC_SITE_URL` | `https://viennagrandtours.com` |
 | `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` or `NEXT_PUBLIC_GA4_MEASUREMENT_ID` | only if you use analytics |
 
-Save and deploy. When it finishes, Cloudflare shows an address like
-`https://vienna-grand-tours.<your-account>.workers.dev`.
+Save. Each build runs `npm ci`, the build command and the deploy command; the site is then on
+`https://vienna-grand-tours.vienna-grand-tours.workers.dev`. Dashboard variables survive deploys
+because `wrangler.jsonc` sets `keep_vars: true`.
 
 ## 4. Add the server settings
 
