@@ -15,12 +15,12 @@
       "service": "vienna-grand-tours"
     }
   ],
-  "r2_buckets": [
+  "kv_namespaces": [
     {
-      // Page cache. Create the bucket once before the first deploy:
-      //   Cloudflare dashboard -> R2 -> Create bucket -> "vienna-grand-tours-cache"
-      "binding": "NEXT_INC_CACHE_R2_BUCKET",
-      "bucket_name": "vienna-grand-tours-cache"
+      // Page cache (KV namespace "vienna-grand-tours-cache" in the
+      // Vienna Grand Tours account).
+      "binding": "NEXT_INC_CACHE_KV",
+      "id": "acf929a0229d41cca6c32b7888137320"
     }
   ],
   "images": {

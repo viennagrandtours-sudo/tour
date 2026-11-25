@@ -9,23 +9,19 @@ touches your real domain.
 
 ---
 
-## 1. Plan (recommended: Workers Paid, $5/month)
+## 1. Plan: start on the free plan
 
-Cloudflare dashboard → **Workers & Pages** → **Plans** → **Workers Paid**.
+The site starts on the free Workers plan. Its limit to watch: each request may use at most 10 ms
+of CPU time. Cached pages are far below that, but the booking API, payment confirmation and the
+admin area do more work. If the Worker's **Logs** show "Exceeded CPU" errors, upgrade:
+**Workers & Pages** → **Plans** → **Workers Paid** ($5/month).
 
-The free plan allows only 10 ms of CPU time per request. Cached pages fit, but the booking API
-and the admin area often need more, and requests over the limit fail. The paid plan removes
-that worry.
+## 2. Page cache (already done)
 
-## 2. Create the page-cache bucket
-
-Dashboard → **R2 Object Storage** → **Create bucket** → name it exactly:
-
-```
-vienna-grand-tours-cache
-```
-
-(R2 may ask you to add a payment method; this site stays well inside the free allowance.)
+Pages are stored in the KV namespace `vienna-grand-tours-cache`, already created in the
+Vienna Grand Tours account and set in `wrangler.jsonc`. KV is free without a payment method;
+its free tier allows 1,000 writes a day (each deploy and each page refresh uses some). If the
+site outgrows that, switch to R2 storage (needs a payment method; see "For developers").
 
 ## 3. Connect the GitHub repository
 
@@ -122,7 +118,11 @@ receiving mail).
 
 - Local Workers preview: `npm run cf:preview` (builds, then `wrangler dev` on :8787).
 - Deploy by hand instead of Workers Builds: `npx wrangler login`, then `npm run cf:deploy`.
-- Pages are prerendered and stored in R2 (`NEXT_INC_CACHE_R2_BUCKET`); stale pages regenerate
+- Pages are prerendered and stored in KV (`NEXT_INC_CACHE_KV`); stale pages regenerate
   in the background via the `WORKER_SELF_REFERENCE` binding; `next/image` uses the `IMAGES`
   binding (Cloudflare Images). See `open-next.config.ts` and `wrangler.jsonc`.
 - `next dev`, `next build` and Netlify keep working unchanged.
+- To move the page cache to R2 later: enable R2, create a bucket, swap `kvIncrementalCache` for
+  `@opennextjs/cloudflare/overrides/incremental-cache/r2-incremental-cache` in
+  `open-next.config.ts`, and replace `kv_namespaces` with an `r2_buckets` entry bound as
+  `NEXT_INC_CACHE_R2_BUCKET` in `wrangler.jsonc`.
