@@ -38,11 +38,11 @@ validate and return a fake reference number but are not stored anywhere.
       (`lib/tours.ts` → `SITE_URL` fallback and `SITE.email`, `.env.example` → analytics domain and
       example email addresses). If you register a *different* domain, those have to be changed in
       code. Buy from any Austrian registrar (e.g. world4you, easyname, Hostinger).
-- [x] **Business email: `viennagrandtours@gmail.com`.** Set as `SITE.email` in `lib/tours.ts`; it
-      appears in the Impressum, the privacy policy, the footer and every booking email, and receives
-      the "new booking" notices. It must be monitored — the AGB tell guests they can cancel by
-      writing to it. If `/admin/settings` has an older contact email saved, change it there too:
-      that saved value wins for the footer and the booking emails.
+- [x] **Business email: `office@viennagrandtours.com`.** Set as `SITE.email` in `lib/tours.ts`; it appears in
+      the Impressum, the privacy policy, the footer and every booking email, and receives the
+      "new booking" notices. It must be monitored — the AGB tell guests they can cancel by
+      writing to it. **Also set it as the contact email in `/admin/settings`**: a saved older
+      address there wins for the footer and the booking emails.
 - [ ] **Decide the phone number you are willing to publish.** See 2.2 — a phone number is legally
       required in the Impressum.
 
@@ -125,7 +125,7 @@ attempt is only logged. Set up **one** of them (if both are set, Gmail is used).
 
 **Option A — Resend, from your own domain (recommended).** Emails come from e.g.
 `bookings@viennagrandtours.com`, which spam filters trust more; guest replies still go to
-viennagrandtours@gmail.com.
+office@viennagrandtours.com.
 
 - [ ] **Create a [Resend](https://resend.com) account** (free: 3,000 emails/month) and add your
       domain under *Domains*. Copy the DNS records it shows into your domain registrar's DNS

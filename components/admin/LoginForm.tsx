@@ -34,7 +34,7 @@ export function LoginForm({ next }: { next: string }) {
           autoComplete="username"
           required
           className={input}
-          placeholder="viennagrandtours@gmail.com"
+          placeholder="office@viennagrandtours.com"
         />
       </div>
 

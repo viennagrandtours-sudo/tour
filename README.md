@@ -15,7 +15,7 @@ Turkish.
 - SumUp **Hosted Checkout** at booking time (`lib/sumup.ts` + `/book/complete`)
 - Booking emails (`lib/booking-email.ts`): EN/DE confirmation to the guest once payment is verified
   or the owner confirms in `/admin/bookings`, plus a "new booking" notice to the owner at
-  viennagrandtours@gmail.com; sends via Resend (`EMAIL_API_KEY` + `EMAIL_FROM`) or Gmail
+  office@viennagrandtours.com; sends via Resend (`EMAIL_API_KEY` + `EMAIL_FROM`) or Gmail
   (`GMAIL_USER` + `GMAIL_APP_PASSWORD`)
 - SEO: per-page metadata, Open Graph, `sitemap.xml`, `robots.txt`, LocalBusiness + TouristAttraction JSON-LD
 

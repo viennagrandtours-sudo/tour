@@ -79,7 +79,7 @@ On `https://vienna-grand-tours.<your-account>.workers.dev`:
 
 - Open a few pages in English and German.
 - Sign in at `/admin`, then make a €1 test booking at `/en/book?test=1` and pay it.
-- You should get the "New booking" email at viennagrandtours@gmail.com and the guest
+- You should get the "New booking" email at office@viennagrandtours.com and the guest
   confirmation; the booking shows as Confirmed in `/admin/bookings`.
 - Cancel the test booking and refund the €1 in SumUp.
 
@@ -88,14 +88,18 @@ If emails don't arrive, check Resend → **Logs**, and the Worker's **Logs** tab
 ## 6. Move the domain
 
 Your domain's DNS is currently run by Netlify. To serve the site from Cloudflare, Cloudflare
-must run it instead. **Your Resend email records live in that DNS — they must come along, or
-booking emails stop.**
+must run it instead. **Two sets of email records live in that DNS and must come along:** the
+Resend records (or booking emails stop) and the records of your mailbox provider for
+office@viennagrandtours.com — MX, plus usually SPF/DKIM TXT records (or that inbox stops
+receiving mail).
 
 1. Dashboard → **Add a domain** → `viennagrandtours.com` → Free plan is fine. Cloudflare scans
    and copies the existing records.
 2. Before continuing, open Resend → **Domains** → `viennagrandtours.com` → **Records**, and
    check that every record listed there (the `resend._domainkey` TXT, the SPF TXT and MX on
-   `send`) also appears in Cloudflare's DNS list with the same value. Add any that are missing.
+   `send`) also appears in Cloudflare's DNS list with the same value. Do the same with the
+   records your mailbox provider (where you created office@viennagrandtours.com) told you to
+   add — at least the MX records for `viennagrandtours.com`. Add any that are missing.
 3. In the Cloudflare DNS list, delete the records that point the website at Netlify (the
    `viennagrandtours.com` and `www` entries pointing to Netlify / `*.netlify.app`). Leave every
    email record alone.
@@ -104,7 +108,8 @@ booking emails stop.**
    **Active** (minutes to a few hours).
 5. Worker → **Settings** → **Domains & Routes** → **Add** → **Custom domain** →
    `viennagrandtours.com`, then again for `www.viennagrandtours.com`.
-6. Check in Resend that the domain still shows **Verified**.
+6. Check in Resend that the domain still shows **Verified**, and send a test email to
+   office@viennagrandtours.com from another account to make sure it still arrives.
 
 ## 7. Clean up (after a few calm days)
 
