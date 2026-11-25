@@ -10,11 +10,11 @@ import { getSitePhotos, slotPhoto } from "@/lib/photos";
 import { getSupabaseServer, type Testimonial } from "@/lib/supabase";
 
 type Props = {
-  params: Promise<{ locale: string }> | { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
 
   // Social preview image, once the owner has uploaded one in /admin/photos.
@@ -53,7 +53,7 @@ async function getTestimonials(locale: string): Promise<Testimonial[] | null> {
 }
 
 export default async function HomePage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   setRequestLocale(locale);
 
   const t = await getTranslations("hero");

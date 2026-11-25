@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 const SAFE_NEXT = /^\/admin(\/[\w\-/]*)?$/;
 
-export default function AdminLoginPage({
+export default async function AdminLoginPage({
   searchParams,
 }: {
-  searchParams: { next?: string };
+  searchParams: Promise<{ next?: string }>;
 }) {
-  const requested = searchParams?.next ?? "";
+  const requested = (await searchParams)?.next ?? "";
   const next = SAFE_NEXT.test(requested) ? requested : "/admin";
   const configured = isSupabaseConfigured();
 

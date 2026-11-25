@@ -8,11 +8,11 @@ import { getActiveTours } from "@/lib/tour-settings";
 import { getSitePhotos } from "@/lib/photos";
 
 type Props = {
-  params: Promise<{ locale: string }> | { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
     title: t("toursTitle"),
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ToursPage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("tours");
   const tours = await getActiveTours();

@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
-import { render, screen, cleanup } from "@testing-library/react";
+import { act, render, screen, cleanup } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { NextIntlClientProvider } from "next-intl";
 import TestimonialCarousel from "./TestimonialCarousel";
@@ -59,7 +59,7 @@ describe("TestimonialCarousel", () => {
     renderCarousel();
     expect(currentDot()).toBe(0);
 
-    await vi.advanceTimersByTimeAsync(6000);
+    await act(() => vi.advanceTimersByTimeAsync(6000));
     expect(currentDot()).toBe(1);
   });
 
@@ -69,11 +69,11 @@ describe("TestimonialCarousel", () => {
     const root = container.firstElementChild as HTMLElement;
 
     await user.hover(root);
-    await vi.advanceTimersByTimeAsync(10_000);
+    await act(() => vi.advanceTimersByTimeAsync(10_000));
     expect(currentDot()).toBe(0); // still paused — no auto-advance while hovered
 
     await user.unhover(root);
-    await vi.advanceTimersByTimeAsync(6000);
+    await act(() => vi.advanceTimersByTimeAsync(6000));
     expect(currentDot()).toBe(1); // resumed after the pointer leaves
   });
 
@@ -81,14 +81,14 @@ describe("TestimonialCarousel", () => {
     const user = userEvent.setup({ delay: null, advanceTimers: vi.advanceTimersByTime });
     renderCarousel();
 
-    await user.click(screen.getByRole("button", { name: "Go to testimonial 3" }));
+    await act(() => user.click(screen.getByRole("button", { name: "Go to testimonial 3" })));
     expect(currentDot()).toBe(2);
 
     // Advancing less than a full interval must not have moved on already.
-    await vi.advanceTimersByTimeAsync(5000);
+    await act(() => vi.advanceTimersByTimeAsync(5000));
     expect(currentDot()).toBe(2);
 
-    await vi.advanceTimersByTimeAsync(1000);
+    await act(() => vi.advanceTimersByTimeAsync(1000));
     expect(currentDot()).toBe(0); // wraps after the full interval elapses
   });
 
@@ -96,7 +96,7 @@ describe("TestimonialCarousel", () => {
     window.matchMedia = matchMediaMock(true);
     renderCarousel();
 
-    await vi.advanceTimersByTimeAsync(30_000);
+    await act(() => vi.advanceTimersByTimeAsync(30_000));
     expect(currentDot()).toBe(0);
   });
 });

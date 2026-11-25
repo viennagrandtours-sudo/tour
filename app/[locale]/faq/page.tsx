@@ -5,11 +5,11 @@ import PageHero from "@/components/PageHero";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 
 type Props = {
-  params: Promise<{ locale: string }> | { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
     title: t("faqTitle"),
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function FAQPage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("faq");
   const rawItems = t.raw("items");

@@ -12,7 +12,7 @@ import "../globals.css";
 
 type Props = {
   children: ReactNode;
-  params: Promise<{ locale: string }> | { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export function generateStaticParams() {
@@ -28,7 +28,7 @@ export function generateStaticParams() {
 export const revalidate = 300;
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const resolved = await Promise.resolve(params);
+  const resolved = await params;
   const locale = resolved.locale;
 
   if (!isLocale(locale)) {

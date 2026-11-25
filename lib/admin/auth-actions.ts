@@ -28,7 +28,7 @@ export async function signInAction(
     };
   }
 
-  const supabase = createSupabaseAction();
+  const supabase = await createSupabaseAction();
   if (!supabase) {
     return { error: "Supabase is not configured on the server." };
   }
@@ -51,7 +51,7 @@ export async function signInAction(
 }
 
 export async function signOutAction(): Promise<void> {
-  const supabase = createSupabaseAction();
+  const supabase = await createSupabaseAction();
   if (supabase) {
     try {
       await supabase.auth.signOut();

@@ -4,13 +4,13 @@ import { localeAlternates } from "@/i18n/seo";
 import PageHero from "@/components/PageHero";
 
 type Props = {
-  params: Promise<{ locale: string }> | { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 type Section = { title: string; body: string };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
     title: t("agbTitle"),
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function AgbPage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("legal");
 

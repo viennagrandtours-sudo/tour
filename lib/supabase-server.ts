@@ -34,9 +34,9 @@ export function hasServiceRole(): boolean {
  * during render, so token refreshes are swallowed here — middleware already
  * refreshes the session on every admin request.
  */
-export function createSupabaseRSC(): SupabaseClient | null {
+export async function createSupabaseRSC(): Promise<SupabaseClient | null> {
   if (!isSupabaseConfigured()) return null;
-  const store = cookies();
+  const store = await cookies();
 
   return createServerClient(url()!, anonKey()!, {
     cookieOptions: { httpOnly: true, secure: process.env.NODE_ENV === "production", sameSite: "lax" },
@@ -49,9 +49,9 @@ export function createSupabaseRSC(): SupabaseClient | null {
 }
 
 /** Cookie-bound client for Server Actions and Route Handlers (can write cookies). */
-export function createSupabaseAction(): SupabaseClient | null {
+export async function createSupabaseAction(): Promise<SupabaseClient | null> {
   if (!isSupabaseConfigured()) return null;
-  const store = cookies();
+  const store = await cookies();
 
   return createServerClient(url()!, anonKey()!, {
     cookieOptions: { httpOnly: true, secure: process.env.NODE_ENV === "production", sameSite: "lax" },
@@ -97,7 +97,7 @@ export type AdminUser = {
 
 /** Returns the signed-in admin user, or null when signed out / not configured. */
 export async function getAdminUser(): Promise<AdminUser | null> {
-  const supabase = createSupabaseRSC();
+  const supabase = await createSupabaseRSC();
   if (!supabase) return null;
 
   try {

@@ -6,11 +6,11 @@ import PageHero from "@/components/PageHero";
 import BookingPaymentComplete from "@/components/BookingPaymentComplete";
 
 type Props = {
-  params: Promise<{ locale: string }> | { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
     title: t("bookTitle"),
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BookCompletePage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("booking");
 
