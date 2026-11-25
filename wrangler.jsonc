@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vienna-grand-tours",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-11-25",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      // Used to regenerate stale pages in the background. Must match "name".
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "vienna-grand-tours"
+    }
+  ],
+  "r2_buckets": [
+    {
+      // Page cache. Create the bucket once before the first deploy:
+      //   Cloudflare dashboard -> R2 -> Create bucket -> "vienna-grand-tours-cache"
+      "binding": "NEXT_INC_CACHE_R2_BUCKET",
+      "bucket_name": "vienna-grand-tours-cache"
+    }
+  ],
+  "images": {
+    // next/image resizing through Cloudflare Images.
+    "binding": "IMAGES"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

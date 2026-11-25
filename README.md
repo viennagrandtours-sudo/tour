@@ -4,7 +4,7 @@ Marketing + booking website for a small, owner-operated Vienna sightseeing busin
 city tours in a dark green vintage-style electric vehicle, narrated in English, German, Spanish and
 Turkish.
 
-**Stack:** Next.js 14 (App Router) · TypeScript · Tailwind CSS · next-intl · Supabase · Netlify
+**Stack:** Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS · next-intl · Supabase · Netlify, moving to Cloudflare Workers (see [CLOUDFLARE.md](CLOUDFLARE.md))
 
 ## Features
 
@@ -89,6 +89,12 @@ Without Supabase env vars, bookings still validate and return a **demo** confirm
 3. Copy URL + anon key (and optionally service role key) into `.env.local`
 
 Tables: `bookings`, `testimonials`, `contact_submissions` (RLS policies included).
+
+## Deploy to Cloudflare Workers
+
+The site builds for Cloudflare Workers with the OpenNext adapter (`wrangler.jsonc`, `open-next.config.ts`).
+Step-by-step setup and the domain move are in [CLOUDFLARE.md](CLOUDFLARE.md). Local Workers preview:
+`npm run cf:preview`.
 
 ## Deploy to Netlify
 
