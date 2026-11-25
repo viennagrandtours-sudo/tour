@@ -4,6 +4,9 @@
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-11-25",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Keep the variables set in the Cloudflare dashboard (Settings -> Variables
+  // and Secrets) on every deploy instead of wiping them.
+  "keep_vars": true,
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
