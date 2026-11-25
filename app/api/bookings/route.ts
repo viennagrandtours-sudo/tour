@@ -17,6 +17,11 @@ import {
 } from "@/lib/tours";
 import { createHostedCheckout, sumupConfigured } from "@/lib/sumup";
 import { sendOwnerNotification } from "@/lib/booking-email";
+import { getAdminUser } from "@/lib/supabase-server";
+
+/** Total charged for an owner test booking (see `test` below). */
+const TEST_BOOKING_AMOUNT = 1;
+const TEST_NOTE = "[TEST BOOKING — €1, cancel/refund afterwards]";
 
 type BookingBody = {
   name: string;
@@ -29,6 +34,8 @@ type BookingBody = {
   language: string;
   notes?: string;
   locale?: string;
+  /** Owner test: €1 total. Only honoured for a signed-in admin. */
+  test?: boolean;
 };
 
 const emailOk = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
@@ -69,6 +76,7 @@ export async function POST(req: NextRequest) {
     language,
     notes,
     locale,
+    test,
   } = body;
 
   if (!name?.trim() || !emailOk(email) || !phone?.trim()) {
@@ -107,7 +115,21 @@ export async function POST(req: NextRequest) {
   if (!resolvedTour || !resolvedTour.active) {
     return NextResponse.json({ error: "That tour is not currently available" }, { status: 400 });
   }
-  const amount = resolvedTour.pricePerPerson * guests;
+  // Owner test bookings run the real flow (SumUp, emails) for €1. The admin
+  // session cookie decides, never the request body alone, so the public can't
+  // book at €1 by sending `test: true`.
+  const isTest = test === true;
+  if (isTest && !(await getAdminUser())) {
+    return NextResponse.json(
+      {
+        error:
+          "Test bookings only work while you are signed in to /admin in this browser. Sign in there, then reload this page.",
+      },
+      { status: 403 }
+    );
+  }
+  const amount = isTest ? TEST_BOOKING_AMOUNT : resolvedTour.pricePerPerson * guests;
+  const storedNotes = isTest ? [TEST_NOTE, notes?.trim()].filter(Boolean).join(" ") : notes?.trim();
   const tour = TOURS.find((t) => t.id === tour_type)!;
 
   // Fast, non-authoritative pre-check: gives a quick "unavailable" for the
@@ -153,7 +175,7 @@ export async function POST(req: NextRequest) {
       p_time: time,
       p_guest_count: guests,
       p_language: language,
-      p_notes: notes?.trim() || null,
+      p_notes: storedNotes || null,
       p_status: "awaiting_payment",
       p_fleet_size: FLEET_SIZE,
       p_seats_per_car: MAX_GUESTS_PER_CAR,
@@ -190,7 +212,7 @@ export async function POST(req: NextRequest) {
         amount,
         currency: "EUR",
         checkoutReference: bookingId,
-        description: `Vienna Grand Tours · ${tour.id} · ${guests} guests · ${date} ${time}`,
+        description: `${isTest ? "TEST · " : ""}Vienna Grand Tours · ${tour.id} · ${guests} guests · ${date} ${time}`,
         redirectUrl: completeUrl,
         returnUrl: webhookUrl.toString(),
       });
