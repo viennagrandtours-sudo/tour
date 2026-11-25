@@ -117,9 +117,13 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
     setForm((prev) => ({ ...prev, time: openSlots[0] }));
   }, [openSlots, form.time]);
 
+  // Owner test mode: /book?test=1 while signed in to /admin. The server
+  // enforces both the admin check and the €1 price; this only mirrors it.
+  const testMode = searchParams.get("test") === "1";
+
   const total = useMemo(
-    () => calculateTotal(form.tour_type, form.guest_count),
-    [form.tour_type, form.guest_count]
+    () => (testMode ? 1 : calculateTotal(form.tour_type, form.guest_count)),
+    [testMode, form.tour_type, form.guest_count]
   );
 
   const carCount = useMemo(
@@ -195,7 +199,7 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
       const res = await fetch("/api/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, locale }),
+        body: JSON.stringify({ ...form, locale, ...(testMode ? { test: true } : {}) }),
       });
 
       const data = await res.json();
@@ -270,6 +274,16 @@ export default function BookingForm({ initialTour = "silver" }: Props) {
 
   return (
     <form onSubmit={onSubmit} className="paper-surface shadow-soft">
+      {testMode && (
+        <p
+          role="status"
+          className="border-b border-red-300 bg-red-50 px-5 py-3 font-sans text-sm text-red-800 sm:px-8"
+        >
+          <strong>Test mode:</strong> this booking costs €1 in total and only works while you are
+          signed in to /admin. It is real: cancel it in /admin/bookings and refund it in SumUp
+          afterwards.
+        </p>
+      )}
       <div className="relative border-b border-navy/8 px-5 py-5 sm:px-8 sm:py-6">
         <ol className="flex flex-wrap items-center gap-x-1 gap-y-2" aria-label={t("stepsLabel")}>
           {STEPS.map((s, i) => (
